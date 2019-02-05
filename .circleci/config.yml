@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  buildAlgoliaIndex:
     branches:
       only:
         - master
@@ -31,3 +31,28 @@ jobs:
       - run:
           name: run indexing
           command: bundle exec jekyll algolia
+
+  buildDockerImage:
+    branches:
+      only:
+        - /^stage.+/
+    docker:
+      - image: jekyll/builder
+
+    steps:
+      - checkout
+
+      - run:
+          name: Generating Jekyll Site
+          command: docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/builder jekyll build
+
+      - run:
+          name: Building Docker Image
+          command: ddocker build -t elasticio/docs:${CIRCLE_SHA1} .
+
+workflows:
+  version: 2
+    build_development:
+      jobs:
+        - buildDockerImage
+        - buildAlgoliaIndex
