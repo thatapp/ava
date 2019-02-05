@@ -1,5 +1,13 @@
-FROM jekyll/jekyll
+FROM nginx:stable AS base
+WORKDIR /usr/src/docs/
+COPY .nginx/.conf /etc/nginx/nginx.conf
+COPY _site ./_site
 
-RUN docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p $(docker-machine ip `docker-machine active`):4000:4000 jekyll/jekyll jekyll serve
+FROM base AS dependencies
 
+RUN mkdir -p /var/cache/nginx && \
+    chown -R nginx:nginx /usr/src/docs /var/cache/nginx
 
+USER nginx
+
+EXPOSE 8000
