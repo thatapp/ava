@@ -36,6 +36,7 @@ jobs:
     branches:
       only:
         - /^stage.+/
+        - dockerizing_docs
     docker:
       - image: jekyll/builder
 
