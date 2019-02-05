@@ -52,7 +52,7 @@ jobs:
 
 workflows:
   version: 2
-    build:
-      jobs:
-        - buildDockerImage
-        - buildAlgoliaIndex
+  build:
+    jobs:
+      - buildDockerImage
+      - buildAlgoliaIndex
