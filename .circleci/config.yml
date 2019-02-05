@@ -42,7 +42,6 @@ jobs:
 
     steps:
       - checkout
-
       - run:
           name: Generating Jekyll Site
           command: docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/builder jekyll build
