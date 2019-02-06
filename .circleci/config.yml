@@ -1,9 +1,6 @@
 version: 2
 jobs:
-  build:
-    branches:
-      only:
-        - master
+  buildAlgoliaIndex:
     docker:
        - image: circleci/ruby:2.4.1-node-browsers
 
@@ -31,3 +28,33 @@ jobs:
       - run:
           name: run indexing
           command: bundle exec jekyll algolia
+
+  buildDockerImage:
+    docker:
+      - image: jekyll/builder
+
+    steps:
+      - checkout
+      - run:
+          name: Generating Jekyll Site
+          command: docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/builder jekyll build
+
+      - run:
+          name: Building Docker Image
+          command: ddocker build -t elasticio/docs:${CIRCLE_SHA1} .
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - buildDockerImage
+          filters:
+            branches:
+              only:
+                - master
+      - buildAlgoliaIndex
+          filters:
+            branches:
+              only:
+                - /^stage.+/
+                - dockerizing_docs
