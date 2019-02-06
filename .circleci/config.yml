@@ -32,7 +32,6 @@ jobs:
     machine: true
     steps:
       - checkout
-      - setup_remote_docker
       - run:
           name: Generating Jekyll Site
           command: docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/builder jekyll build
