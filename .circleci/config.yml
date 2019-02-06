@@ -51,7 +51,7 @@ workflows:
           filters:
             branches:
               only:
-                - /^stage.+/
+                - /stage_.+/
                 - dockerizing_docs
       - buildAlgoliaIndex:
           filters:
