@@ -35,13 +35,14 @@ jobs:
 
     steps:
       - checkout
+      - setup_remote_docker
       - run:
           name: Generating Jekyll Site
           command: docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/builder jekyll build
 
       - run:
           name: Building Docker Image
-          command: ddocker build -t elasticio/docs:${CIRCLE_SHA1} .
+          command: docker build -t elasticio/docs:${CIRCLE_SHA1} .
 
 workflows:
   version: 2
