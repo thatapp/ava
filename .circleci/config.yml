@@ -3,7 +3,6 @@ jobs:
   buildAlgoliaIndex:
     docker:
        - image: circleci/ruby:2.4.1-node-browsers
-
     working_directory: ~/repo
 
     steps:
@@ -30,16 +29,12 @@ jobs:
           command: bundle exec jekyll algolia
 
   buildDockerImage:
-    docker:
-      - image: jekyll/builder
-
     steps:
       - checkout
       - setup_remote_docker
       - run:
           name: Generating Jekyll Site
           command: docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/builder jekyll build
-
       - run:
           name: Building Docker Image
           command: docker build -t elasticio/docs:${CIRCLE_SHA1} .
