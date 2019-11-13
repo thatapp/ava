@@ -17,9 +17,9 @@ collections:
     output: true
 
 algolia:
-  application_id: 'OIJ2XNEVHZ'
-  index_name:     'test_elasticio_documentation'
-  search_only_api_key: 'e434b9595ab515ca31a23e22aa39ecf1'
+  application_id: 'PPVCPBO4V1'
+  index_name:     'prod_ava'
+  search_only_api_key: 'c90743a840d2d9fd31193ab6180f83cf'
 
 exclude:
 
