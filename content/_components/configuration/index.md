@@ -9,7 +9,7 @@ section: Utility components
 The configuration component allows separating the modification of configurable
 values from the modification of the flow.
 
-### How works.  API version / SDK version
+### How it works.  API version / SDK version
 
 Configuration component has a credential which is a text field with the following
 rules:
@@ -27,7 +27,6 @@ Afterwards, it emits a message with an object equivalent to the JSON in the conf
 So any data which is used in the flow and is repeated in multiple places can be
 configured (or later changed) in the single step. After that new values are used
 where it is needed.
-
 
 ### Requirements
 
