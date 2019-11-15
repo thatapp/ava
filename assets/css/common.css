@@ -207,7 +207,7 @@ a:active,
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  background: #ff4e35;
+  background: #0196b1;
   border: none;
   color: #fff;
   -webkit-user-select: none;
@@ -218,15 +218,15 @@ a:active,
   height: 40px;
   padding: 0 23px;
   line-height: 40px;
-  background: #ff4e35;
+  background: #0196b1;
   border-radius: 20px; }
 .button:link, .button:visited, .button:active {
   text-decoration: none;
-  background: #ff4e35;
+  background: #0196b1;
   color: #fff; }
 
 .button:hover {
-  background: #ff2102; }
+  background: #018AA3; }
 
 .button_minor,
 .button_minor:link,
