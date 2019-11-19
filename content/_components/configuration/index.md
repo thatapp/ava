@@ -1,15 +1,25 @@
 ---
 title: Configuration component
-layout: article
+layout: component
 section: Utility components
+description: A component allows separating the modification of configurable values from the modification of the flow.
+icon: configuration.png
+icontext: Configuration component
+category: Configuration component
+createdDate: 2018-11-20
+updatedDate: 2018-11-20
 ---
 
+<<<<<<< HEAD
 ## Description
 
 The configuration component allows separating the modification of configurable
 values from the modification of the flow.
 
 ### How it works.  API version / SDK version
+=======
+## How works.  API version / SDK version
+>>>>>>> c043adb98d7b64beed79053a4d1719f77355e324
 
 Configuration component has a credential which is a text field with the following
 rules:
@@ -28,9 +38,13 @@ So any data which is used in the flow and is repeated in multiple places can be
 configured (or later changed) in the single step. After that new values are used
 where it is needed.
 
+<<<<<<< HEAD
 ### Requirements
 
 #### Environment variables
+=======
+### Environment variables
+>>>>>>> c043adb98d7b64beed79053a4d1719f77355e324
 
 No environment variables are necessary to configure the component.
 
@@ -131,7 +145,3 @@ use something like:
   ]
 }
 ```
-
-## License
-
-Allowed to use, source code is not open source.
