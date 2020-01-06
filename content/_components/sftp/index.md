@@ -10,6 +10,23 @@ createdDate: 2015-11-20
 updatedDate: 2019-12-16
 ---
 
+## Latest changelog
+
+**1.2.0 (December 18, 2019)**
+
+**General Changes:**
+
+* Add max to file size and environment variable to configure
+* Add key-based authentication
+* Add Download files action
+* Add Upload File From URL action    
+* The following actions are renamed:
+  - Upload files -> Upload files From Attachments Header
+  - Lookup file by name -> Download file by name
+  - Get new and updated files -> Poll files
+
+> To see the full **changelog** please use the following [link](/components/sftp/changelog).
+
 ## General Information
 
 ### Description and Purpose
@@ -655,7 +672,7 @@ Action does not support `Fetch Page` mode (according to OIH standards)
 ## Known limitations
 
 * The maximum file size accepted by the SFTP component is limited to 100 MB.
-* The attachments mechanism does not work with [Local Agent Installation](https://support.elastic.io/support/solutions/articles/14000076461-announcing-the-local-agent-)
+* The attachments mechanism does not work with [Local Agent Installation](/getting-started/local-agent)
 * `Get new and updated files` trigger mechanism is based on SFTP file `modifyTime` metadata field. For correct processing the trigger requires correct time configuration on the SFTP server.
 * `Get new and updated files` trigger does not support empty files processing.
 * `Get new and updated files` trigger does not support `fetch page` Emit Behaviour
