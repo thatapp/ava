@@ -2,20 +2,18 @@
 title: Contracts and Workspaces
 layout: article
 section: Basic Concepts
-order: 1
+description: Explanation of the hierarchy of contracts and workspaces.
+order: 5
 since: 20190401
 ---
 
 This document provides information on [contracts](#contracts), [contract management](#contract-management), [workspaces](#workspaces) and [workspace management](#workspace-management). Additionally, it explains the basic application of this
 approach in [solution life cycle](#workspaces-and-life-cycles), and what [limited workspaces](#limited-workspaces) are. The following
-scheme shows how contracts and workspaces stand in solution hierarchy.  
+scheme shows how contracts and workspaces stand in solution hierarchy.
 
-
-
-![](/assets/img/getting-started/contracts-and-workspaces/Screenshot_1.png)
+![Solution hierarchy scheme](/assets/img/getting-started/contracts-and-workspaces/Screenshot_1.png)
 
 ## Contracts
-
 
 A client’s enclosed environment within a
 [tenant](tenant) is called a
@@ -38,7 +36,6 @@ memberships to enter and work in. With the invitation a user gets a user role.
 
 ## Contract Management
 
-
 A tenant Admin can create contracts and set contract
 Owners. By default, only members with contract Owner or a other
 [roles](/guides/managing-user-roles-in-a-tenant) with the right permissions can
@@ -60,9 +57,7 @@ Here is the full list of contract permissions:
 
 6.  Edit developer team
 
-
 ## Workspaces
-
 
 A client’s enclosed environment within a contract is called a workspace. Each
 contract can have multiple workspaces, and each workspace is virtually separated
@@ -86,7 +81,6 @@ individually.
 
 ## Workspace Management
 
-
 Any contract member can create workspaces. Only workspace Owner or member with
 corresponding permissions can manage workspaces. Here is the full list of
 workspace permissions:
@@ -103,9 +97,7 @@ workspace permissions:
 
 You can learn more about workspace management [here](/guides/managing-workspaces).
 
-
 ## Workspaces and Life Cycles
-
 
 Workspaces in a contract are separated from each other, but they can utilize the
 same components for their integration flows. This means that one can create
@@ -114,7 +106,6 @@ non-disruptive testing one can create dedicated workspaces for testing and
 production stages, both running near-identical integration flows. The workspaces
 will have different credentials, so the testing stage may be accessed by the
 client’s engineers, and production environment is customer-facing only.
-
 
 ## Limited Workspaces
 
@@ -126,10 +117,17 @@ Workspaces can have the `limited` or `full` type. `Limited` is intended for plat
 
 Though not forbidden, **it is highly unrecommended to use `limited` workspaces for any production purposes**. `Limited` workspaces are indicated in the UI:
 
-![](/assets/img/getting-started/contracts-and-workspaces/Screenshot_2.png)
+![Workspace - Limited_1](/assets/img/getting-started/contracts-and-workspaces/Screenshot_2.png)
 
-![](/assets/img/getting-started/contracts-and-workspaces/Screenshot_3.png)
+![Workspace - Limited_2](/assets/img/getting-started/contracts-and-workspaces/Screenshot_3.png)
 
 To change workspace type from `limited` to `full`, contact support.
 
 The default type for workspaces created in a tenant can be changed. A user with corresponding permission can do that, using `"default_workspace_type"`, setting `limited` or `full` as a value.
+
+## Related links
+
+- [Managing user roles in a tenant](/guides/managing-user-roles-in-a-tenant)
+- [Credentials](credential)
+- [Integration flows](integration-flow)
+- [Workspace management](/guides/managing-workspaces)
