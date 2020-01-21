@@ -1,5 +1,6 @@
 ---
 title: General Troubleshooting Guide
+description: This document describes common problems that you can encounter and the ways to solve them.
 layout: article
 section: Building integration flows
 order: 1
@@ -37,7 +38,8 @@ When it comes to Component problems, everything is quite simple. You can check w
 While the Platform itself is not error-prone, we surely can not predict every possible issue with custom Components and complex Flows. Check [this document](platform-behavior) for some details on the common Platform troubles and the general way to fix them.
 Most of platform errors won't lead to message loss, unless the messaging subsystem itself fails. Platform uses RabbitMQ to handle message transport between integration steps.
 
-If you encounter a Platform issue that you can not deal with, feel free to contact our support service. You can reach them by [email](mailto:support@elastic.io): support@elastic.io or via the UI. First, click the *Quick Help* (*?*) icon of the Navigational Menu **(1)**, then click *Help Center* **(2)**:
+If you encounter a Platform issue that you can not deal with, feel free to
+contact our support service. You can reach them by [email](mailto:{{site.data.tenant.supportEmail}}): {{site.data.tenant.supportEmail}} or via the UI. First, click the *Quick Help* (*?*) icon of the Navigational Menu **(1)**, then click *Help Center* **(2)**:
 
 ![Help Center](/assets/img/integrator-guide/troubleshoot/Screenshot_2.png)
 
@@ -67,3 +69,9 @@ Here is the info the team requires to provide support:
 ## Examples
 
 Stay tuned, we will come up with some beneficial examples soon!
+
+## Related links
+
+- [Mapping data](mapping-data)
+- [Managing Flow Errors](managing-flow-errors)
+- [Platform Behavior](platform-behavior)

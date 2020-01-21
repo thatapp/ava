@@ -1,5 +1,6 @@
 ---
 title: OAuth Callback redirect URL
+description: This document gives the guidelines on configuring your own OAuth App in case when platform is run on different/dedicated tenant.
 layout: article
 section: Tenant Management
 order: 1
@@ -13,7 +14,12 @@ When your created app needs to use a Callback URL for the authentication purpose
 
 The full constructed example would be : `https://your-tenant-address/callback/oauth2`.
 
-Any component which runs the authentication through the OAuth is set by default to use elastic.io main Callback redirect URL structure. For example `https://app.{{site.data.tenant.name}}/callback/oauth2` is the URL for our OAuth2. This means the authorisation process would not be successful if the same app is deployed into a different tenant (i.e. different base URL).
+Any component which runs the authentication through the OAuth is set by default to use {{site.data.tenant.name}} main Callback redirect URL structure. For example `{{site.data.tenant.appURL}}/callback/oauth2` is the URL for our OAuth2. This means the authorisation process would not be successful if the same app is deployed into a different tenant (i.e. different base URL).
 
 > Care must be made to create and configure your own OAuth app and to provide the specifically created OAuth keys as `env vars`.
 For more information please read our [articles about environment variables](/references/how-to-define-envirament-variables-for-components).
+
+## Related links
+
+- [(IETF) The OAuth 2.0 Authorization Framework](https://tools.ietf.org/html/rfc6749)
+- [How to define environment variables for components](/references/how-to-define-envirament-variables-for-components)

@@ -1,5 +1,6 @@
 ---
 title: Managing Flow Errors
+description: This document describes the way to find errors that occur in your Flows, and deal with them.
 layout: article
 section: Building integration flows
 order: 2
@@ -9,6 +10,7 @@ since: 20190924
 This document describes the way to find errors that occur in your Flows, and deal with them.
 
 ## Flow Errors
+
 Let's start with the fact, that no errors on the Platform are fatal. There is never a reason to panic - everything has a solution. Maybe you won't even need any assistance with it. All the errors are gathered in one convenient list that you can access from the Dashboard. To see the list of errors, navigate to the Dashboard and click *Errors* tab:
 
 ![Dashboard](/assets/img/integrator-guide/flow-errors/Screenshot_1.png)
@@ -37,7 +39,7 @@ Logs of a particular component or integration flow may contain some important
 information that is useful when investigating issues. With the Download Logs
 feature, an integration administrator or integration developer can download
 complete logs of a single connector or even a whole flow. This allows to analyze
-them without having to page through them via elastic.io UI.
+them without having to page through them via {{site.data.tenant.name}} UI.
 
 You can also download logs by clicking the corresponding button for:
 

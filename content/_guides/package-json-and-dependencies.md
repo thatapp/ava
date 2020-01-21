@@ -1,5 +1,6 @@
 ---
 title: package.json and Dependencies
+description: Here is how to make sure to have all the correct dependencies for your component.
 layout: article
 section: Developing Components
 order: 1
@@ -14,13 +15,13 @@ From here on we would assume that you have all the necessary preconditions for d
 
 While developing a component is node.js it is important to have all the dependencies right. If you are calling any modules from your programs that are required to run your component then the packages that include them need to be included as well. The logic is the following:
 
-**You need to add any dependencies in your component's package.json** file in the section of dependencies like it's done for our [Petstore component](https://github.com/elasticio/petstore-component-nodejs):
+**You need to add any dependencies in your component's package.json** file in the section of dependencies like it's done for our [Petstore component]({{site.data.tenant.petStoreSourceNodeJS}}):
 
 ```json
 {
-  "name": "@elasticio/petstore-component-nodejs",
+  "name": "petstore-component-nodejs",
   "version": "0.0.1",
-  "description": "elastic.io component for the Petstore API",
+  "description": "{{site.data.tenant.name}} component for the Petstore API",
   "scripts": {
     "test": "exit 0"
   },
@@ -28,7 +29,7 @@ While developing a component is node.js it is important to have all the dependen
     "type": "git",
     "url": "git@github.com:elasticio/petstore-component-nodejs.git"
   },
-  "author": "elastic.io GmbH",
+  "author": "{{site.data.tenant.companyName}}",
   "license": "BSD-2-Clause",
   "engines": {
     "node": "6.4.0"
@@ -43,7 +44,8 @@ While developing a component is node.js it is important to have all the dependen
 }
 ```
 
-When you include the required dependencies it will be included in your component during the deployment into elastic.io platform. More information is available from the official NPM home page about using a [package.json](https://docs.npmjs.com/creating-a-package-json-file).
+When you include the required dependencies it will be included in your component
+during the deployment into {{site.data.tenant.name}} platform. More information is available from the official NPM home page about using a [package.json](https://docs.npmjs.com/creating-a-package-json-file).
 
 ## Adding Dependencies
 
@@ -74,3 +76,9 @@ If you need to check for the missing dependencies for any program included (for 
   3. Load Node.js by typing `node` on command line and take the file in question and run: `require('./path/to/code.js')`
 
 If all goes well without errors then your file `code.js` has no missing dependencies. Otherwise, you will get errors for missing dependencies which needs to be added inside the package.json as a required package so it would be fetched and included during the deployment.
+
+## Related links
+
+- [Petstore component]({{site.data.tenant.petStoreSourceNodeJS}})
+- [Creating a package.json file](https://docs.npmjs.com/creating-a-package-json-file)
+- [Downloading and installing packages locally](https://docs.npmjs.com/downloading-and-installing-packages-locally)
