@@ -2,8 +2,9 @@
 title: OAuth Callback redirect URL
 description: This document gives the guidelines on configuring your own OAuth App in case when platform is run on different/dedicated tenant.
 layout: article
-section: Tenant Management
+section: Contract Management
 order: 9
+category: integrator-management
 ---
 
 This document gives the guidelines on configuring your own OAuth App in case when {{site.data.tenant.name}} platform is run on different/dedicated tenant. Why would one need to do this?

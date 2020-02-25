@@ -5,6 +5,7 @@ section: Introduction
 description: Explanation of the hierarchy of contracts and workspaces.
 order: 2
 since: 20190401
+category: intro
 ---
 
 This document provides information on [contracts](#contracts), [contract management](#contract-management), [workspaces](#workspaces) and [workspace management](#workspace-management). Additionally, it explains the basic application of this
@@ -16,7 +17,7 @@ scheme shows how contracts and workspaces stand in solution hierarchy.
 ## Contracts
 
 A client’s enclosed environment within a
-[tenant](tenant) is called a
+tenant is called a
 contract. It is usually backed by a formal contract, hence the name. Each
 client can have multiple contracts. A contract includes members, developer
 teams, and workspaces:
