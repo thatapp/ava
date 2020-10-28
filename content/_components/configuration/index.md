@@ -7,14 +7,24 @@ icon: configuration.png
 icontext: Configuration component
 category: Configuration component
 createdDate: 2018-11-20
-updatedDate: 2018-11-20
+updatedDate: 2020-10-30
 ---
 
 <<<<<<< HEAD
 ## Description
 
+<<<<<<< HEAD
 The configuration component allows separating the modification of configurable
 values from the modification of the flow.
+=======
+**0.0.3 (October 30, 2020)**
+
+* Update sailor version to 2.6.18
+* Annual audit of the component code to check if it exposes a sensitive data in the logs
+* Add circle.ci automation build
+
+> To see the full **changelog** please use the following [link](changelog).
+>>>>>>> 340e7db6963c6b497fe65b0472ea33c940a2c291
 
 ### How it works.  API version / SDK version
 =======
