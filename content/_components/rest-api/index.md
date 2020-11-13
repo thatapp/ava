@@ -7,14 +7,14 @@ icon: rest-api.png
 icontext: REST API component
 category: REST API component
 createdDate: 2018-07-17
-updatedDate: 2020-10-23
+updatedDate: 2020-11-10
 ---
 
 ## Latest changelog
 
-**2.0.2 (October 23, 2020)**
+**2.0.3 (November 6, 2020)**
 
-* Annual audit of the component code to check if it exposes a sensitive data in the logs
+* Update sailor version to 2.6.18
 
 > To see the full **changelog** please use the following [link](changelog).
 
@@ -73,6 +73,7 @@ You can add the authorization methods during the integration flow design or by g
 and adding there.
 
 ![alt text](https://user-images.githubusercontent.com/8449044/95571461-2f68ba80-0a31-11eb-9fff-c67b34506b00.png "REST API component OAuth2 authorization")
+
 *Example above shows how to add new credential to access the API from Credentials page.*
 
 REST API component supports 4 authorisation types:
@@ -83,10 +84,16 @@ REST API component supports 4 authorisation types:
 *   `OAuth2` - use it to provide `Oauth2` credentials to access the resource. Currently it is implemented `Authorization code` OAuth2 flow.
 
 To create `OAuth2` credential you have to choose Auth-client or create the new one. It must contains `Name`, `Client ID`, `Client Secret`, `Authorization Endpoint` and `Token Endpoint`.
+
 ![alt text](https://user-images.githubusercontent.com/8449044/95571677-7e165480-0a31-11eb-9b45-915401d40e31.png "Creating auth client for REST API component")
+
 *Example above shows how to add new Auth-client to access the API.*
 
-Please note that the result of creating a credential is an HTTP header automatically placed for you. You can also specify the authorisation in the headers section directly.
+Here you can see how to select an existing `client`:
+
+![Choose client](img/client-exist.png)
+
+>**Please note** that the result of creating a credential is an HTTP header automatically placed for you. You can also specify the authorisation in the headers section directly.
 
 ### Environment variables
 
@@ -303,8 +310,7 @@ There are:
 
   2. Attachments mechanism does not work with [Local Agent Installation](/references/local-agents-requesting#compatible-operating-systems)
 
-**3.** OAuth2 authentication strategy limitation: [Access Token Response](https://www.oauth.com/oauth2-servers/access-tokens/access-token-response/) contains `refresh_token` optional property, but due to the platform limitation it is required.
-Possible solution - use `access_type:offline` in additional parameters (may not work in some cases).
+**3.** OAuth2 authentication strategy limitation: [Access Token Response](https://www.oauth.com/oauth2-servers/access-tokens/access-token-response/) should   always contain `refresh_token` property (optional in OAuth2 standard). Reason behind it - platform shoud be able to refresh access token after it's expiration.  Possible solution - use `access_type:offline` in additional parameter which is supported by many OAuth2 providers.
 
 **4.** We suggest not to set Delay value more then time period between two executions of the flow.
 Please keep in mind that delay can influence on time of next execution.
