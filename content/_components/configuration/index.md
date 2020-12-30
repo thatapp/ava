@@ -5,11 +5,12 @@ section: Utility components
 description: A component allows separating the modification of configurable values from the modification of the flow.
 icon: configuration.png
 icontext: Configuration component
-category: Configuration component
-createdDate: 2018-11-20
+category: configuration
 updatedDate: 2020-10-30
+ComponentVersion: 0.0.4
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Description
 
@@ -28,6 +29,8 @@ values from the modification of the flow.
 
 ### How it works.  API version / SDK version
 =======
+=======
+>>>>>>> a48af29eaa496fe803a5dc6fa840a9bb65e8d20b
 ## How works.  API version / SDK version
 >>>>>>> c043adb98d7b64beed79053a4d1719f77355e324
 
@@ -97,6 +100,10 @@ for all the price import flows. Currency rates sample:
 Then the currency rate can be used in any number of flows, where it is needed
 and then changed form the single place. That changes will affect all the flows
 where it is used.
+
+### Technical Notes
+
+The [technical notes](technical-notes) page gives some technical details about Configuration component like [changelog](/components/configuration/technical-notes#changelog) and.
 
 ## Triggers
 

@@ -5,18 +5,10 @@ section: ERP components
 description: A component which interacts with the NetSuite ERP system.
 icon: netsuite.png
 icontext: NetSuite component
-category: NetSuite component
-createdDate: 2018-09-10
-updatedDate: 2019-08-07
+category: netsuite
+updatedDate: 2020-12-11
+ComponentVersion: 2.2.0
 ---
-
-## Latest changelog
-
-**2.1.1 (August 8, 2019)**
-
-- Modify Error Handling in component with custom ComponentException
-
-> To see the full **changelog** please use the following [link](changelog).
 
 ## How works
 
@@ -25,6 +17,10 @@ NetSuite version is used and supported. The component will work with other NS
 versions in most cases. But 100% compatibility could not be guaranteed.
 
 ## Requirements
+
+### API version
+
+**2019.1** NetSuite version is used and supported. The component will work with other NS versions in most cases. But 100% compatibility could not be guaranteed.
 
 ### Environment variables
 
@@ -47,31 +43,13 @@ enabled in order to allow component make calls. To enable Web Service communicat
 
 ![Enable Web Service](https://user-images.githubusercontent.com/8449044/44262942-9a3d5300-a225-11e8-840d-834528f68776.png)
 
-## Credentials
+### Technical Notes
 
-### Get credentials in NetSuite
+The [technical notes](technical-notes) page gives some technical details about NetSuite component like [changelog](/components/netsuite/technical-notes#changelog).
 
-**Email**  - Email as a login for NetSuite account.
+## Authentication on platform
 
-**Password** - Password for NetSuite account.
-
-**Account** - Account Number to access NetSuite API. This number is required for the component t
-o connect to NetSuite via native SuiteTalk API Can be found here:
-
-1.  Go to Setup -> Integration -> Web Services Preferences
-2.  Find ACCOUNT ID field there.
-
-![Get Account Number](https://user-images.githubusercontent.com/8449044/44263739-c3abae00-a228-11e8-8de6-8e6b33c23be3.png)
-
-**Application ID**
-
-Application ID to access NetSuite API. This number is required for the component
-to connect to NetSuite via native SuiteTalk API Can be found here:
-
-1.  Go to Setup -> Integration -> Manage Integrations -> New
-2.  Find APPLICATION ID field there.
-
-![Get Application ID](https://user-images.githubusercontent.com/8449044/44274840-e4392f80-a24b-11e8-9d1d-00676e0b9217.png)
+In order to use the functions of the NetSuite component, you need to go through the authentication process. Please follow the step by steps instruction on this [page](authentication).
 
 ## Triggers
 
