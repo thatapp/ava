@@ -6,8 +6,8 @@ description: A service that makes it easier to pass messages between machines an
 icon: google-pubsub.png
 icontext: Google PubSub component
 category: google-pubsub
-updatedDate: 2020-12-18
-ComponentVersion: 1.7.1
+updatedDate: 2021-03-25
+ComponentVersion: 1.7.2
 ---
 
 ## Description
@@ -15,6 +15,8 @@ ComponentVersion: 1.7.1
 The component interacts with Google Pub-Sub API. The API is an asynchronous messaging service that decouples services that produce events from services that process events.
 
 Pub/Sub offers durable message storage and real-time message delivery with high availability and consistent performance at scale. Pub/Sub servers run in all Google Cloud regions around the world.
+
+## Requirements
 
 ### Core concepts
 
@@ -29,6 +31,19 @@ Pub/Sub offers durable message storage and real-time message delivery with high 
 *   **Client E-Mail**
 *   **Private Key**
 
+> Please Note: Google provides a JSON file which includes your private key. You should be careful how you are using the information. Follow the instructions below to succeed:
+
+1.  Copy and paste the private key as is.
+2.  Remove any line breakers (`\n`) from your key.
+3.  Leave the two lines as is with begin and end part.
+
+```
+-----BEGIN PRIVATE KEY-----
+YOUR KEY HERE
+-----END PRIVATE KEY-----
+
+```
+
 ### Technical Notes
 
 The [technical notes](technical-notes) page gives some technical details about Google PubSub component like [changelog](/components/google-pubsub/technical-notes#changelog) and.
@@ -37,24 +52,26 @@ The [technical notes](technical-notes) page gives some technical details about G
 
 PubSub component authentication works with
 [Google IAM Service Accounts](https://developers.google.com/identity/protocols/OAuth2ServiceAccount)
-and two-legged OAuth, in order to authenticate your component you would
+and two-legged OAuth, to authenticate your component you would
 need to create a new Service Account on [Service Accounts Page](https://console.developers.google.com/permissions/serviceaccounts)
  of your project and download the JSON file with the private key.
  You would need ``client_email`` and ``private_key`` values
  on component authentication page (see [here](https://github.com/google/google-api-nodejs-client#using-jwt-service-tokens)
  for more information).
 
+> **Please Note** : authentication mechanism required access to the topics in your account to read and publish.
+> If your created service account had no read permission (to subscribe as trigger function) then verifications will fail. Save the credential without verification and use it for the publishing to the topics (as action function).
+
 ## Triggers
 
-### Pull
+### Subscribe
 
-The Pull trigger receives a message from a Topic, emits it, and sends an acknowledgment to Pub/Sub.
-
-![Pull](img/google-pubsub-pull.png)
+The Subscribe trigger receives a message from a Topic, emits it, and sends an acknowledgement to Pub/Sub.
 
 #### Configuration
 
-- Topic Name - (required field) fully-qualified topic resource name string, e.g. `projects/<project_id>/topics/<topic_name>`
+- `Topic Name` - (required field) fully-qualified topic resource name string, e.g. `projects/<project_id>/topics/<topic_name>`
+
 
 ## Actions
 
@@ -66,7 +83,7 @@ The Publish action retrieves message body from a previous step and sends a messa
 
 #### Configuration
 
-- Topic Name - (required field) fully-qualified topic resource name string, e.g. `projects/<project_id>/topics/<topic_name>`
+- `Topic Name` - (required field) fully-qualified topic resource name string, e.g. `projects/<project_id>/topics/<topic_name>`
 
 ## Warning
 
