@@ -5,147 +5,114 @@ description: CSV component actions.
 icon: csv.png
 icontext: CSV component
 category: csv
-updatedDate: 2021-04-23
-ComponentVersion: 2.2.0
+updatedDate: 2021-06-25
+ComponentVersion: 3.0.0
 ---
 
 ## Read CSV attachment
 
 This action will read the CSV attachment of the incoming message or from the specified URL and output a JSON object.
+
+An example of an object stored in the github repository:
+
+![Addresses](img/addresses.png)
+
 To configure this action the following fields can be used:
 
 ![Read CVS attachments](img/read-CSV-attachment.png)
 
-*   `CSV URL` - the full URL to the file for retrieving data. Leave the field blank and action will read CSV attachment of the incoming message (if any). Error will be thrown if URL of the CSV is missing and no CSV file in incoming message found
-*   `Emit all messages` - this checkbox configures output behavior of the component. If the option is checked - the component emits an array of messages, otherwise - the component emits a message per row.
-*   `CSV Header` - this is a required field. Input the names of headers separated with a comma.
-*   `Separators` - Specify the separator type. Usually it is a comma (`,`) but values like Semicolon (`;`), Space (` `), Tab (`\t`) and Hash (`#`) are also supported.
-*   `Skip rows` - if you know that the incoming CSV file has certain number of headers you can indicate to skip them. The supported values are `None`, `First row`, `First two`, `First three` and `First four`.
-*   `Data columns` - here the values will be added dynamically based on the values in the `CSV Header` field. Here each data column will be listed with the name, Data Type and the Format to enable further configuration.
+Here you can see an example of a sample:
 
+![Read CVS attachments sample](img/read-sample.png)
 
-## Write CSV attachment
+### Config Fields
 
-* `Include Header` - this select configures output behavior of the component. If option is `Yes` or no value chosen than header of csv file will be written to attachment, this is default behavior. If value `No` selected than csv header will be omitted from attachment.
+*   `Emit Behavior` - this selector configures output behavior of the component. If the option is `Fetch All` - the component emits an array of messages, otherwise (`Emit Individually`) - the component emits a message per row.
 
-This action will combine multiple incoming events into a CSV file until there is a gap
-of more than 10 seconds between events. Afterwards, the CSV file will be closed
-and attached to the outgoing message.
+### Input Metadata
 
-As part of the component setup, one must specify the columns of the CSV file.
-These columns will be published as the header in the first row. For each incoming
-event, the value for each header will be `stringified` and written as the value
-for that cell. All other properties will be ignored. For example, headers
-`foo,bar` along with the following JSON events:
+*   `URL` - We will fetch this URL and parse it as CSV file
+*   `Contains headers` - if true, the first row of parsed data will be interpreted as field names, false by default.
+*   `Delimiter` - The delimiting character. Leave blank to auto-detect from a list of most common delimiters.
+*   `Convert Data types` - numeric, date and boolean data will be converted to their type instead of remaining strings, false by default.
 
-```
-{"foo":"myfoo", "bar":"mybar"}
-{"foo":"myfoo", "bar":[1,2]}
-{"bar":"mybar", "baz":"mybaz"}
-```
+## Create CSV From Message Stream
 
-will produce the following `.csv` file:
+Here you can see an Message Stream example created using the Node.js component:
 
-```
-foo,bar
-myfoo,mybar
-myfoo,"[1,2]"
-,mybar
-```
-
-When columns are added in the UI, you will be presented with an opportunity to
-provide a JSONata expression per column. If you require number formatting that
-is specific to a locale, the JSONata expression should handle that concern.
-
-![Configure Input](img/configure-input.png)
-
-The output of the CSV Write component will be a message with an attachment.  In
-order to access this attachment, the component following the CSV Write must be
-able to handle file attachments.
-
-## Write CSV attachment from JSON Object
-
-* `Include Header` - this select configures output behavior of the component. If option is `Yes` or no value chosen than header of csv file will be written to attachment, this is default behavior. If value `No` selected than csv header will be omitted from attachment.
-* `Separator` - this select configures type of CSV delimiter in an output file. There are next options: `Comma (,)`, `Semicolon (;)`, `Space ( )`, `Tab (\t)`, `Pipe (¦)`.
+![Node.js stream](img/nodejs-stream.png)
 
 This action will combine multiple incoming events into a CSV file until there is a gap
 of more than 10 seconds between events. Afterwards, the CSV file will be closed
 and attached to the outgoing message.
 
-![Write CSV attachment from JSON Object](img/inputObject.png)
+To configure this action the following fields can be used:
 
-This action will convert an incoming array into a CSV file by following approach:
+![Create CSV From Message Stream](img/create-csv-from-message-stream.png)
 
-* Header inherits names of keys from the input message;
-* Payload will store data from Values of relevant Keys (Columns);
-* Undefined values of a JSON Object won't be joined to result set (`{ key: undefined }`);
-* False values of a JSON Object will be represented as empty string (`{ key: false }` => `""`).
+### Config Fields
 
-### Requirements:
+* `Upload CSV as file to attachments` -  If checked store the generated CSV data as an attachment. If unchecked, place the CSV as a string in the outbound message.
+* `Separator` - A single char used to delimit the CSV file. Default to `,`
+* `Column Order` - A string delimited with the separator indicating which columns & in what order the columns should appear in the resulting file. If omitted, the column order in the resulting file will not be deterministic. Columns names will be trimmed (removed spaces in beginning and end of column name, for example: 'col 1,col 2 ,col 3, col 4' => ['col 1', 'col 2', 'col 3', 'col 4'])
 
-* The inbound message is an JSON Object, wrapped by 'inputObject' object;
-* This JSON object has plain structure without nested levels (structured types `objects` and `arrays` are not supported as values). Only primitive types are supported: `strings`, `numbers`, `booleans` and `null`. Otherwise, the error message will be thrown: `Inbound message should be a plain Object. At least one of entries is not a primitive type`.
+### Input Metadata
 
-The keys of an input JSON will be published as the header in the first row. For each incoming
-event, the value for each header will be `stringified` and written as the value
-for that cell. All other properties will be ignored. For example, headers
-`foo,bar` along with the following JSON events:
+* `Include Headers` - Indicates if a header row should be included in the generated file. Must be a `boolean`.
+* `Input Object` - Object to be written as a row in the CSV file. If the Column Order is specified, then individual properties can be specified.
 
-```
-{"foo":"myfoo", "bar":"mybar"}
-```
+### Output Metadata
 
-will produce the following `.csv` file:
+* If **Upload CSV as file to attachments** is checked:
+  * `csvString` - The output CSV as a string inline in the body
 
-```
-foo,bar
-myfoo,mybar
-```
+* If **Upload CSV as file to attachments** is not checked:
+  * `attachmentUrl` - A URL to the CSV output
+  * `type` - Always set to `.csv`
+  * `size` - Size in bytes of the resulting CSV file
+  * `attachmentCreationTime` - When the attachment was generated
+  * `attachmentExpiryTime` - When the attachment is set to expire
+  * `contentType` - Always set to `text/csv`
 
-The output of the CSV Write component will be a message with an attachment.  In
-order to access this attachment, the component following the CSV Write must be
-able to handle file attachments.
+## Create CSV From JSON Array
 
-## Write CSV attachment from JSON Array
+This action will convert an incoming array into a CSV file.
+Here you can see an JSON Array example created using the Webhook component:
 
-* `Include Header` - this select configures output behavior of the component. If option is `Yes` or no value chosen than header of csv file will be written to attachment, this is default behavior. If value `No` selected than csv header will be omitted from attachment.
-* `Separator` - this select configures type of CSV delimiter in an output file. There are next options: `Comma (,)`, `Semicolon (;)`, `Space ( )`, `Tab (\t)`, `Pipe (¦)`.
+![Array Example](img/array-example.png)
 
-![Write CSV attachment from JSON Array](img/inputArray.png)
+To configure this action the following fields can be used:
 
-This action will convert an incoming array into a CSV file by following approach:
+![Create CSV From JSON Array](img/create-csv-from-json-array.png)
 
-* Header inherits names of keys from the input message;
-* Payload will store data from Values of relevant Keys (Columns);
-* Undefined values of a JSON Object won't be joined to result set (`{ key: undefined }`);
-* False values of a JSON Object will be represented as empty string (`{ key: false }` => `""`).
+### Config Fields
 
-### Requirements:
+* `Upload CSV as file to attachments` -  If checked store the generated CSV data as an attachment. If unchecked, place the CSV as a string in the outbound message.
+* `Separator` - A single char used to delimit the CSV file. Default to `,`
+* `Column Order` - A string delimited with the separator indicating which columns & in what order the columns should appear in the resulting file. If omitted, the column order in the resulting file will not be deterministic.
 
-* The inbound message is an JSON Array of Objects with identical structure, wrapped by 'inputArray' object;
-* Each JSON object for a message has plain structure without nested levels (structured types `objects` and `arrays` are not supported as values). Only primitive types are supported: `strings`, `numbers`, `booleans` and `null`. Otherwise, the error message will be thrown: `Inbound message should be a plain Object. At least one of entries is not a primitive type`.
+### Input Metadata
 
-The keys of an input JSON will be published as the header in the first row. For each incoming
-event, the value for each header will be `stringified` and written as the value
-for that cell. All other properties will be ignored. For example, headers
-`foo,bar` along with the following JSON events:
+* `Include Headers` - Indicates if a header row should be included in the generated file. Must be a `boolean`.
+* `Input Array` - Array of objects to be written as rows in the CSV file. (One row per object + headers) If the Column Order is specified, then individual properties can be specified. The component will throw an error when the array is empty.
 
-```
-[
-        {"foo":"myfoo", "bar":"mybar"},
-        {"foo":"myfoo2", "bar":"1"},
-        {"bar":"mybar", "baz":"mybaz"}
-]
-```
+### Output Metadata
 
-will produce the following `.csv` file:
+* If **Upload CSV as file to attachments** is checked:
+  * `csvString` - The output CSV as a string inline in the body
 
-```
-foo,bar
-myfoo,mybar
-myfoo2, 1
-mybar
-```
+* If **Upload CSV as file to attachments** is not checked:
+  * `attachmentUrl` - A URL to the CSV output
+  * `type` - Always set to `.csv`
+  * `size` - Size in bytes of the resulting CSV file
+  * `attachmentCreationTime` - When the attachment was generated
+  * `attachmentExpiryTime` - When the attachment is set to expire
+  * `contentType` - Always set to `text/csv`
 
-The output of the CSV Write component will be a message with an attachment. There will be one CSV file generated per incoming message. In order to access this attachment, the component following the CSV Write must be
-able to handle file attachments.
+## Limitations
+
+* You may get `Component run out of memory and terminated.` error during run-time, that means that component needs more memory, please add
+ `EIO_REQUIRED_RAM_MB` environment variable with an appropriate value (e.g. value `1024` means that 1024 MB will be allocated) for the component in this case.
+* Maximal possible size for an attachment is 10 MB.
+* Attachments mechanism does not work with [Local Agent Installation](https://docs.elastic.io/getting-started/local-agent.html)
+* Inbound message in `Message Stream` and each element of `JSON Array` should be a plain Object, if value not a primitive type it will be set as `[object Object]`
