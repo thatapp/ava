@@ -1,241 +1,33 @@
 ---
-title: Shopify actions.
+title: Shopify deprecated actions
 layout: component
-description: Shopify Admin component actions.
+description: Shopify component deprecated actions.
 icon: shopify-admin.png
-icontext: Shopify Admin component
+icontext: Shopify component
 category: shopify-component
-updatedDate: 2020-11-20
-ComponentVersion: 1.4.1
-redirect_from:
-  - /components/shopify-admin/actions.html
+updatedDate: 2021-09-15
+ComponentVersion: 1.4.2
 ---
 
-## Lookup Object
+## Table of contents
+
+The following Shopify actions are deprecated:
+
+1.  [List Products(deprecated)](deprecated-actions#list-productsdeprecated) - This actions is deprecated. Use the [Lookup Object](actions#lookup-object) action instead.
+2.  [Upsert Product(deprecated)](deprecated-actions#upsert-productdeprecated) - This actions is deprecated. Use the [Upsert Objects](actions#upsert-object) action instead.
+3.  [Delete Product(deprecated)](deprecated-actions#delete-productdeprecated) - This actions is deprecated. Use the [Upsert Objects](actions#delete-object) action instead.
+4.  [Get Product(deprecated)](deprecated-actions#get-productdeprecated) - This actions is deprecated. Use the [Lookup Object](actions#lookup-object) action instead.
+5.  [Count Products(deprecated)](deprecated-actions#count-productsdeprecated) - This actions is deprecated. Use the [Delete Object](actions#delete-object) action instead.
+6.  [Create Product Image(deprecated)](deprecated-actions#create-product-imagedeprecated) - This actions is deprecated. Use the [Upsert Object](actions#upsert-object) action instead.
+7.  [Update Product Image(deprecated)](deprecated-actions#update-product-imagedeprecated) - This actions is deprecated. Use the [Upsert Object](actions#upsert-object) action instead.
+8.  [Delete Product Image(deprecated)](deprecated-actions#delete-product-imagedeprecated) - This actions is deprecated. Use the [Upsert Object](actions#upsert-object) action instead.
+9.  [List Inventory Items(deprecated)](deprecated-actions#list-inventory-itemsdeprecated) - This actions is deprecated. Use [Lookup Object](actions#lookup-object) action instead.
+10.  [Get Inventory Item(deprecated)](deprecated-actions#get-inventory-itemdeprecated) - This actions is deprecated. Use the [Lookup Object](actions#lookup-object) action instead.
+11.  [Update Inventory Item(deprecated)](deprecated-actions#update-inventory-itemdeprecated) - This actions is deprecated. Use [Upsert Object](actions#upsert-object) action instead.
+12.  [Create Product Variant(deprecated)](deprecated-actions#create-product-variantdeprecated) - This actions is deprecated. Use [Upsert Object](actions#upsert-object) action instead.
+13.  [Update Product Variant(deprecated)](deprecated-actions#update-product-variantdeprecated) - This actions is deprecated. Use [Upsert Object](actions#upsert-object) action instead.
+14.  [Delete Product Variant(deprecated)](deprecated-actions#delete-product-variantdeprecated) - This actions is deprecated. Use [Upsert Object](actions#upsert-object) action instead.
 
-Finds object by id.
-
-![Lookup Object](img/lookup-object.png)
-
-### List of Expected Config fields
-
-  * **Object Type -** Type of object for polling.
-
-  * **Allow Empty Result -** Default `No`. In case `No` is selected - an error will be thrown when no objects were found, If `Yes` is selected - an empty object will be returned instead of throwing an error.
-
-  * **Allow ID to be Omitted -** Default `No`. In case `No` is selected - an error will be thrown when object id is missing in metadata, if `Yes` is selected - an empty object will be returned instead of throwing an error.
-
-  * **Expected input metadata -** Input metadata contains `id` or several `ids` fields (some object types have complex id):
-
-  1. Object type `Shop` - does not have `id` empty input expected in message.
-
-  2. Type Objects with complex id: `Article`, `Asset`, `Checkout`, `Customer Address`, `Discount Code`, `Fulfillment`, `Fulfillment Event`, `Gift Card Adjustment`, `Inventory Level`,  `Order Risk`,  `Payment`,  `Product Image`,  `Product Listing`,  `Product Variant`, `Province`, `Refund`, `Shop`, `Usage Charge`
-
-  * **Fetch Metafields for Object -** If selected, in addition to returning the built-in fields associated with the object,
-  return the metafields.
-
-## Lookup Objects
-
-![Lookup Objects](img/lookup-objects.png)
-
-### List of Expected Config fields
-
-  * **Object Type -** Type of object for polling.
-
-  * **Behavior -** `Fetch All` - fetch all objects in one message in form of array, `Emit Individually` - emit each fetched object as separate message.
-
-  * **Max Size -** Maximum number of objects to fetch. Default `250`, maximum value is `250`.
-
-  * **Fetch Metafields for Objects -** If selected, in addition to returning the built-in fields associated with the objects,
-return the metafields.
-
-### Expected Input metadata
-
-1.  `idField` - object types: `Article`, `Asset`, `Article`, `Customer Address`, `Discount Code`, `Inventory Item`, `Inventory Level`, `Fulfillment`, `Order Risk`, `Refund`, `Transaction`, `Fulfillment Event`, `Gift Card Adjustment`, `Payment`, `Product Image`, `Product Variant`, `Province`, `Usage Charge` require id of parent object to be passed in input metadata.
-
-2.  `order` - add ability to sort items.`fieldName`: name of field for sorting objects, only fields of type: `string`, `number`, `boolean` supported. `orderDirection`: asc or desc defines direction of sorting.
-
-3.  `filter` - add ability filter item from result. `searchTerm`: `fieldName` - name of field to apply filter. `condition` - `eq` equal, `ne` not equal, `gt` greater, `ge` greater or equal, `lt` less, `le` less or equal apply provided condition to field. `fieldValue` - value to be used by condition in comparing with `value` in object field. It is possible to chain few conditions via: `criteriaLink` - `and`, `or` chain with previous condition by provided operator.
-
-### Example of usage
-
-1.  Object Type - `Country`,
-2.  Behaviour - `Fetch All`,
-3.  Max Size - `20`
-
-```json
-{
-  "order": {
-    "fieldName": "code",
-    "orderDirection": "desc"
-  },
-  "filter": [
-    {
-      "searchTerm": {
-        "fieldName": "tax",
-        "condition": "gt",
-        "fieldValue": "0"
-      },
-      "criteriaLink": "and"
-    }
-  ]
-}
-```
-
-Will return maximum 20 objects of type Country ordered by their code and filtered
-where tax value greater then 0.
-
-## Create Object
-
-Action to create new object instance. Only for object that can't be updated.
-
-![Create Object](img/create-object.png)
-
-### List of Expected Config fields
-
-* **Object Type -** Type of object for polling.
-
- See the section [Metafields Notes](/components/shopify-admin#metafield-notes) for information about setting metafield values.
-
-### Example of usage
-
-Object Type: `Order`
-
-Input message:
-
-```json
-{
-    "title": "Apple main blog second",
-}
-```
-
-Output message:
-
-```json
-{
-  "id": 49341497426,
-  "handle": "apple-main-blog-second-9",
-  "title": "Apple main blog second",
-  "updated_at": "2019-11-14T04:54:30-05:00",
-  "commentable": "no",
-  "feedburner": null,
-  "feedburner_location": null,
-  "created_at": "2019-11-14T04:54:30-05:00",
-  "template_suffix": null,
-  "tags": "",
-  "admin_graphql_api_id": "gid://shopify/OnlineStoreBlog/49341497426"
-}
-```
-
-## Upsert Object
-
-Upsert Object action is useful if it isn't known if there is already an object in the system. Action determines if the data needs to be matched to an existing object or added to a new one.
-Only for objects that can be created and updated.
-
-![Upsert Object](img/upsert-object.png)
-
-### List of Expected Config fields
-
-* **Object Type -** Type of object for polling.
-
-### Example of usage
-
-Object Type: `Article`
-
-Input message:
-
-```json
-{
-    "id": 383343525970,
-    "blog_id": 47884042322,
-    "title": "My new title",
-}
-```
-
-Output message:
-
-```json
-{
-  "id": 383343525970,
-  "title": "My new Title",
-  "created_at": "2019-11-12T08:27:49-05:00",
-  "body_html": "Hello, it's a test blog",
-  "blog_id": 47884042322,
-  "author": "test Admin",
-  "user_id": 38430933074,
-  "published_at": "2019-11-12T08:27:00-05:00",
-  "updated_at": "2019-11-19T10:21:40-05:00",
-  "summary_html": "",
-  "template_suffix": null,
-  "handle": "test-blog-post",
-  "tags": "",
-  "admin_graphql_api_id": "gid://shopify/OnlineStoreArticle/383343525970"
-}
-```
-
-## Delete Object
-
-![Delete Object](img/delete-object.png)
-
-### List of Expected Config fields
-
-* **Object Type -** Type of object for polling.
-
-### Expected input metadata
-
-For most type of objects: `{ "id" : "object id" }`
-
-Special cases:
-
-1. Api Permission - this type of object does not have `id`. Empty object expected as input for this type.
-
-2. Article -  `{ "id" : "object id",  "blodId" : "Blog Id" }`.
-
-3. Asset - `{ "key" : "object id",  "themeId" : "Theme Id" }`.
-
-4. Customer Address - `{ "id" : "object id",  "customerId" : "Customer Id" }`.
-
-5. Discount Code - `{ "id" : "object id",  "priceRuleId" : "Price Rule Id" }`.
-
-6. Fulfillment Event - `{ "id" : "object id",  "orderId" : "Order Id", "fulfillmentId" : "Fulfillment Id" }`.
-
-7. Inventory Level - `{ "params" : { "inventory_item_id" : "Inventory Item Id", "location_id" : "Location Id" }}`.
-
-8. Order Risk - `{ "id" : "object id",  "orderId" : "Order Id" }`.
-
-9. Product Image - `{ "id" : "object id",  "productId" : "Product Id" }`.
-
-10. Product Variant - `{ "id" : "object id",  "productId" : "Product Id" }`.
-
-### Expected output metadata
-
-Output: `{ "id" : "object id" }` means that object was successfully deleted. Output: `{}` means that object hasn`t been deleted.`
-
-Special cases:
-
-1. Api Permission - this type of object does not have `id`, in case of successful deletion of this object type: `{ "id" : "Successfully deleted API Permission object"}` returned.
-
-2. Inventory Level - this type of object does not have `id`, in case of successful deletion of this object type: `{ "id" : { "inventory_item_id" : "Inventory item id", "location_id": "Location id" }}`
-
-### Example of usage
-
-Object Type: `Order`
-
-Input message:
-
-```json
-{
-    "id" : "1213"
-}
-```
-
-Output message:
-
-```json
-{
-    "id" : "1213"
-}
-```
 
 ## List Products(deprecated)
 
@@ -268,7 +60,10 @@ input message:
 }
 ```
 
-output message:
+<details closed markdown="block">
+<summary>
+Click to expand - Output message
+</summary>
 
 ```json
 {
@@ -356,6 +151,7 @@ output message:
 	]
 }
 ```
+</details>
 
 ## Upsert Product(deprecated)
 
@@ -363,7 +159,10 @@ This actions is deprecated. Use [Upsert Objects](#upsert-object) action instead.
 
 ### Usage example
 
-input message:
+<details closed markdown="block">
+<summary>
+Click to expand - Input message
+</summary>
 
 ```json
 {
@@ -420,8 +219,12 @@ input message:
 	"vendor": "Apple"
 }
 ```
+</details>
 
-output message:
+<details closed markdown="block">
+<summary>
+Click to expand - Output message
+</summary>
 
 ```json
 {
@@ -507,6 +310,7 @@ output message:
 	}
 }
 ```
+</details>
 
 ## Delete Product(deprecated)
 
@@ -830,7 +634,10 @@ This actions is deprecated. Use [Upsert Object](/components/shopify-admin/action
 
 ### Usage example
 
-input message:
+<details closed markdown="block">
+<summary>
+Click to expand - Input message
+</summary>
 
 ```json
 {
@@ -866,8 +673,13 @@ input message:
 	"weight_unit": "oz"
 }
 ```
+</details>
 
-output message:
+
+<details closed markdown="block">
+<summary>
+Click to expand - Output message
+</summary>
 
 ```json
 {
@@ -900,6 +712,7 @@ output message:
 	}
 }
 ```
+</details>
 
 ## Update Product Variant(deprecated)
 
