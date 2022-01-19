@@ -6,8 +6,8 @@ description: A component that connects to Hubspot API
 icon: hubspot.png
 icontext: Hubspot component
 category: hubspot
-updatedDate: 2021-12-10
-ComponentVersion: 1.4.0
+updatedDate: 2021-12-22
+ComponentVersion: 1.4.1
 ---
 
 ## General information
@@ -30,6 +30,13 @@ In order to make OAuth work, you need a new App in your Hubspot.
 During credentials creation you would need to select existing Auth Client from drop-down list Choose Auth Client or create the new one:
 
 ![Oauth2](img\client-exist.png)
+
+* The **Additional parameters** input can be left empty.
+* In the **Scopes** input, the following value should be provided. (If you wish to only grant certain permissions, you can do so by removing them from this list.) 
+
+```
+crm.objects.contacts.read,crm.objects.contacts.write,crm.schemas.contacts.read,crm.schemas.contacts.write,crm.objects.owners.read
+``` 
 
 More information you can find in other article: [Creating OAuth App for Hubspot](creating-oauth-app-for-salesforce)
 
@@ -249,4 +256,4 @@ The expected output is an object with a `id` property. `id` value stands for id 
 ## Known Limitations
 
 1. [Rate Limits](https://developers.hubspot.com/docs/api/usage-details#rate-limits)
-2. Platform attachments url (like http://steward-service.platform.svc.cluster.local:8200/v2/objects/xxxxx) thrown process.uncaughtException
+2. Please, use some timer (around 5sec) if you are going to implement flow like `Upsert Object Action` -> any type of `Lookup Object(s) Action` with enabled feature `Enable download attachments`. Uploading the file to Hubspot on `Upsert Object Action` takes some time, so it is possible to receive `404` error on lookup.
