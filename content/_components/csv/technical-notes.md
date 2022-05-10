@@ -5,13 +5,27 @@ description: Technical Notes for the CSV component.
 icon: csv.png
 icontext: CSV component
 category: csv
-updatedDate: 2022-03-15
-ComponentVersion: 3.1.1
+updatedDate: 2022-05-06
+ComponentVersion: 3.1.4
 redirect_from:
   - /components/csv/changelog.html
 ---
 
 ## Changelog
+
+### 3.1.4 (May 06, 2022)
+
+* Fix memory leak on `Emit Batch` behavior for `Read CSV attachment` action
+
+### 3.1.3 (April 22, 2022)
+
+* Fix a bug when emit strategy 'Emit Batch' did not process correctly
+
+### 3.1.2 (April 14, 2022)
+
+* Update `component-commons-library` to read and upload attachments through `Maester`
+* Update `elasticio-sailor-nodejs` to v2.6.27
+* Fix dependencies
 
 ### 3.1.1 (March 15, 2022)
 
@@ -37,6 +51,13 @@ redirect_from:
   - `Create CSV From JSON Array`
 
 * Removed old dependencies
+
+
+### 2.2.1 (April 08, 2022)
+
+* Update Sailor version to 2.6.27
+* Get rid of vulnerabilities in dependencies
+* Add component pusher job to Circle.ci config
 
 ### 2.2.0 (April 23, 2021)
 

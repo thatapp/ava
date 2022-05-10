@@ -6,13 +6,15 @@ description: A PayPal component with implementations of actions and triggers bas
 icon: paypal.png
 icontext: PayPal component
 category: paypal
-updatedDate: 2022-04-08
-ComponentVersion: 1.2.0
+updatedDate: 2022-05-06
+ComponentVersion: 1.3.0
 ---
 
 ## General information
 
 {{page.description}}
+
+> For more information you can visit [PayPal REST API documentation](https://developer.paypal.com/api/rest/)
 
 ## Credentials
 
@@ -33,6 +35,31 @@ Component credentials configuration Fields:
   * **Secret**  (string, required) - from App
 
 ## Triggers
+
+### Webhook trigger
+
+Creates webhook subscriptions on the PayPal side and receives events to the flow.
+
+![Webhook trigger](img/webhook-trigger.png)
+
+#### Configuration Fields
+
+* **Webhook ID** - (string, required) - webhook ID that becomes available after [creating a webhook](https://developer.paypal.com/docs/api/webhooks/v1/#webhooks_post).
+It is necessary to set the Internet accessible URL configured to listen for incoming POST notification messages containing event information when webhook creates.
+To implement this mechanism, the following steps must be taken:
+1. Create a flow with a random id in the config field
+2. Publish flow, after which the webhook URL will become available.
+3. Copy the URL of the elastic.io webhook
+4. Create a webhook on the PayPal side with the URL generated in the previous step.
+5. Edit the flow and specify the webhook ID created in the previous step.
+
+#### Input Metadata
+
+There is no Input Metadata
+
+#### Output Metadata
+
+Data received in the request
 
 ### Get New And Updated Objects Polling
 
@@ -58,7 +85,80 @@ Output metadata is generated dynamically and depends on Object Type
 1. `Transactions` always use `Created` date to poll
 2. It takes a maximum of three hours for executed transactions to appear in the list transactions call and even more time is sandbox
 
+### Receive Instant Payment Notification
+
+Webhook trigger for receive IPN.
+Instant Payment Notification ([IPN](https://developer.paypal.com/api/nvp-soap/ipn/)) is a message service that automatically notifies merchants of events related to PayPal transactions.
+
+You can test your trigger using [Instant Payment Notification (IPN) simulator](https://developer.paypal.com/developer/ipnSimulator): set your webhookURL to `IPN handler URL` field, select any value of `Transaction type`, set `receiver_email` the same, as `Expected Email Address` from configuration and press `Send IPN`.
+
+#### Configuration Fields
+
+* **Expected Email Address** - (required, string)
+
+#### Input Metadata
+
+There is no Input Metadata
+
+#### Output Metadata
+
+All Transaction data (including success/fail)
+
+### Receive Payment Data Transfer
+
+Webhook trigger for receive PDT.
+Payment Data Transfer ([PDT](https://developer.paypal.com/api/nvp-soap/payment-data-transfer/)) is a notification service that, once activated, can send transaction-related information immediately to merchants who are using PayPal payment buttons.
+
+#### Configuration Fields
+
+* **Identity Token** - (required, string)
+
+#### Input Metadata
+
+There is no Input Metadata
+
+#### Output Metadata
+
+All Transaction data (including success/fail)
+
 ## Actions
+
+### Create Object
+
+Creates PayPal object
+
+![Create object](img/create-object.png)
+
+#### Configuration Fields
+
+* **Object Type** - (dropdown, required) For example `Orders`.
+
+#### Input Metadata
+
+Inputs for request fields.
+
+#### Output Metadata
+
+The object creation result as reported by the system.
+
+### Update Object
+
+Updates PayPal object
+
+![Update Object](img/update-object.png)
+
+#### Configuration Fields
+
+* **Object Type** - (dropdown, required) For example `Orders`.
+
+#### Input Metadata
+
+* **PayPal ID** - (string, required) ID of the object.
+Other input fields depending on selected object.
+
+#### Output Metadata
+
+If request succeed - [empty object will be returned.](https://developer.paypal.com/docs/api/orders/v2/#orders_patch)
 
 ### Make Raw Request
 

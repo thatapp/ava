@@ -5,8 +5,8 @@ description: JDBC Component actions page
 icon: jdbc.png
 icontext: JDBC component
 category: jdbc
-updatedDate: 2021-04-08
-ComponentVersion: 2.5.2
+updatedDate: 2022-05-06
+ComponentVersion: 2.5.3
 ---
 
 ## Select action
@@ -196,10 +196,6 @@ Select table from `Table` dropdown list,
 specify input(`userid` field is in our case a Primary key) data and click "Continue". You can also enable rebound mechanism if needed.
 
 ![Upsert Row By Primary Key - Input](img/upsert-row-by-primary-key-input.png)
-
-Retrieving sample
-
-![Upsert Row By Primary Key - Retrieving sample](img/upsert-row-by-primary-key-sample.png)
 
 Retrieve sample result, click "Continue" and finish component configuration.
 
