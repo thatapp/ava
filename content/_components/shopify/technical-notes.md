@@ -5,8 +5,8 @@ description: Changelog for Shopify component.
 icon: shopify-admin.png
 icontext: Shopify component
 category: shopify-component
-updatedDate: 2022-05-06
-ComponentVersion: 1.6.0
+updatedDate: 2022-06-17
+ComponentVersion: 1.6.2
 redirect_from:
   - /components/shopify-admin/completeness-matrix.html
   - /components/shopify-admin/changelog.html
@@ -14,6 +14,14 @@ redirect_from:
 ---
 
 ## Changelog
+
+### 1.6.2 (June 17, 2022)
+
+* Added information about required permissions for credential verification
+
+### 1.6.1 (May 20, 2022)
+
+* More info in logs if got errors
 
 ### 1.6.0 (May 06, 2022)
 

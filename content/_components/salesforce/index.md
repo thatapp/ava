@@ -6,8 +6,8 @@ description: A component enables you to manage your organization’s sales, mark
 icon: salesforce.png
 icontext: Salesforce component
 category: salesforce
-updatedDate: 2022-04-14
-ComponentVersion: 2.2.3
+updatedDate: 2022-06-17
+ComponentVersion: 2.3.0
 ---
 
 {{page.description}}
@@ -32,6 +32,7 @@ by the environment variable `SALESFORCE_API_VERSION`.
 | REFRESH_TOKEN_RETRIES| false | Determines how many retries to refresh token should be done before throwing an error | Default: `10` |
 | HASH_LIMIT_TIME| false | Hash expiration time in ms  | Default: `600000` |
 | HASH_LIMIT_ELEMENTS| false | Hash size number limit  | Default: `10` |
+|UPSERT_TIME_OUT| false | Time out for `Upsert Object` action in ms | Default: `120000` (2min) |
 
 > Please Note: From the platform version [20.51](/releases/20/51) we deprecated the
 > component `LOG_LEVEL` environment variable. Now you can control logging level per each step of the flow.
