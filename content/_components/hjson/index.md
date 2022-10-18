@@ -6,15 +6,17 @@ description: A component to parse, validate, generate HJSON data for the platfor
 icon: hjson.png
 icontext: HJSON component
 category: hjson
-updatedDate: 2022-06-03
-ComponentVersion: 1.0.2
+updatedDate: 2022-10-07
+ComponentVersion: 1.0.4
 ---
 
 ## General information
 
 ### Description
 
-Component to parse, validate, generate HJSON (https://hjson.github.io/) data for [{{site.data.tenant.name}}](http://www.{{site.data.tenant.name}}) platform.
+The HJSON is a JSON syntax extension that increases the readability of JSON documents. HJSON offers several changes to the way documents are written, such as the removal of different characters: commas, double quotes, and the ability to write comments right inside the document.
+
+The HJSON component allows us to use this format on our platform. The component supports document [transformation](#actions) from HJSON to JSON and back. Accordingly, in general terms, we have only 2 scenarios for its use (JSON->HJSON and HJSON->JSON conversion). Also, the component supports the ability to work not only with inline-strings, but with attachments as well. That allows you to convert documents from one format to another without entering into the file.
 
 ## Triggers
 
@@ -24,6 +26,7 @@ select as a first component during the integration flow design.
 ## Actions
 
 ### Convert Action
+
 Action to convert data from HJSON to JSON and vise verse
 
 #### Config Fields
