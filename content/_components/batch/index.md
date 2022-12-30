@@ -6,13 +6,14 @@ description: A component that provides an opportunity to collect messages to a b
 icon: batch.png
 icontext: Batch component
 category: batch
-updatedDate: 2022-08-26
-ComponentVersion: 2.0.4
+updatedDate: 2022-11-18
+ComponentVersion: 2.0.6
 ---
 
 ## General information
 
 ### Description
+
 Сomponent that provides an opportunity to collect messages to a batch.
 
 The main purpose is to provide a user with a simple collection and an opportunity to process messages in batches.
