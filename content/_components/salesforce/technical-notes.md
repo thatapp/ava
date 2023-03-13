@@ -5,14 +5,19 @@ description: Technical Notes for Salesforce Component.
 icon: salesforce.png
 icontext: Salesforce component
 category: salesforce
-updatedDate: 2022-11-18
-ComponentVersion: 2.4.2
+updatedDate: 2023-01-02
+ComponentVersion: 2.5.1
 redirect_from:
   - /components/salesforce/completeness-matrix.html
   - /components/salesforce/changelog.html
 ---
 
 ## Changelog
+
+### 2.5.1 (January 31, 2023)
+
+* Fixed issue with `431` and `414` errors in `Get Updated Objects Polling` trigger
+* New configuration field `Selected Fields`in `Get Updated Objects Polling` trigger added
 
 ### 2.4.2 (November 18, 2022)
 
@@ -44,7 +49,7 @@ redirect_from:
 
 * Bump dependencies
 
-## 2.2.2 (April 08, 2022)
+### 2.2.2 (April 08, 2022)
 
 * Implemented reconnect logic on errors
 * Update Sailor version to 2.6.27

@@ -2,9 +2,9 @@
 title: Embedded Recipe Deployment
 description: This document provides basic information on embedded recipe deployment.
 layout: article
-order: 2
-section: Marketplace
-category: Marketplace
+order: 5
+section: Recipes Feature
+category: Recipes Feature
 ---
 
 There is a way to provide a direct link to a Recipe Deployment for an end user. It’s intended for cases when the end user doesn’t want to manage the elastic.io platform. Eio customer can prepare a platform and compile a link for an end user so he will authenticate and be able to update Credentials used in the Deployment and restart Flows using them.
@@ -12,7 +12,7 @@ There is a way to provide a direct link to a Recipe Deployment for an end user. 
 ## Setup
 
 1. User has activated a Recipe. (e.g. using [Embedded recipe](embedded-recipe) page)
-2. [Create a one-time token for the user](({{site.data.tenant.apiDocsUri}}/v2#/users/post_users__user_id__one_time_token)) using API.
+2. [Create a one-time token for the user]({{site.data.tenant.apiDocsUri}}/v2#/users/post_users__user_id__one_time_token) using API.
 3. Generate URL and give it to the user.
 
 ## Generate URL

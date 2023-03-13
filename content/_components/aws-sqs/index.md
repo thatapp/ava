@@ -6,8 +6,8 @@ description: Amazon AWS SQS (Simple Queue Service) Component is designed to use 
 icon:  aws-sqs.png
 icontext: AWS SQS component
 category: aws-sqs
-updatedDate: 2022-12-09
-ComponentVersion: 1.1.0
+updatedDate: 2023-03-06
+ComponentVersion: 1.1.2
 ---
 
 ## Description
@@ -40,7 +40,7 @@ Right after the first call a new API request starts. And so on until the flow is
 
 #### Configuration Fields
 
-* **Visibility Timeout** - (optional, string): The duration (in seconds) that the received messages are hidden from subsequent retrieve requests after being retrieved by a ReceiveMessage request. Default: 30. Max 12 hours.
+* **Visibility Timeout** - (optional, string): The duration (in seconds) that the received messages are hidden from subsequent retrieve requests after being retrieved by a ReceiveMessage request. Default: SQS server timeout. Max 12 hours.
 * **Max number of messages per 1 API call** - (optional, string): Maximum number of messages to fetch in the single API call. From 0 to 10. Default: 10.
 * **Max number of seconds to wait for a message** - (optional, string): The duration (in seconds) that the received messages are hidden from subsequent retrieve requests after being retrieved by a ReceiveMessage request. Default: 0. Max.
 * **Delete a message after it is received** - (optional, boolean): Delete a message from a queue after it is received. Default: false.
@@ -142,3 +142,33 @@ Sending a message to a queue
 * **MD5OfMessageBody** - An MD5 digest of the message body
 * **MD5OfMessageAttributes** - An MD5 digest of the message attributes
 * **MessageId** - ID of the message
+
+## High load performance
+
+After several load tests we can make several conclusions:
+* `Send Message` action is able to generate:
+  * `2-3` messages per second 1 by 1, each up to 10KB in size
+  * `10-20` messages per second using parallel processing x10.
+
+* `Receive Messages` trigger is able to receive:
+  * `2` messages per second, if you use delete option enabled.
+  * `20-30` messages per second w/o delete option.
+
+* No issues with processing large amounts of messages (tested up to 100,000).
+
+These numbers are just for reference and can depend on many factors - like current Amazon SQS server and platform load, network stability, and so on.
+
+### Recommendations
+
+* To reach best performance we recommend using `Parallel Processing` feature in `Send Message` action - optimal size is **10**.
+
+* If you use delete flag, speed decrease to only 2 messages per second, so better split flow logic - delete messages using separate action - `Delete Message`
+
+Here is how to enable "Parallel Processing" option:
+
+  * Open step, where you want to enable this option
+  * Go to `Summary` tab
+  * Expand `Show Advanced Settings`
+  * Increase `Parallel Processing` number
+
+![Parallel processing](img/aws-sqs-parallel.png)
