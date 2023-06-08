@@ -9,6 +9,12 @@ updatedDate: 2020-11-30
 ComponentVersion: 1.2.2
 ---
 
+## Deprecated component
+
+>**Plese note:** the Microsoft Dynamics CRM component has been **deprecated** and is no longer supported. We highly recommend migrating to the newer [Microsoft Dynamics CRM v2](/components/msdynamics-crm-v2) component, which offers improved functionality and ongoing maintenance.
+
+>Please update your codebase to utilize the [Microsoft Dynamics CRM v2](/components/msdynamics-crm-v2) as soon as possible to ensure compatibility with future updates and benefit from the latest features.
+
 ![Dynamics 365](img/DynamicsCrm1.png)
 
 Microsoft Dynamics CRM is a product in the Microsoft Dynamics family.  It is a
@@ -60,7 +66,3 @@ One previous issue was resolved by using incognito mode.  A screenshot of that e
 ## Integration Tests
 
 An `.env` file for integration tests can be found in BitWarden.  It requires a valid access token for authentication to be manually provided first.  One can be obtained using the provided postman collection.
-
-## License
-
-Apache-2.0 © [{{site.data.tenant.name}} GmbH]({{site.data.tenant.name}})
