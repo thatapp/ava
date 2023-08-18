@@ -1,19 +1,18 @@
 ---
-title: Request-reply component
+title: HTTP Reply component
 layout: component
 section: Utility components
-description: Request-Reply component for the platform.
+description: HTTP Reply component for the platform.
 icon: request-reply.png
-icontext: Request-reply component
-category: request-reply
-updatedDate: 2022-11-04
-ComponentVersion: 1.2.7
+icontext: HTTP Reply component
+category: http-reply
+updatedDate: 2023-06-29
+ComponentVersion: 1.3.0
 ---
 
 ## Description
 
-The HTTP Reply integration connector makes webhooks reply with the data produced
-inside integration workflows, with the result of massively speeding up the data processing.
+This component receives the message body from incoming requests and, if a JSONata transformation is configured, applies it to the message. It then sends the transformed message back to the client that requested a webhook for a specific flow.
 
 ### Authentication
 
@@ -25,7 +24,7 @@ This component requires no authentication.
 
 ### Technical Notes
 
-The [technical notes](technical-notes) page gives some technical details about Request-reply component like [changelog](/components/request-reply/technical-notes#changelog).
+The [technical notes](technical-notes) page gives some technical details about HTTP Reply component like [changelog](/components/request-reply/technical-notes#changelog).
 
 ## Asynchronous vs. Synchronous messaging
 
@@ -40,9 +39,8 @@ and then the replier receives the request message and responds with a reply mess
 
 These two approaches are called: **Asynchronous** (one-way) and **Synchronous**
 (two-way) messaging transmission types. At {{site.data.tenant.name}} all
-integration flows are asynchronous in nature unless **HTTP Reply** or
-**Request-reply** component is added. It enables the two-way messaging conversation
-through the request-reply pattern transforming the flow into a synchronous one.
+integration flows are asynchronous in nature unless **HTTP Reply** component is added. It enables the two-way messaging conversation
+through the HTTP Reply pattern transforming the flow into a synchronous one.
 
 ## Triggers
 
@@ -53,27 +51,49 @@ select as a first component during the integration flow design.
 
 ### Reply
 
-List of Expected Config fields:
+#### Configuration Fields
 
-- `Custom HTTP Headers` - not required, provides with possibility to set additional headers (e.g `Content-Language`)
-- `Content Type (Defaults to 'application/json')` - not required, header value tells the client what the content type of the returned content actually is. The action supports only types with `text/...` or `application/...` in the beginning of the header name.
-- `Response Body` -  required, supports JSONata expressions. Max length of a JSONata expression is 1000 symbols.
-- `Response Status Code` - not required,user may specify response code, if needed
+* **Custom HTTP Headers** - (string, optional): Provides with possibility to set additional headers separated by comma (e.g `Content-Language, User-Agent`)
 
-![Reply](img/reply.png)
+{% include img.html max-width="100%" url="img/reply.png" title="Reply" %}
+
+#### Input Metadata
+
+* **Content Type (Defaults to 'application/json')** - (string, optional, defaults to `application/json`): Header value tells the client what the content type of the returned content actually is.
+* **Response Body** - (string/Object, required): Body to send as the response
+* **Response Status Code** - (number, optional, defaults to `200`): Integer number between `200` and `999` (more info about status codes in [rfc7231](https://datatracker.ietf.org/doc/html/rfc7231#section-6) standart)
+
+If provided `Custom HTTP Headers` there will be additional field:
+
+* **customHeaders**, contains:
+  * **Header <header name provided in "Custom HTTP Headers">** - you can provide value to your custom header here
+
+#### Output Metadata
+
+The output metadata remains the same as the `input metadata`.
 
 ### Reply With Attachment
 
-List of Expected Config fields:
+#### Configuration Fields
 
-- `Custom HTTP Headers` - non-required, provides with possibility to set additional headers (e.g `Content-Language`)
-- `Content Type (Defaults to 'application/json')` - the `non-required` header value tells the client what the content type of the returned content actually is
-- `Attachment URL` - required, supported are attachments from `stewart` microservice by URL and external attachments URL, Max field length is 1000 symbols.
-- `Response Status Code` - not required, user may specify response code, if needed
+* **Custom HTTP Headers** - (string, optional): Provides with possibility to set additional headers separated by comma (e.g `Content-Language, User-Agent`)
 
-![Reply with attachment](img/reply-with-attachment.png)
+{% include img.html max-width="100%" url="img/reply-attachment.png" title="Reply With Attachment" %}
 
-> **Please Note:** Be advised that the action does not actually write an attachment when the sample is retrieved.
+#### Input Metadata
+
+* **Content Type (Defaults to 'application/json')** - (string, optional, defaults to `application/json`): Header value tells the client what the content type of the returned content actually is.
+* **Attachment URL** - (string, required): Link to file (on platform or external) that will be used as response
+* **Response Status Code** - (number, optional, defaults to `200`): Integer number between `200` and `999` (more info about status codes in [rfc7231](https://datatracker.ietf.org/doc/html/rfc7231#section-6) standart)
+
+If provided `Custom HTTP Headers` there will be additional field:
+
+* **customHeaders**, contains:
+  * **Header <header name provided in "Custom HTTP Headers">** - you can provide value to your custom header here
+
+#### Output Metadata
+
+The output metadata remains the same as the `input metadata`.
 
 ## Use cases for HTTP Reply
 
@@ -107,7 +127,7 @@ If you require to receive a meaningful, configurable response and immediately th
 "email" : "Email was sent by john.newman@example.com"
 }
 ```
-## Request-reply mechanism
+## HTTP Reply mechanism
 
 In all of the use cases described above, the basic principle is the same: there is an incoming message which is passed through the integration flow for processing and a reply is sent back to the waiting entry point with on output information. Logic is the following:
 
@@ -128,6 +148,6 @@ In all of the use cases described above, the basic principle is the same: there 
 There are several specific requirements that need to be fulfilled before the
 request-response mechanism can be used. There are:
 
-*   If a custom Node.js component is to be used in the flow with request-reply then then [sailor-node.js](/references/sailor-compatibility-matrix) version should be 1.3.0 or above to support the messaging in the flow. We recommend to use the most recent sailor version.
+*   If a custom Node.js component is to be used in the flow with HTTP Reply then then [sailor-node.js](/references/sailor-compatibility-matrix) version should be 1.3.0 or above to support the messaging in the flow. We recommend to use the most recent sailor version.
 *   If a custom Java component is to be used then please use `sailor-jvm` version 2.0.0 or above.
 *   Care must be met to have all the steps tested in advance so the proper fields are mapped.
