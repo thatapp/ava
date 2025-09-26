@@ -5,13 +5,23 @@ description: Technical Notes for REST API component.
 icon: rest-api.png
 icontext: REST API component
 category: rest-api
-updatedDate: 2025-07-10
-ComponentVersion: 2.2.0
+updatedDate: 2025-09-22
+ComponentVersion: 2.2.2
 redirect_from:
   - /components/rest-api/changelog.html
 ---
 
 ## Changelog
+
+### 2.2.2 (September 22, 2025)
+
+* Removed `elasticio-node` library from deprecated action and trigger to fix the bug introduced in version 2.2.1.
+
+### 2.2.1 (September 19, 2025)
+
+* Improved Error Handling Policy description
+* Updated `component-commons-library` to version 4.0.0
+* Updated `Sailor` to version to 2.7.6
 
 ### 2.2.0 (July 10, 2025)
 
