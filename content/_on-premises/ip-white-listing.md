@@ -29,14 +29,11 @@ communication will be done when elastic.io tasks will try to establish a connect
 ## EU cluster
 
 The EU cluster which hosts `app.elastic.io` among other tenants has the following
-outgoing IP addresses:
-
-*   `92.5.117.7`
-*   `130.162.33.7`
-*   `34.89.196.206`
-*   `34.159.187.160`
-*   `34.89.174.177`
+outgoing IP addresses: 
+* [Egress IP List for app.elastic.io](/admin/egress-ip-addresses.html#egress-ip-list-for-appelasticio)
 
 ## US cluster
 
-*   `35.245.125.178`
+The US cluster which hosts `app-us.elastic.io` among other tenants has the following
+outgoing IP addresses: 
+* [Egress IP List for app-us.elastic.io](/admin/egress-ip-addresses.html#egress-ip-list-for-app-uselasticio)
