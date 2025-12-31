@@ -2,37 +2,19 @@
 title: Configuration component
 layout: component
 section: Utility components
-description: A component allows separating the modification of configurable values from the modification of the flow.
+description: A component that allows separating the modification of configurable values from the modification of the flow.
 icon: configuration.png
 icontext: Configuration component
 category: configuration
-updatedDate: 2022-11-04
-ComponentVersion: 1.0.1
+updatedDate: 2025-12-03
+ComponentVersion: 1.0.2
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## Description
 
-<<<<<<< HEAD
-The configuration component allows separating the modification of configurable
-values from the modification of the flow.
-=======
-**0.0.3 (October 30, 2020)**
+{{page.description}}
 
-* Update sailor version to 2.6.18
-* Annual audit of the component code to check if it exposes a sensitive data in the logs
-* Add circle.ci automation build
-
-> To see the full **changelog** please use the following [link](changelog).
->>>>>>> 340e7db6963c6b497fe65b0472ea33c940a2c291
-
-### How it works.  API version / SDK version
-=======
-=======
->>>>>>> a48af29eaa496fe803a5dc6fa840a9bb65e8d20b
-## How works.  API version / SDK version
->>>>>>> c043adb98d7b64beed79053a4d1719f77355e324
+## How it works.  API version / SDK version
 
 Configuration component has a credential which is a text field with the following
 rules:
@@ -123,7 +105,7 @@ The [technical notes](technical-notes) page gives some technical details about C
 ## Triggers
 
 The configuration component has no trigger functions.
-This means **the component can not be selected as a first step in any integration flow.**
+This means the component can not be selected as a first step in any integration flow.
 
 ## Actions
 
