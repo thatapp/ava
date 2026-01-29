@@ -22,6 +22,7 @@ outgoing IP addresses:
 
 *   `92.5.117.7`
 *   `130.162.33.7`
+*   `79.76.108.15`
 
 ## Egress IP List for app-us.elastic.io
 
@@ -29,6 +30,7 @@ The US cluster which hosts `app-us.elastic.io` among other tenants has the follo
 outgoing IP addresses:
 
 *   `193.122.172.111`
+*   `157.151.204.47`
 
 ## Details
 
