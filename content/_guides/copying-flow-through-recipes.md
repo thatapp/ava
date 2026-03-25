@@ -2,7 +2,7 @@
 title: Copying flow through recipes feature
 layout: article
 section: Recipes Feature
-description: The article explains how to utilize the recipes feature in elastic.io to create flow templates, configure access levels, and change the visibility of recipes.
+description: The article explains how to utilize the recipes feature to create flow templates, configure access levels, and change the visibility of recipes.
 order: 1
 category: Recipes Feature
 ---

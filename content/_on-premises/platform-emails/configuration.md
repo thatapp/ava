@@ -15,10 +15,10 @@ category: platform-emails
 ## Email Configuration
 
 You can enable or disable all emails for each Tenant. This is done by
-[updating the Tenant](https://api.elastic.io/docs/v2#/tenants/patch_tenants__tenant_id_) via the following API request:
+[updating the Tenant]({{site.data.tenant.apiBaseUri}}/docs/v2#/tenants/patch_tenants__tenant_id_) via the following API request:
 
 ```sh
-curl https://api.elastic.io/v2/tenants/{TENANT_ID} \
+curl {{site.data.tenant.apiBaseUri}}/v2/tenants/{TENANT_ID} \
     -X PATCH \
     -u {EMAIL}:{APIKEY} \
     -H 'Content-Type: application/json' -d '

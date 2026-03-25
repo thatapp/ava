@@ -1,7 +1,7 @@
 ---
 title: Egress IP Addresses for IP Whitelisting
 layout: article
-section: elastic.io Specific Settings
+section: Platform Specific Settings
 description: Document lists public egress IP addresses of our clusters to whitelist if required.
 order: 1
 category: support
@@ -15,18 +15,18 @@ category: support
 
 ---
 
-## Egress IP List for app.elastic.io
+## Egress IP List for {{site.data.tenant.appURL}}
 
-The EU cluster which hosts `app.elastic.io` among other tenants has the following
+The EU cluster which hosts `{{site.data.tenant.appURL}}` among other tenants has the following
 outgoing IP addresses:
 
 *   `92.5.117.7`
 *   `130.162.33.7`
 *   `79.76.108.15`
 
-## Egress IP List for app-us.elastic.io
+## Egress IP List for app-us.{{site.data.tenant.appURL}}
 
-The US cluster which hosts `app-us.elastic.io` among other tenants has the following
+The US cluster which hosts `app-us.{{site.data.tenant.appURL}}` among other tenants has the following
 outgoing IP addresses:
 
 *   `193.122.172.111`

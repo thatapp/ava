@@ -40,7 +40,7 @@ The component uses Zoho Subscription - [API Version 1.0](https://www.zoho.com/su
 ### Credentials
 
 Component version 2.0.0 and higher contains breaking changes due to Deprecating [Support for Authtokens](https://help.zoho.com/portal/en/community/topic/deprecating-support-for-authtokens):
-component start to use [Faceless](https://docs.elastic.io/guides/secrets.html) service for authentication, credentials must be re-created.
+component start to use [Faceless](/guides/secrets.html) service for authentication, credentials must be re-created.
 
 Zoho REST APIs uses the [OAuth 2.0](https://www.zoho.com/subscriptions/api/v1/oauth/#overview) protocol to authorize and authenticate calls.
 During credentials creation you would need to:

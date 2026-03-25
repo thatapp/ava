@@ -9,7 +9,7 @@ category: helm3
 ---
 
 {: .no_toc}
-[Platform release](https://docs.elastic.io/releases/{{page.version}}#helm3) - **v{{page.version}}**
+[Platform release](/releases/{{page.version}}#helm3) - **v{{page.version}}**
 {: .note.normal}
 
 {{page.description}}

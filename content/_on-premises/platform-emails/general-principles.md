@@ -107,7 +107,7 @@ Message field general structure (like in Mandrill):
         },
         {
             "name": "APP_DOMAIN",
-            "content": "app.elastic.io"
+            "content": "app.thatapp.io"
         }
     ]
 }
@@ -151,7 +151,7 @@ This is how the `password-recovery` template should look like:
             },
             {
                 "name": "APP_DOMAIN",
-                "content": "app.elastic.io"
+                "content": "app.thatapp.io"
             },
             {
                 "name": "SUBJECT",
@@ -159,7 +159,7 @@ This is how the `password-recovery` template should look like:
             },
             {
                 "name": "COMPANY",
-                "content": "elastic.io GmbH"
+                "content": "thatapp.io"
             },
             {
                 "name": "LIST_ADDRESS_HTML",

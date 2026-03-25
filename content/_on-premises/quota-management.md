@@ -17,7 +17,7 @@ If you host your own installation (on-premises case) then you already have these
 credentials.
 {: .note.success}
 
-If you have an OEM tenant on elastic.io hosted clusters talk to
+If you have an OEM tenant on {{site.data.tenant.name}} hosted clusters talk to
 us for the quota management.
 {: .note.info}
 

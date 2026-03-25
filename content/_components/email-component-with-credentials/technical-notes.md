@@ -14,4 +14,4 @@ updatedDate: 2024-11-22
 ## 1.0.0 (November 22, 2024)
 
 * Initial release
-* Copy of the existing [Email component](https://docs.elastic.io/components/email/index.html), enhanced with the ability to set custom credentials, allowing flexible management of different domains, workflows, and API keys.
+* Copy of the existing [Email component](/components/email/index.html), enhanced with the ability to set custom credentials, allowing flexible management of different domains, workflows, and API keys.

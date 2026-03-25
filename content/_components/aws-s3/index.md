@@ -55,7 +55,7 @@ The component is based on [AWS S3 SDK](https://aws.amazon.com/sdk-for-node-js/ '
 
 |Name|Mandatory|Description|Values|
 |----|---------|-----------|------|
-|`ATTACHMENT_MAX_SIZE`| false | For `elastic.io` attachments configuration. Maximum possible attachment size in bytes. By default set to `104857600` and according to platform limitations **CAN'T** be bigger than that. | Up to `104857600` bytes (100MB)|
+|`ATTACHMENT_MAX_SIZE`| false | For {{site.data.tenant.name}} attachments configuration. Maximum possible attachment size in bytes. By default set to `104857600` and according to platform limitations **CAN'T** be bigger than that. | Up to `104857600` bytes (100MB)|
 |`ACCESS_KEY_ID`| false | This variable is required for integration-tests |  |
 |`ACCESS_KEY_SECRET`| false | This variable is required for integration-tests |  |
 |`REGION`| false | This variable is required for integration-tests |  |

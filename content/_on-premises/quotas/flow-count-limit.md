@@ -19,13 +19,13 @@ apply this quota.
 ## Quota sync
 
 Before you can use this quota you MUST sync your existing flow counts with the
-`quotatxns` DB tables. Use `https://api.elastic.io/sidedoor/quotatxns/sync/flow`
+`quotatxns` DB tables. Use `{{site.data.tenant.apiBaseUri}}/sidedoor/quotatxns/sync/flow`
 endpoint to `POST` using the Service Account credentials.
 {: .note.errors}
 
 ## API Call Blueprint
 
-To apply quota make an HTTP `POST` to `https://api.elastic.io/v2/quotas/quota_type/context_expression` endpoint
+To apply quota make an HTTP `POST` to `{{site.data.tenant.apiBaseUri}}/v2/quotas/quota_type/context_expression` endpoint
 using the correct credentials and the following body:
 
 ```json

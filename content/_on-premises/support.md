@@ -49,10 +49,10 @@ the hot-fix (if necessary).
 
 ## Handover Criteria
 
-Usually elastic.io takes over 2nd Level support, for the 2nd Level to effectively
+Usually {{site.data.tenant.name}} takes over 2nd Level support, for the 2nd Level to effectively
 help the customer following information needed to be collected by the 1st Level:
 
-The document in elastic.io reporing issues page [gives the details](/admin/reporting-issue.html#what-information-to-send).
+The document in {{site.data.tenant.name}} reporing issues page [gives the details](/admin/reporting-issue.html#what-information-to-send).
 
 *   **Your contract ID, workspace ID** and the flow ID - We need this to start our investigation.
 *   **When did it happen?** - We would need this information to locate the events on our back-end.

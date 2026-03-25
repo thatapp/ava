@@ -12,8 +12,8 @@ for an access to dashboards to import.
 
 Each dashboard has the following tags:
 
-*   `eio` indicates dashboard provided by elastic.io
-*   `eio-service` if dashboard monitors service developed by elastic.io
+*   `eio` indicates dashboard provided by {{site.data.tenant.name}}
+*   `eio-service` if dashboard monitors service developed by {{site.data.tenant.name}}
 *   `eio-vendor` if dashboard monitors 3rd party service
 
 We recommend using 3rd party dashboards:

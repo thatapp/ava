@@ -49,7 +49,7 @@ It is necessary to set the Internet accessible URL configured to listen for inco
 To implement this mechanism, the following steps must be taken:
 1. Create a flow with a random id in the config field
 2. Publish flow, after which the webhook URL will become available.
-3. Copy the URL of the elastic.io webhook
+3. Copy the URL of the {{site.data.tenant.name}} webhook
 4. Create a webhook on the PayPal side with the URL generated in the previous step.
 5. Edit the flow and specify the webhook ID created in the previous step.
 

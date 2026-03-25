@@ -612,7 +612,7 @@ To utilize it, you need to manually create a webhook subscription in your Facebo
 
 1. Create a flow with the `Webhook` trigger as the first step. You might also need to add additional [Credentials](#credentials).
 2. Save and start this flow.
-3. Click the `Run now` button. There you will see the webhook URL, which will look like `https://in.elastic.io/hook/6690dc400f98620012465ffd`. Copy this URL.
+3. Click the `Run now` button. There you will see the webhook URL, which will look like `https://{{site.data.tenant.webhookDomain}}/hook/6690dc400f98620012465ffd`. Copy this URL.
 4. Sign in to [Meta for Developers](https://developers.facebook.com/apps/).
 5. Open your app.
 6. In the left menu bar, you will find the `Webhooks` section. Open it.

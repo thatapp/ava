@@ -47,8 +47,8 @@ description: Everything you need to know to build integrations with the most inn
                             <span class="label success">Stable</span>
                             REST API documentation v2 <i class="fa fa-external-link"></i>
                         </a>
-                        {% if site.data.tenant.name == "elastic.io" %}
-                        <a class="link-box__link" href="https://status.elastic.io">
+                        {% if site.data.tenant.statusPageURL %}
+                        <a class="link-box__link" href="{{site.data.tenant.statusPageURL}}">
                             {{site.data.tenant.name}} Status Page<i class="fa fa-external-link"></i>
                         </a>
                         {% endif %}

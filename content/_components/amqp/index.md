@@ -43,7 +43,7 @@ This queue is then bound to the specified exchange using one or more binding key
 
 The component supports automatic payload encryption and decryption using `AES-256`. This feature is enabled by default but can be disabled using the `Don't encrypt payload` or `Don't decrypt payload` configuration options.
 
-The following environment variables are required for encryption/decryption and are automatically provided by the elastic.io platform:
+The following environment variables are required for encryption/decryption and are automatically provided by the {{site.data.tenant.name}} platform:
 
 *   `ELASTICIO_MESSAGE_CRYPTO_IV` - vector for symmetric encryption.
 *   `ELASTICIO_MESSAGE_CRYPTO_PASSWORD` - password for symmetric encryption.

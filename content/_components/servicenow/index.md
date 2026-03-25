@@ -37,8 +37,8 @@ To build an integration flow, you must configure OAuth 2.0 authentication:
 Before configuring the component, you need to set up OAuth 2.0 in your ServiceNow instance. For detailed instructions, see the [ServiceNow OAuth Applications documentation](https://www.servicenow.com/docs/r/xanadu/platform-security/c_Authentication.html).
 
 **Create OAuth Application** – Navigate to `System OAuth → Application Registry → New → New Inbound Integration Experience → OAuth - Authorization code grant`
-   - **Name** – Enter a descriptive name for your OAuth application (e.g., "elastic.io integration")
-   - **Provider name** – Enter a provider identifier (e.g., "elastic.io")
+   - **Name** – Enter a descriptive name for your OAuth application (e.g., "{{site.data.tenant.name}} integration")
+   - **Provider name** – Enter a provider identifier (e.g., "{{site.data.tenant.name}}")
    - **Redirect URLs** – Add the following [callback redirect URL](/guides/oauth-callback-redirect-url): `https://{your-tenant-address}/callback/oauth2`
    - **Active** – Ensure this checkbox is checked
    - **Auth scope** – Configure the auth scope:

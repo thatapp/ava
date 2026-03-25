@@ -18,7 +18,7 @@ category: installation
 
 [OpenID Connect (OIDC)](https://openid.net/) is an interoperable authentication protocol based on the OAuth 2.0 family of specifications. It uses straightforward REST/JSON message flows to allow clients of all types, including browser-based JavaScript and native mobile apps, to launch sign-in flows and receive verifiable assertions about the identity of signed-in users.
 
-Elastic.io allows users to utilize OIDC to simplify authentication process. The implemented OpenID Connect Version is `1.0`, and the implemented Flow type is [Code Flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth).
+{{site.data.tenant.name}} allows users to utilize OIDC to simplify authentication process. The implemented OpenID Connect Version is `1.0`, and the implemented Flow type is [Code Flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth).
 
 ## Requirements
 1\. OIDC provider must support the [Discovery process](https://openid.net/specs/openid-connect-discovery-1_0.html).
@@ -71,7 +71,7 @@ You will need to use the following callback URL:
 ### Register OIDC Provider in the Platform
 OIDC provider could be added via the following API call:
 
-`POST /v2/tenants/:tenant_id/openid/providers` - more info [here](https://api.elastic.io/docs/v2#/tenants/post_tenants__tenant_id__openid_providers).
+`POST /v2/tenants/:tenant_id/openid/providers` - more info [here]({{site.data.tenant.apiBaseUri}}/docs/v2#/tenants/post_tenants__tenant_id__openid_providers).
 
 The following ID Token [claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims) are used:
 
@@ -95,6 +95,6 @@ Required configuration:
 ### Adding OIDC Connections Manually
 It’s possible to manually add an OIDC connection to an existing user via the following API call:
 
-`POST /v2/users/{user_id}/openid/identities` - more info [here](https://api.elastic.io/docs/v2#/users/post_users__user_id__openid_identities).
+`POST /v2/users/{user_id}/openid/identities` - more info [here]({{site.data.tenant.apiBaseUri}}/docs/v2#/users/post_users__user_id__openid_identities).
 
 On successful call, the user will be recognized and logged in during the next login via OIDC.

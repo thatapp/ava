@@ -61,7 +61,7 @@ The component uses Salesforce API Version 46.0 by default, but this can be overr
 
 Authentication occurs via OAuth 2.0.
 
-To use OAuth 2.0, you must create a Connected App in your Salesforce instance. During the app creation process, you will be asked to specify a Callback URL. To process OAuth authentication on the platform, your [callback URL](/guides/oauth-callback-redirect-url) should be in the format `https://your-tenant.elastic.io/callback/oauth2`.
+To use OAuth 2.0, you must create a Connected App in your Salesforce instance. During the app creation process, you will be asked to specify a Callback URL. To process OAuth authentication on the platform, your [callback URL](/guides/oauth-callback-redirect-url) should be in the format `https://{{site.data.tenant.appURL}}/callback/oauth2`.
 
 More information can be found in the official [Salesforce documentation](https://help.salesforce.com/apex/HTViewHelpDoc?id=connected_app_create.htm).
 

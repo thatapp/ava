@@ -7,7 +7,7 @@ section: Recipes Feature
 category: Recipes Feature
 ---
 
-There is a way to provide a direct link to a Recipe page for an end user. It’s intended for cases when the end user doesn’t want to manage the elastic.io platform. Eio customer can prepare a platform and compile a link for an end user so he will authenticate and be able to activate a recipe.
+There is a way to provide a direct link to a Recipe page for an end user. It’s intended for cases when the end user doesn’t want to manage the {{site.data.tenant.name}} platform. Eio customer can prepare a platform and compile a link for an end user so he will authenticate and be able to activate a recipe.
 
 ## Setup
 
@@ -27,7 +27,7 @@ https://[platform_domain]/embedded-recipe?recipeId=[recipeId]&oneTimeToken=[oneT
 
 Options:
 
-- `platform_domain` (required). Your elastic.io platform domain.
+- `platform_domain` (required). Your {{site.data.tenant.name}} platform domain.
 - `recipeId` (required). Recipe ID which you want the user to activate.
 - `oneTimeToken` (required). One-time token that was generated for the user. Used to authenticate  a user in the platform.
 - `contractId` (optional). Contract ID in which the user will activate the recipe. If not provided, the first found contract for the user is used.

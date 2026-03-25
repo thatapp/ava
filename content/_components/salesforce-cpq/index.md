@@ -39,7 +39,7 @@ In the component repository you need to specify OAuth Client credentials as envi
 ### Create a new App in Salesforce
 
 In order to make OAuth work, you need a new App in your Salesforce. During app creation process you will be asked to specify
-the callback URL, to process OAuth authentication via elastic.io platform your callback URL should be
+the callback URL, to process OAuth authentication via {{site.data.tenant.name}} platform your callback URL should be
 
 ### Credentials
 

@@ -72,7 +72,7 @@ Where you must replace the following values:
 
 *   `[shard_id]` (e.g. 01) - shard instance id. Currently we don't use sharding, so all instances will contain the same value.
 *   `[replica_id]` (e.g. 1) - replica member id. Each replica instance should have unique id.
-*   `[domain]` (e.g. elastic.io) - string to identify this CH cluster. We prefer to use a domain.
+*   `[domain]` (e.g. example.com) - string to identify this CH cluster. We prefer to use a domain.
 
 
 ### Step2 - ZooKeeper Servers

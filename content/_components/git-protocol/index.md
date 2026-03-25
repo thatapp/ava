@@ -85,7 +85,7 @@ This action executes a sequence of Git commands: `clone`, `checkout`, `add`, `rm
 #### Configuration Fields
 
 - **File Source**: Defines the source of the files for the commit.
-  - **Maester**: Elastic.io's internal object storage.
+  - **Maester**: {{site.data.tenant.name}}'s internal object storage.
   - **URL**: A publicly accessible URL. Authentication is not supported.
 - **Beautify JSON files** (optional): When enabled, this option formats `.json` files for improved human readability using standard indentation, which enhances the clarity of diffs in version control.
 
@@ -114,7 +114,7 @@ This action executes a sequence of Git commands: `clone`, `checkout`, `add`, `rm
 
 ### Read from Branch
 
-This action retrieves files from a specified branch in a Git repository and stores them in Maester, the elastic.io internal object storage.
+This action retrieves files from a specified branch in a Git repository and stores them in Maester, the {{site.data.tenant.name}} internal object storage.
 
 #### Configuration Fields
 

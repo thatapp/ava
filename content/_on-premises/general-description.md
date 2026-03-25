@@ -28,7 +28,7 @@ During platform deployment the current and the [Common values](common-values) ch
 
 ### apiDocsImage:
 {: .charts.h3}
- `"elasticio/api-docs:HASHVERSION"` - image for [API documentation](https://api.elastic.io/docs/v2) service.
+ `"elasticio/api-docs:HASHVERSION"` - image for [API documentation]({{site.data.tenant.apiBaseUri}}/docs/v2) service.
  {: .charts.level_h3}
 ### cloudProvider:
 {: .charts.h3}

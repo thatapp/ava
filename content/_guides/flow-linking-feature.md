@@ -13,7 +13,7 @@ order: 6
 
 ## REST API Component and Webhook Component
 
-REST API and Webhook are two of the most common approaches used for integrating with external systems or services. REST API is a popular protocol for web-based communication that uses HTTP requests to send and receive data. The REST API component in elastic.io allows users to expose their own REST API endpoints or consume third-party REST API endpoints. In contrast, the Webhook component in elastic.io enables users to receive incoming HTTP requests from external systems and trigger a flow in response.
+REST API and Webhook are two of the most common approaches used for integrating with external systems or services. REST API is a popular protocol for web-based communication that uses HTTP requests to send and receive data. The REST API component in {{site.data.tenant.name}} allows users to expose their own REST API endpoints or consume third-party REST API endpoints. In contrast, the Webhook component in {{site.data.tenant.name}} enables users to receive incoming HTTP requests from external systems and trigger a flow in response.
 
 > All necessary information about API endpoints can be found in our [API documentation]({{site.data.tenant.apiDocsUri}}/v2#).
 

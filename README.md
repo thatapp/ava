@@ -1,9 +1,8 @@
-# elastic.io Documentation
-![](https://github.com/elasticio/splitter-component/blob/master/elastic.io%20Logo%20pure-01.png)
+# AVA Documentation
 
 
-This repository contains the documentation of the elastic.io iPaaS platform. Visit
-the [doc.elastic.io](https://docs.elastic.io) to see it live.
+This repository contains the documentation of the AVA iPaaS platform. Visit
+the [docs.thatapp.io](https://docs.thatapp.io) to see it live.
 
 *   [Contributing](#contributing)
 *   [White-labeling](#white-labeling)
@@ -14,7 +13,7 @@ the [doc.elastic.io](https://docs.elastic.io) to see it live.
 Contributions are welcome. If you create a pull request with some changes, we will review and incorporate as appropriate.
 
 ## Style Guidelines
-* In order to maximize re-use for white-label customers who run elastic.io software under a different brand, it is important to use the handlebars replacements when appropriate. For example, instead of referencing `elastic.io` within a document, `{{site.data.tenant.name}}` should be used instead. [A full list of substitution values can be found here.](_data/tenant.yml)
+* In order to maximize re-use for white-label customers who run AVA software under a different brand, it is important to use the handlebars replacements when appropriate. For example, instead of referencing `AVA` within a document, `{{site.data.tenant.name}}` should be used instead. [A full list of substitution values can be found here.](_data/tenant.yml)
 * All git commits should have meaningful messages. Related commits should be combined into a single commit.
 * Commits should be ideally be scoped to a single feature as much as possible.
 

@@ -47,7 +47,7 @@ Click to expand the template which Raven is using:
         },
         {
             "name": "COMPANY",
-            "content": "elastic.io GmbH"
+            "content": "thatapp.io"
         },
         {
             "name": "USER",
@@ -116,7 +116,7 @@ Click to expand the template which Raven is using:
         },
         {
             "name": "COMPANY",
-            "content": "elastic.io GmbH"
+            "content": "thatapp.io"
         },
         {
             "name": "NAME",
@@ -179,7 +179,7 @@ Click to expand the template which Raven is using:
         },
         {
             "name": "COMPANY",
-            "content": "elastic.io GmbH"
+            "content": "thatapp.io"
         },
         {
             "name": "NAME",
@@ -243,7 +243,7 @@ Click to expand the template which Raven is using:
         },
         {
             "name": "COMPANY",
-            "content": "elastic.io GmbH"
+            "content": "thatapp.io"
         },
         {
             "name": "NAME",
@@ -316,7 +316,7 @@ Click to expand the template which Raven is using:
             },
             {
                 "name": "APP_DOMAIN",
-                "content": "app.elastic.io"
+                "content": "app.thatapp.io"
             },
             {
                 "name": "SUBJECT",
@@ -324,7 +324,7 @@ Click to expand the template which Raven is using:
             },
             {
                 "name": "COMPANY",
-                "content": "elastic.io GmbH"
+                "content": "thatapp.io"
             },
             {
                 "name": "LIST_ADDRESS_HTML",
@@ -384,7 +384,7 @@ Click to expand the template which Raven is using:
         },
         {
             "name": "COMPANY",
-            "content": "elastic.io GmbH"
+            "content": "thatapp.io"
         },
         {
             "name": "NAME",
@@ -475,7 +475,7 @@ Click to expand the template which Raven is using:
         },
         {
             "name": "COMPANY",
-            "content": "elastic.io"
+            "content": "thatapp.io"
         },
         {
             "name": "TASK_NAME",
@@ -566,7 +566,7 @@ Click to expand the template which Raven is using:
         },
         {
             "name": "COMPANY",
-            "content": "elastic.io GmbH"
+            "content": "thatapp.io"
         }
     ]
 }
@@ -657,7 +657,7 @@ This email is sent to a user whose membership in a Developer Team has been termi
 To trigger the message, follow these steps:
 
 1. Create a new Developer Team and invite members to it
-2. Use `DELETE https://api.elastic.io/v2/teams/{TEAM_ID}/relationships/members`
+2. Use `DELETE {{site.data.tenant.apiBaseUri}}/v2/teams/{TEAM_ID}/relationships/members`
 
 {% raw %}
 ```json
@@ -936,7 +936,7 @@ Template name: `workspace-removed-member`
 This email is sent to a user whose membership in a Workspace has been terminated.
 
 1. Create a Workspace and add members to it
-2. Delete a member from this Workspace via the UI, or `DELETE https://api.elastic.io/v2/workspaces/{WORKSPACE_ID} \` API request
+2. Delete a member from this Workspace via the UI, or `DELETE {{site.data.tenant.apiBaseUri}}/v2/workspaces/{WORKSPACE_ID} \` API request
 3.
 <details close markdown="block">
 <summary>
@@ -977,7 +977,7 @@ Template name: `wiper-contract-suspended`
 This email is sent to all members of the suspended Contract.
 
 1. Create a Contract and add members to it
-2. Suspend the Contract via `POST https://api.elastic.io/v2/contracts/CONTRACT_ID/suspend/` API call
+2. Suspend the Contract via `POST {{site.data.tenant.apiBaseUri}}/v2/contracts/CONTRACT_ID/suspend/` API call
 
 <details close markdown="block">
 <summary>
@@ -1025,8 +1025,8 @@ Template name: `contract-unsuspended`
 This email is sent to all members of the unsuspended Contract.
 
 1. Create a Contract and add members to it
-2. Suspend the Contract via `POST https://api.elastic.io/v2/contracts/CONTRACT_ID/suspend/` API call
-3. Unsuspend the Contract via `POST https://api.elastic.io/v2/contracts/CONTRACT_ID/unsuspend/` API call
+2. Suspend the Contract via `POST {{site.data.tenant.apiBaseUri}}/v2/contracts/CONTRACT_ID/suspend/` API call
+3. Unsuspend the Contract via `POST {{site.data.tenant.apiBaseUri}}/v2/contracts/CONTRACT_ID/unsuspend/` API call
 
 <details close markdown="block">
 <summary>
@@ -1045,7 +1045,7 @@ Click to expand the template which Raven is using:
         },
         {
             "name": "COMPANY",
-            "content": "elastic.io GmbH"
+            "content": "thatapp.io"
         },
         {
             "name": "USER_NAME",
@@ -1074,7 +1074,7 @@ Template name: `wiper-contract-deleted`
 This email is sent to all members of the removed Contract.
 
 1. Create a Contract and add members to it
-2. Delete the Contract via `DELETE https://api.elastic.io/v2/contracts/{CONTRACT_ID} \` API call
+2. Delete the Contract via `DELETE {{site.data.tenant.apiBaseUri}}/v2/contracts/{CONTRACT_ID} \` API call
 
 <details close markdown="block">
 <summary>
@@ -1093,7 +1093,7 @@ Click to expand the template which Raven is using:
         },
         {
             "name": "COMPANY",
-            "content": "elastic.io GmbH"
+            "content": "thatapp.io"
         },
         {
             "name": "USER_NAME",
@@ -1124,7 +1124,7 @@ Template name: `user-removed-from-contract`
 This email is sent to a user whose membership in a Contract has been terminated.
 
 1. Create a Contract and add members to it
-2. Delete a member from this Contract via the UI, or `DELETE https://api.elastic.io/v2/contracts/{CONTRACT_ID}/members/{USER_ID}/` API request
+2. Delete a member from this Contract via the UI, or `DELETE {{site.data.tenant.apiBaseUri}}/v2/contracts/{CONTRACT_ID}/members/{USER_ID}/` API request
 
 <details close markdown="block">
 <summary>
@@ -1143,7 +1143,7 @@ Click to expand the template which Raven is using:
         },
         {
             "name": "COMPANY",
-            "content": "elastic.io GmbH"
+            "content": "thatapp.io"
         },
         {
             "name": "USER_NAME",

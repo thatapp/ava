@@ -87,4 +87,4 @@ Example:
   * **Base64 string** - Converts the response to a Base64-encoded string and returns it in the `base64` key
 
 ## Known Limitations
-Please note that for the functionality to save and update the token to work correctly, the platform user must have `workspaces.credential.edit` permission (see elastic.io [API docs](https://api.elastic.io/docs/v2#/credentials/patch_credentials__credential_id_)).
+Please note that for the functionality to save and update the token to work correctly, the platform user must have `workspaces.credential.edit` permission (see {{site.data.tenant.name}} [API docs]({{site.data.tenant.apiBaseUri}}/docs/v2#/credentials/patch_credentials__credential_id_)).

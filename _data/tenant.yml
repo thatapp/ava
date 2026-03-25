@@ -9,3 +9,10 @@ petStoreSourceNodeJS: https://github.com/thatapp/petstore-component-nodejs
 petStoreSourceJava: https://github.com/thatapp/petstore-component-java
 javaAPIDocs: http://thatapp.io/javadoc/
 javaAPISource: https://github.com/thatapp/java-api
+appURL: https://app.thatapp.io
+apiDocsUri: https://api.thatapp.io
+webhookDomain: in.thatapp.io
+supportPortalURL: https://support.thatapp.io
+statusPageURL: https://status.thatapp.io
+companyLegalName: thatapp.io
+websiteURL: https://www.thatapp.io

@@ -9,7 +9,7 @@ category: platform-emails
 
 {: .no_toc}
 
-{{page.description}} These pages are mainly technical guides and how-tows. For more general introduction to white-labelling please visit the [White-Label iPaaS](https://www.elastic.io/saas-embedded-integration/) page.
+{{page.description}} These pages are mainly technical guides and how-tows. For more general introduction to white-labelling please visit the [White-Label iPaaS]({{site.data.tenant.websiteURL}}/saas-embedded-integration/) page.
 
 ## Table of contents
 

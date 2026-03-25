@@ -7,7 +7,7 @@ section: Recipes Feature
 category: Recipes Feature
 ---
 
-There is a way to provide a direct link to a Recipe Deployment for an end user. It’s intended for cases when the end user doesn’t want to manage the elastic.io platform. Eio customer can prepare a platform and compile a link for an end user so he will authenticate and be able to update Credentials used in the Deployment and restart Flows using them.
+There is a way to provide a direct link to a Recipe Deployment for an end user. It’s intended for cases when the end user doesn’t want to manage the {{site.data.tenant.name}} platform. Eio customer can prepare a platform and compile a link for an end user so he will authenticate and be able to update Credentials used in the Deployment and restart Flows using them.
 
 ## Setup
 
@@ -24,7 +24,7 @@ https://[platform_domain]/embedded-recipe?recipeDeploymentId=[recipeDeploymentId
 
 Options:
 
-- `platform_domain` (required). Your elastic.io platform domain.
+- `platform_domain` (required). Your {{site.data.tenant.name}} platform domain.
 - `recipeDeploymentId` (required). Recipe Deployment ID which you want the user to update.
 - `oneTimeToken` (required). One-time token that was generated for the user. Used to authenticate a user in the platform.
 

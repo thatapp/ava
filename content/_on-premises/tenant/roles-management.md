@@ -22,7 +22,7 @@ A role in the platform is an attribute that is defined with a set of permissions
 enabling it to perform operations on the platform. There are different types of
 roles in the platform:
 
-*   **Service accounts** - These are specific roles with set permissions to perform specific operations with system infrastructure and services. Details of these roles and permissions [presented elsewhere](https://api.elastic.io/docs/v2#/permissions/get_permissions). This article would not extend on these accounts and permissions.
+*   **Service accounts** - These are specific roles with set permissions to perform specific operations with system infrastructure and services. Details of these roles and permissions [presented elsewhere]({{site.data.tenant.apiBaseUri}}/docs/v2#/permissions/get_permissions). This article would not extend on these accounts and permissions.
 *   **TenantAdmin** - This role has defined permissions to operate the tenant specific entities.
 *   **User roles** - These are attributes that have set of [defined permissions](#available-user-roles) for the users to perform operations on the platform.
 
@@ -31,7 +31,7 @@ roles in the platform:
 
 The platform has default set of user roles which have already [defined permissions](#available-permissions)
 to perform operations in contracts and workspaces. The details of abilities for user
-roles in context of contract and workspace units are [presented elsewhere](https://docs.elastic.io/guides/managing-user-roles-in-a-tenant). Here we will list the roles in conjunction with their permissions.
+roles in context of contract and workspace units are [presented elsewhere](/guides/managing-user-roles-in-a-tenant). Here we will list the roles in conjunction with their permissions.
 
 **Contract roles are** (click to expand to see the permissions):
 
@@ -290,9 +290,9 @@ for custom role creation and role deletion:
 
 To create, edit or delete a user role follow these instructions:
 
-1.  Use HTTP `GET` call to the platform API `/v2/tenants/{TENANT_ID}/roles` endpoint using the TenantAdmin credentials to get the current list of roles and permissions. More about this API call [here](https://api.elastic.io/docs/v2#/tenants/get_tenants__tenant_id__roles).
+1.  Use HTTP `GET` call to the platform API `/v2/tenants/{TENANT_ID}/roles` endpoint using the TenantAdmin credentials to get the current list of roles and permissions. More about this API call [here]({{site.data.tenant.apiBaseUri}}/docs/v2#/tenants/get_tenants__tenant_id__roles).
 2.  Examine the returned JSON structure and make your modifications following the [established structure](#request-structure-parameters) and the [example case](#example-role-structure).
-3.  Use the HTTP `PATCH` call to the platform API `/v2/tenants/{TENANT_ID}/roles` endpoint using the **service account** credentials to add, modify or delete a role. The `TENANT_ID` in the call is the ID of tenant where the modification must be done. More about this API call [here](https://api.elastic.io/docs/v2#/tenants/patch_tenants__tenant_id__roles). Don't submit the tenant `id`, `relationships` and `meta` parts you got in the step 1 back in the body of the call.
+3.  Use the HTTP `PATCH` call to the platform API `/v2/tenants/{TENANT_ID}/roles` endpoint using the **service account** credentials to add, modify or delete a role. The `TENANT_ID` in the call is the ID of tenant where the modification must be done. More about this API call [here]({{site.data.tenant.apiBaseUri}}/docs/v2#/tenants/patch_tenants__tenant_id__roles). Don't submit the tenant `id`, `relationships` and `meta` parts you got in the step 1 back in the body of the call.
 
 Before you go and try to modify the tenant roles table you must remember to
 **submit all existing roles along with the new modifications in one API call**.
@@ -410,6 +410,6 @@ are set for 3 different levels like `global`, `contracts` and `workspaces`.
 | `workspaces.topic.delete`                      | Delete the topics                                                   |
 
 These are not all permissions available in the system. There are additional
-[group of permissions](https://api.elastic.io/docs/v2#/permissions/get_permissions)
+[group of permissions]({{site.data.tenant.apiBaseUri}}/docs/v2#/permissions/get_permissions)
 not available for users for performing specific operations with the system infrastructure and services.
 {: .note.info}

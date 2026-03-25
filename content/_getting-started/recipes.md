@@ -34,7 +34,7 @@ For more information, please refer to the article on [Recipe deployment](/guides
 
 ### Embedded Recipes
 
-To accommodate scenarios where end users prefer not to directly manage the elastic.io platform, we offer the Embedded Recipes feature. It enables you to provide a direct link to a Recipe page for end users. This allows them to authenticate and activate Recipes without navigating the entire platform.
+To accommodate scenarios where end users prefer not to directly manage the {{site.data.tenant.name}} platform, we offer the Embedded Recipes feature. It enables you to provide a direct link to a Recipe page for end users. This allows them to authenticate and activate Recipes without navigating the entire platform.
 
 For more information, please refer to the article on [embedded Recipes](/guides/embedded-recipe).
 

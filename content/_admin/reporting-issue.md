@@ -32,15 +32,15 @@ pages for explanations and suggestions on how to overcome problems.
 
 > **If above articles and guidelines did not provide answers you seek please get in touch with us by sending an e-mail to [{{site.data.tenant.supportEmail}}](mailto:{{site.data.tenant.supportEmail}}).**
 
-{% if site.data.tenant.name == "elastic.io" %}
+{% if site.data.tenant.supportPortalURL %}
 
 Every email sent to our support opens a support ticket and you get an automated
 reply with a ticket number which you can track by registering in our
-[support portal](https://support.elastic.io/). The support portal credentials
+[support portal]({{site.data.tenant.supportPortalURL}}). The support portal credentials
 are not the same as your credentials while logged into the platform. If this is
 the first time submitting an issue, our portal will automatically create a new account for you.
 If you have submitted an issue before you already have an account -
-[login here](https://support.elastic.io/support/login).
+[login here]({{site.data.tenant.supportPortalURL}}/support/login).
 
 > Please note, you must not register in our support portal to communicate
 > with us. You will get answers per email every time you submit a ticket to our

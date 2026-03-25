@@ -9,7 +9,7 @@ category: helm3
 ---
 
 {: .no_toc}
-[Platform release](https://docs.elastic.io/releases/{{page.version}}#helm3) - **v{{page.version}}**
+[Platform release](/releases/{{page.version}}#helm3) - **v{{page.version}}**
 {: .note.normal}
 
 {{page.description}} From the platform version 21.37 we separated the secrets from
@@ -112,7 +112,7 @@ data:
 
 ## Platform docker registry secret
 
-**REQUIRED** by the whole platform. Since it's used to pull elastic.io images from the dockerhub.
+**REQUIRED** by the whole platform. Since it's used to pull {{site.data.tenant.name}} images from the dockerhub.
 
 It's a simple [.dockerconfigjson kubernetes](https://kubernetes.io/docs/concepts/configuration/secret/#docker-config-secrets) secret.
 
@@ -195,7 +195,7 @@ data:
 
 ## Platform environment secret
 
-**REQUIRED** by the [elastic.io platform](common-values#platform).
+**REQUIRED** by the [{{site.data.tenant.name}} platform](common-values#platform).
 
 We use this secret to store the platform environment variables.
 
@@ -751,11 +751,11 @@ to your needs.
 {: .charts.level_h3}
 ### TENANT_API_DOMAIN:
 {: .charts.h3}
-`tenant_api_domain` - The default tenant API domain, e.g. `api.elastic.io`
+`tenant_api_domain` - The default tenant API domain, e.g. `api.example.com`
 {: .charts.level_h3}
 ### TENANT_WEBHOOKS_DOMAIN:
 {: .charts.h3}
-`tenant_webhooks_domain` - The default tenant webhooks domain, e.g. `in.elastic.io`
+`tenant_webhooks_domain` - The default tenant webhooks domain, e.g. `in.example.com`
 {: .charts.level_h3}
 ### TENANT_NAME:
 {: .charts.h3}
