@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -v \":0$\")",
+      "Bash(sort -t: -k2 -nr)",
+      "Bash(wc -l /c/Users/SethHelgeson/Documents/GitHub/ava/content/_components/*.md)",
+      "Bash(grep -r site.data.tenant. /c/Users/SethHelgeson/Documents/GitHub/ava/content --include=*.md)",
+      "Bash(grep -r \"apiBaseUri\\\\|gitDomain\\\\|petStoreDocs\\\\|petStoreSourceNodeJS\\\\|petStoreSourceJava\\\\|javaAPIDocs\\\\|javaAPISource\\\\|appURL\" /c/Users/SethHelgeson/Documents/GitHub/ava/content --include=*.md)",
+      "Bash(xargs file:*)",
+      "Bash(sed 's/.*\\\\.//')",
+      "Bash(grep -r elastic.io --include=*.md --include=*.yml --include=*.yaml --include=*.html --include=*.json --include=*.js --include=*.ts -l)",
+      "Read(//tmp/**)",
+      "Read(//c/Users/SethHelgeson/Documents/GitHub/ava/{sum += $NF} END {print \"\"\"\"\"\"\"\"Total @elastic.io/**)"
+    ]
+  }
+}
