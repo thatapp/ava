@@ -38,24 +38,12 @@ You want to make an email marketing that can allow the customers on your email l
 
 If you are interested in a more detailed example of using a configuration component, please read this [article](usage-example).
 
-<<<<<<< HEAD
-### Requirements
-
-#### Environment variables
-=======
 ### Environment variables
->>>>>>> c043adb98d7b64beed79053a4d1719f77355e324
 
-<<<<<<< HEAD
 No environment variables are necessary to configure the component.
-=======
+
 > Please Note: From the platform version [20.51](/releases/2020-12-17) we deprecated the
-<<<<<<< HEAD
-> component `LOG_LEVEL` environment variable. Now you can control logging level per each step of the flow. 
->>>>>>> ada1e51c3e75b1a99c039ad339624249f5ccde1a
-=======
 > component `LOG_LEVEL` environment variable. Now you can control logging level per each step of the flow.
->>>>>>> af4ddea2888125ab3e3c32305ce4c64d5645b777
 
 ## Credentials
 
