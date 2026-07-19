@@ -208,7 +208,7 @@ The secret must have the following structure:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: elasticio
+  name: thatapp
   namespace: platform
 type: Opaque
 stringData:
@@ -248,7 +248,7 @@ URI used to connect platform services to RabbitMQ. MUST include the same vhost a
 
 ### APPRUNNER_IMAGE:
 {: .charts.h3}
-Docker image used for running flow steps containers. Default value `"elasticio/apprunner:production"`
+Docker image used for running flow steps containers. Default value `"thatapp/apprunner:production"`
 {: .charts.level_h3}
 
 ### BRAN_PREFETCH_COUNT:

@@ -17,10 +17,10 @@ updatedDate: 2024-09-05
 There is no need to set up any environment variables manually.
 
 However, the component needs the next environment variables:
-- `ELASTICIO_API_URI`
-- `ELASTICIO_API_USERNAME`
-- `ELASTICIO_API_KEY`
-- `ELASTICIO_WORKSPACE_ID`
+- `THATAPP_API_URI`
+- `THATAPP_API_USERNAME`
+- `THATAPP_API_KEY`
+- `THATAPP_WORKSPACE_ID`
 
 ### Credentials
 

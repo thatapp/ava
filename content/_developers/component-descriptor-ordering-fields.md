@@ -148,7 +148,7 @@ Same for credentials ordering:
 
 ```json
 "credentials": {
-    "verifier": "io.elastic.jdbc.JdbcCredentialsVerifier",
+    "verifier": "io.thatapp.jdbc.JdbcCredentialsVerifier",
     "fields": {
       "dbEngine": {
         "order":1,

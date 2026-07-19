@@ -48,8 +48,8 @@ emitSnapshot(newSnapshot);
 ```javascript
 'use strict';
 
-const elasticio = require('elasticio-node');
-const messages = elasticio.messages;
+const thatapp = require('thatapp-node');
+const messages = thatapp.messages;
 
 exports.process = processTrigger;
 

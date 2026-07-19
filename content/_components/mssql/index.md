@@ -93,6 +93,6 @@ Following types are supported:
  * ``date`` (will be converted to ``DateTime2``)
  * ``money``
 
-more details can be found [here](https://github.com/elasticio/mssql-component/blob/master/lib/actions/insert.js#L25)
+more details can be found [here](https://github.com/thatapp/mssql-component/blob/master/lib/actions/insert.js#L25)
 
 Component supports dynamic incoming metadata - as soon as your query is in place it will be parsed and incoming metadata will be generated accordingly.

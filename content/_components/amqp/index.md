@@ -45,8 +45,8 @@ The component supports automatic payload encryption and decryption using `AES-25
 
 The following environment variables are required for encryption/decryption and are automatically provided by the {{site.data.tenant.name}} platform:
 
-*   `ELASTICIO_MESSAGE_CRYPTO_IV` - vector for symmetric encryption.
-*   `ELASTICIO_MESSAGE_CRYPTO_PASSWORD` - password for symmetric encryption.
+*   `THATAPP_MESSAGE_CRYPTO_IV` - vector for symmetric encryption.
+*   `THATAPP_MESSAGE_CRYPTO_PASSWORD` - password for symmetric encryption.
 
 ## Credentials
 

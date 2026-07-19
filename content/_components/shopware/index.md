@@ -21,7 +21,7 @@ is developed specifically to run on {{site.data.tenant.name}} platform.
 
 ## Requirements
 
-> **PLEASE NOTE:** This component depends on [Shopware REST API extenstions](https://github.com/elasticio/elasticio-shopware-api-extension),
+> **PLEASE NOTE:** This component depends on [Shopware REST API extenstions](https://github.com/thatapp/thatapp-shopware-api-extension),
 > please install it first before proceeding further.	please install it first before proceeding further.
 
 ### Credentials

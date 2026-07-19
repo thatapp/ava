@@ -18,15 +18,15 @@ redirect_from:
 * Added dynamic metadata for `Add new Subscriber` action to support list-specific merge fields.
 * **ATTENTION**: Moving to the dynamic metadata might break existing flow mapping. Please check your flows after upgrading.
 * Upgraded dependencies to latest stable versions:
-    * `elasticio-sailor-nodejs`: 2.7.1 -> 2.7.8
+    * `thatapp-sailor-nodejs`: 2.7.1 -> 2.7.8
     * `moment`: 2.29.4 -> 2.30.1
-* Removed `elasticio-node` dependency and replaced it with a local utility.
+* Removed `thatapp-node` dependency and replaced it with a local utility.
 * Integrated latest security fixes and `better-npm-audit`.
 
 ### 1.0.5 (January 05, 2026)
 
 * Update Sailor version to 2.7.7
-* Remove unused `elasticio-node` dependency
+* Remove unused `thatapp-node` dependency
 * Update the Node engine to version 24.x.
 
 ### 1.0.4 (June 12, 2022)

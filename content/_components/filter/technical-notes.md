@@ -17,7 +17,7 @@ redirect_from:
 
 * Update Sailor version to 2.7.7
 * Update component-commons-library version to 4.0.0
-* Remove redundant `elasticio-node` dependency
+* Remove redundant `thatapp-node` dependency
 * Remove redundant `bunyan` dependency
 * Update the Node engine to version 24.x.
 * Replace deprecated `request` and `request-promise` with `axios`
@@ -50,7 +50,7 @@ redirect_from:
 
 ### 1.0.4 (July 3, 2020)
 
-* Fix for `elasticio` key in output message
+* Fix for `thatapp` key in output message
 
 ### 1.0.3 (May 22, 2020)
 
@@ -69,5 +69,5 @@ redirect_from:
 
 ### 1.0.0 (November 11, 2019)
 
-* Use `@elastic.io/component-commons-library` instead of `@elastic.io/jsonata-moment` for JSONata transform
+* Use `@thatapp.io/component-commons-library` instead of `@thatapp.io/jsonata-moment` for JSONata transform
 * Update to use JSONata version 1.7.0

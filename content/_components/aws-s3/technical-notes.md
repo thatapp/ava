@@ -24,7 +24,7 @@ redirect_from:
 * Update the Node engine to version 24.x
 * Improve `README.md`
 * Update `component-commons-library` version to 4.0.0
-* Remove unused `elasticio-node` dependency
+* Remove unused `thatapp-node` dependency
 
 ### 1.5.2 (September 23, 2022)
 
@@ -49,7 +49,7 @@ redirect_from:
 
 * Update `component-commons-library` to 2.0.2
 * Update `oih-standard-library` to 2.0.2
-* Update `elasticio-sailor-nodejs` to 2.6.27
+* Update `thatapp-sailor-nodejs` to 2.6.27
 * Added component-pusher to circleci
 * Fix dependencies
 

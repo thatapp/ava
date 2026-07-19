@@ -38,7 +38,7 @@ In this example, we specify the FlowID of the flow shown in the screenshot below
         "component": {
           "id": "55ba18e35d04040500000004",
           "name": "webhook",
-          "team_name": "elasticio"
+          "team_name": "thatapp"
         }
       },
       {
@@ -47,7 +47,7 @@ In this example, we specify the FlowID of the flow shown in the screenshot below
         "component": {
           "id": "5e8edcd78e3acb9d03765511",
           "name": "dropbox-component",
-          "team_name": "elasticio"
+          "team_name": "thatapp"
         }
       }
     ],
@@ -62,7 +62,7 @@ In this example, we specify the FlowID of the flow shown in the screenshot below
         "component": {
           "id": "5f7f16a5eceeac001187426e",
           "name": "rest-api-v2",
-          "team_name": "elasticio"
+          "team_name": "thatapp"
         }
       }
     ],
@@ -70,7 +70,7 @@ In this example, we specify the FlowID of the flow shown in the screenshot below
       {
         "id": "55ba18e35d04040500000004",
         "repo_name": "webhook",
-        "team_name": "elasticio",
+        "team_name": "thatapp",
         "title": "Webhook",
         "description": "Webhooks allow you to collect information about events as they happen in near real-time. Provide a URL, select when and where you want that URL to receive data about events on your list, and we'll send it to you as the events take place.  It is recommended that you specify a URL using https.",
         "name": "webhook",
@@ -79,7 +79,7 @@ In this example, we specify the FlowID of the flow shown in the screenshot below
       {
         "id": "5f7f16a5eceeac001187426e",
         "repo_name": "rest-api-v2",
-        "team_name": "elasticio",
+        "team_name": "thatapp",
         "title": "REST API V2",
         "description": "A generic connector for accessing HTTP and REST APIs .",
         "name": "rest-api-v2",
@@ -88,7 +88,7 @@ In this example, we specify the FlowID of the flow shown in the screenshot below
       {
         "id": "610bb01937de140011488619",
         "repo_name": "csv-v3",
-        "team_name": "elasticio",
+        "team_name": "thatapp",
         "title": "CSV",
         "description": "A comma-separated values (CSV) file stores tabular data (numbers and text) in plain-text form",
         "name": "csv-v3",
@@ -97,7 +97,7 @@ In this example, we specify the FlowID of the flow shown in the screenshot below
       {
         "id": "5e8edcd78e3acb9d03765511",
         "repo_name": "dropbox-component",
-        "team_name": "elasticio",
+        "team_name": "thatapp",
         "title": "Dropbox",
         "description": "Dropbox is a cloud storage service, which allows anyone upload and transfer files to the cloud, and access files later.",
         "name": "dropbox-component",
@@ -161,7 +161,7 @@ The primary purpose of this component is to retrieve comprehensive information a
           "id": "step_1",
           "component_id": {
             "componentId": "55ba18e35d04040500000004",
-            "componentDevTeam": "elasticio",
+            "componentDevTeam": "thatapp",
             "componentName": "webhook",
             "componentSemanticVersion": "1.2.11"
           },
@@ -181,7 +181,7 @@ The primary purpose of this component is to retrieve comprehensive information a
           "id": "step_2",
           "component_id": {
             "componentId": "58a30bd961763000199ba049",
-            "componentDevTeam": "elasticio",
+            "componentDevTeam": "thatapp",
             "componentName": "filter",
             "componentSemanticVersion": "1.1.3"
           },
@@ -200,7 +200,7 @@ The primary purpose of this component is to retrieve comprehensive information a
           "id": "step_3",
           "component_id": {
             "componentId": "59a3e5d4418dee00192eb0b6",
-            "componentDevTeam": "elasticio",
+            "componentDevTeam": "thatapp",
             "componentName": "jsonata",
             "componentSemanticVersion": "1.0.11"
           },

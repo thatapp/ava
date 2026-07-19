@@ -48,10 +48,10 @@ Triggers to get all new and updated files since last polling.
 Will continuously poll remote SFTP location for files that match given pattern. Found files will be transferred as attachments to the next component
 
 After a file is found:
- * It is moved to the (hidden) directory `.elasticio_processed` and to name of the file will be added timestamp, ex.: file `test.txt` will be renamed to `test.txt_1657621889133`
+ * It is moved to the (hidden) directory `.thatapp_processed` and to name of the file will be added timestamp, ex.: file `test.txt` will be renamed to `test.txt_1657621889133`
  * It is pulled and uploaded (streamed) to the attachment storage
 
->**Please Note:** you may need to consider cleaning up the `.elasticio_processed` directory manually
+>**Please Note:** you may need to consider cleaning up the `.thatapp_processed` directory manually
 
 ### Configuration Fields
 

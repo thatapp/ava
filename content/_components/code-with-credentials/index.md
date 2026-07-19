@@ -191,8 +191,8 @@ It's very simple to code a small REST API call out of the Code component, see fo
 
 ```javascript
 async function run(msg, cfg, snapshot) {
-  const username = process.env.ELASTICIO_API_USERNAME;
-  const password = process.env.ELASTICIO_API_KEY;
+  const username = process.env.THATAPP_API_USERNAME;
+  const password = process.env.THATAPP_API_KEY;
   const url = '{{site.data.tenant.apiBaseUri}}/v2/users/me';
   const { data } = await axios.get(url,
     {
@@ -291,9 +291,9 @@ async function run(msg, cfg, snapshot) {
   });
   // 3. Attempt to send a test email
   const info = await transporter.sendMail({
-    from: '"Tester" <test@elastic.io>',
+    from: '"Tester" <test@thatapp.io>',
     to: "bar@example.com",
-    subject: "Nodemailer Test from elastic.io ✔",
+    subject: "Nodemailer Test from thatapp.io ✔",
     text: "Nodemailer is correctly installed and accessible!",
     html: "<b>Nodemailer is correctly installed and accessible!</b>",
     attachments: [

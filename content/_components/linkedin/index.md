@@ -27,11 +27,11 @@ The LinkedIn component is designed for seamless integration with the LinkedIn AP
 ## Credentials
 Authentication occurs via OAuth 2.0.
 
-To use OAuth 2.0, you must create a **LinkedIn Application** in the LinkedIn Developer Portal. During the app creation process, you will be asked to specify a **Redirect URL**. To process OAuth authentication via the platform, your [redirect URL](/guides/oauth-callback-redirect-url.html) should be in the format `https://your-tenant.elastic.io/callback/oauth2`.
+To use OAuth 2.0, you must create a **LinkedIn Application** in the LinkedIn Developer Portal. During the app creation process, you will be asked to specify a **Redirect URL**. To process OAuth authentication via the platform, your [redirect URL](/guides/oauth-callback-redirect-url.html) should be in the format `https://your-tenant.thatapp.io/callback/oauth2`.
 
 More information can be found in the official [LinkedIn documentation](https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow).
 
-To create credentials in the elastic.io platform:
+To create credentials in the thatapp.io platform:
 
 1. Select an existing Auth Client from the **Choose Auth Client** dropdown or create a new one. To create a new Auth Client, specify the following fields:
 

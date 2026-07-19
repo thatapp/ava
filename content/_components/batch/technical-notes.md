@@ -15,7 +15,7 @@ redirect_from:
 
 ### 2.0.9 (December 03, 2025)
 
-* Update `@elastic.io/maester-client` version to 6.0.0
+* Update `@thatapp.io/maester-client` version to 6.0.0
 * Update Node engine version to 24.x
 * Update Sailor version to 2.7.7
 

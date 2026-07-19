@@ -19,7 +19,7 @@ redirect_from:
 * Slightly improved error handling
 * Updated Sailor 2.7.1 -> 2.7.5
 * Updated axios 1.4.0 -> 1.10.0
-* Updated @elastic.io/component-commons-library 3.1.5 -> 3.2.2
+* Updated @thatapp.io/component-commons-library 3.1.5 -> 3.2.2
 
 ### 2.1.0 (August 04, 2023)
 

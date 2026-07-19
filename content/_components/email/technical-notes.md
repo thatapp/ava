@@ -17,8 +17,8 @@ redirect_from:
 
 * Update Sailor version to 2.7.7
 * Update Axios version to 1.12.2
-* Remove unused `elasticio-node` dependency
-* Update `@elastic.io/component-commons-library` to 4.0.0
+* Remove unused `thatapp-node` dependency
+* Update `@thatapp.io/component-commons-library` to 4.0.0
 * Update the Node engine to version 24.x.
 
 ### 1.3.0 (November 07, 2024)

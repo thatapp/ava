@@ -14,8 +14,8 @@ updatedDate: 2025-11-20
 ### 2.2.1 (November 20, 2025)
 * Fixed `Upsert Object` action metadata loading for `PtRealization`, `KnSalesRelationOrg`, `KnQuotation` object types by adding identifier mapping
 * Updated `Sailor` version to 2.7.7
-* Updated `@elastic.io/component-commons-library` version to 4.0.0
-* Removed `elasticio-node` dependency
+* Updated `@thatapp.io/component-commons-library` version to 4.0.0
+* Removed `thatapp-node` dependency
 
 ### 2.2.0 (May 07, 2025)
 * Added an option which adds the request body to the response message body. This option has been applied to the following actions:

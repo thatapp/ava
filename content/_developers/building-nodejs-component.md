@@ -42,8 +42,8 @@ The Node.js components for {{site.data.tenant.name}} platform get built by NPM `
 
 ```js
 "dependencies": {
-  "elasticio-sailor-nodejs": "^2.2.0",
-  "elasticio-node": "^0.0.8"
+  "thatapp-sailor-nodejs": "^2.2.0",
+  "thatapp-node": "^0.0.8"
 }
 ```
 

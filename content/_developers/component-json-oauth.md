@@ -67,7 +67,7 @@ To use an OAuth2 based Component in the platform it is required to register a cl
 | token_uri   | `string`   | Yes | URI to get a Access Token |
 | scopes      | `array` of `strings` |   No | Scopes of the access request |
 
-Here is an example of `OAuth2` implementation in [Google Spreadsheets](https://github.com/elasticio/gspreadsheets/blob/master/component.json#L18) component:
+Here is an example of `OAuth2` implementation in [Google Spreadsheets](https://github.com/thatapp/gspreadsheets/blob/master/component.json#L18) component:
 
 ```json
 {
@@ -88,7 +88,7 @@ Here is an example of `OAuth2` implementation in [Google Spreadsheets](https://g
 > Please note that the properties `access_type` and `prompt` above are specific to Google. They are not defined in the OAuth2 specification.
 
 Sometimes you will need to access values in the `oauth2` properties you
-gathered from the user using fields, as for example is done in the [Salesforce component](https://github.com/elasticio/salesforce-component/blob/master/component.json).
+gathered from the user using fields, as for example is done in the [Salesforce component](https://github.com/thatapp/salesforce-component/blob/master/component.json).
 The following example demonstrates how to do that.
 
 ```json

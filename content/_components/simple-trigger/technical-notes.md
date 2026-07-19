@@ -15,10 +15,10 @@ redirect_from:
 
 ### 1.3.0 (March 05, 2026)
 
-* Removed legacy `elasticio-node` dependency and transitioned to local utilities
+* Removed legacy `thatapp-node` dependency and transitioned to local utilities
 * **Modernized Runtime**: Updated Node.js engine from **18.x** to **24.x**.
 * **Dependency Upgrades**:
-    * `elasticio-sailor-nodejs`: 2.7.1 -> 2.7.8
+    * `thatapp-sailor-nodejs`: 2.7.1 -> 2.7.8
 
 ### 1.2.0 (June 30, 2023)
 

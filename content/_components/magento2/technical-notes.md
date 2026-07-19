@@ -19,7 +19,7 @@ redirect_from:
 * Updated the `Sailor` version to 2.7.7
 * Updated the Axios version to 1.12.2
 * Updated the `component-commons-library` version to 4.0.0
-* Remove unused `elasticio-node` dependency
+* Remove unused `thatapp-node` dependency
 * Update the Node engine to version 24.x.
 
 ### 1.7.1 (July 03, 2025)

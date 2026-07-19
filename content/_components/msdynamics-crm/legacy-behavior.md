@@ -30,7 +30,7 @@ You would need a node.js and npm. Node.js version > 0.11.
 Check it out from GitHub and install dependencies.
 
 ```sh
-git clone git@github.com:elasticio/microsoft-dynamics-crm.git
+git clone git@github.com:thatapp/microsoft-dynamics-crm.git
 cd microsoft-dynamics-crm/
 npm install
 ```

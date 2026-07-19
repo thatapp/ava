@@ -74,7 +74,7 @@ For creating Auth Client you should specify following fields:
 
 You will receive next fields: `Client ID`, `Client Secret`.
 
-In order to setup created Auth Client on Elastic.io platform you should click on `Add New Auth Client`, and fill next fields:
+In order to setup created Auth Client on Thatapp.io platform you should click on `Add New Auth Client`, and fill next fields:
 * **Name** -  Name your Auth Client's name (any).
 * **Client ID** - Your `Client ID` from Zoho Developer Console.
 * **Client Secret** - Your `Client Secret` from Zoho Developer Console

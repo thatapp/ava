@@ -48,7 +48,7 @@ dependencies, plugins, etc. Your build file can be a regular Gradle build file. 
 dependency:
 
 ````
-compile "io.elastic:sailor-jvm:2.0.1"
+compile "io.thatapp:sailor-jvm:2.0.1"
 ````
 
 Sailor is the Java SDK for the {{site.data.tenant.name}} platform. It makes your component a citizen of the
@@ -89,7 +89,7 @@ required information about the component. Let's explore the descriptor of the Pe
         "viewClass": "TextFieldWithNoteView",
       }
     },
-    "verifier": "io.elastic.petstore.ApiKeyVerifier"                        (4)
+    "verifier": "io.thatapp.petstore.ApiKeyVerifier"                        (4)
   },
   "triggers": {                                                             (5)
     ...
@@ -103,7 +103,7 @@ required information about the component. Let's explore the descriptor of the Pe
 The component descriptor above defines the component title (1) and description (2). It also defines the fields used to
 ask the user to provide input for authentication (3). In this case a single field is define in which the user will input
 the API key for the Petstore API so that the component can communicate with the API on user's behalf. The property
-`verifier` (4) is used to define an implementation of the `io.elastic.api.CredentialsVerifier` interface which will be
+`verifier` (4) is used to define an implementation of the `io.thatapp.api.CredentialsVerifier` interface which will be
 invoked by the platform when a user credential, such as an API key, needs to be verified before storing it in the platform.
 
 The `triggers` (5) and `actions` (6) properties are used to define the component's triggers and actions.
@@ -114,7 +114,7 @@ Now let's have a closer look on how to define triggers. The example below demons
 ```json
   "triggers": {
     "getPetsByStatus": {                                                (1)
-      "main": "io.elastic.petstore.triggers.GetPetsByStatus",           (2)
+      "main": "io.thatapp.petstore.triggers.GetPetsByStatus",           (2)
       "type": "polling",                                                (3)
       "title": "Get Pets By Status (HttpClient)",
       "fields": {                                                       (4)
@@ -144,7 +144,7 @@ API. The triggers can be configured with some fields (4) and defines out-metadat
 ## Verifying credentials
 
 As mentioned above you can configure a credentials verifying in the component's descriptor. In the Petstore component
-the verifier is implemented in the `io.elastic.petstore.ApiKeyVerifier` class, shown below:
+the verifier is implemented in the `io.thatapp.petstore.ApiKeyVerifier` class, shown below:
 
 ````java
 public class ApiKeyVerifier implements CredentialsVerifier {                    (1)
@@ -162,7 +162,7 @@ public class ApiKeyVerifier implements CredentialsVerifier {                    
 }
 ````
 
-The `ApiKeyVerifier` class above is an implementation of the `io.elastic.api.CredentialsVerifier` interface (1) which
+The `ApiKeyVerifier` class above is an implementation of the `io.thatapp.api.CredentialsVerifier` interface (1) which
 defines the method `verify` (2). This method takes a `JsonObject` which represents the component's configuration and may
 throw an `InvalidCredentialsException` exception. The component's configuration holds the values user input into the
 credentials fields defined in `component.json` (see above). The verification above is implemented by sending a simple

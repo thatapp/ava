@@ -241,7 +241,7 @@ The following inputs can be set through JSONata expressions:
         "id": "step_1",
         "component_id": {
           "componentId": "5c41a519299462001290d260",
-          "componentDevTeam": "elasticio",
+          "componentDevTeam": "thatapp",
           "componentName": "simple-trigger-component",
           "componentSemanticVersion": "1.0.0"
         },
@@ -257,7 +257,7 @@ The following inputs can be set through JSONata expressions:
         "id": "step_3",
         "component_id": {
           "componentId": "55ffca6ecc04c20600000001",
-          "componentDevTeam": "elasticio",
+          "componentDevTeam": "thatapp",
           "componentName": "jdbc",
           "componentSemanticVersion": "1.0.0"
         },
@@ -276,7 +276,7 @@ The following inputs can be set through JSONata expressions:
         "id": "step_4",
         "component_id": {
           "componentId": "6156f6ecb8eee60012c3965f",
-          "componentDevTeam": "elasticio",
+          "componentDevTeam": "thatapp",
           "componentName": "hubspot",
           "componentSemanticVersion": "1.0.0"
         },
@@ -299,7 +299,7 @@ The following inputs can be set through JSONata expressions:
         "id": "step_5",
         "component_id": {
           "componentId": "5968b3c594cbb000199f2adc",
-          "componentDevTeam": "elasticio",
+          "componentDevTeam": "thatapp",
           "componentName": "router",
           "componentSemanticVersion": "1.0.0"
         },
@@ -315,7 +315,7 @@ The following inputs can be set through JSONata expressions:
         "id": "step_6",
         "component_id": {
           "componentId": "566d7ca473917c0a0000005c",
-          "componentDevTeam": "elasticio",
+          "componentDevTeam": "thatapp",
           "componentName": "code",
           "componentSemanticVersion": "1.0.0"
         },
@@ -333,7 +333,7 @@ The following inputs can be set through JSONata expressions:
         "id": "step_10",
         "component_id": {
           "componentId": "566d7ca473917c0a0000005c",
-          "componentDevTeam": "elasticio",
+          "componentDevTeam": "thatapp",
           "componentName": "code",
           "componentSemanticVersion": "1.0.0"
         },
@@ -351,7 +351,7 @@ The following inputs can be set through JSONata expressions:
         "id": "step_9",
         "component_id": {
           "componentId": "5d42a70b0a1c6bb17137cdb7",
-          "componentDevTeam": "elasticio",
+          "componentDevTeam": "thatapp",
           "componentName": "utility-component",
           "componentSemanticVersion": "1.0.0"
         },

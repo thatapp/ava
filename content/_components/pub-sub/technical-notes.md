@@ -16,9 +16,9 @@ redirect_from:
 ### 1.0.12 (November 19, 2025)
 
 * Update component-commons-library to 4.0.0
-* Update elasticio-sailor-nodejs to 2.7.7
+* Update thatapp-sailor-nodejs to 2.7.7
 * Update uuid to 13.0.0
-* Remove elasticio-node dependency and refactor message creation to src/utils.js
+* Remove thatapp-node dependency and refactor message creation to src/utils.js
 * Update ESLint and its plugins to compatible versions (eslint 8.57.1, eslint-config-standard 17.1.0, eslint-plugin-import 2.32.0, eslint-plugin-node 11.1.0, eslint-plugin-promise 6.6.0, eslint-plugin-standard 5.0.0)
 * Fix ESLint configuration and formatting issues
 

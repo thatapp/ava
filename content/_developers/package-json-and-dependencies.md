@@ -29,7 +29,7 @@ While developing a component is node.js it is important to have all the dependen
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:elasticio/petstore-component-nodejs.git"
+    "url": "git@github.com:thatapp/petstore-component-nodejs.git"
   },
   "author": "{{site.data.tenant.companyName}}",
   "license": "BSD-2-Clause",
@@ -37,8 +37,8 @@ While developing a component is node.js it is important to have all the dependen
     "node": "6.4.0"
   },
   "dependencies": {
-    "elasticio-sailor-nodejs": "2.0.1",
-    "elasticio-node": "0.0.7",
+    "thatapp-sailor-nodejs": "2.0.1",
+    "thatapp-node": "0.0.7",
     "co": "4.6.0",
     "request": "2.76.0",
     "request-promise": "4.1.1"

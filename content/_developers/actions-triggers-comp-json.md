@@ -87,7 +87,7 @@ In the case of Java components, the code entry point is identified as a fully qu
 
 **Examples:**
 * **JavaScript:** `./lib/actions/upsertFile.js`
-* **Java:** `io.elastic.soap.actions.CallAction`
+* **Java:** `io.thatapp.soap.actions.CallAction`
 
 ## Type
 
@@ -133,7 +133,7 @@ Some examples when dynamic metadata is used include:
 
 When dynamic metadata is used, once all required configuration fields for an action/trigger have been submitted, then the platform will call component code to learn the metadata.
 * **JavaScript:** When using dynamic metadata with JavaScript components, the `dynamicMetadata` field should be set to boolean `true`. The file containing the action/trigger with dynamic metadata needs to export a function `getMetaModel()` which accepts the credential & config field information and then returns the metadata as an object with two keys `in` and `out` which describe the expected structure of incoming and outgoing messages.
-* **Java:** When using dynamic metadata with Java components, the `dynamicMetadata` field should be set to a string that is the fully qualified name of a Java class which inherits the `io.elastic.api.DynamicMetadataProvider` class.
+* **Java:** When using dynamic metadata with Java components, the `dynamicMetadata` field should be set to a string that is the fully qualified name of a Java class which inherits the `io.thatapp.api.DynamicMetadataProvider` class.
 
 Whenever a config field is edited, the metadata will be refreshed.
 

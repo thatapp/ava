@@ -61,7 +61,7 @@ return co(function* mainLoop()
 }
 ```
 
-In this example, which is taken from the [Microsoft Outlook component](https://github.com/elasticio/outlook/blob/master/lib/triggers/contacts.js), the whole procedure includes refreshing first the `refresh_token` then using the first to refresh the access_token.
+In this example, which is taken from the [Microsoft Outlook component](https://github.com/thatapp/outlook/blob/master/lib/triggers/contacts.js), the whole procedure includes refreshing first the `refresh_token` then using the first to refresh the access_token.
 
 >Notice how the refresh token is emitted via `updateKeys` event (on line 15 in the above example).
 
@@ -71,7 +71,7 @@ It is important to get familiarized in advance with the requirements of the API 
 
 ## Refreshing the tokens when it is required
 
-This is the more standard implementation of the token refresh procedure. The tokens are being refreshed only when the API provider rejects with **401 UNAUTHORIZED** error. The following is an example taken from the [Salesforce Java component](https://github.com/elasticio/salesforce-component-java) by {{site.data.tenant.name}}:
+This is the more standard implementation of the token refresh procedure. The tokens are being refreshed only when the API provider rejects with **401 UNAUTHORIZED** error. The following is an example taken from the [Salesforce Java component](https://github.com/thatapp/salesforce-component-java) by {{site.data.tenant.name}}:
 
 ```java
 private String sendRequestAndRefreshTokensIfRequired(
@@ -166,5 +166,5 @@ public static final void refreshTokens(final JsonObject configuration) {
 - [OAuth2 setup preparation in component.json](/references/oauth2-setup-preparation-in-component-json)
 - [Preparing the verifyCredentials.js for oauth](/references/preparing-the-verifyCredentials-js-for-oauth-process)
 - [How to access access_token during component execution?](/references/how-to-access-access_token-during-component-execution)
-- [Microsoft Outlook component](https://github.com/elasticio/outlook/blob/master/lib/triggers/contacts.js)
-- [Salesforce Java component](https://github.com/elasticio/salesforce-component-java)
+- [Microsoft Outlook component](https://github.com/thatapp/outlook/blob/master/lib/triggers/contacts.js)
+- [Salesforce Java component](https://github.com/thatapp/salesforce-component-java)

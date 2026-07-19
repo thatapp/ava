@@ -19,10 +19,10 @@ ComponentVersion: 1.3.0
     * `Node.js`: 18 -> 24
     * `axios`: 0.27.2 -> 1.15.2
     * `qs`: 6.11.0 -> 6.15.1
-    * `@elastic.io/component-commons-library`: 3.1.5 -> 4.0.0
-    * `elasticio-sailor-nodejs`: 2.7.1 -> 2.7.8
+    * `@thatapp.io/component-commons-library`: 3.1.5 -> 4.0.0
+    * `thatapp-sailor-nodejs`: 2.7.1 -> 2.7.8
     * `uuid`: 8.3.2 -> 9.0.1
-* Removed legacy `elasticio-node` and `elasticio-rest-node` libraries
+* Removed legacy `thatapp-node` and `thatapp-rest-node` libraries
 
 ### 1.2.0 (March 01, 2024)
 

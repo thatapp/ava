@@ -26,8 +26,8 @@ This is one of the simplistic implementations of the emit error event. For more 
 ```js
 var Keen = require('keen-js');
 var Q = require('q');
-var elasticio = require('elasticio-node');
-var messages = elasticio.messages;
+var thatapp = require('thatapp-node');
+var messages = thatapp.messages;
 
 exports.process = execute;
 

@@ -282,7 +282,7 @@ nodePort: 31000
 {: .charts.h5}
 loadBalancerIp: ""
 {: .charts.h5}
-path: `"elasticio"`
+path: `"thatapp"`
 {: .charts.h5}
 uri: `""`
 {: .charts.h5}

@@ -30,7 +30,7 @@ start:
 *   [Snapshot](/guides/using-snapshots) - 5KB storage shared between executions.
 
 In this article, we will talk about the differences of **Input fields** and input
-**metadata** as it often confuses new Elastic.io platform users.
+**metadata** as it often confuses new Thatapp.io platform users.
 
 ## Semantics
 

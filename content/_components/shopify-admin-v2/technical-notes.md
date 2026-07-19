@@ -22,9 +22,9 @@ ComponentVersion: 2.6.0
 
 ### 2.5.2 (August 06, 2025)
 * Updated Sailor to version 2.7.6.
-* Updated `@elastic.io/component-commons-library` to version 4.0.0.
+* Updated `@thatapp.io/component-commons-library` to version 4.0.0.
 * Updated `axios` to version 1.11.0.
-* Removed the `elasticio-node` library.
+* Removed the `thatapp-node` library.
 
 ### 2.5.1 (April 15, 2025)
 * Improved errors text

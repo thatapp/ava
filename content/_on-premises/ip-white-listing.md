@@ -30,10 +30,10 @@ communication will be done when {{site.data.tenant.name}} tasks will try to esta
 
 The EU cluster which hosts `{{site.data.tenant.appURL}}` among other tenants has the following
 outgoing IP addresses:
-* [Egress IP List for {{site.data.tenant.appURL}}](/admin/egress-ip-addresses.html#egress-ip-list-for-appelasticio)
+* [Egress IP List for {{site.data.tenant.appURL}}](/admin/egress-ip-addresses.html#egress-ip-list-for-appthatapp)
 
 ## US cluster
 
 The US cluster which hosts `{{site.data.tenant.appURL}}` among other tenants has the following
 outgoing IP addresses:
-* [Egress IP List for {{site.data.tenant.appURL}}](/admin/egress-ip-addresses.html#egress-ip-list-for-app-uselasticio)
+* [Egress IP List for {{site.data.tenant.appURL}}](/admin/egress-ip-addresses.html#egress-ip-list-for-app-usthatapp)

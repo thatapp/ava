@@ -91,7 +91,7 @@ SugarCRM component includes the following actions:
 
 ### Required environment variables
 
-For the local testing (e.g. spec-integration) `ELASTICIO_TASK_ID` and `ELASTICIO_STEP_ID` environment variables should be provided.
+For the local testing (e.g. spec-integration) `THATAPP_TASK_ID` and `THATAPP_STEP_ID` environment variables should be provided.
 
 ### Version and compatibility information
 

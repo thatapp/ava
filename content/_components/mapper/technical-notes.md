@@ -17,8 +17,8 @@ redirect_from:
 
 * Update Sailor version to 2.7.7
 * Update dependencies to latest backward compatible versions
-* Remove unused `elasticio-node` dependency
-* Remove redundant `@elastic.io/bunyan-logger` dependency
+* Remove unused `thatapp-node` dependency
+* Remove redundant `@thatapp.io/bunyan-logger` dependency
 * Fix vulnerabilities in dependencies
 
 ### 1.0.1 (October 10, 2023)
@@ -63,11 +63,11 @@ redirect_from:
 
 ### 0.0.7 (July 1, 2020)
 
-* Update elasticio-sailor-nodejs to 2.6.13
+* Update thatapp-sailor-nodejs to 2.6.13
 
 ### 0.0.6 (May 19, 2020)
 
-* Update elasticio-sailor-nodejs to 2.6.7
+* Update thatapp-sailor-nodejs to 2.6.7
 
 ### 0.0.5 (February 20, 2020)
 

@@ -74,7 +74,7 @@ Here is an example implementation of `TextAreaView` view class:
 
 ```js
 "selectTrigger": {
-      "main": "io.elastic.jdbc.triggers.SelectTrigger",
+      "main": "io.thatapp.jdbc.triggers.SelectTrigger",
       "title": "Select",
       "description": "Executes a custom SELECT statement for incremental polling.",
       "type": "polling",
@@ -94,7 +94,7 @@ Here is an example implementation of `TextAreaView` view class:
           "placeholder": "2026-03-12 00:00:00.000"
         }
       }    
-      "dynamicMetadata": "io.elastic.jdbc.providers.ColumnNamesProvider"
+      "dynamicMetadata": "io.thatapp.jdbc.providers.ColumnNamesProvider"
     }
 ```
 
@@ -168,7 +168,7 @@ This is rendered in the following way:
 The true power of this view class is in the ability to pass a `string` containing
 the name of a function exposed by a component that returns a JSON `object`. This
 is commonly implemented with the dynamic select models. For example the
-component descriptor of the [MailChimp component](https://github.com/elasticio/mailchimp-component/blob/master/component.json) has the following structure:
+component descriptor of the [MailChimp component](https://github.com/thatapp/mailchimp-component/blob/master/component.json) has the following structure:
 
 ```js
 "fields": {
@@ -183,7 +183,7 @@ component descriptor of the [MailChimp component](https://github.com/elasticio/m
 ```
 
 Here the `model` has a `getLists` which is exposed in the `lib/commons.js` as a
-[function `getLists`](https://github.com/elasticio/mailchimp-component/blob/master/lib/common.js#L14):
+[function `getLists`](https://github.com/thatapp/mailchimp-component/blob/master/lib/common.js#L14):
 
 ```js
 /**

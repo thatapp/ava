@@ -20,7 +20,7 @@ redirect_from:
     * Removed critical vulnerability: `form-data` (GHSA-fjxv-7rqg-78g4)
     * Removed high vulnerability: `qs` (GHSA-6rw7-vpxm-498p)
     * Removed moderate SSRF vulnerability in deprecated `request` package
-  * Updated `elasticio-rest-node` from v1.2.7 to v2.0.0
+  * Updated `thatapp-rest-node` from v1.2.7 to v2.0.0
   * Removed `.nsprc` file (no longer needed as vulnerabilities are resolved)
 * **Breaking Changes** (handled internally):
   * Updated query methods to use `scanAll` as an option to `execute()` instead of method chaining (jsforce v3 API change)
@@ -41,7 +41,7 @@ redirect_from:
 * Fixed `Lookup Object (at most 1)` action to always include `attachments` property in emitted messages (even when empty), ensuring consistent message structure
 * Updated Sailor version to 2.7.7
 * Updated `component-commons-library` version to 4.0.0
-* Removed unused `elasticio-node` dependency
+* Removed unused `thatapp-node` dependency
 * Updated the Node engine to version 24.x
 
 ### 2.9.0 (October 15, 2025)

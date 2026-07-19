@@ -79,7 +79,7 @@ Bucket contains bucket ID and an array of linked objects between the systems. Li
 ### Environment variables
 
 No need to set up any environment variables manually.
-However, the component needs environment variables ELASTICIO_OBJECT_STORAGE_TOKEN and ELASTICIO_OBJECT_STORAGE_URI to connect to Maester service.
+However, the component needs environment variables THATAPP_OBJECT_STORAGE_TOKEN and THATAPP_OBJECT_STORAGE_URI to connect to Maester service.
 
 ## Credentials
 

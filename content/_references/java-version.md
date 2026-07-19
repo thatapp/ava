@@ -22,7 +22,7 @@ dependencies {
     compile 'com.fasterxml.jackson.module:jackson-module-jsonSchema:2.9.4'
     compile group: "com.github.java-json-tools", name: "json-schema-validator", version: "2.2.8"
     compile group: 'com.smartystreets.api', name: 'smartystreets-java-sdk', version: '3.2.0'
-    compile 'io.elastic:sailor-jvm:2.1.0'
+    compile 'io.thatapp:sailor-jvm:2.1.0'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 ```

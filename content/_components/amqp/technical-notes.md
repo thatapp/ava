@@ -18,8 +18,8 @@ redirect_from:
 * Updated Node.js engine requirement to `24.x`.
 * Upgraded dependencies:
   * `amqp-connection-manager`: 4.1.14 -> 5.0.0
-  * `elasticio-sailor-nodejs`: 2.7.2 -> 2.7.7
-* Got rid of `elasticio-node` and `amqplib` dependencies
+  * `thatapp-sailor-nodejs`: 2.7.2 -> 2.7.7
+* Got rid of `thatapp-node` and `amqplib` dependencies
 * Updated CircleCI configuration to reflect Node 24 upgrade.
 * Enhanced README for clarity, improved language, and better formatting.
 

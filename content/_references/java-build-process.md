@@ -17,10 +17,10 @@ dependencies, plugins, etc. Your build file can be a regular Gradle build file.
 We require you to define the Java Sailor dependency like:
 
 ```
-compile "io.elastic:sailor-jvm:2.1.1"
+compile "io.thatapp:sailor-jvm:2.1.1"
 ```
 
-You can always find the latest Sailor version from the [Maven repository](https://mvnrepository.com/artifact/io.elastic/sailor-jvm).
+You can always find the latest Sailor version from the [Maven repository](https://mvnrepository.com/artifact/io.thatapp/sailor-jvm).
 
 Sailor is the Java SDK for the {{site.data.tenant.name}} platform. It makes your
 component a citizen of the platform by providing you a simple programming model
@@ -49,9 +49,9 @@ during the execution that you can use in the component. And here some more:
 
 | Variable Name | Description |
 |---------------|-------------|
-| `ELASTICIO_COMP_NAME` | The name of the executed component |
-| `ELASTICIO_FLOW_ID` | ID of the executed flow |
-| `ELASTICIO_TENANT_ID` | ID of the tenant |
+| `THATAPP_COMP_NAME` | The name of the executed component |
+| `THATAPP_FLOW_ID` | ID of the executed flow |
+| `THATAPP_TENANT_ID` | ID of the tenant |
 
 If you need the integration component to use and expose an environment variables
 then you should [define them in your component descriptor file](/references/component-json-technical-reference#envvars-object) (`component.json`) following way:
@@ -85,6 +85,6 @@ CPU: 0.1points
 
 ## Related links
 
-- [Maven repository](https://mvnrepository.com/artifact/io.elastic/sailor-jvm)
+- [Maven repository](https://mvnrepository.com/artifact/io.thatapp/sailor-jvm)
 - [How to define environment variables for components](/references/how-to-define-envirament-variables-for-components)
 - [Component.json Overview - envVars Object](/references/component-json-technical-reference#envvars-object)

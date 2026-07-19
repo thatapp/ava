@@ -53,7 +53,7 @@ The expression will be evaluated to a value of  `true` or `false`.
 * If checked, the checkbox adds `Assertion` functionality. Instead of doing nothing,
 the component will throw an error when the condition is not met.
 
-* `Metadata To Response` Adding passthrough from a previous step to message body as `elasticioMeta` variable, if enabled.
+* `Metadata To Response` Adding passthrough from a previous step to message body as `thatappMeta` variable, if enabled.
 
 ## What can Filter do
 
@@ -76,7 +76,7 @@ The given expressions can be true or false if one and two is numbers:
 If given Checkbox is checked:
 
 * Assertion - will throw an error if the condition is not met.
-* Metadata To Response - adds passthrough from a previous step to the message body as elasticioMeta variable. That means that data from all previous steps will be added to the message that is emitted.
+* Metadata To Response - adds passthrough from a previous step to the message body as thatappMeta variable. That means that data from all previous steps will be added to the message that is emitted.
 
 ## Additional Notes
 

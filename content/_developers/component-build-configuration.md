@@ -30,7 +30,7 @@ following environment variables:
 *   `DOCKER_PASSWORD` - password to authenticate in the docker registry
 *   `DRY_RUN` - If `true` , disables pushing built docker image to the docker registry
 
-> **Limitation**: `build_component_docker` command supports pushing docker image only to the **elasticio** Docker Hub repository.
+> **Limitation**: `build_component_docker` command supports pushing docker image only to the **thatapp** Docker Hub repository.
 
 Example of component CI/CD configuration:
 
@@ -57,7 +57,7 @@ jobs:
       # build and push Docker image
       - run:
           name: Install component-build-helper lib
-          command: npm install -g @elastic.io/component-build-helper
+          command: npm install -g @thatapp.io/component-build-helper
       - run:
           name: Build and publish docker image
           command: build_component_docker
@@ -207,7 +207,7 @@ If you need to customise the Dockerfile image, you can create a custom Dockerfil
 by issuing the following command:
 
 ```bash
-npm i @elastic.io/component-build-helper -g
+npm i @thatapp.io/component-build-helper -g
 component_cli generateDockerfile ./ > /your/component/root/dir/Dockerfile
 ```
 
@@ -227,8 +227,8 @@ RUN npm test
 RUN npm prune --production
 RUN rm -rf spec* .circleci README.md LICENSE .idea
 FROM node:14-alpine AS release
-LABEL elastic.io.component=""
-LABEL elastic.io.logo=""
+LABEL thatapp.io.component=""
+LABEL thatapp.io.logo=""
 WORKDIR /home/node
 COPY --from=base --chown=node:node /sbin/tini /sbin/tini
 COPY --from=dependencies --chown=node:node /home/node /home/node
@@ -241,6 +241,6 @@ ENTRYPOINT ["/sbin/tini", "-v", "-e", "143", "--"]
 
 ### Docker Labels
 
-In case you wand to use custom `Dockerfile`, omit `elastic.io.component` and
-`elastic.io.logo` labels in your custom `Dockerfile`. The `generateDockerfile`
+In case you wand to use custom `Dockerfile`, omit `thatapp.io.component` and
+`thatapp.io.logo` labels in your custom `Dockerfile`. The `generateDockerfile`
 command will add these labels automatically during the deployment.

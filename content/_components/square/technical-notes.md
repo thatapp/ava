@@ -17,7 +17,7 @@ ComponentVersion: 1.1.0
 * Added `Lookup Objects (plural)` action
 * Updated `Sailor` to 2.7.6 version
 * Updated `component-commons-library` to 4.0.0 version
-* Removed `elasticio-node` library
+* Removed `thatapp-node` library
 
 ### 1.0.0 (July 05, 2024)
 

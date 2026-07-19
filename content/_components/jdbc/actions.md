@@ -107,7 +107,7 @@ The action will execute ``INSERT`` command into the table from ``Table`` dropdow
 
 ### List of Expected Config fields
 
-   * `Enable Rebound` if `Yes` in case of deadlocks rebound message using Sailor rebound mechanism, number of rebound can be specified via environment variable: `ELASTICIO_REBOUND_LIMIT` recommended value 3.
+   * `Enable Rebound` if `Yes` in case of deadlocks rebound message using Sailor rebound mechanism, number of rebound can be specified via environment variable: `THATAPP_REBOUND_LIMIT` recommended value 3.
 
 ### Input fields description
 
@@ -135,7 +135,7 @@ As output metadata, you will get execution insert result like:
 The action will execute delete query from a ``Table`` dropdown field, as criteria can be used only [PRIMARY KEY](https://en.wikipedia.org/wiki/Primary_key "PRIMARY KEY"). The action returns count of affected rows.
 Checkbox ``Don't throw Error on an Empty Result`` allows to emit an empty response, otherwise you will get an error on empty response.
 
-`Enable Rebound` if `Yes` in case of deadlocks rebound message using Sailor rebound mechanism, number of rebound can be specified via environment variable: `ELASTICIO_REBOUND_LIMIT` recommended value 3.
+`Enable Rebound` if `Yes` in case of deadlocks rebound message using Sailor rebound mechanism, number of rebound can be specified via environment variable: `THATAPP_REBOUND_LIMIT` recommended value 3.
 
 ### Input fields description
 
@@ -204,7 +204,7 @@ Retrieve sample result, click "Continue" and finish component configuration.
 
 ### Input fields description
 
-* `Enable Rebound` if `Yes` in case of deadlocks rebound message using Sailor rebound mechanism, number of rebound can be specified via environment variable: `ELASTICIO_REBOUND_LIMIT` recommended value 3.
+* `Enable Rebound` if `Yes` in case of deadlocks rebound message using Sailor rebound mechanism, number of rebound can be specified via environment variable: `THATAPP_REBOUND_LIMIT` recommended value 3.
 
 As an input metadata you will get all fields of selected table. [PRIMARY KEY](https://en.wikipedia.org/wiki/Primary_key "PRIMARY KEY") is required field and other input fields are optional.
 

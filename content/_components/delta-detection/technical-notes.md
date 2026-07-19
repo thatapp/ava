@@ -43,7 +43,7 @@ ComponentVersion: 2.2.0
 ### 2.0.0 (June 11, 2021)
 
 * Use `maester-client` library based on `object-storage-client` library
-* Update `elasticio-sailor-nodejs` version from 2.6.10 to 2.6.24
+* Update `thatapp-sailor-nodejs` version from 2.6.10 to 2.6.24
 
 ### 1.0.0 (June 11, 2018)
 

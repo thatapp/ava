@@ -34,7 +34,7 @@ redirect_from:
 ### 1.0.5 (April 14, 2022)
 
 * Update `component-commons-library` to read and upload attachments through `Maester`
-* Update `elasticio-sailor-nodejs` to v2.6.27
+* Update `thatapp-sailor-nodejs` to v2.6.27
 * Fix dependencies
 
 ### 1.0.4 (November 26, 2021)

@@ -18,7 +18,7 @@ redirect_from:
 * Improved visibility of rebounds and request processing in logs for Axios library
 * Updated dependencies:
   * `axios` 1.12.2 -> 1.15.0
-  * `elasticio-sailor-nodejs` 2.7.7 -> 2.7.8
+  * `thatapp-sailor-nodejs` 2.7.7 -> 2.7.8
   * `form-data` 4.0.4 -> 4.0.5
   * `request-promise` 4.2.2 -> 4.2.6
 
@@ -33,7 +33,7 @@ redirect_from:
 
 ### 2.2.2 (September 22, 2025)
 
-* Removed `elasticio-node` library from deprecated action and trigger to fix the bug introduced in version 2.2.1.
+* Removed `thatapp-node` library from deprecated action and trigger to fix the bug introduced in version 2.2.1.
 
 ### 2.2.1 (September 19, 2025)
 

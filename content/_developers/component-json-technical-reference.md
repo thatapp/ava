@@ -136,7 +136,7 @@ The environment variable naming follows a standard UNIX/Linux Shell variable
 definitions. As a guidance, variable name must begin with an alphanumeric or alpha
 character, followed by one or more alphanumeric or underscore (`_`) characters.
 Avoid using reserved words like (`if`, `else`, `elif`, `do`, `done` ...). Here is
-an example of `envVars` object implemented in the [Salesforce Component](https://github.com/elasticio/salesforce-component/blob/master/component.json):
+an example of `envVars` object implemented in the [Salesforce Component](https://github.com/thatapp/salesforce-component/blob/master/component.json):
 
 ```json
 {

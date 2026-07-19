@@ -21,20 +21,20 @@ redirect_from:
 
 * Added `Get file metadata` action
 * Bumped sailor to `2.7.6`
-* Bumped @elastic.io/component-commons-library to `4.0.0`
+* Bumped @thatapp.io/component-commons-library to `4.0.0`
 
 ### 1.7.0 (July 18, 2024)
 
 * Added `Create named time values` checkbox to `Convert Between Timezones` action
 * Bumped sailor to `2.7.5`
-* Bumped @elastic.io/component-commons-library to `3.2.2`
+* Bumped @thatapp.io/component-commons-library to `3.2.2`
 
 ## 1.6.1 (December 12, 2024)
 
 * Added options to decode data as either plain text or binary to the `String to Attachment` action
 * Moved to Node.js `20`
 * Bumped sailor to `2.7.4`
-* Bumped @elastic.io/component-commons-library to `3.2.1`
+* Bumped @thatapp.io/component-commons-library to `3.2.1`
 * Bumped a bunch of development dependencies to the recent versions
 * Got rid of a few usused packages and functions
 

@@ -55,7 +55,7 @@ The jar is also available on Maven Central. For Apache Maven (XML) please use:
 
 ```xml
 <dependency>
-    <groupId>io.elastic</groupId>
+    <groupId>io.thatapp</groupId>
     <artifactId>java-api</artifactId>
     <version>2.0.1</version>
 </dependency>

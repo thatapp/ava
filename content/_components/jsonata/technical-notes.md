@@ -22,12 +22,12 @@ redirect_from:
 
 *   Updated dependencies to the latest versions
 *   Removed unused `request` and `bunyan` dependencies
-*   Refactored the code to remove `elasticio-node` dependency to fix security vulnerabilities
+*   Refactored the code to remove `thatapp-node` dependency to fix security vulnerabilities
 
 ### 1.0.13 (March 28, 2024)
 
 * Updated Sailor version to `2.7.2`
-* Updated `@elastic.io/component-commons-library` to `3.2.0`
+* Updated `@thatapp.io/component-commons-library` to `3.2.0`
 
 ### 1.0.12 (October 28, 2022)
 

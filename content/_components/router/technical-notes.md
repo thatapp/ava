@@ -17,7 +17,7 @@ redirect_from:
 
 * Update `Sailor` version to 2.7.7
 * Updated the Node engine to version 22.x.
-* Remove unused `elasticio-node` dependency
+* Remove unused `thatapp-node` dependency
 
 ### 1.0.1 (December 23, 2022)
 

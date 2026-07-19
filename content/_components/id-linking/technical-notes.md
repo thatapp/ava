@@ -13,9 +13,9 @@ ComponentVersion: 1.3.0
 
 ### 1.3.0 (December 22, 2025)
 
-* Updated `@elastic.io/component-commons-library` to `4.0.0`
-* Updated `@elastic.io/maester-client` to `6.0.0`
-* Updated `elasticio-sailor-nodejs` to `2.7.7`
+* Updated `@thatapp.io/component-commons-library` to `4.0.0`
+* Updated `@thatapp.io/maester-client` to `6.0.0`
+* Updated `thatapp-sailor-nodejs` to `2.7.7`
 * Implemented retry mechanism for Maester API calls
 * Fixed JSON parsing error when looking up objects in Maester
 * Improved test coverage and refactored tests to remove nock dependency

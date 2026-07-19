@@ -15,7 +15,7 @@ updatedDate: 2025-09-18
 
 * Updated `Sailor` to 2.7.6 version
 * Updated `component-commons-library` to 4.0.0 version
-* Removed `elasticio-node` library
+* Removed `thatapp-node` library
 
 ### 1.0.0 (April 11, 2025)
 

@@ -36,7 +36,7 @@ Now instead of `list products` the platform calls `get shop` endpoint which does
 
 * Added `email` support in `Upsert Object` action for `customer` objectType
 * Improved error message
-* Updated elasticio-sailor-nodejs to v2.6.29
+* Updated thatapp-sailor-nodejs to v2.6.29
 * Updated oih-standard-library to v2.0.3
 
 ### 1.6.3 (July 1, 2022)

@@ -51,7 +51,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAAD{.....}kf0vBMStV user@exampleHost
 > **Please Note:** Your public SSH key must be added to your Git provider (e.g., GitHub, GitLab) before using this component.
 
 - **Service URL** (required): The base URL for the Git service (e.g., `git@github.com`).
-- **Git Project** (required): The repository path. For a repository URL like `git@github.com:elasticio/git-protocol-component.git`, this value would be `elasticio/git-protocol-component.git`.
+- **Git Project** (required): The repository path. For a repository URL like `git@github.com:thatapp/git-protocol-component.git`, this value would be `thatapp/git-protocol-component.git`.
 
 ### Technical details
 

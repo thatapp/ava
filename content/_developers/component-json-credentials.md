@@ -41,7 +41,7 @@ The `credentials` should be an object with the following properties:
 | Property Name | Description |
 | :------------ | :---------- |
 | [fields](component-json-fields.html) | An object which describes the fields in the credential. [See the article on fields for more information.](component-json-fields.html) |
-| verifier | *Java components only* Identifies the Java class to be invoked by specifying the fully qualified name of a Java class which inherits the `io.elastic.api.CredentialsVerifier` class. |
+| verifier | *Java components only* Identifies the Java class to be invoked by specifying the fully qualified name of a Java class which inherits the `io.thatapp.api.CredentialsVerifier` class. |
 | [oauth1](component-json-oauth.html#oauth1) | Specifies the details about OAuth v1.0 resources. Only used if a `OAuthFieldView` field is defined. |
 | [oauth2](component-json-oauth.html#oauth2) | Specifies the details about OAuth v2.0 resources. Only used if a `OAuthFieldView` field is defined. |
 

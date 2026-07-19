@@ -55,11 +55,11 @@ Here is how to implement the Rebound feature in the component code written in Ja
 
 
 ```java
-package io.elastic.demo;
+package io.thatapp.demo;
 
-import io.elastic.api.Component;
-import io.elastic.api.EventEmitter;
-import io.elastic.api.ExecutionParameters;
+import io.thatapp.api.Component;
+import io.thatapp.api.EventEmitter;
+import io.thatapp.api.ExecutionParameters;
 
 public class ReboundingComponent extends Component {
 
@@ -78,11 +78,11 @@ public class ReboundingComponent extends Component {
 Here is how to do with Java `Exception`:
 
 ```java
-package io.elastic.demo;
+package io.thatapp.demo;
 
-import io.elastic.api.Component;
-import io.elastic.api.EventEmitter;
-import io.elastic.api.ExecutionParameters;
+import io.thatapp.api.Component;
+import io.thatapp.api.EventEmitter;
+import io.thatapp.api.ExecutionParameters;
 
 public class ReboundingReasonExceptionComponent extends Component{
 

@@ -13,18 +13,18 @@ ComponentVersion: 1.7.1
 
 ### 1.7.1 (July 01, 2026)
 
-* Made the description `iPaaS` instead of `elastic.io`
+* Made the description `iPaaS` instead of `thatapp.io`
 
 ### 1.7.0 (June 12, 2026)
 
 * Added support for HubSpot Service Keys (Beta) authentication
-* Removed the `elasticio-node` library in favor of a local messaging utility
+* Removed the `thatapp-node` library in favor of a local messaging utility
 * Updated core dependencies:
-  * Upgraded `@elastic.io/component-commons-library` from `3.2.2` to `4.0.0`
+  * Upgraded `@thatapp.io/component-commons-library` from `3.2.2` to `4.0.0`
   * Upgraded `axios` from `1.9.0` to `1.17.0`
-  * Upgraded `elasticio-sailor-nodejs` from `2.7.5` to `2.7.8`
+  * Upgraded `thatapp-sailor-nodejs` from `2.7.5` to `2.7.8`
   * Upgraded `form-data` from `4.0.0` to `4.0.5`
-  * Removed `elasticio-node` (`0.0.9`)
+  * Removed `thatapp-node` (`0.0.9`)
 
 ### 1.6.3 (June 06, 2025)
 

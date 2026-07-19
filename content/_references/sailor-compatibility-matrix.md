@@ -31,11 +31,11 @@ we might skip patch releases here.
 ## Node.js - package.json
 
 All the available `Node.js` Sailor versions can be retrieved directly from the
-[NPM](https://www.npmjs.com/package/elasticio-sailor-nodejs) or by executing the
+[NPM](https://www.npmjs.com/package/thatapp-sailor-nodejs) or by executing the
 following command on your terminal:
 
 ```sh
-npm view elasticio-sailor-nodejs versions
+npm view thatapp-sailor-nodejs versions
 ```
 
 If your component is written in Node.js then you must make the modification in
@@ -44,8 +44,8 @@ Here is where to pay particular attention:
 
 ```js
 "dependencies": {
-    "elasticio-sailor-nodejs": "2.7.1",
-    "elasticio-node": "0.0.9",
+    "thatapp-sailor-nodejs": "2.7.1",
+    "thatapp-node": "0.0.9",
 }
 ```
 
@@ -68,7 +68,7 @@ Here is where to pay particular attention:
 ## Java - build.gradle
 
 All the available Java Sailor versions can be retrieved from the
-[Maven Central Repository](https://search.maven.org/#search%7Cga%7C1%7Cio.elastic).
+[Maven Central Repository](https://search.maven.org/#search%7Cga%7C1%7Cio.thatapp).
 
 If your component is written in Java you must make the modification in your
 `build.gradle` configuration file found in the root directory of your component.
@@ -76,7 +76,7 @@ Here is where to pay particular attention:
 
 ```java
 dependencies {
-    compile "io.elastic:java-api:2.1.0"
+    compile "io.thatapp:java-api:2.1.0"
 }
 ```
 

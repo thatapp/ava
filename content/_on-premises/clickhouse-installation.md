@@ -119,14 +119,14 @@ cluster instances, you need to do it manually:
 
 1.  Prepare connection URI for each ClickHouse cluster instance and run:
 ```
-docker run -e LOG_LEVEL=info -e AMQP_URI= -e MONGO_URI= -e BRAN_CLICKHOUSE_URI="[connection_uri]" --rm --network=host elasticio/bran:[platform_version] npm run start:migrate.
+docker run -e LOG_LEVEL=info -e AMQP_URI= -e MONGO_URI= -e BRAN_CLICKHOUSE_URI="[connection_uri]" --rm --network=host thatapp/bran:[platform_version] npm run start:migrate.
 ```
 
 Note, `[connection_uri]` should include database name.
 
 2.  Do the same for the iron-bank:
 ```
-docker run -e CLICKHOUSE_URI="[connection_uri]" --rm --network=host elasticio/iron-bank:[platform_version] npm run start.
+docker run -e CLICKHOUSE_URI="[connection_uri]" --rm --network=host thatapp/iron-bank:[platform_version] npm run start.
 ```
 
 Note, `[connection_uri]` should include database name. There may be some errors, but
