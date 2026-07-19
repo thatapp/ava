@@ -59,7 +59,7 @@ We'll use the Basic Auth type. In this case your Username is your `E-mail`, and 
 
 >**Please Note:** For information on other methods of authorization please read the [Authorization methods](authorization-methods) page.
 
-Now we need to configure the input. In our case, we use the `GET` request, which returns information upon request using the URL. We could use the [platform API]({{site.data.tenant.apiBaseUri}}/docs/v2#/users/get_users_me) as URL example. As a result, we should get information about us as a user of the platform.
+Now we need to configure the input. In our case, we use the `GET` request, which returns information upon request using the URL. We could use the [platform API]({{site.data.tenant.apiDocsUri}}/v2#/users/get_users_me) as URL example. As a result, we should get information about us as a user of the platform.
 
 ![Configure Input](img/user-me-input.png)
 

@@ -130,18 +130,18 @@ To delete a component repository, follow the steps outlined below. Ensure you ha
 1. Locate the developer team associated with the component you wish to remove.
 > **Please Note:** Your user account must have access to this team.
 
-2. Identify the component repository, you can use search or [Fetch all components]({{site.data.tenant.apiBaseUri}}/docs/v2#/components/get_workspace__workspace_id__components) visible in your workspace using the API call. The response will include **component IDs**, which are also the **repository IDs**.
+2. Identify the component repository, you can use search or [Fetch all components]({{site.data.tenant.apiDocsUri}}/v2#/components/get_workspace__workspace_id__components) visible in your workspace using the API call. The response will include **component IDs**, which are also the **repository IDs**.
 ![Search repositories](/assets/img/developer-guide/team-repo/Repo_Search.png)
 ```
 https://{your-tenant-address}/c/{contract-id}/teams/{team-id}/repo/{repo-id}
 ```
-3. If the component is not in use, you can delete the repository. By opening the repository and clicking on **Delete** button or [Deleting the component]({{site.data.tenant.apiBaseUri}}/docs/v2#/components/delete_components__component_id_) via API.
+3. If the component is not in use, you can delete the repository. By opening the repository and clicking on **Delete** button or [Deleting the component]({{site.data.tenant.apiDocsUri}}/v2#/components/delete_components__component_id_) via API.
 ![Delete the repository](/assets/img/developer-guide/team-repo/Delete_Repo.png)
 > **Please Note:** If a component is used in any flow, the delete operation will fail. The error message will show the **flow(s)** where the component is used. To proceed, update affected flows to remove the component, or delete those flows if they’re no longer needed.
 
 ### Delete the component version
 
-If you want to delete some version of a component. Navigate to the component **Build history** and click the **Delete** button next to the version. To delete via API use the following calls: [List all versions]({{site.data.tenant.apiBaseUri}}/docs/v2#/components/get_components__component_id__versions), and [Delete version]({{site.data.tenant.apiBaseUri}}/docs/v2#/components/delete_components__component_id__versions__version_id_).
+If you want to delete some version of a component. Navigate to the component **Build history** and click the **Delete** button next to the version. To delete via API use the following calls: [List all versions]({{site.data.tenant.apiDocsUri}}/v2#/components/get_components__component_id__versions), and [Delete version]({{site.data.tenant.apiDocsUri}}/v2#/components/delete_components__component_id__versions__version_id_).
 ![Delete builds](/assets/img/developer-guide/team-repo/Delete_Version.png)
 
 ## Managing Environment variables

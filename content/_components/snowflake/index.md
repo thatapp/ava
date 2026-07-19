@@ -115,7 +115,7 @@ Now you can create new credentials for the component:
 
 ### Key-Pair Authentication
 
-To use key-pair authentication, you must pre-create an authentication client of type `noauth` via the [API]({{site.data.tenant.apiBaseUri}}/docs/v2#/auth%20clients/post_auth_clients). The auth-client must have the same visibility scope (e.g., contract, workspace, tenant, or global) as the component that will use it.
+To use key-pair authentication, you must pre-create an authentication client of type `noauth` via the [API]({{site.data.tenant.apiDocsUri}}/v2#/auth%20clients/post_auth_clients). The auth-client must have the same visibility scope (e.g., contract, workspace, tenant, or global) as the component that will use it.
 
 You need one of the following permissions to create or access auth clients:
 `global.auth_clients.get`, `tenants.auth_clients.get`, `contracts.auth_clients.get`, or `workspaces.auth_clients.get`.

@@ -15,7 +15,7 @@ category: platform-emails
 ## Email Configuration
 
 You can enable or disable all emails for each Tenant. This is done by
-[updating the Tenant]({{site.data.tenant.apiBaseUri}}/docs/v2#/tenants/patch_tenants__tenant_id_) via the following API request:
+[updating the Tenant]({{site.data.tenant.apiDocsUri}}/v2#/tenants/patch_tenants__tenant_id_) via the following API request:
 
 ```sh
 curl {{site.data.tenant.apiBaseUri}}/v2/tenants/{TENANT_ID} \
