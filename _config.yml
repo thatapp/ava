@@ -37,3 +37,8 @@ plugins:
 exclude:
 
   - .jekyll-cache
+  # repo housekeeping, not site content (debrand-inventory.md is an internal working note)
+  - Dockerfile
+  - README.md
+  - start.sh
+  - debrand-inventory.md
