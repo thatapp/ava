@@ -34,11 +34,6 @@ collections:
 plugins:
   - jekyll-redirect-from
 
-algolia:
-  application_id: 'PPVCPBO4V1'
-  index_name:     'prod_ava'
-  search_only_api_key: 'c90743a840d2d9fd31193ab6180f83cf'
-
 exclude:
 
   - .jekyll-cache
