@@ -112,7 +112,7 @@ See the [legacy behavior](legacy-behavior) for details.
 
 ### Required environment variables
 
-`EIO_REQUIRED_RAM_MB` must be set to `512`.  This is because the metadata file for the service is large enough that it requires additional RAM to be parsed.
+`AVA_REQUIRED_RAM_MB` must be set to `512`.  This is because the metadata file for the service is large enough that it requires additional RAM to be parsed.
 
 For the local testing (e.g. spec-integration) the following environment variables are required:
 * `RESOURCE`

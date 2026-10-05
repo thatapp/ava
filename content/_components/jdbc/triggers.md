@@ -15,7 +15,7 @@ Executes a custom SELECT statement for incremental polling.
 
 {% include img.html max-width="100%" url="img/select-trigger.png" title="Select trigger" %}
 
-Before execution, the `%%EIO_LAST_POLL%%` placeholder is replaced with either the ISO date of the last successful execution or the maximum value from the last polled dataset (e.g., `2018-08-01T00:00:00.000`).
+Before execution, the `%%AVA_LAST_POLL%%` placeholder is replaced with either the ISO date of the last successful execution or the maximum value from the last polled dataset (e.g., `2018-08-01T00:00:00.000`).
 
 **Initial Execution:**
 During the first execution (when no snapshot exists), the placeholder defaults to **midnight of the current day** (Today at 00:00:00.000).
@@ -27,7 +27,7 @@ During the first execution (when no snapshot exists), the placeholder defaults t
 
 Executes an operation that polls multiple rows from the database since the last record.
 
-The `%%EIO_LAST_POLL%%` placeholder functions similarly to the Select Trigger, tracking the last processed record to ensure only new data is retrieved.
+The `%%AVA_LAST_POLL%%` placeholder functions similarly to the Select Trigger, tracking the last processed record to ensure only new data is retrieved.
 
 **Initial Execution:**
 If no snapshot exists and the `Start Polling From` field is empty, the trigger defaults to the **Unix Epoch** (1970-01-01 00:00:00.000).

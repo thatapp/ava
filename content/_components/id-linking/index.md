@@ -60,7 +60,7 @@ Bucket contains bucket ID and an array of linked objects between the systems. Li
     {
       "systemAId": "00344000020qT3K",
       "systemBId": {
-        "company": "mvise-eio",
+        "company": "example-company",
         "id": "7c7fec00-d313-40c7-890b-3bc857bbb7dd"
       }
     },

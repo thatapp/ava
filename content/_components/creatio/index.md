@@ -80,7 +80,7 @@ When creating a new credential on the platform:
 | Variable | Description |
 |---|---|
 | `THATAPP_FLOW_TYPE` | Set to `debug` during sample retrieval in the flow designer. When `debug`, maximum page size is automatically capped at `10`. |
-| `EIO_REQUIRED_RAM_MB` | Recommended container memory allocation. Default: `256` MB. |
+| `AVA_REQUIRED_RAM_MB` | Recommended container memory allocation. Default: `256` MB. |
 
 ## Triggers
 

@@ -42,7 +42,7 @@ The Webhook component supports the following authorisation types:
   * **Header Name** - (string, required)
   * **Header Value** - (string, required)
 * **HMAC (sha256/sha512) verification with shared secret** - Use this method to verify requests using a shared secret. This method includes the following fields:
-  * **Header Name** - (string, optional, defaults to `x-eio-signature`)
+  * **Header Name** - (string, optional, defaults to `x-ava-signature`)
   * **HMAC (sha256/sha512) verification shared secret** - (string, required)
   
   ![HMAC-credentials-settings](img/HMAC-credentials-settings.png)

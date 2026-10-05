@@ -374,7 +374,7 @@ The result of the component will be an API response to the corresponding request
         "self": "/v2/users/607013a4a17cbd0011eaa456"
       },
       "attributes": {
-        "first_name": "EIO",
+        "first_name": "AVA",
         "last_name": "Support",
         "email": "helpme@{{site.data.tenant.name}}",
         "registered": "2021-04-09T08:43:16.434Z",

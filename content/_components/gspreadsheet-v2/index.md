@@ -55,7 +55,7 @@ In case of new domain you may get message like `This app isn't verified`. Please
 | `REQUEST_MAX_RETRY` | No | Specifies the maximum number of times the system retries an API request after an error. Default: `3`. | Any `integer` greater than `0` |
 | `REQUEST_RETRY_DELAY` | No | Specifies the delay between retry attempts, in milliseconds. Default: `1000`. | Any `integer` greater than `0` |
 | `REQUEST_TIMEOUT` | No | Specifies the HTTP request timeout, in milliseconds. Default: `120000`. | Any `integer` greater than `0` |
-| `EIO_REQUIRED_RAM_MB` | No | Specifies the amount of memory allocated to the system. The recommended value is `512 MB`. | Any `integer` greater than `0` |
+| `AVA_REQUIRED_RAM_MB` | No | Specifies the amount of memory allocated to the system. The recommended value is `512 MB`. | Any `integer` greater than `0` |
 
 ## Credentials
 

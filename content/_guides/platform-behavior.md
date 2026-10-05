@@ -149,12 +149,12 @@ We have set recommendations for each component for the minimum amount of RAM
 memory to use. Check if your component has such requirement and set it accordingly.
 
 To set the custom RAM memory limits on any component an environment variable
-`EIO_REQUIRED_RAM_MB` and the value in megabytes (MB) is set.
+`AVA_REQUIRED_RAM_MB` and the value in megabytes (MB) is set.
 
 > **Please Note**: Use of environment variable to increase the limits higher than
 > recommended should be considered as a last resort. Please follow instructions below strictly.
 
-*   If you are setting environment variable to test the scenario in one flow, consider using `EIO_REQUIRED_RAM_MB_FLOW_{Flow_ID}` variable. This way the component will use more RAM memory only in one flow and you will not suddenly increase the RAM memory consumption for everybody who uses the component.
+*   If you are setting environment variable to test the scenario in one flow, consider using `AVA_REQUIRED_RAM_MB_FLOW_{Flow_ID}` variable. This way the component will use more RAM memory only in one flow and you will not suddenly increase the RAM memory consumption for everybody who uses the component.
 *   Consider increasing the RAM memory incrementally. Set 2048 first and test your flow.
 *   If you are near to 4GB (4096) and still getting `OOMKilled` error, then you are doing something wrong. You need to revisit your component's code or integration logic.
 *   If you need RAM memory increase on one of the system provided components. Get in touch with support to discuss your use case.

@@ -1047,7 +1047,7 @@ In case of a success, output metadata simply repeats the incoming message. I.e. 
 }
 ```
 
-> **Please note:** When employing the `Send Mail` action along with attachments, the component seamlessly handles files up to 20MB as its default capability. Nevertheless, should your tasks involve larger files, it is recommended to either establish or augment the `EIO_REQUIRED_RAM_MB` environment variable. This variable functions as the memory usage threshold for the component, initially configured at 256MB.
+> **Please note:** When employing the `Send Mail` action along with attachments, the component seamlessly handles files up to 20MB as its default capability. Nevertheless, should your tasks involve larger files, it is recommended to either establish or augment the `AVA_REQUIRED_RAM_MB` environment variable. This variable functions as the memory usage threshold for the component, initially configured at 256MB.
 
 ## Known issues and limitations
 

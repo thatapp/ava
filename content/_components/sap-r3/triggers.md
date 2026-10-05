@@ -32,9 +32,9 @@ Additionally, to this, the server supports `FTP_R3_TO_CLIENT` function can recei
 
 ### Configuration steps on the SAP ECC side
 
-#### 1.Ensure, that registration of tp `EIO_SAP_CONNECTOR` from integration platform host allowed.
+#### 1.Ensure, that registration of tp `AVA_SAP_CONNECTOR` from integration platform host allowed.
 
- By default the gateway is not allowing the program ID `EIO_SAP_CONNECTOR` to be registered from the integration platform host. In this case, RFC connection fails error below when try to extract data from SAP using **SAP ECC (R/3, ERP) Connector**.
+ By default the gateway is not allowing the program ID `AVA_SAP_CONNECTOR` to be registered from the integration platform host. In this case, RFC connection fails error below when try to extract data from SAP using **SAP ECC (R/3, ERP) Connector**.
 
 ```
 LOCATION  SAP-Gateway on host <hostname> / sapgw
@@ -62,7 +62,7 @@ The location of the "reg_info" file is specified by parameter `gw/reg_info` and 
 
  Then, reload the new settings via transaction **SMGW**.
 
-#### 2.Create RFC Destination 'EIO_SERVER' using transaction **SM59**
+#### 2.Create RFC Destination 'AVA_SERVER' using transaction **SM59**
 
 ![Step_1](https://user-images.githubusercontent.com/13310949/70803152-0dc08780-1dbc-11ea-906b-c5adc6bb9fa5.png)
 

@@ -51,7 +51,7 @@ To establish a connection, configure the following fields:
 The component has no required variables, however in some cases it would be beneficiary
 to use them. Here are the available variables:
 1. **`MONGO_CONNECTION_TIMEOUT`** (optional): Maximum time in milliseconds to wait for database connection establishment. Default: `10000`.
-2. **`EIO_REQUIRED_RAM_MB`** (optional): Container memory limit allocated for component execution. Recommended to increase when executing large aggregations or batch lookups.
+2. **`AVA_REQUIRED_RAM_MB`** (optional): Container memory limit allocated for component execution. Recommended to increase when executing large aggregations or batch lookups.
 
 ### ObjectId Handling Across Actions
 MongoDB uses 12-byte / 24-character hexadecimal identifiers for document `_id` fields. The component provides unified, consistent support for ObjectIds across all actions:

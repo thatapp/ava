@@ -42,19 +42,19 @@ To use this component, you need to create an App:
 1. Go to the [Dev Dashboard](https://dev.shopify.com/dashboard/).  
 2. Open the `Apps` tab.  
 3. Click the `Create app` button.  
-4. Enter any App name in the `Start from Dev Dashboard` section, for example, `EIO`.  
+4. Enter any App name in the `Start from Dev Dashboard` section, for example, `AVA`.  
 5. Click the `Create` button. You will be redirected to the App version creation page.  
 6. We do not use the `App URL` field, so you can leave it as `https://example.com`.  
 7. In the `Access` window, add the required Scopes that you plan to use in the component.  
 8. Click the `Release` button.  
 9. On the left side, select the `Settings` tab.  
 10. Under the `Credentials` section, you will see `Client ID` and `Secret`. These will be required for the component credentials.  
-11. Now, on the left side, select your App name, such as `EIO`, which we used when creating this app.  
+11. Now, on the left side, select your App name, such as `AVA`, which we used when creating this app.  
 12. On this page, next to the `Installs` section, you will see the `Install app` button. Click it.  
 13. The previous action will open a new window where you need to select the shop that will be used with the component.  
 14. Here, you can verify once again that all required scopes are included, then click the `Install` button.  
 15. Now go to [Partner Dashboard Apps](https://partners.shopify.com/current/apps).  
-16. Select your new app here, for example, `EIO`.  
+16. Select your new app here, for example, `AVA`.  
 17. Open the `Distribution` tab on the left side.  
 18. Select the `Custom distribution` option.  
 19. Enter your store URL here and click the `Generate Link` button.  

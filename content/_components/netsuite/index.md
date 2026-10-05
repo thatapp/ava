@@ -52,7 +52,7 @@ to increase the RAM memory prior any activity (credentials verify, retrieve samp
 
 | Variable            | Value  |
 | ------------------- |:------:| 
-| EIO_REQUIRED_RAM_MB | 1024   | 
+| AVA_REQUIRED_RAM_MB | 1024   | 
 
 ### Enable web-service communication
 

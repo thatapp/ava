@@ -258,7 +258,7 @@ Reads a file from an S3 bucket. The result is stored in the output body (for JSO
 
 Retrieves all filenames from an S3 bucket and emits them individually. This action gets all names of files which are stored in the S3 bucket with the provided name.
 
-**Notice**: If you provide bucket and folder (as an example `eio-dev/inbound`), not only all names of files will be returned but the name of the root folder (`inbound/`) as well.
+**Notice**: If you provide bucket and folder (as an example `ava-dev/inbound`), not only all names of files will be returned but the name of the root folder (`inbound/`) as well.
 
 #### Configuration Fields
 

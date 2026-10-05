@@ -44,10 +44,10 @@ via sequential fetching that is implemented within the node.js ``mssql`` driver.
 Component will remember last execution timestamp and let you build queries on it:
 
 ```sql
-select * from Leads where Created >= '%%EIO_LAST_POLL%%'
+select * from Leads where Created >= '%%AVA_LAST_POLL%%'
 ```
 
-where just before executing the statement the ``%%EIO_LAST_POLL%%`` will be replaced with ISO Date of the last execution, for example ``2017-08-25T07:43:48.127Z``. During the first execution, date will be equal to [the bigging of time](http://www.onthisday.com/date/1970/january/1) - ``1970-01-01T00:00:00.000Z``.
+where just before executing the statement the ``%%AVA_LAST_POLL%%`` will be replaced with ISO Date of the last execution, for example ``2017-08-25T07:43:48.127Z``. During the first execution, date will be equal to [the bigging of time](http://www.onthisday.com/date/1970/january/1) - ``1970-01-01T00:00:00.000Z``.
 
 ## Actions
 

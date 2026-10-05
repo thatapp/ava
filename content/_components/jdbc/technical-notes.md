@@ -18,7 +18,7 @@ redirect_from:
 
 * Updated Sailor to 5.0.1 to address the issue when the component failed to execute when there was an array in any of the preceding steps passthrough data.
 * Fix issue in the `Select` trigger.
-* Improvements for `Select` trigger: support case-insensitive `%%EIO_LAST_POLL%%` placeholder, handle quoted placeholders, and support date-only/high-precision polling values.
+* Improvements for `Select` trigger: support case-insensitive `%%AVA_LAST_POLL%%` placeholder, handle quoted placeholders, and support date-only/high-precision polling values.
 * Fix issue in the `Get rows polling` trigger.
 * Improved Date/Timestamp parsing in `Get rows polling` trigger to support fractional seconds (up to 9 digits) and date-only formats (e.g., YYYY-MM-DD).
 * Enhanced snapshot accuracy and safety by using direct `ResultSet.getTimestamp()` access, preventing string-parsing errors during polling.

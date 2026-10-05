@@ -114,7 +114,7 @@ Executes custom request.
 [More info on limitations](https://developer.intuit.com/app/developer/qbpayments/docs/learn/rest-api-features#limits-and-throttles)
 
 2. Metadata
-Most field of Quick Books entities are optionally required - they are NOT marked in EIO web so be careful and
+Most field of Quick Books entities are optionally required - they are NOT marked in the platform UI so be careful and
 check the QB [docs](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account)
 before building a request.
 

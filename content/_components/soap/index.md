@@ -53,7 +53,7 @@ Component supports the following WSDL styles:
 
 ### Environment variables
 
-* `EIO_REQUIRED_RAM_MB` - The recommended value for allocated memory is `2048MB`.
+* `AVA_REQUIRED_RAM_MB` - The recommended value for allocated memory is `2048MB`.
 
 ## How it Works
 

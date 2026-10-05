@@ -7,7 +7,7 @@ section: Recipes Feature
 category: Recipes Feature
 ---
 
-There is a way to provide a direct link to a Recipe page for an end user. It’s intended for cases when the end user doesn’t want to manage the {{site.data.tenant.name}} platform. Eio customer can prepare a platform and compile a link for an end user so he will authenticate and be able to activate a recipe.
+There is a way to provide a direct link to a Recipe page for an end user. It’s intended for cases when the end user doesn’t want to manage the {{site.data.tenant.name}} platform. A {{site.data.tenant.name}} customer can prepare a platform and compile a link for an end user so he will authenticate and be able to activate a recipe.
 
 ## Setup
 
@@ -54,7 +54,7 @@ When a user successfully activates a recipe, the platform sends a message with a
 
 ```json
 {
-    "action": "eio:embedded-recipe:activate-success",
+    "action": "ava:embedded-recipe:activate-success",
     "data": {
         "recipeDeploymentId": "RECIPE_DEPLOYMENT_ID"
     }

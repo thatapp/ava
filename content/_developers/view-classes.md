@@ -83,8 +83,8 @@ Here is an example implementation of `TextAreaView` view class:
           "viewClass": "TextAreaView",
           "label": "SQL Query",
           "required": true,
-          "placeholder": "SELECT * FROM films WHERE created > '%%EIO_LAST_POLL%%'",
-          "note": "Before execution, the %%EIO_LAST_POLL%% placeholder will be replaced with the ISO date of the last successful execution."
+          "placeholder": "SELECT * FROM films WHERE created > '%%AVA_LAST_POLL%%'",
+          "note": "Before execution, the %%AVA_LAST_POLL%% placeholder will be replaced with the ISO date of the last successful execution."
         },
         "pollingValue": {
           "viewClass": "TextFieldView",

@@ -155,7 +155,7 @@ Search for mail by a provided ID.
 
 #### Known limitations
 
-The component operates smoothly with attachments up to 15MB by default. However, if you intend to work with larger files, it is advisable to create or increase the environment variable `EIO_REQUIRED_RAM_MB`, which serves as the memory usage limit for the component, initially set at 256MB.
+The component operates smoothly with attachments up to 15MB by default. However, if you intend to work with larger files, it is advisable to create or increase the environment variable `AVA_REQUIRED_RAM_MB`, which serves as the memory usage limit for the component, initially set at 256MB.
 
 ### Search emails
 

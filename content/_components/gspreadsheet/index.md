@@ -57,7 +57,7 @@ To get these please use the [Google Developers Console](https://console.develope
 
  Recommended environment variable:
 
- - `EIO_REQUIRED_RAM_MB` - recommended value of allocated memory is `512` MB.
+ - `AVA_REQUIRED_RAM_MB` - recommended value of allocated memory is `512` MB.
 
 ### Technical Notes
 

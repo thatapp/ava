@@ -72,7 +72,7 @@ is equivalent to
 * `MAX_FILE_SIZE`: *optional* - Controls the maximum size of an attachment to be read or written in MB.
   Defaults to 10 MB where 1 MB = 1024 * 1024 bytes.
 
-* `EIO_REQUIRED_RAM_MB`: *optional* - You can increase memory usage limit for component if you going to work with big files
+* `AVA_REQUIRED_RAM_MB`: *optional* - You can increase memory usage limit for component if you going to work with big files
   Defaults to 256 MB where 1 MB = 1024 * 1024 bytes.
 
 ## Trigger

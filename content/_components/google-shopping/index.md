@@ -20,7 +20,7 @@ productId - unique product identifier. Consist of:
 
 Component requires at least 1GB of RAM to work correct:
 
-Set env variable `EIO_REQUIRED_RAM_MB` to `1024`.
+Set env variable `AVA_REQUIRED_RAM_MB` to `1024`.
 
 ## Credentials
 

@@ -7,7 +7,7 @@ section: Recipes Feature
 category: Recipes Feature
 ---
 
-There is a way to provide a direct link to a Recipe Deployment for an end user. It’s intended for cases when the end user doesn’t want to manage the {{site.data.tenant.name}} platform. Eio customer can prepare a platform and compile a link for an end user so he will authenticate and be able to update Credentials used in the Deployment and restart Flows using them.
+There is a way to provide a direct link to a Recipe Deployment for an end user. It’s intended for cases when the end user doesn’t want to manage the {{site.data.tenant.name}} platform. A {{site.data.tenant.name}} customer can prepare a platform and compile a link for an end user so he will authenticate and be able to update Credentials used in the Deployment and restart Flows using them.
 
 ## Setup
 
@@ -48,7 +48,7 @@ Options:
 
 ``` json
 {
-    "action": "eio:embedded-recipe:deployment-update-success",
+    "action": "ava:embedded-recipe:deployment-update-success",
     "data": {
         "recipeDeploymentId": "RECIPE_DEPLOYMENT_ID"
     }

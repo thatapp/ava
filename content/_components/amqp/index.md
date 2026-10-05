@@ -33,7 +33,7 @@ It enables publishing messages to exchanges and consuming messages from queues.
 
 The consumer (in the "Consume" trigger) automatically creates a non-exclusive, non-durable queue with the `autoDelete` property set to `true`. This queue does not have a dead-letter exchange configured.
 
-The queue name is dynamically generated using the pattern `eio_consumer_{USER_ID}_{FLOW_ID}`.
+The queue name is dynamically generated using the pattern `ava_consumer_{USER_ID}_{FLOW_ID}`.
 
 This queue is then bound to the specified exchange using one or more binding keys (provided as a comma-separated string).
 

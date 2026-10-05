@@ -36,7 +36,7 @@ A component that is designed for utility operations.
 
 | NAME                       | DESCRIPTION                                      | DEFAULT  | REQUIRED |
 |----------------------------|--------------------------------------------------|----------|----------|
-| EIO_REQUIRED_RAM_MB        | Number of MB allocated to container               | 1024     | false    |
+| AVA_REQUIRED_RAM_MB        | Number of MB allocated to container               | 1024     | false    |
 | REQUEST_TIMEOUT            | HTTP request timeout in milliseconds              | 10000    | false    |
 | REQUEST_RETRY_DELAY        | Delay between retry attempts in milliseconds      | 7000     | false    |
 | REQUEST_MAX_RETRY          | Number of HTTP request retry attempts             | 7        | false    |
@@ -277,7 +277,7 @@ There are no Config Fields in this action.
 
 ### Network Diagnostics
 
-Useful to diagnose connectivity issues between an eio pod and some endpoint
+Useful to diagnose connectivity issues between a platform pod and some endpoint
 
 {% include img.html max-width="100%" url="img/network-diagnostics.png" title="Network Diagnostics" %}
 

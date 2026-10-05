@@ -56,7 +56,7 @@ redirect_from:
 
 * Add JSONata expression when error thrown by assertion
 * Pass incoming message when filter condition is true
-* Update EIO Sailor version to 2.6.7
+* Update Sailor version to 2.6.7
 * Update eslint codestyle check properties
 
 ## 1.0.2 (March 23, 2019)

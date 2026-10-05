@@ -14,14 +14,14 @@ ComponentVersion: 1.0.6
 
 Component requires at least 1GB of RAM to work correct:
 
-Set env variable `EIO_REQUIRED_RAM_MB` to 1024
+Set env variable `AVA_REQUIRED_RAM_MB` to 1024
 
 ### How to insert env variable into {{site.data.tenant.name}} platform:
 
 1. Navigate to 'Developers' tab
 2. Choose your component Repository. Here you should already have your component pushed to the platform.
 3. Click the link `You can configure your environment variables here.`
-4. Under 'Create a new environment variable' input 'EIO_REQUIRED_RAM_MB' as Name and '1024' as Value.
+4. Under 'Create a new environment variable' input 'AVA_REQUIRED_RAM_MB' as Name and '1024' as Value.
 5. Click 'Add'.
 
 ## Credentials

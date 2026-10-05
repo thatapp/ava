@@ -47,7 +47,7 @@ Before building any flow, you must first create an OAuth 2 integration in [Snowf
 
 2. Use the following query to create a new integration:
     ```sql
-    CREATE SECURITY INTEGRATION EIO
+    CREATE SECURITY INTEGRATION AVA
       TYPE = OAUTH
       ENABLED = TRUE
       OAUTH_CLIENT = CUSTOM
@@ -58,7 +58,7 @@ Before building any flow, you must first create an OAuth 2 integration in [Snowf
     ;
     ```
     The main fields here are:
-      * **EIO** – The name of your integration; you can replace it with your own.
+      * **AVA** – The name of your integration; you can replace it with your own.
       * **OAUTH_REDIRECT_URI** – The [OAuth 2 redirect URL](/guides/oauth-callback-redirect-url.html) to our platform. Replace `{your-tenant-address}` with your own.
       * **OAUTH_REFRESH_TOKEN_VALIDITY** – The duration for which the component can automatically refresh the token.
       
@@ -66,13 +66,13 @@ Before building any flow, you must first create an OAuth 2 integration in [Snowf
 
     You can change some values later. For example, to change the **OAUTH_REDIRECT_URI**, you can use the following query:
     ```sql
-    ALTER SECURITY INTEGRATION EIO
+    ALTER SECURITY INTEGRATION AVA
     SET OAUTH_REDIRECT_URI = 'https://{your-tenant2-address}/callback/oauth2';
     ```
 
 3. After creating the integration, you can use the following query:
     ```sql
-    SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('EIO');
+    SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('AVA');
     ```
     In response, you will receive the following fields that will be needed for the component:
       * **OAUTH_CLIENT_SECRET**
@@ -80,7 +80,7 @@ Before building any flow, you must first create an OAuth 2 integration in [Snowf
 
 4. You will also need this query:
     ```sql
-    DESC INTEGRATION EIO;
+    DESC INTEGRATION AVA;
     ```
     From this, we will need:
       * **OAUTH_AUTHORIZATION_ENDPOINT**
