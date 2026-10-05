@@ -45,7 +45,7 @@ limitworkspace:
 containerlogsttl:
   field: 'Container logs TTL'
   description: >
-    <p>The number of <b>days</b> for which <a href="/releases/23/24#implement-new-containers-page">container</a> information is stored on the platform.</p>
+    <p>The number of <b>days</b> for which container information is stored on the platform.</p>
   value: '<b>14d</b>'
 
 executionsttl:
