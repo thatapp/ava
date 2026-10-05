@@ -64,7 +64,7 @@ To build an integration flow, you must first register an OAuth 2.0 application i
 
 ### Configuring Platform Credentials
 
-When creating a new credential on the elastic.io platform:
+When creating a new credential on the platform:
 
 | Field | Type | Required | Description |
 |---|---|---|---|
@@ -79,7 +79,7 @@ When creating a new credential on the elastic.io platform:
 
 | Variable | Description |
 |---|---|
-| `ELASTICIO_FLOW_TYPE` | Set to `debug` during sample retrieval in the flow designer. When `debug`, maximum page size is automatically capped at `10`. |
+| `THATAPP_FLOW_TYPE` | Set to `debug` during sample retrieval in the flow designer. When `debug`, maximum page size is automatically capped at `10`. |
 | `EIO_REQUIRED_RAM_MB` | Recommended container memory allocation. Default: `256` MB. |
 
 ## Triggers

@@ -14,9 +14,9 @@ ComponentVersion: 2.0.3
 ### 2.0.3 (September 09, 2026)
 
 * Updated Node.js engine to 24.x
-* Bumped `@elastic.io/maester-client` to 6.0.3
-* Bumped `@elastic.io/component-commons-library` to 4.0.3
-* Updated `elasticio-sailor-nodejs` to 2.7.9
+* Bumped `@thatapp.io/maester-client` to 6.0.3
+* Bumped `@thatapp.io/component-commons-library` to 4.0.3
+* Updated `thatapp-sailor-nodejs` to 2.7.9
 
 ### 2.0.2 (September 12, 2024)
 

@@ -16,8 +16,8 @@ redirect_from:
 ### 1.4.0 (September 17, 2026)
 
 * Add support for SMTP transport via `SMTP_URI` environment variable
-* Update `elasticio-sailor-nodejs` version to 2.7.9
-* Update `@elastic.io/component-commons-library` to 4.0.3
+* Update `thatapp-sailor-nodejs` version to 2.7.9
+* Update `@thatapp.io/component-commons-library` to 4.0.3
 * Update `axios` version to 1.20.0
 
 ### 1.3.1 (January 05, 2026)

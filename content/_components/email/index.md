@@ -33,8 +33,8 @@ The component can be configured using the following environmental variables (at 
 |---|---|---|---|
 | `MANDRILL_API_KEY` | false | You can use API key provided by platform or [generate](https://mailchimp.com/developer/transactional/guides/quick-start/#generate-your-api-key) it by yourself (required when sending via Mandrill). | any `string` |
 | `SMTP_URI` | false | SMTP connection URI (e.g. `smtp://USER:PASS@HOST:PORT` or `smtps://USER:PASS@HOST:PORT`). Required when sending via custom SMTP server. If both `SMTP_URI` and `MANDRILL_API_KEY` are set, `SMTP_URI` is used. | any `string` |
-| `MANDRILL_FROM_EMAIL` | false | Sender email address, `no-reply@elastic.io` by default | any `string` |
-| `MANDRILL_FROM_NAME` | false | Sender name, `elastic.io` by default | any `string` |
+| `MANDRILL_FROM_EMAIL` | false | Sender email address, `no-reply@thatapp.io` by default | any `string` |
+| `MANDRILL_FROM_NAME` | false | Sender name, `ThatApp` by default | any `string` |
 | `MANDRILL_URL` | false | Base path and version of mandrill installation, `https://mandrillapp.com/api/1.0` by default (used only with Mandrill) | any `string` |
 | `MAX_BODY_LENGTH` | false | Maximum email message size (including attachments), `10485760` (10MB) by default | any `number` |
 

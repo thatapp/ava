@@ -576,7 +576,7 @@ Manually construct and execute HTTP requests against any Trumba endpoint.
     "Content-Type": "text/calendar; charset=utf-8",
     "Accept": "application/xml, text/xml, */*"
   },
-  "data": "BEGIN:VCALENDAR\r\nMETHOD:PUBLISH\r\nVERSION:2.0\r\nPRODID:-//elastic.io//Trumba Test//EN\r\nBEGIN:VEVENT\r\nUID:test-event-001\r\nDTSTAMP:20260921T120000Z\r\nDTSTART:20261101T090000Z\r\nDTEND:20261101T100000Z\r\nSUMMARY:Test Event\r\nDESCRIPTION:Created with Make Raw Request.\r\nEND:VEVENT\r\nEND:VCALENDAR"
+  "data": "BEGIN:VCALENDAR\r\nMETHOD:PUBLISH\r\nVERSION:2.0\r\nPRODID:-//thatapp.io//Trumba Test//EN\r\nBEGIN:VEVENT\r\nUID:test-event-001\r\nDTSTAMP:20260921T120000Z\r\nDTSTART:20261101T090000Z\r\nDTEND:20261101T100000Z\r\nSUMMARY:Test Event\r\nDESCRIPTION:Created with Make Raw Request.\r\nEND:VEVENT\r\nEND:VCALENDAR"
 }
 ```
 

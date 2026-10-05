@@ -19,8 +19,8 @@ redirect_from:
   * Updated core dependencies to latest versions:
     * `mongodb`: `3.5.9` -> `7.6.0` (Unified driver supporting MongoDB 4.0+)
     * `uuid`: `8.2.0` -> `11.1.1`
-    * `elasticio-sailor-nodejs`: `2.7.1` -> `2.7.9`
-  * Removed legacy `elasticio-node` dependency and transitioned to local utilities
+    * `thatapp-sailor-nodejs`: `2.7.1` -> `2.7.9`
+  * Removed legacy `thatapp-node` dependency and transitioned to local utilities
   * Added `ObjectId` support to **Delete By Unique Criteria** action
   * Fixed metadata generation failure when documents contain null or undefined fields
   * Sorted collection and database dropdown lists alphabetically across all actions

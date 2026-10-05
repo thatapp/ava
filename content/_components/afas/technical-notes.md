@@ -14,10 +14,10 @@ updatedDate: 2026-08-31
 ### 2.3.0 (August 31, 2026)
 * Added support for OAuth authentication
 * Updated `Sailor` from version 2.7.7 to 2.7.8
-* Updated `@elastic.io/component-commons-library` from version 4.0.0 to 4.0.3
+* Updated `@thatapp.io/component-commons-library` from version 4.0.0 to 4.0.3
 * Updated `moment-timezone` from version 0.5.45 to 0.6.3
 * Updated `axios` from version 1.12.2 to 1.19.0
-* Removed `elasticio-rest-node` dependency
+* Removed `thatapp-rest-node` dependency
 
 ### 2.2.1 (November 20, 2025)
 * Fixed `Upsert Object` action metadata loading for `PtRealization`, `KnSalesRelationOrg`, `KnQuotation` object types by adding identifier mapping

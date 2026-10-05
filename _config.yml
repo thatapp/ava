@@ -28,8 +28,6 @@ collections:
     output: true
   developers:
     output: true
-  on-premises:
-    output: true
      
 plugins:
   - jekyll-redirect-from

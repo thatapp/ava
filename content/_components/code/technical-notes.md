@@ -16,7 +16,7 @@ redirect_from:
 ### 1.2.17 (August 27, 2026)
 
 * Updated the following dependencies:
- * elasticio-sailor-nodejs `2.7.8` -> `2.7.9`
+ * thatapp-sailor-nodejs `2.7.8` -> `2.7.9`
  * nodemailer `8.0.7` -> `9.0.5`
  * strong-soap `5.0.9` -> `6.0.2`
 

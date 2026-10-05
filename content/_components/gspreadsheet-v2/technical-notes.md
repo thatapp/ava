@@ -14,9 +14,9 @@ ComponentVersion: 1.1.1
 ### 1.1.1 (August 06, 2025)
 
 * Updated Sailor to version 2.7.6.
-* Updated `@elastic.io/component-commons-library` to version 4.0.0.
+* Updated `@thatapp.io/component-commons-library` to version 4.0.0.
 * Updated `axios` to version 1.11.0.
-* Removed the `elasticio-node` library.
+* Removed the `thatapp-node` library.
 
 ### 1.1.0 (December 4, 2023)
 

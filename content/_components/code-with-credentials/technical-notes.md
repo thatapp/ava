@@ -14,9 +14,9 @@ ComponentVersion: 1.0.4
 ### 1.0.4 (August 27, 2026)
 
 * Updated the following dependencies:
- * @elastic.io/component-commons-library `4.0.0` -> `4.0.3`
+ * @thatapp.io/component-commons-library `4.0.0` -> `4.0.3`
  * axios `1.16.0` -> `1.20.0`
- * elasticio-sailor-nodejs `2.7.8` -> `2.7.9`
+ * thatapp-sailor-nodejs `2.7.8` -> `2.7.9`
  * nodemailer `8.0.7` -> `9.0.5`
  * strong-soap `5.0.9` -> `6.0.2`
 

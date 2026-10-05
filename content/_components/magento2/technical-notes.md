@@ -19,7 +19,7 @@ redirect_from:
 * Added support for configurable Error Handling Policy (`errorTolerance`) and Error Codes (`errorCodes`) in connector actions
 * Allowed configured non-2xx HTTP status responses to pass through to integration flows without triggering platform execution errors
 * Updated dependencies to latest compatible versions
-* Removed the `elasticio-rest-node` dependency
+* Removed the `thatapp-rest-node` dependency
 
 ### 1.7.2 (January 05, 2026)
 
