@@ -40,3 +40,5 @@ exclude:
   - README.md
   - start.sh
   - debrand-inventory.md
+  # internal archive: pre-2024 release notes, kept for reference, never published
+  - _archive
