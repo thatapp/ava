@@ -42,7 +42,7 @@ If you are interested in a more detailed example of using a configuration compon
 
 No environment variables are necessary to configure the component.
 
-> Please Note: From the platform version [20.51](/releases/2020-12-17) we deprecated the
+> Please Note: From the platform version 20.51 we deprecated the
 > component `LOG_LEVEL` environment variable. Now you can control logging level per each step of the flow.
 
 ## Credentials
