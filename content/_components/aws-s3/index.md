@@ -10,6 +10,8 @@ updatedDate: 2026-01-21
 ComponentVersion: 1.6.0
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Table of Contents
 
 * [General information](#general-information)
@@ -536,4 +538,4 @@ Be careful: this action can process only one attachment - if it would be more or
 ## Known Limitations
 
 1. The maximum possible size for an attachment is 100 MB.
-2. Attachments mechanism does not work with [Local Agent Installation](/guides/vpn-agent)
+2. The platform VPN Agent / Local Agent service is **not offered**; the former Agent attachment limitation is not a current setup option.

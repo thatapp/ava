@@ -10,6 +10,8 @@ updatedDate: 2022-10-07
 ComponentVersion: 1.1.0
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## General information
 
 ### Description
@@ -289,4 +291,4 @@ Create new folder in provided `path`. Path should contains folder name:
 ## Known Limitations
 
 1. Maximal possible size for an attachment is 10 MB.
-2. Attachments mechanism does not work with [Local Agent Installation](/guides/vpn-agent).
+2. The platform VPN Agent / Local Agent service is **not offered**; the former Agent attachment limitation is not a current setup option.

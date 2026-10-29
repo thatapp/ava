@@ -1,0 +1,36 @@
+{
+  "result": "PASS",
+  "area": "components",
+  "coverage_records": 142,
+  "supported_better_ordinals": [
+    26,
+    27,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "frontmatter_checked": 140,
+  "files_checked": 141,
+  "checks": [
+    "Coverage record and physical CSV-line references resolve exactly",
+    "All supported Better sentences for this area occur in their pages",
+    "Front matter parses; layout and redirects preserved",
+    "No newly unclosed Markdown fences or control characters",
+    "Changed JSON parses",
+    "Whitespace diff check",
+    "Historical component release bodies retained verbatim",
+    "Withheld Better row28 and its reason retained as UNVERIFIED"
+  ],
+  "limits": [
+    "Jekyll build UNVERIFIED: Ruby/Bundler and Docker are unavailable; WSL has no installed distribution",
+    "No deployment or live runtime/install/vendor checks; #64 must rerun relevant ledger lines"
+  ]
+}

@@ -10,6 +10,8 @@ updatedDate: 2025-07-08
 ComponentVersion: 2.0.0
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Table of Contents
 * [Description](#description)
 * [Environment variables](#environment-variables)
@@ -70,7 +72,7 @@ SFTP component includes the following actions:
 
 ## Known limitations
 
-* The attachments mechanism does not work with [Local Agent Installation](/guides/vpn-agent).
+* The platform VPN Agent / Local Agent service is **not offered**; the former Agent attachment limitation is not a current setup option.
 
 ## Related links
 

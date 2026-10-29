@@ -10,6 +10,8 @@ updatedDate: 2020-01-17
 ComponentVersion: 1.2.0
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## General Information
 
 ### How works
@@ -79,38 +81,8 @@ SAP ECC (R/3, ERP) component includes the following actions:
 After receiving the request the server responses with an input BAPI structure.
 6. `RFC Server` trigger works for realtime flows only.
 
-## Deployment limitations
+## Deployment status
 
-### Technical details
+The former git-push, platform Docker registry and VPN/subnet deployment recipe is **not offered**. Do not modify legacy registry database records or publish an image using that recipe.
 
-A component can be deployed to the platform starting from the version
-`3.19.0-rc.1`. Sap Jco client library is not supported in the default version of the task docker image.
-
-Steps to deploy the component:
-
-1.  Push the HEAD master version of the component to the component repository.
-2.  Run gradle clean build.
-3.  Build a local docker image using a docker file from the component repository.
-
-```sh
-docker build . --no-cache -t 10.25.0.54:31001/docker_dir/5d5a7ffa8cd40800110e37e3:test19
-```
-
-where
-s
-*   `10.25.0.54` - IP address one of platform nodes
-*   `docker_dir` - the name of the docker directory
-*   `31001` - port of docker registry
-*   `test19` - tag of the docker image which you will use for new component version
-
-4.  Push docker image to the docker registry (you need VPN access to the platform subnet):
-
-```sh
-docker push 10.25.0.54:31001/docker_dir/5d5a7ffa8cd40800110e37e3:test19
-```
-
-5.  Find document in the collection `repobuilds` which connected with your last `git push` and update version of docker image to `test19`
-
-```
-"dockerImage" : "docker_dir/5d5a7ffa8cd40800110e37e3:test20",
-```
+The SAP JCo details above describe vendor dependencies. They do not establish a supported or installed build on this host. An operator must review the exact component and dependencies through component intake. Installation, native/Java prerequisites and current runtime behavior remain **UNVERIFIED**.

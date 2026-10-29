@@ -10,6 +10,8 @@ updatedDate: 2024-06-03
 ComponentVersion: 3.3.0
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## How works
 
 The component can read the CSV file from a remote URL or from the message
@@ -62,4 +64,4 @@ The component does not require credentials to function.
   1. You may get `Component run out of memory and terminated.` error during run-time, that means that component needs more memory, please add  `AVA_REQUIRED_RAM_MB` environment variable with an appropriate value (e.g. value `1024` means that 1024 MB will be allocated) for the component in this case.
   2. You may get `Error: write after end` error, as a current workaround try increase value of environment variable: `TIMEOUT_BETWEEN_EVENTS`.
   3. The maximum possible size for an attachment is only limited by the available RAM memory of the component. In case of running into the limit the platform will give an error message, and if problem persists after a number of restarts the platform will suspend the complete integration flow.
-  4. Attachments mechanism does not work with [Local Agent Installation](/guides/vpn-agent).
+  4. The platform VPN Agent / Local Agent service is **not offered**; the former Agent attachment limitation is not a current setup option.

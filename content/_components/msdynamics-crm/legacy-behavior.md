@@ -9,6 +9,8 @@ updatedDate: 2025-12-19
 ComponentVersion: 1.2.5
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Deprecated component
 
 >**Plese note:** the Microsoft Dynamics CRM component has been **deprecated** and is no longer supported. We highly recommend migrating to the newer [Microsoft Dynamics CRM v2](/components/msdynamics-crm-v2) component, which offers improved functionality and ongoing maintenance.
@@ -23,31 +25,9 @@ Component is structured in the following parts:
  * Triggers can be found in `lib/triggers`.
  * This component supports validation of credentials information, code for that you'll find in `/verifyCredentials.js`.
 
-## How to start working on it
+## Legacy development workflow
 
-You would need a node.js and npm. Node.js version > 0.11.
-
-Check it out from GitHub and install dependencies.
-
-```sh
-git clone git@github.com:thatapp/microsoft-dynamics-crm.git
-cd microsoft-dynamics-crm/
-npm install
-```
-
-After code modification don't forget to run the tests:
-
-```sh
-npm test
-```
-
-Or you can use Grunt for that, just install the grunt-cli and run it:
-
-```sh
-npm install -g grunt-cli
-grunt
-```
-
+The old clone/npm/Grunt installation recipe has been removed from current instructions. Grunt is third-party developer tooling, not an unavailable AVA CLI. This legacy workflow was not reproduced, so its commands are not labelled working or freshly failed. Use reviewed component intake for any replacement build; local development does not install it on the host.
 
 ## How to add new trigger / action
 
