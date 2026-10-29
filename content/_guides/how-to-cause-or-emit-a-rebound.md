@@ -7,6 +7,8 @@ category: integration-patterns
 order: 3
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Description
 
 The Rebound is **in-build feature** so all you have to do is use it in your component creation.
@@ -49,51 +51,6 @@ function addVariant(productId, payload) {
     }
 ```
 
-## Causing Rebound in Java code
+## Java rebound examples
 
-Here is how to implement the Rebound feature in the component code written in Java `String`:
-
-
-```java
-package io.thatapp.demo;
-
-import io.thatapp.api.Component;
-import io.thatapp.api.EventEmitter;
-import io.thatapp.api.ExecutionParameters;
-
-public class ReboundingComponent extends Component {
-
-    public ReboundingComponent(EventEmitter eventEmitter) {
-        super(eventEmitter);
-    }
-
-    @Override
-    public void execute(ExecutionParameters parameters) {
-        this.getEventEmitter().emitRebound("Rebound for a reason!");
-    }
-
-}
-```
-
-Here is how to do with Java `Exception`:
-
-```java
-package io.thatapp.demo;
-
-import io.thatapp.api.Component;
-import io.thatapp.api.EventEmitter;
-import io.thatapp.api.ExecutionParameters;
-
-public class ReboundingReasonExceptionComponent extends Component{
-
-    public ReboundingReasonExceptionComponent(EventEmitter eventEmitter) {
-        super(eventEmitter);
-    }
-
-    @Override
-    public void execute(ExecutionParameters parameters) {
-        this.getEventEmitter().emitRebound(new RuntimeException("Rebound"));
-    }
-
-}
-```
+Java component hosting is **not offered**. The former Java SDK examples have been removed.

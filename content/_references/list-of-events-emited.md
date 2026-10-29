@@ -8,7 +8,9 @@ order: 2
 category: events
 ---
 
-Here is a growing list of events which are exposed by the {{site.data.tenant.name}} sailor. Meaning **if the component is emitting any of these events they would be recognised and processed accordingly** by the platform:
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
+This is a legacy event vocabulary. Current behavior is defined by the host, not by a Sailor version; the rows below are not a conformance certification.
 
 ## List of events
 
@@ -17,6 +19,6 @@ Here is a growing list of events which are exposed by the {{site.data.tenant.nam
 | [data](/references/emitdata) | This event is used to emit or return the values from the executions.|
 | [error](/references/emiterror) | This event is used to emit the error messages which are occurring in the executions.|
 | snapshot | 	Using this event one can emit the Snapshot object.|
-| [end](/references/emitend) | 	This event emits the End execution, indicating that the data processing is complete.|
-| updateKeys | 	This event is used to emit or update the OAuth Keys.|
+| [end](/references/emitend) | 	Accepted for compatibility; does not control completion. Return or await process() instead.|
+| updateKeys | 	Legacy event; supported platform OAuth grants renew through the platform path.|
 | httpReply | This event emits/sends back the HTTP Reply.|

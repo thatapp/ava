@@ -1,6 +1,6 @@
 ---
-title: SSH session during the component pushing
-description: Here is how to keep your SSH sessions from disconnecting while pushing a component?
+title: "SSH session during the component pushing — not offered"
+description: "Former platform feature; not offered on the current host."
 layout: article
 section: Component Troubleshooting
 order: 1
@@ -8,37 +8,12 @@ redirect_from:
   - /guides/ssh-session-pushing-components.html
 ---
 
-> How to keep your SSH sessions from disconnecting while pushing a component?
+## Not offered
 
-During the component deployment, all the necessary package dependencies are
-downloaded from the external resources. This is to ensure that the version of
-the package you have in your `package.json` is exactly the one that you indicate.
+The following former platform feature is **not offered** on the current {{site.data.tenant.name}} host: Customer git-push deployment, its SSH-key service and the old platform repository receiver. Its setup and installation recipe has been removed so it is not mistaken for a supported deployment path.
 
-The process of downloading the dependencies depends on the connectivity with the
-external resources and when a particularly big resource is being downloaded can
-take more than a minute or so. Since the connection between you and our server is
-maintained via SSH then this kind of long period can cause for the server to break
-the connection and failure of your deployment process:
+Ordinary Git hosting remains a source-control choice; pushing a source repository does not install a component on this host.
 
-```
-fatal: The remote end hung up unexpectedly
-```
+See [Node.js component authoring](/developers/building-nodejs-component.html) and [component intake](/developers/deploying-component.html).
 
-What is happening here is the SSH connection is not receiving any updates and
-after some time the connection is dropped. To prevent this from happening the
-local SSH configuration can be used to send regular enquiries telling the server
-to keep the connection alive.
-
-The configuration file is located in the local SSH setup directory `.ssh/config`.
-If the file does not exist it needs to be created and the following lines to be added:
-
-```
-host *
-    ServerAliveInterval 30
-    TCPKeepAlive yes
-```
-
-These lines tell the SSH to automatically send a **no-op null packet** every 30
-seconds (`ServerAliveInterval`) so that the server won’t disconnect you.
-`TCPKeepAlive` is set to **yes** to indicate that the TCP connections should not
-be dropped.
+Runtime and deployment validation remain **UNVERIFIED** pending [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).

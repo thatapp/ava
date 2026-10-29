@@ -9,25 +9,13 @@ redirect_from:
   - /references/how-to-access-access_token-during-component-execution.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Description
 
-Before we can try to access any part of `credentials` structure we need to know how it is stored in database. In our database all the credentials are stored in an encrypted conditions. Whenever the process of authorization wants to access a parameter from it, the system is decrypting it in the process and returns the value for further use.
+Secret credential fields are sealed with AES-256-GCM, and writes requiring a sealing key are refused when that key is unavailable; non-secret configuration fields are not covered by this encryption claim.
 
-Here is how the credentials are stored in the database:
-
-```js
-{
-     "oauth":  {
-       "access_token":"2YotnFZFEjr1zCsicMWpAA",
-       "expires_in":3599,
-       "ext_expires_in" : "0",
-       "id_token" : "iuyaoixboiayudq807bd209db02ud92jd92",
-       "refresh_token":"tGzv3JOkF0XG5Qx2TlKWIA",
-       "scope" : "calendars.read calendars.readwrite contacts.read mail.read mail.send user.read",
-       "token_type":"bearer"
-     }
-}
-```
+This describes storage protection for secret fields, not the on-disk or API representation of every configuration field. Do not log access or refresh tokens.
 
 ## Example
 

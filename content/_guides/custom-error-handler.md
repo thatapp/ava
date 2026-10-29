@@ -7,6 +7,8 @@ order: 5
 category: troubleshooting
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Description
 
 Custom Error Handler feature gives you a control to process information about
@@ -15,7 +17,9 @@ use any component which has an action function to process the error information.
 For example you can send [Email](/components/email/), add a row in
 [spreadsheet](/components/gspreadsheet/) and much more.
 
-The screenshot below shows what kind of error information you can get:
+An error handler receives errorName, errorMessage, the failing step identifier and that step's input; a failed handler mapping is recorded instead of running the handler with unmapped data.
+
+The screenshot below is a historical illustration:
 
 ![Error emitter](/assets/img/integrator-guide/custom-error-handler/error-emitter.png)
 

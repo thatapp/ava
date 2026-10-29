@@ -9,6 +9,8 @@ redirect_from:
   - /guides/building-nodejs-component.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 The {{site.data.tenant.name}} platform supports `Node.js` programming language for building integration components.
 
 To help you create a component in `Node.js` we have created a simple [Petstore component in Node.js]({{site.data.tenant.petStoreSourceNodeJS}} "Petstore Component in Node.js") which connects to the [Petstore API]({{site.data.tenant.petStoreDocs}} "Petstore API") and demonstrates multiple features of the platform.
@@ -38,16 +40,17 @@ petstore-component-nodejs
 └── verifyCredentials.js                                    (7)
 ```
 
-The Node.js components for {{site.data.tenant.name}} platform get built by NPM `run-script` which checks first the `package.json` (6) configuration file and starts initialising the `node` and `npm` versions and builds them. Next, the dependencies get downloaded and build. All node.js components must use the following dependencies:
+## Host entry point and dependencies
+
+Declare only dependencies actually used and reviewed for the component build. The old mandatory renamed SDK packages are not part of this recipe. Export a `process` function and emit a body envelope directly; return or await asynchronous work.
 
 ```js
-"dependencies": {
-  "thatapp-sailor-nodejs": "^2.2.0",
-  "thatapp-node": "^0.0.8"
-}
+exports.process = async function process(msg) {
+  this.emit('data', { body: msg.body });
+};
 ```
 
-Sailor is the Node.js SDK of the {{site.data.tenant.name}} platform. It makes your component a citizen of the {{site.data.tenant.name}} platform by providing a simple programming model for components and ensuring a smooth communication with the platform.
+A source repository does not deploy itself. Use [reviewed component intake](/developers/deploying-component.html).
 
 The `component.json` file (1) is the component descriptor interpreted by the platform to gather all the required information for presenting to the user in the platform user interface (UI). For example, you can define the component’s title in the component descriptor but also the component’s authentication mechanism. The descriptor is the only place to list the functionality provided by the component, the so called `triggers` and `actions`.
 
@@ -159,7 +162,7 @@ Here is the skeleton structure for the verify Credentials for a reference. You a
 // This function gets called by the platform to verify credentials
 module.exports = function verifyCredentials(credentials, cb) {
     // In credentials you will find what users entered in account form
-    console.log('Credentials passed for verification %j', credentials)
+    // Never log credential values.
     if (true) {
         // Verified
         return cb(null, {verified: true});

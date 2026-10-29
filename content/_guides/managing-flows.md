@@ -7,6 +7,8 @@ order: 1
 category: integrator-management
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 This document provides information on Flow management, namely the following
 actions:
 
@@ -77,17 +79,9 @@ By following the link below, you will learn how to perform the functions describ
 
 ## Restoring Deleted Flow
 
-If you accidentally delete a Flow you need, you can restore it for some time after deletion.
+Administrators can restore a soft-deleted flow while its stored record remains available.
 
-> The amount of time during which Flow can be restored is set by the installation environment variable. By default, this parameter is equivalent to 48 hours.
-
-If you have Tenant-Admin rights, you can use these two endpoints to find and restore access to Flow:
-
-1\. [List deleted Flows]({{site.data.tenant.apiDocsUri}}/v2#/flows/get_flows_deleted)
-
-2\. [Restore deleted Flow by ID]({{site.data.tenant.apiDocsUri}}/v2#/flows/post_flows__flow_id__restore)
-
-If you do not have Tenant-Admin rights, please [contact support](/admin/reporting-issue.html#how-to-contact-us) and describe the flow you need to restore.
+No fixed or indefinite retention interval is promised. Ask an administrator to check whether the record is still available; the restoration UI and deployed retention settings have not been verified.
 
 ## Filtering, Sorting Flows
 

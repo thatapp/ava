@@ -1,6 +1,6 @@
 ---
-title: Sailor compatibility matrix
-description: This document provides information on Sailor compatibility matrix
+title: "Sailor compatibility matrix — not offered"
+description: "Former platform feature; not offered on the current host."
 layout: article
 section: Sailor
 since: 20180430
@@ -8,89 +8,12 @@ order: 1
 category: sailor
 ---
 
-## Platform Sailor
+## Not offered
 
-Sailor is a tool that provides developers with a set of pre-built functionalities in library form, allowing them to easily create integration components for the {{site.data.tenant.name}} platform. It enables developers to interact with the platform by:
+The following former platform feature is **not offered** on the current {{site.data.tenant.name}} host: The old Sailor package/version compatibility matrix as a current host support contract. Its setup and installation recipe has been removed so it is not mistaken for a supported deployment path.
 
-* emit messages - send them from the component further into the flow
-* write logs
-* manage the load - [flow control](/guides/flow-control)
-* [create some hooks](/references/sailor-hooks) - code that will be executed once, for example, at startup flow
+Sailor release numbers do not select this host's event, logging or completion behavior. The renamed npm/Maven dependency instructions have been removed; registry availability was not retested.
 
-Sailor also takes care of platform interactions under the hood, including message encryption, queuing, and other tasks, making it easier for developers to focus on building their integrations.
+See [Node.js component authoring](/developers/building-nodejs-component.html) and [component intake](/developers/deploying-component.html).
 
-The following tables shows the support of the platform features in Sailor versions:
-
- * [Node.js Sailor compatibility matrix](#nodejs-sailor-compatibility-matrix)
- * [Java Sailor compatibility matrix](#java-sailor-compatibility-matrix)
-
-{{site.data.tenant.name}} follows the [Semver semantics](https://en.wikipedia.org/wiki/Software_versioning)
-for the Sailor releases. To keep the compatibility matrix manageable,
-we might skip patch releases here.
-
-## Node.js - package.json
-
-All the available `Node.js` Sailor versions can be retrieved directly from the
-[NPM](https://www.npmjs.com/package/thatapp-sailor-nodejs) or by executing the
-following command on your terminal:
-
-```sh
-npm view thatapp-sailor-nodejs versions
-```
-
-If your component is written in Node.js then you must make the modification in
-your `package.json` configuration file found in the root directory of your component.
-Here is where to pay particular attention:
-
-```js
-"dependencies": {
-    "thatapp-sailor-nodejs": "2.7.1",
-    "thatapp-node": "0.0.9",
-}
-```
-
-### Node.js Sailor compatibility matrix
-
-| Features             | v2.0.x | v2.1.x | v2.2.x | v2.5.x | v2.6.x-v2.7.0 |
-| :---                 | :---   | :---   | :---   | : --- | : --- |
-| [Request-reply](/components/request-reply/index.html#request-reply-mechanism) | Yes    | Yes    | Yes    | Yes   | Yes   |
-| [Startup Hook](/references/sailor-hooks.html#startup-hook) | Yes    | Yes    | Yes    | Yes   | Yes   |
-| [Init Hook](/references/sailor-hooks.html#init-hook) | Yes    | Yes    | Yes    | Yes   | Yes   |
-| [Passthrough](/guides/passthrough-feature) | -      | Yes    | Yes    | Yes   | Yes   |
-| [Shutdown Hook](/references/sailor-hooks.html#shutdown-hook)| -      | -      | Yes    | Yes   | Yes   |
-| [Bunyan Logger](/references/sailor-logger) | -      | -      | -      | Yes   | Yes   |
-| [Message Size](/guides/platform-behavior.html#default-limits) | -      | -      | -      | -     | Yes   |
-| [Disable Passthrough](/guides/passthrough-feature.html#disable-passthrough) | -      | -      | -      | -     | Yes   |
-| [Dynamic flow control](/guides/flow-control) | -      | -      | -      | -     | Yes   |
-| [Custom error handler](/guides/custom-error-handler.html) | -      | -      | -      | -     | Yes   |
-| Lightweight messages | -      | -      | -      | -     | Yes   |
-
-## Java - build.gradle
-
-All the available Java Sailor versions can be retrieved from the
-[Maven Central Repository](https://search.maven.org/#search%7Cga%7C1%7Cio.thatapp).
-
-If your component is written in Java you must make the modification in your
-`build.gradle` configuration file found in the root directory of your component.
-Here is where to pay particular attention:
-
-```java
-dependencies {
-    compile "io.thatapp:java-api:2.1.0"
-}
-```
-
-### Java Sailor compatibility matrix
-
-| Features             | v2.0.x | v2.1.x | v3.0.x | v3.1.x | v3.2.x | v3.3.x-v4.0.0 |
-| :---                 | :---   | :---   | :---   | :---   | :---   | :---   |
-| [Request-reply](/components/request-reply/index.html#request-reply-mechanism) | Yes    | Yes    | Yes    | Yes    | Yes    | Yes    |
-| [Startup Hook](/references/sailor-hooks.html#startup-hook) | Yes    | Yes    | Yes    | Yes    | Yes    | Yes    |
-| [Init Hook](/references/sailor-hooks.html#init-hook) | Yes    | Yes    | Yes    | Yes    | Yes    | Yes    |
-| [Passthrough](/guides/passthrough-feature) | -      | Yes    | Yes    | Yes    | Yes    | Yes    |
-| [Shutdown Hook](/references/sailor-hooks.html#shutdown-hook) | -      | -      | Yes    | Yes    | Yes    | Yes    |
-| [Bunyan Logger](/references/sailor-logger) | -      | Yes    | Yes    | Yes    | Yes    | Yes    |
-| [Disable Passthrough](/guides/passthrough-feature.html#disable-passthrough) | -      | Yes    | Yes    | Yes    | Yes    | Yes    |
-| [Dynamic flow control](/guides/flow-control) | -      | -      | -      | Yes    | Yes    | Yes    |
-| [Custom error handler](/guides/custom-error-handler.html) | -      | -      | -      | -      | -      | Yes    |
-| Lightweight messages | -      | -      | -      | -      | Yes    | Yes    |
+Runtime and deployment validation remain **UNVERIFIED** pending [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).

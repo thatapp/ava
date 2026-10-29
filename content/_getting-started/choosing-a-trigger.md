@@ -7,6 +7,8 @@ description: A practical guide to the trigger types you'll find across component
 category: actions-and-triggers
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 Every flow starts with a trigger. Before you pick a component, it helps to know that almost every trigger on the platform is one of three kinds, regardless of which system it connects to. This article walks through each, and gives you a way to decide which one your flow needs.
 
 > This article assumes you've read [Understanding Actions and Triggers](actions-and-triggers-overview) first.
@@ -41,6 +43,10 @@ Use a webhook trigger when:
 * near-real-time reaction matters for the use case (order placed, ticket created, payment received)
 
 See the [Webhook Overview](webhooks-overview) and [Creating a webhook flow](webhooks-flow) for a full walkthrough of setting one up.
+
+For supported Podio item events, starting a flow registers and requests verification of hooks; when hooks cannot be used, supported create/update events can use five-minute polling, and deletion is refused if hooks cannot be confirmed removed.
+
+This applies to supported Podio item events; generic webhook setup does not establish HMAC configuration or polling fallback for every event.
 
 ### Event subscription triggers
 

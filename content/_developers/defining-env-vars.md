@@ -9,6 +9,8 @@ redirect_from:
   - /references/how-to-define-envirament-variables-for-components.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Description
 
 Environment variables are an essential part of the {{site.data.tenant.name}} platform environment. Apart from the ever growing [list of system-wide variables](env-vars-execution), it is possible and rather encouraged, to define custom environment variables.
@@ -84,7 +86,7 @@ Depending on the used programming language and libraries some of the implementat
 }
 ```
 
-In some cases, this type of definition might not be sufficient. For example `curl` and `wget` respect the `HTTP_PROXY` and `HTTPS_PROXY` environment variables. Most Node.js libraries do it the same way while Java rather expects `http.proxyHost` and `http.proxyPort` system properties defined in the **gradle.properties** file as it already explained in the Java components behind a proxy guide.
+Proxy support depends on the selected client library and deployment configuration. The old Gradle/Java proxy recipe does not apply: Java component hosting is **not offered**. Do not assume a library honors proxy environment variables without checking that build.
 
 Some Node.js libraries have their own different way to use proxy setups. For example, when [Microsoft SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript) is used then the necessary setup needs to follow a specific approach used in superagent to send HTTP requests. The problem is that **superagent** does not respect `HTTP_PROXY` and `HTTPS_PROXY` variables as most Node.js libraries do, but wants these configurations to be passed [directly to the constructor](https://github.com/visionmedia/superagent).
 

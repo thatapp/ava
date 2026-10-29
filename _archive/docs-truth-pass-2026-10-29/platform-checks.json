@@ -1,0 +1,42 @@
+{
+  "result": "PASS",
+  "area": "platform",
+  "coverage_records": 51,
+  "supported_better_ordinals": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "frontmatter_checked": 48,
+  "files_checked": 53,
+  "checks": [
+    "Coverage record and physical CSV-line references resolve exactly",
+    "All supported Better sentences for this area occur in their pages",
+    "Front matter parses; layout and redirects preserved",
+    "No newly unclosed Markdown fences or control characters",
+    "Changed JSON parses",
+    "Whitespace diff check",
+    "118 legacy OpenAPI paths retained and all operations marked deprecated/UNVERIFIED",
+    "Four new standalone JavaScript samples pass node --check"
+  ],
+  "limits": [
+    "Jekyll build UNVERIFIED: Ruby/Bundler and Docker are unavailable; WSL has no installed distribution",
+    "No deployment or live runtime/install/vendor checks; #64 must rerun relevant ledger lines"
+  ]
+}

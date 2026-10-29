@@ -9,6 +9,8 @@ redirect_from:
   - /getting-started/credential.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Description
 
 An [integration flow](/getting-started/integration-flow) runs on behalf of a person or an
@@ -60,9 +62,9 @@ flows using same component.
 
 Credentials are structured by components. The green number on a component icon tells you how many credentials exist for that component.
 
-A new credential can be added by pressing the `Add New Credential` button that you can see at the end of the video above. An existing credential can also be edited or deleted. This is accomplished by clicking the `Edit` or `Delete` button on an existing credential.
+The credential API refuses deletion when running flows use the credential, names the affected flows and steps, and also refuses deletion if the usage scan is incomplete.
 
->**Please note** that it is not possible to delete a credential used by an active integration flow as the flow would become broken. If you try to delete such a credential, a corresponding error message will be displayed. Please delete these flow first or reconfigure them to use another credentials.
+Stop or reconfigure affected flows before deleting their credential. This is an API behavior description; the historical editing controls shown above have not been revalidated.
 
 ## Related links
 
