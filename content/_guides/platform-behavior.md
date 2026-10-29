@@ -7,6 +7,10 @@ order: 1
 category: troubleshooting
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
+> **Legacy platform reference — not offered as the current host contract.** The Sailor/RabbitMQ/container lifecycle described below belongs to the former platform. Its version gates, restart policy, flow suspension and operational limits must not be applied to the current host. Java hosting is **not offered**. Current behavior remains **UNVERIFIED** pending [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Introduction
 
 Every running system has limitation and safeguards in place to prevent abuse and

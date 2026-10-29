@@ -8,15 +8,17 @@ order: 5
 category: events
 ---
 
-> emit `end` event is used to inform the flow that the component has finished the execution.
+## Completion
 
-## Basic implementation
-
-It is a source of many controversial error reports where without emit `end` event the function of the component is waiting till it is killed by the system. To avoid this kind of errors it is recommended to **announce the end of a program** using the emit `end` event so the next stage can begin. Here is the basic implementation of this event:
+Return or await a promise from process() for asynchronous work; emit('end') is accepted but does not control completion on this host.
 
 ```js
-function emitEnd() {
-   this.logger.info('Finished execution');
-   self.emit('end');
- }
+exports.process = async function process(msg) {
+  await Promise.resolve();
+  this.emit('data', { body: msg.body });
+};
 ```
+
+An unreturned callback can finish after the host considers the call complete. This example does not certify all emit-contract behavior.
+
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).

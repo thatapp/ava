@@ -9,26 +9,13 @@ redirect_from:
   - /getting-started/secrets.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Introduction
 
-Secrets is a feature which independently keeps access tokens up-to-date so any
-integration step would get a valid and working access credential to the third party
-resource. Secrets updates these tokens behind the scene using the token expiration
-information.
+The platform serializes OAuth grant renewal using a per-grant in-process lock and a stored compare-and-set lock across processes.
 
-The real power of Secrets becomes evident in case of OAuth2 credentials when token
-expiration becomes a real problem while more than one integration steps try to refresh the
-tokens of the same credential. This can create a race-condition and other
-contention-on-shared-data problems due to concurrent and asynchronous work of steps
-in different integration flow steps.
-
-Secrets takes over all the functionalities of the Credentials and provides a
-unified service to manage the credentials and tokens independently. This removes
-the need to refresh credentials by the components.
-
-> **Please Note:** Secrets runs as a micro-service in the platform cluster, constantly
-> checking the expiration information for all credentials and updating them at
-> last 1 minutes before the expiration.
+For supported platform OAuth grants, the platform owns renewal; components do not maintain a second refresh-token lifecycle. Locks are source-supported mechanisms, not proof that every deployed race condition has been tested.
 
 ## How it works
 
@@ -172,18 +159,6 @@ Below you can see where to find `CONTRACT_ID`(**1**) and `COMPONENT_ID`(**2**):
 
 ## Auth Secret Expiration Behavior
 
-The Application (platform) does not manage or control the secret’s expiration. If your `CLIENT_SECRET` has an expiration date configured in your Service (3rd party service), token refresh attempts will fail with an error once the secret expires.
+Updating an auth client's client secret clears its refusal state; a grant whose refresh token was refused still requires reconnection.
 
-On the first failed refresh attempt caused by an expired secret, we mark the `auth-client` with an internal flag indicating that it is no longer in a recoverable state. This behavior is intentional and part of our security design, helping protect against scenarios such as credential brute-force attacks.
-
-> **Please Note:** Once the `auth-client` is marked as **irrecoverable**, all subsequent token refresh attempts will continue to fail, even if the `CLIENT_SECRET` is later updated.
-
-### How to Prevent Authentication Errors
-
-To avoid entering an irrecoverable state, use one of the following approaches:
-#### 1. Recreate the Auth Client
-Create a new `auth-client` and switch to the new credentials.  
-This guarantees a clean state and avoids any issues related to expired secrets.
-#### 2. Rotate the Secret Before Expiration
-Update (patch) the `CLIENT_SECRET` **before it expires**.  
-By doing this, you prevent failed refresh attempts, ensuring the client is never marked as irrecoverable and token refresh continues to function normally.
+Rotate an expiring client secret through the supported credential workflow. If a refresh token has been refused, reconnect the grant; changing the client secret alone does not replace that token.

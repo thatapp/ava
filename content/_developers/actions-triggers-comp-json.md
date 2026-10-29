@@ -9,6 +9,8 @@ redirect_from:
   - /references/component-json-technical-reference-actions-triggers.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Actions & Triggers Object
 
 The `actions` & `triggers` objects in the [`component.json`](component-json-technical-reference.html) describe the actions & triggers that exist within the component.  
@@ -79,15 +81,9 @@ We strongly recommend reviewing your integrations and switching to the latest co
 
 Identifies the code entry point for the action/trigger.
 
-In the case of JavaScript components, the code entry point is identified as a path to a `.js` file which contains the code for the action/trigger. This path should be relative to the root of the component.
+A JavaScript entry point may resolve as the declared path, that path plus .js or .json, or its index.js; a missing main file is reported.
 
-In the case of Java components, the code entry point is identified as a fully qualified Java class name which implements the logic for the action/trigger.
-
-**Type:** string
-
-**Examples:**
-* **JavaScript:** `./lib/actions/upsertFile.js`
-* **Java:** `io.thatapp.soap.actions.CallAction`
+Paths are relative to the component root, for example `./lib/actions/upsertFile.js`. Java class-name entry points are **not offered**.
 
 ## Type
 
@@ -133,7 +129,7 @@ Some examples when dynamic metadata is used include:
 
 When dynamic metadata is used, once all required configuration fields for an action/trigger have been submitted, then the platform will call component code to learn the metadata.
 * **JavaScript:** When using dynamic metadata with JavaScript components, the `dynamicMetadata` field should be set to boolean `true`. The file containing the action/trigger with dynamic metadata needs to export a function `getMetaModel()` which accepts the credential & config field information and then returns the metadata as an object with two keys `in` and `out` which describe the expected structure of incoming and outgoing messages.
-* **Java:** When using dynamic metadata with Java components, the `dynamicMetadata` field should be set to a string that is the fully qualified name of a Java class which inherits the `io.thatapp.api.DynamicMetadataProvider` class.
+* **Java:** Java component hosting and Java dynamic-metadata providers are **not offered**.
 
 Whenever a config field is edited, the metadata will be refreshed.
 

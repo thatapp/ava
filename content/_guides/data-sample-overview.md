@@ -9,6 +9,8 @@ redirect_from:
   - /getting-started/data-sample-overview.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 This document provides basic information on [data samples](#data-sample) and how they are useful when [building integration flows](#samples-in-integration-flows).
 
 ## Data Sample
@@ -41,7 +43,9 @@ standard.
 
 ![Data Sample](/assets/img/integrator-guide/data-sample/data-sample.png)
 
->**Please note** that samples exist for flow building and testing purposes. Retrieving a sample for an action creates new objects in the target system. If you want to avoid this, you can use **Generate Stub Sample** function. It retrieves the component's output template and fills it with fake data that you can discard afterwards. You can also just **Skip Sample** if you don't need it. However, we recommend doing this only when you are sure about the data your component will receive.
+Read-step samples run in clean-room mode; a live write sample requires explicit confirmation and a named target, and cannot use upstream stub samples as its input.
+
+Use a stub when you do not intend to contact the target. A live write sample can create or change target data; this documentation does not certify the current UI confirmation.
 
 ## Handling Large Data Samples
 

@@ -7,6 +7,8 @@ order: 1
 category: integration-patterns
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 {{page.description}}
 
 ## Creating and Using a Snapshot
@@ -48,15 +50,12 @@ emitSnapshot(newSnapshot);
 ```javascript
 'use strict';
 
-const thatapp = require('thatapp-node');
-const messages = thatapp.messages;
+
 
 exports.process = processTrigger;
 
 function processTrigger(msg, cfg, snapshot) {
-    console.log('Message %j', msg);
-    console.log('Config %j', cfg);
-    console.log('Snapshot %j', snapshot);
+    snapshot = snapshot || {};
 
     snapshot.iteration = snapshot.iteration || 0;
 
@@ -65,8 +64,7 @@ function processTrigger(msg, cfg, snapshot) {
     snapshot.iteration += 1;
 
     this.emit('snapshot', snapshot);
-    this.emit('data', messages.newMessageWithBody({iteration: snapshot.iteration}));
-    this.emit('end');
+    this.emit('data', {body: {iteration: snapshot.iteration}});
 }
 ```
 

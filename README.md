@@ -42,42 +42,10 @@ The index is regenerated automatically whenever the documentation site is built:
 
 ```bash
 bundle exec jekyll build
+```
 
 ## Testing locally
 
-If you don't have the `jekyll/jekyll` Docker image on your machine yet,
-install it once.
+The old Docker/docker-machine startup recipe is no longer presented as a supported local build. Its installation and startup commands have not been reproduced in a clean environment.
 
-```sh
-docker pull jekyll/jekyll
-```
-
-Once you have `jekyll/jekyll` image locally, execute the following
-command from the root folder of this repo:
-
-```sh
-./start.sh
-```
-
-If you are on a Windows machine just copy the command from the
-[start.sh](./start.sh) file and adjust it with Windows specific commands.
-
-If your see the following output in the terminal, the docs are up and running:
-
-```sh
-No active host found
-Error getting IP address: Host is not running
-Configuration file: /srv/jekyll/_config.yml
-Configuration file: /srv/jekyll/_config.yml
-            Source: /srv/jekyll
-       Destination: /srv/jekyll/_site
- Incremental build: disabled. Enable with --incremental
-      Generating...
-                    done in 0.672 seconds.
- Auto-regeneration: enabled for '/srv/jekyll'
-Configuration file: /srv/jekyll/_config.yml
-    Server address: http://0.0.0.0:4000/
-  Server running... press ctrl-c to stop.
- ```
-
-The docs are available now at [http://localhost:4000/](http://localhost:4000/).
+With the repository's Ruby and Bundler dependencies available, the build command above is the candidate check. A successful local build is separate from deployment of docs.thatapp.io. Record the toolchain, command and result in the PR; do not label an unrun command as passed.

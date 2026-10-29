@@ -9,6 +9,10 @@ redirect_from:
   - /references/component-json-technical-reference.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
+> **Java hosting is not offered.** Any Java class names, verifier fields or JDBC examples retained below describe the former platform format and do not establish a supported Java build. Use the JavaScript descriptor for an approved current-host component.
+
 {{site.data.tenant.name}} components are code libraries that are accompanied by a manifest file/**component descriptor** file which contains metadata about the component.  The metadata in this file includes:
 * the name and description of the component
 * information about the actions and triggers of the component including

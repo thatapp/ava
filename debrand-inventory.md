@@ -1,3 +1,8 @@
+
+## 2026-10-29 correction to this historical inventory
+
+Do not rename package coordinates to create installation instructions, and do not scrub historical release facts. Renamed SDK/build-helper recipes are removed from current guidance; upstream package/version mentions remain historical. CLI/registry/git-push/VPN/Java platform services are not offered. The inventory below records an earlier plan, not current implementation instructions.
+
 # Debranding Inventory — Phase 1 (read-only)
 
 **Repo:** `thatapp/ava` — the **AVA documentation site** (`docs.thatapp.io`), a Jekyll
