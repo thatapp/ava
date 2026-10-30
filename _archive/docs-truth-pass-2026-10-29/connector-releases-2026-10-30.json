@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T06:06:03.736565+00:00",
+  "checked_at_utc": "2026-10-30T06:19:36.284627+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -326,10 +326,30 @@
           "sha256": "af2c8747bb54c6427312c25c0509e87b9d5fb8cd8b23e550b1f8aab1e7f06ab0"
         }
       ]
+    },
+    {
+      "slug": "aws-lambda",
+      "repository": "https://github.com/thatapp/connector-amazon-aws-lambda",
+      "tag": "1.0.0",
+      "commit": "196a02f22b79e8e00e9b1e7497dc478664ecb848",
+      "status": "PUBLISHED scoped; WAITING HOST #72 credential redaction and #75 text/XML transport; long synchronous execution remains a qualified #80 limitation",
+      "intake_url": "https://github.com/thatapp/connector-amazon-aws-lambda/blob/196a02f22b79e8e00e9b1e7497dc478664ecb848/INTAKE.json",
+      "intake_sha256": "97e3b8c98820c4ac22f20a466f91c1ecb642e9af2e9c12aad585204413524d94",
+      "intake_review": "This chat ran all four gates on Node 20 and 24: 47 npm tests, 18 exact cases, 27 workers, six supplemental workers, zero network attempts.",
+      "pages": [
+        {
+          "path": "content/_components/aws-lambda/index.md",
+          "sha256": "0e26072c7788592b9c94bf911e78feac2676761e3eeef032db90a5b08bb5b99f"
+        },
+        {
+          "path": "content/_components/aws-lambda/technical-notes.md",
+          "sha256": "21f8b4fab04db969ca678d9f9a097aa0a57c3b7fab66b9b445073c5b6ff06848"
+        }
+      ]
     }
   ],
   "checks": [
-    "All15 release tags resolve to the stated commits: nine from this chat and six coordinated releases previously independently read with git ls-remote. HubSpot additionally verified at publication.",
+    "All 16 release tags resolve to the stated commits: ten from this chat and six coordinated releases previously independently read with git ls-remote. HubSpot and Lambda additionally verified at publication.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
