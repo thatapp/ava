@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30",
+  "checked_at_utc": "2026-10-30T06:06:03.736565+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -306,10 +306,30 @@
           "sha256": "f42d203a3c1b3594fc0e36e38ec750df5d64ae24fae6cabcf373b1f5b008cd95"
         }
       ]
+    },
+    {
+      "slug": "hubspot",
+      "repository": "https://github.com/thatapp/connector-hubspot",
+      "tag": "1.0.0",
+      "commit": "6479855a0bcb20ace70af2ed0b4d3763412531e1",
+      "status": "PUBLISHED scoped; WAITING HOST #57 credentials/OAuth and #75 binary transport/scoped storage; custom environment #58, deprecated webhook #74 and polling limitations #80 remain qualified",
+      "intake_url": "https://github.com/thatapp/connector-hubspot/blob/6479855a0bcb20ace70af2ed0b4d3763412531e1/INTAKE.json",
+      "intake_sha256": "09c3f6675eeced3e1b2f4ebf1d3912508dcc8de9bb213f5f96e4dc4bf9613eb0",
+      "intake_review": "This chat ran four gates on Node20 and24; 71 npm tests, 35 exact cases, 53 workers, five supplemental checks (four workers, one parent scope probe), zero network.",
+      "pages": [
+        {
+          "path": "content/_components/hubspot/index.md",
+          "sha256": "13d4fa46d51a0797941b8d71e63d09b2a8e126d803ddbe5a05bcdc4051d7f0c0"
+        },
+        {
+          "path": "content/_components/hubspot/technical-notes.md",
+          "sha256": "af2c8747bb54c6427312c25c0509e87b9d5fb8cd8b23e550b1f8aab1e7f06ab0"
+        }
+      ]
     }
   ],
   "checks": [
-    "All14 release tags resolve to the stated commits: eight from local release checkouts and six independently reread with git ls-remote.",
+    "All15 release tags resolve to the stated commits: nine from this chat and six coordinated releases previously independently read with git ls-remote. HubSpot additionally verified at publication.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
