@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T06:58:34.602243+00:00",
+  "checked_at_utc": "2026-10-30T07:48:17.889171+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -426,6 +426,48 @@
           "sha256": "d07924917a6a9e8659ca3a9a9f37abdbac6f7bd258a993ee1f6f49c3818c8ce4"
         }
       ]
+    },
+    {
+      "slug": "gmail",
+      "repository": "https://github.com/thatapp/connector-gmail",
+      "tag": "1.0.0",
+      "commit": "3955a08310b705dfe97448f6e610b10bbf7d3055",
+      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth, #72/#75 transport/scoped storage, #58 custom environment and #80 URL/size/polling parity",
+      "intake_url": "https://github.com/thatapp/connector-gmail/blob/3955a08310b705dfe97448f6e610b10bbf7d3055/evidence/intake.json",
+      "intake_git_blob_sha": "75d0995eec325030451f0d7e0431ab0d66d961b8",
+      "intake_sha256": "ec6de269c9db329dab58eb6a6f8251f4494d7aa084585aeebaa3f72b25bfbfc9",
+      "intake_review": "This documentation chat independently read the published full REPORT and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/gmail/index.md",
+          "sha256": "7d22f46b069162b3d7b04af23e0062545b44801bf25b042277333d5ca250f757"
+        },
+        {
+          "path": "content/_components/gmail/technical-notes.md",
+          "sha256": "7eb4eb4a2cdc731f11b79cb15c0c15e18ca75f8bee2fca121222b41348b54c62"
+        }
+      ]
+    },
+    {
+      "slug": "google-bigquery",
+      "repository": "https://github.com/thatapp/connector-google-bigquery",
+      "tag": "1.0.0",
+      "commit": "19d62b19fc0fb53bf5b00bb7d7867a5791d4f0d6",
+      "status": "PUBLISHED scoped; WAITING HOST #72/MR159 credential redaction integration; #80 bounded execution, SDK, Arrow and continuous-query differences",
+      "intake_url": "https://github.com/thatapp/connector-google-bigquery/blob/19d62b19fc0fb53bf5b00bb7d7867a5791d4f0d6/INTAKE.json",
+      "intake_git_blob_sha": "df65b540b11f983041c3f979b2b52669557d852e",
+      "intake_sha256": "d85aadb8ac5dad8e44962a0ddeb3692a3a743f2b4965528d33e01dae19da1bee",
+      "intake_review": "This documentation chat independently read the published full REPORT and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/google-bigquery/index.md",
+          "sha256": "77ebac733809fd26914b505adbbd2ea6c4c622aaecb8c0f15820904917e1ae85"
+        },
+        {
+          "path": "content/_components/google-bigquery/technical-notes.md",
+          "sha256": "8756d66df77e16d939749af4d874aace7e891b57224f7878d8640c8b59878adb"
+        }
+      ]
     }
   ],
   "checks": [
@@ -550,6 +592,20 @@
       "commit": "5cabb841947edb99e14b2ee062cb22f071064036",
       "tag_object": "ae8cdadbdfaa1d5f25bb640ac46a5d73560fabc8",
       "main": "c69ad16819b358c2ad6f506ed273b8a28f1ad8e4",
+      "status": "PASS"
+    },
+    {
+      "slug": "gmail",
+      "commit": "3955a08310b705dfe97448f6e610b10bbf7d3055",
+      "tag_object": "b032b3c7d4beee7c4ad3dc8447b9b8692eab66d6",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "google-bigquery",
+      "commit": "19d62b19fc0fb53bf5b00bb7d7867a5791d4f0d6",
+      "tag_object": "e87c883bf194f9fa92895e2ed1543c3281a0be2e",
+      "main": "3ed1b1a641bc2bc3f5a3dced63848b6c78f9e498",
       "status": "PASS"
     }
   ]

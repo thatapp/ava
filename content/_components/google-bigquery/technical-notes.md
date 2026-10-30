@@ -16,6 +16,10 @@ redirect_from:
 
 > **Historical component releases.** The entries below record upstream/component release facts. They do not establish the build installed on the current host. Sailor versions and renamed package coordinates in these entries are historical references, not installation instructions or a current runtime support matrix.
 
+## AVA 1.0.0 source release — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST #72/MR159 credential redaction integration; #80 bounded execution, SDK, Arrow and continuous-query differences.** The immutable [1.0.0 source](https://github.com/thatapp/connector-google-bigquery/tree/19d62b19fc0fb53bf5b00bb7d7867a5791d4f0d6) is separate from the historical versions below. See the [current scope and limitations](index#ava-100-release-status--2026-10-30) and [full report](https://github.com/thatapp/connector-google-bigquery/blob/19d62b19fc0fb53bf5b00bb7d7867a5791d4f0d6/REPORT.md). All four local intake gates pass; installation, live vendor acceptance and UI behavior remain **UNVERIFIED**.
+
 ## Changelog
 
 ### 1.1.0 (Februar 10, 2023)
