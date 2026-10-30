@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T10:37:58.309753+00:00",
+  "checked_at_utc": "2026-10-30T16:31:45.203832+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -694,6 +694,48 @@
           "sha256": "3f7b33bd9deb13b8e092d4c00f4621f4d0e8e600ea7570444a883d13d64d474f"
         }
       ]
+    },
+    {
+      "slug": "ldap",
+      "repository": "https://github.com/thatapp/connector-ldap",
+      "tag": "1.0.0",
+      "commit": "70a2e0fa4a1ea6155e337942dc49bd51a6c31ae4",
+      "status": "PUBLISHED CONDITIONAL #84/#72 host integration and #57/#58 credential UI/save acceptance; not installed",
+      "intake_url": "https://github.com/thatapp/connector-ldap/blob/70a2e0fa4a1ea6155e337942dc49bd51a6c31ae4/INTAKE.json",
+      "intake_git_blob_sha": "704c2f5f35aa2540db7187ecd1637faf983bf738",
+      "intake_sha256": "03f49c2e50effbf00136d965989822dfc526eb4abd98f53a2d31ecd2edfb3cf9",
+      "intake_review": "Own dual-runtime final committed four-gate/standalone/saved checks; independent paired host review60workers/303tests each; exact remote tag/main readback.",
+      "pages": [
+        {
+          "path": "content/_components/ldap/index.md",
+          "sha256": "815406c825d5facb032e515e3e2a01ce8b4ec6c3e4cf934e2d09aff389935385"
+        },
+        {
+          "path": "content/_components/ldap/technical-notes.md",
+          "sha256": "445cf75cafcb95622f0bc14ff1d00bba7fad27de49bb644570595cf0c1aa34be"
+        }
+      ]
+    },
+    {
+      "slug": "email-component-with-credentials",
+      "repository": "https://github.com/thatapp/connector-email-component-with-credentials",
+      "tag": "1.0.0",
+      "commit": "459f77786bf76e995e010609525caa63f5a22def",
+      "status": "PUBLISHED CONDITIONAL #58/#72/#75/#80; not installed or live-delivery verified",
+      "intake_url": "https://github.com/thatapp/connector-email-component-with-credentials/blob/459f77786bf76e995e010609525caa63f5a22def/evidence/precommit-intake-24.json",
+      "intake_git_blob_sha": "32a30ed698c7dbc35b09d5c7958214b5b8f142aa",
+      "intake_sha256": "190aec777ce898475f580b2bd2a025cd9eebcf0b6ee77d23f6479738c1d763f9",
+      "intake_review": "Full remote report/accepted precommit receipt and exact remote tag/main readback; final committed suites attributed to publisher and independent reviewer.",
+      "pages": [
+        {
+          "path": "content/_components/email-component-with-credentials/index.md",
+          "sha256": "de5b928c4c6cd76fe9198fcb42bff0986cbf4a0198f8d159798efcf0d2f7c5b4"
+        },
+        {
+          "path": "content/_components/email-component-with-credentials/technical-notes.md",
+          "sha256": "bec4adcba75c87d97fd5420d09c0c599ee725e974cb741810cdbcb5bb282df62"
+        }
+      ]
     }
   ],
   "checks": [
@@ -948,6 +990,22 @@
       "commit": "1a688b3d965471b53d2da3a7df270a0780499721",
       "tag_object": "ce94a9114be9cd4885440a2421ed99fc710604f9",
       "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "ldap",
+      "tag": "1.0.0",
+      "commit": "70a2e0fa4a1ea6155e337942dc49bd51a6c31ae4",
+      "tag_object": "6862a13cde0a446fecb075e11f58c850b974a9b4",
+      "main": "4380845474849e82ac44f7a09c96134df6acc20e",
+      "status": "PASS"
+    },
+    {
+      "slug": "email-component-with-credentials",
+      "tag": "1.0.0",
+      "commit": "459f77786bf76e995e010609525caa63f5a22def",
+      "tag_object": "20b1e2d45211586afc77ebaf0605492940911758",
+      "main": "c7cf081cf936cc5053f885035abc01e600820801",
       "status": "PASS"
     }
   ],
