@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T19:34:38.129002+00:00",
+  "checked_at_utc": "2026-10-30T20:46:24.993047+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -897,10 +897,33 @@
           "sha256": "ea9a8ab72b867cf0df4e4fdd2bb1cd4710ae13a921afcde55392ddaba3fe8ff7"
         }
       ]
+    },
+    {
+      "slug": "odata",
+      "repository": "https://github.com/thatapp/connector-odata",
+      "tag": "1.0.0",
+      "commit": "466adc8944ba02297fd499bc6120081137c725ae",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#75/#80; not installed",
+      "intake_url": "https://github.com/thatapp/connector-odata/blob/466adc8944ba02297fd499bc6120081137c725ae/evidence/release-qualification/owner/odata-correction-intake-node24.json",
+      "intake_git_blob_sha": "e8b6922b5ee240be4e414ce57a45865f31697eb9",
+      "intake_sha256": "a15d1b632e55ba7e65f2b58a59085a567097a91168d4e2b24f7ff08fd04cbbbe",
+      "intake_review": "Packaged reviewedff6 source intake accepted137/34/185; exact final466 package separately passes137/34/291 on both runtimes, archived in engine3cb7140. B161checks198workers59stores; C137checks113metadata24actions each. Root verifies323rawfiles103newrawarchives131priorpins. Six findings resolved; original failures preserved.",
+      "final_intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/3cb714010647d373f743cdf5127febfff9fb363e/docs/ipaas/source-inventory-2026-10-30/odata-release-intake/qualification.json",
+      "publication_receipt_sha256": "37e23976033f99219cb9fb4451536409498985a47ab32e4ada2527cac22c4e7b",
+      "pages": [
+        {
+          "path": "content/_components/odata/index.md",
+          "sha256": "1bb8c3b2d9e02adfcebba0df917681f4ecf526accc2b9b32797f98436d606d39"
+        },
+        {
+          "path": "content/_components/odata/technical-notes.md",
+          "sha256": "adf8be9ae280c960caeb5f7fdfebbd60265742e9d248d5c6956e69ae84ae3fbc"
+        }
+      ]
     }
   ],
   "checks": [
-    "All40 current release tags resolve to recorded commits; tag/main readbacks are retained with publication qualifications. Historical superseded releases remain separate.",
+    "All41 current release tags resolve to recorded commits; tag/main readbacks are retained with publication qualifications. Historical superseded releases remain separate.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
@@ -1222,6 +1245,14 @@
       "commit": "2730719ed80d6064f0bcca806654318f32287f1f",
       "tag_object": "082036ce14194fdecc8986a5322e25e90f0ca592",
       "main": "271d4cf35639c37b3d268db5cb2fe2622f77cb19",
+      "tag": "1.0.0",
+      "status": "PASS"
+    },
+    {
+      "slug": "odata",
+      "commit": "466adc8944ba02297fd499bc6120081137c725ae",
+      "tag_object": "5960a37c6c7af66538c053e6013894af7e1c0f48",
+      "main": "6af05a6c9509800a2f12c6a5ee291afbdcb181c5",
       "tag": "1.0.0",
       "status": "PASS"
     }
