@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T10:25:10.890921+00:00",
+  "checked_at_utc": "2026-10-30T10:37:58.309753+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -431,21 +431,21 @@
     {
       "slug": "gmail",
       "repository": "https://github.com/thatapp/connector-gmail",
-      "tag": "1.0.0",
-      "commit": "3955a08310b705dfe97448f6e610b10bbf7d3055",
-      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth, #72/#75 transport/scoped storage, #58 custom environment and #80 URL/size/polling parity; KNOWN short-credential polling checkpoint defect, correction not yet verified published",
-      "intake_url": "https://github.com/thatapp/connector-gmail/blob/3955a08310b705dfe97448f6e610b10bbf7d3055/evidence/intake.json",
-      "intake_git_blob_sha": "75d0995eec325030451f0d7e0431ab0d66d961b8",
-      "intake_sha256": "ec6de269c9db329dab58eb6a6f8251f4494d7aa084585aeebaa3f72b25bfbfc9",
-      "intake_review": "This documentation chat independently read the published full REPORT and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "tag": "1.0.1",
+      "commit": "1a688b3d965471b53d2da3a7df270a0780499721",
+      "status": "PUBLISHED 1.0.1 numeric v2 polling checkpoint correction; #57/#58/#72/#75/#80 remain conditional",
+      "intake_url": "https://github.com/thatapp/connector-gmail/blob/1a688b3d965471b53d2da3a7df270a0780499721/INTAKE.json",
+      "intake_git_blob_sha": "5cc68aebddd3d1791464a4d8bd5d2c16afaadc5a",
+      "intake_sha256": "8f0d4fbe7c4a6a4aa490e0cb1589e920fc2abd6e8be9b94203f318c60bf565d2",
+      "intake_review": "Full remote report, accepted receipt and exact tag readback verified by documentation chat; dual-runtime suite counts attributed to publisher/independent reviewer, not rerun here.",
       "pages": [
         {
           "path": "content/_components/gmail/index.md",
-          "sha256": "387edf3647dfd53f6bbec59952569ab607a1fc064bb8b157de6003d86fa826fb"
+          "sha256": "68f65afc05573f08aacd17cac901227680a1ab1166374d6bf8a3a355bdc9e90a"
         },
         {
           "path": "content/_components/gmail/technical-notes.md",
-          "sha256": "cb59a30730128177b54313e04a88f450fc9f69a73f308151efb42fc1f873645c"
+          "sha256": "db2b1346402756c78c085931ad7da6fa2329c3a7f0fede65cf4f298b74e40dc5"
         }
       ]
     },
@@ -941,6 +941,14 @@
       "tag_object": "d18e0b685e2a6ee6e63d3a9507e3e4b1c6b95f02",
       "main": null,
       "status": "PASS"
+    },
+    {
+      "slug": "gmail",
+      "tag": "1.0.1",
+      "commit": "1a688b3d965471b53d2da3a7df270a0780499721",
+      "tag_object": "ce94a9114be9cd4885440a2421ed99fc710604f9",
+      "main": null,
+      "status": "PASS"
     }
   ],
   "superseded_releases": [
@@ -1057,6 +1065,29 @@
       ],
       "superseded_by": "1.0.1",
       "pages_are_historical": true
+    },
+    {
+      "slug": "gmail",
+      "repository": "https://github.com/thatapp/connector-gmail",
+      "tag": "1.0.0",
+      "commit": "3955a08310b705dfe97448f6e610b10bbf7d3055",
+      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth, #72/#75 transport/scoped storage, #58 custom environment and #80 URL/size/polling parity; KNOWN short-credential polling checkpoint defect, correction not yet verified published",
+      "intake_url": "https://github.com/thatapp/connector-gmail/blob/3955a08310b705dfe97448f6e610b10bbf7d3055/evidence/intake.json",
+      "intake_git_blob_sha": "75d0995eec325030451f0d7e0431ab0d66d961b8",
+      "intake_sha256": "ec6de269c9db329dab58eb6a6f8251f4494d7aa084585aeebaa3f72b25bfbfc9",
+      "intake_review": "This documentation chat independently read the published full REPORT and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/gmail/index.md",
+          "sha256": "387edf3647dfd53f6bbec59952569ab607a1fc064bb8b157de6003d86fa826fb"
+        },
+        {
+          "path": "content/_components/gmail/technical-notes.md",
+          "sha256": "cb59a30730128177b54313e04a88f450fc9f69a73f308151efb42fc1f873645c"
+        }
+      ],
+      "superseded_by": "1.0.1",
+      "pages_are_historical": true
     }
   ],
   "qualification_notices": [
@@ -1064,7 +1095,8 @@
       "slug": "gmail",
       "tag": "1.0.0",
       "notice": "A coordinating actual-worker audit reproduced a short-credential defect in published1.0.0: string ISO lastUpdated can be masked, then the next poll fails400 before HTTP. A long-token control passes. The old tag is preserved; a corrective source patch is under review and is not yet a verified published replacement.",
-      "source": "Coordinating chat actual-worker audit; reported on issue62. No new release asserted."
+      "source": "Coordinating chat actual-worker audit; reported on issue62. No new release asserted.",
+      "superseded_by": "1.0.1"
     },
     {
       "slug": "google-analytics-component",
