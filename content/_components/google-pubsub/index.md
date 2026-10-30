@@ -12,6 +12,10 @@ ComponentVersion: 1.8.0
 
 ## Description
 
+> **AVA port is unreleased.** [Connector PR3](https://github.com/thatapp/connector-blendededge-google-pubsub-oih/pull/3) at `aea9596ef1eb580b3f9f4776cad8d6e70ff04b93` implements Publish, service-account verification and the topic selector. Both Subscribe entry points currently refuse before any Google request: the host must durably hand off each event before acknowledging it ([#83](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/83), [MR160](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/merge_requests/160)). There is **no 1.0.0 tag or install recommendation**. Offline tests pass, but canonical intake remains rejected for the missing positive Subscribe contract. The [full report](https://github.com/thatapp/connector-blendededge-google-pubsub-oih/blob/aea9596ef1eb580b3f9f4776cad8d6e70ff04b93/REPORT.md) records the Node 20/24 checks and required [MR159 private-key redaction correction](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/merge_requests/159); deployment and live Google behavior remain UNVERIFIED.
+
+> **Draft behavior differs from the historical instructions below.** Preserve a complete RSA PEM; actual or escaped newlines are accepted. The private key uses a sealed password field. Publish sends the whole message body with a 3 MiB UTF-8 cap and emits `MessageId` only after Google returns an ID. Verification checks topic-list access, not publish permissions. Clean-room execution records the token request unsent and returns 501. The platform's [Pub-Sub component](/components/pub-sub/) is a separate workspace-topic contract, not an alias of Google Pub/Sub.
+
 The component interacts with Google Pub-Sub API. The API is an asynchronous messaging service that decouples services that produce events from services that process events.
 
 Pub/Sub offers durable message storage and real-time message delivery with high availability and consistent performance at scale. Pub/Sub servers run in all Google Cloud regions around the world.

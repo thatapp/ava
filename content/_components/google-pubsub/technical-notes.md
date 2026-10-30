@@ -15,6 +15,8 @@ redirect_from:
 
 > **Historical component releases.** The entries below record upstream/component release facts. They do not establish the build installed on the current host. Sailor versions and renamed package coordinates in these entries are historical references, not installation instructions or a current runtime support matrix.
 
+> **AVA draft, not a release:** [connector PR3](https://github.com/thatapp/connector-blendededge-google-pubsub-oih/pull/3) has no `1.0.0` tag. Publish, verification and topic selection are tested offline; current and deprecated Subscribe remain unavailable pending [host #83](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/83). [MR160](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/merge_requests/160) reproduces the worker-crash acknowledgement gap; it does not yet fix it. [The draft report](https://github.com/thatapp/connector-blendededge-google-pubsub-oih/blob/aea9596ef1eb580b3f9f4776cad8d6e70ff04b93/REPORT.md) includes failed historical redaction probes and passing reruns against MR159. Historical versions below do not establish current AVA support.
+
 ## Changelog
 
 ### 1.8.0 (February 01, 2024)
