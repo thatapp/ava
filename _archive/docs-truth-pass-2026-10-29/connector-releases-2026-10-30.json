@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T17:42:36.366777+00:00",
+  "checked_at_utc": "2026-10-30T18:26:41.048471+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -824,10 +824,32 @@
           "sha256": "b8f4d082551593e28cd8575e34b3ed49e38184db4aa63eff657be8db828b9835"
         }
       ]
+    },
+    {
+      "slug": "youtube",
+      "repository": "https://github.com/thatapp/connector-youtube",
+      "tag": "1.0.0",
+      "commit": "7dfea8fdc000af28377ced033d66218661b2e264",
+      "status": "PUBLISHED CONDITIONAL #57/#72; not installed or live verified",
+      "intake_url": "https://github.com/thatapp/connector-youtube/blob/7dfea8fdc000af28377ced033d66218661b2e264/evidence/precommit-intake-24.json",
+      "intake_git_blob_sha": "3d3bc9b112040ab6c7db4feabc9005f0c265c4c4",
+      "intake_sha256": "2c16a0b179b14cc3b23632a52f5b7f39857d68ea3888aecb6e48182b3e9b4070",
+      "intake_review": "Full report and accepted packaged intake read; 82 published raw blobs and 10 external final receipt hashes verified. Publisher/reviewer suites attributed, not rerun here.",
+      "publication_receipt_sha256": "f682fa2ce08c48a738bf8747552575d805931b974d8fd31cb92549afc2d1367f",
+      "pages": [
+        {
+          "path": "content/_components/youtube/index.md",
+          "sha256": "5a04fd3d76b4551d8243f5e53dcfccf312bced042d27d3d62efa0f59a08e7664"
+        },
+        {
+          "path": "content/_components/youtube/technical-notes.md",
+          "sha256": "a9055a340513221c2e80541bdf5767490bab410c4d7615e5fa80dacb8624bdc3"
+        }
+      ]
     }
   ],
   "checks": [
-    "All 20 release tags resolve to stated commits: twelve own releases and eight independently read coordinated releases. SNS tag/main independently verified at publication.",
+    "All 38 current release tags resolve to recorded commits; tag/main readbacks are retained with publication qualifications. Historical superseded releases remain separate.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
@@ -1127,6 +1149,14 @@
       "main": "7562706d9814b9fea8cfed9ebbfc4d9a1ea1aa53",
       "tag": "1.0.0",
       "status": "PASS"
+    },
+    {
+      "slug": "youtube",
+      "commit": "7dfea8fdc000af28377ced033d66218661b2e264",
+      "tag_object": "a908a80b8ee9df9637ef932467d7440240d3b8b8",
+      "main": null,
+      "tag": "1.0.0",
+      "status": "PASS"
     }
   ],
   "superseded_releases": [
@@ -1334,33 +1364,37 @@
     {
       "slug": "graphql",
       "repository": "https://github.com/thatapp/connector-blendededge-graphql-component-oih",
-      "commit": "3aa2f2be0d2a165b5820f48b705a1e99ce524462",
+      "commit": "9e5e8073962c9a7ade70e6cafb17f3e78a2641fc",
       "pr": "https://github.com/thatapp/connector-blendededge-graphql-component-oih/pull/4",
       "tag": null,
-      "status": "BLOCKED #88; action intake passes, config-time metadata unavailable",
+      "status": "BLOCKED #88; connector review clear, host MR164 review and integration pending",
       "blocker": 88,
-      "unit_tests_per_node": 60,
+      "unit_tests_per_node": 72,
       "canonical_workers_per_node": 18,
-      "supplemental_workers_per_node": 23,
-      "secret_files_per_node": 61,
+      "supplemental_workers_per_node": 31,
+      "secret_files_per_node": 71,
       "pages": [
         {
           "path": "content/_components/graphql/index.md",
-          "sha256": "44f28c5ca59d2643a5265cbfa18d667b210de81ea31e82ea955e8ff538838214"
+          "sha256": "965d66dee006d1ba7eb3bc520ac7f1155202abbd861c3427a7a0ed17249ecbf1"
         },
         {
           "path": "content/_components/graphql/technical-notes.md",
-          "sha256": "4a944b8dd4b40480c9d09e3564314fc7997f41dd3f65b0f887c48e67341e02e7"
+          "sha256": "ead1fcb24ae58d5136663badb2ab41ef737633f05543b00ff11f05d37f3422b5"
         }
       ],
       "committed_receipts": {
-        "graphql-committed-intake-node20.json": "3945249d2c9a726665a086b2adb68c95341ae9e7e9a600dd4623d86a5bda70b8",
-        "graphql-committed-hostcheck-node20.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
-        "graphql-committed-proof-node20.json": "1de7940f45fda866028acfb805be5cd8e9f964a3a5f406829e6815fc03afea96",
-        "graphql-committed-intake-node24.json": "4ba5a4a80a2989bacffb8028463b2364a0b3a5ffe49363f15afa79d7ba860790",
-        "graphql-committed-hostcheck-node24.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
-        "graphql-committed-proof-node24.json": "a095707fc507a4f91e5838c2f0e4a2dc1fe6621e794ce3d6c1a0513744d4f432"
-      }
+        "graphql-correction3-final-hostcheck-node20.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
+        "graphql-correction3-final-hostcheck-node24.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
+        "graphql-correction3-final-intake-node20.json": "124f54dcf6462ddf6c2d47d493e254b934e2d3a39ccfe2a714df5855a306df67",
+        "graphql-correction3-final-intake-node24.json": "71a71bc3f74295db320008e3dbe315c175f2b3eb3dfbcfa1fe333eb40a5c3d25",
+        "graphql-correction3-final-proof-node20.json": "32c898eaf1fb765481394755cdedaf749d9754fa5ca4e3b13c6b496f12c75019",
+        "graphql-correction3-final-proof-node24.json": "946f30b4c74d8a0dbdcd430c21761ea9bb980172b8685cb1d8f3ca64147ee496"
+      },
+      "runtime_commit": "ddda174c4b72524e2aba755ba14c0cad89f43246",
+      "independent_workers_per_node": 125,
+      "host_candidate_commit": "8ef36036afd4e7c3bc3a9dad117a9558c380ae54",
+      "host_mr": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/merge_requests/164"
     }
   ],
   "superseded_blocked_candidates": [
@@ -1405,6 +1439,38 @@
       "evidence_followup_commit": "eb611a398d4aa2fa8f2e4a79c93568ec66de4e89",
       "receipt_url": "https://github.com/thatapp/connector-csv/blob/eb611a398d4aa2fa8f2e4a79c93568ec66de4e89/evidence/csv-62f1e8d-committed-intake-node24.json",
       "followup_secret_files_per_node": 113,
+      "pages_are_historical": true
+    },
+    {
+      "slug": "graphql",
+      "repository": "https://github.com/thatapp/connector-blendededge-graphql-component-oih",
+      "commit": "3aa2f2be0d2a165b5820f48b705a1e99ce524462",
+      "pr": "https://github.com/thatapp/connector-blendededge-graphql-component-oih/pull/4",
+      "tag": null,
+      "status": "BLOCKED #88; action intake passes, config-time metadata unavailable",
+      "blocker": 88,
+      "unit_tests_per_node": 60,
+      "canonical_workers_per_node": 18,
+      "supplemental_workers_per_node": 23,
+      "secret_files_per_node": 61,
+      "pages": [
+        {
+          "path": "content/_components/graphql/index.md",
+          "sha256": "44f28c5ca59d2643a5265cbfa18d667b210de81ea31e82ea955e8ff538838214"
+        },
+        {
+          "path": "content/_components/graphql/technical-notes.md",
+          "sha256": "4a944b8dd4b40480c9d09e3564314fc7997f41dd3f65b0f887c48e67341e02e7"
+        }
+      ],
+      "committed_receipts": {
+        "graphql-committed-intake-node20.json": "3945249d2c9a726665a086b2adb68c95341ae9e7e9a600dd4623d86a5bda70b8",
+        "graphql-committed-hostcheck-node20.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
+        "graphql-committed-proof-node20.json": "1de7940f45fda866028acfb805be5cd8e9f964a3a5f406829e6815fc03afea96",
+        "graphql-committed-intake-node24.json": "4ba5a4a80a2989bacffb8028463b2364a0b3a5ffe49363f15afa79d7ba860790",
+        "graphql-committed-hostcheck-node24.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
+        "graphql-committed-proof-node24.json": "a095707fc507a4f91e5838c2f0e4a2dc1fe6621e794ce3d6c1a0513744d4f432"
+      },
       "pages_are_historical": true
     }
   ]
