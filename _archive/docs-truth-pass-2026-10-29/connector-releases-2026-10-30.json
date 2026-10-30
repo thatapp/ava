@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T19:10:15.410983+00:00",
+  "checked_at_utc": "2026-10-30T19:34:38.129002+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -870,10 +870,37 @@
           "sha256": "d3eb731e03ba987ef8f6408e6dce934f99f60b5092a693065deb53789ac9add8"
         }
       ]
+    },
+    {
+      "slug": "xml",
+      "repository": "https://github.com/thatapp/connector-xml-component",
+      "tag": "1.0.0",
+      "commit": "2730719ed80d6064f0bcca806654318f32287f1f",
+      "status": "PUBLISHED CONDITIONAL #57/#58/#72/#75/#80; not installed",
+      "intake_url": "https://github.com/thatapp/connector-xml-component/blob/2730719ed80d6064f0bcca806654318f32287f1f/evidence/release-qualification/owner/xml-grammar-corrected-final-intake-node24.json",
+      "intake_git_blob_sha": "08fb4453e90133a75f88dd2165a45278b7355ed5",
+      "intake_sha256": "c510222183e4008e7b89cb972a222b41f0b4872de06626c3bed5d7849973dcdd",
+      "intake_review": "Packaged reviewed5b source intake accepted95/100/130; exact final273 package separately passes95/100/198 on both runtimes and is archived in engine309f1fa. Independent149 process workers each, original/corrected findings preserved. Root package audit verifies212rawfiles/65evidence hashes/55source and AVA content pins.",
+      "final_intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/309f1fa35189512cc260b945cb1eb3586b08f615/docs/ipaas/source-inventory-2026-10-30/xml-release-intake/qualification.json",
+      "publication_receipt_sha256": "d5eab273c4f11a7b246ee35868b1ce2664b49c7442fd6b72396eeea752fae05b",
+      "pages": [
+        {
+          "path": "content/_components/xml/index.md",
+          "sha256": "d191156a08b2d91254ac7b7b1f8f199d1c39f485e6b79e46942f7a63e4aad5f7"
+        },
+        {
+          "path": "content/_components/xml/technical-notes.md",
+          "sha256": "6229134ac4c8edecc16b0ea8b3997a2e4eba144dec332c5acc748caaba261383"
+        },
+        {
+          "path": "content/_components/xml/use-case.md",
+          "sha256": "ea9a8ab72b867cf0df4e4fdd2bb1cd4710ae13a921afcde55392ddaba3fe8ff7"
+        }
+      ]
     }
   ],
   "checks": [
-    "All39 current release tags resolve to recorded commits; tag/main readbacks are retained with publication qualifications. Historical superseded releases remain separate.",
+    "All40 current release tags resolve to recorded commits; tag/main readbacks are retained with publication qualifications. Historical superseded releases remain separate.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
@@ -1187,6 +1214,14 @@
       "commit": "a76d6ddc58a5ae043797cc86ea4104166717715b",
       "tag_object": "d2adce7e0974f698386c34e8c4aaef1b4e29e5ee",
       "main": "d929bb232b174aed06ad4d5286989ebfa5946feb",
+      "tag": "1.0.0",
+      "status": "PASS"
+    },
+    {
+      "slug": "xml",
+      "commit": "2730719ed80d6064f0bcca806654318f32287f1f",
+      "tag_object": "082036ce14194fdecc8986a5322e25e90f0ca592",
+      "main": "271d4cf35639c37b3d268db5cb2fe2622f77cb19",
       "tag": "1.0.0",
       "status": "PASS"
     }
