@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T16:31:45.203832+00:00",
+  "checked_at_utc": "2026-10-30T16:55:15.086557+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -736,6 +736,52 @@
           "sha256": "bec4adcba75c87d97fd5420d09c0c599ee725e974cb741810cdbcb5bb282df62"
         }
       ]
+    },
+    {
+      "slug": "configuration",
+      "repository": "https://github.com/thatapp/connector-configuration-component",
+      "tag": "1.0.0",
+      "commit": "496585cba0e0ef032229890a5ed357fdd3c4f6e8",
+      "status": "PUBLISHED CONDITIONAL #57/#72; not installed or live verified",
+      "intake_url": "https://github.com/thatapp/connector-configuration-component/blob/496585cba0e0ef032229890a5ed357fdd3c4f6e8/INTAKE.json",
+      "intake_git_blob_sha": "fe93e5ee79e1d65080f8dcb2a73996049523f6a0",
+      "intake_sha256": "46fc8c5f7dc64eec2090608705220d6e3a8cff9a595169a32b34f0c2402fbaac",
+      "intake_review": "Accepted packaged source receipt; final release commit qualified externally. Configuration rerun in this chat; Azure publisher/root audit explicitly attributed.",
+      "pages": [
+        {
+          "path": "content/_components/configuration/index.md",
+          "sha256": "3250fceb5b51e480ca4a233128eb658dbd5863f454cfcb1e8246138ccf0940ff"
+        },
+        {
+          "path": "content/_components/configuration/technical-notes.md",
+          "sha256": "7caa397edef074598b7a91f8bd9ee896488e9b80e5778ddca9e856c68db7f2bf"
+        },
+        {
+          "path": "content/_components/configuration/usage-example.md",
+          "sha256": "fbe370fe622e5aa299a6678cfa17e2185553c401f5efbd137cad14c614656bd4"
+        }
+      ]
+    },
+    {
+      "slug": "microsoft-azure-ad",
+      "repository": "https://github.com/thatapp/connector-microsoft-azure-ad",
+      "tag": "1.0.0",
+      "commit": "f033cd5452576b019b9ccc5465966438d62dcb2b",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80; not installed or live verified",
+      "intake_url": "https://github.com/thatapp/connector-microsoft-azure-ad/blob/f033cd5452576b019b9ccc5465966438d62dcb2b/evidence/precommit-intake-24.json",
+      "intake_git_blob_sha": "8bafd7b1f9a4285c6f2d3d81551e53015700d387",
+      "intake_sha256": "9009d2fa85e99b62cdd8d750501199eec531bbeb3e4f0254938d523cb539e63a",
+      "intake_review": "Accepted packaged source receipt; final release commit qualified externally. Configuration rerun in this chat; Azure publisher/root audit explicitly attributed.",
+      "pages": [
+        {
+          "path": "content/_components/microsoft-azure-ad/index.md",
+          "sha256": "17b729feb4d386262ebacd892b79a3ab3f7fe05317e633e89cf48cf47de80340"
+        },
+        {
+          "path": "content/_components/microsoft-azure-ad/technical-notes.md",
+          "sha256": "31b5f5256aae9adc53be0cd8f043eb51d2baa79d7710eb7717a7445fd3d85aaa"
+        }
+      ]
     }
   ],
   "checks": [
@@ -1006,6 +1052,22 @@
       "commit": "459f77786bf76e995e010609525caa63f5a22def",
       "tag_object": "20b1e2d45211586afc77ebaf0605492940911758",
       "main": "c7cf081cf936cc5053f885035abc01e600820801",
+      "status": "PASS"
+    },
+    {
+      "slug": "configuration",
+      "commit": "496585cba0e0ef032229890a5ed357fdd3c4f6e8",
+      "tag_object": "7585442619ddbcf2b2b7435c2bbecbb199cbafb2",
+      "main": "c3db1f8eaf6c29e9476d3a7551d85990bc6016d2",
+      "tag": "1.0.0",
+      "status": "PASS"
+    },
+    {
+      "slug": "microsoft-azure-ad",
+      "commit": "f033cd5452576b019b9ccc5465966438d62dcb2b",
+      "tag_object": "cd0007bdd5a7d3a2d7a2b9f0e21bb9df1523d337",
+      "main": "d7a51040c2dfd01b2aee62afaefbca13fd910f66",
+      "tag": "1.0.0",
       "status": "PASS"
     }
   ],
