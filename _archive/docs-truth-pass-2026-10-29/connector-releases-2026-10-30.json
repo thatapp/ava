@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T07:48:17.889171+00:00",
+  "checked_at_utc": "2026-10-30T07:59:08.501576+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -468,6 +468,27 @@
           "sha256": "8756d66df77e16d939749af4d874aace7e891b57224f7878d8640c8b59878adb"
         }
       ]
+    },
+    {
+      "slug": "amazon-selling-partner-api",
+      "repository": "https://github.com/thatapp/connector-amazon-selling-partner-api",
+      "tag": "1.0.0",
+      "commit": "2d2cf6bed99228500ae1a49e97db810dc23b0bc3",
+      "status": "PUBLISHED scoped; WAITING HOST #72/#75 integration; #80 grantless verifier, polling and binary parity; #81 deprecated operations and restricted-data-token orchestration",
+      "intake_url": "https://github.com/thatapp/connector-amazon-selling-partner-api/blob/2d2cf6bed99228500ae1a49e97db810dc23b0bc3/evidence/intake.json",
+      "intake_git_blob_sha": "899e9c6c093c4c99c951edddee6f27be80afbe1e",
+      "intake_sha256": "eff7571081014ce7dd5afd68f6f16f4132b01400ca4379c51199706ed8890e35",
+      "intake_review": "This documentation chat independently read the published full REPORT and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/amazon-selling-partner-api/index.md",
+          "sha256": "7f82b5e08eb3edbf7d41e66d37e71ac197623aa604a5df573c72eb7ef78b9e54"
+        },
+        {
+          "path": "content/_components/amazon-selling-partner-api/technical-notes.md",
+          "sha256": "6c6573c9b5d1be51ac134ad98c9cb805b9f10a929664ab450ea363190167ce33"
+        }
+      ]
     }
   ],
   "checks": [
@@ -606,6 +627,13 @@
       "commit": "19d62b19fc0fb53bf5b00bb7d7867a5791d4f0d6",
       "tag_object": "e87c883bf194f9fa92895e2ed1543c3281a0be2e",
       "main": "3ed1b1a641bc2bc3f5a3dced63848b6c78f9e498",
+      "status": "PASS"
+    },
+    {
+      "slug": "amazon-selling-partner-api",
+      "commit": "2d2cf6bed99228500ae1a49e97db810dc23b0bc3",
+      "tag_object": "21beb656ee0e87df17276a2ef7eaafe6df65f53e",
+      "main": null,
       "status": "PASS"
     }
   ]
