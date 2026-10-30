@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T07:59:08.501576+00:00",
+  "checked_at_utc": "2026-10-30T08:49:28.903798+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -203,7 +203,7 @@
       "repository": "https://github.com/thatapp/connector-google-calendar",
       "tag": "1.0.0",
       "commit": "35be581702443f31927072be2a01b769022b8040",
-      "status": "READY for scoped source installation; vendor and installation checks UNVERIFIED",
+      "status": "PUBLISHED 1.0.0; first-run polling BLOCKED #80; vendor and installation checks UNVERIFIED",
       "intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/0fbb6b5b4d40c9c60491ffc8b5f73f590203dd3f/docs/ipaas/connector-submissions/google-calendar-evidence/intake-standalone.json",
       "intake_sha256": "ea19189c1e4d562b6db4758862a4438ed4cff977e03b4ee9f65089db25052869",
       "evidence_commit": "0fbb6b5b4d40c9c60491ffc8b5f73f590203dd3f",
@@ -212,11 +212,11 @@
       "pages": [
         {
           "path": "content/_components/google-calendar/index.md",
-          "sha256": "f97610b09f715914436931fd0e736c2dc86425894a5eff679a6a4d2ae2911545"
+          "sha256": "18f461695c4ef670601cca47c3cc687fcbe3eea5ef41d8d0f36d3cdeb09358ee"
         },
         {
           "path": "content/_components/google-calendar/technical-notes.md",
-          "sha256": "bfda088501056743b855722567cf6d178c0e5abf00564cbd79b2776d9a823c72"
+          "sha256": "0552417f79757d25ab60178ac21225be5d0232a0f392eef13ce4925960afc82f"
         }
       ]
     },
@@ -310,22 +310,23 @@
     {
       "slug": "hubspot",
       "repository": "https://github.com/thatapp/connector-hubspot",
-      "tag": "1.0.0",
-      "commit": "6479855a0bcb20ace70af2ed0b4d3763412531e1",
-      "status": "PUBLISHED scoped; WAITING HOST #57 credentials/OAuth and #75 binary transport/scoped storage; custom environment #58, deprecated webhook #74 and polling limitations #80 remain qualified",
-      "intake_url": "https://github.com/thatapp/connector-hubspot/blob/6479855a0bcb20ace70af2ed0b4d3763412531e1/INTAKE.json",
-      "intake_sha256": "09c3f6675eeced3e1b2f4ebf1d3912508dcc8de9bb213f5f96e4dc4bf9613eb0",
-      "intake_review": "This chat ran four gates on Node20 and24; 71 npm tests, 35 exact cases, 53 workers, five supplemental checks (four workers, one parent scope probe), zero network.",
+      "tag": "1.0.1",
+      "commit": "491571cc0590cbe60e216656997b37ba9779ca83",
+      "status": "PUBLISHED 1.0.1; initial-snapshot defect corrected; existing #57/#58/#72/#74/#75 and polling qualifications remain conditional",
+      "intake_url": "https://github.com/thatapp/connector-hubspot/blob/491571cc0590cbe60e216656997b37ba9779ca83/INTAKE.json",
+      "intake_sha256": "a3aefaf9d489da60ed348ffb0d9695a0e6d44a6c2a599d864d2c7adb72718bef",
+      "intake_review": "This chat ran final committed-head four gates and direct snapshot regressions on Node20/24, preserving the 1.0.0 defect receipt.",
       "pages": [
         {
           "path": "content/_components/hubspot/index.md",
-          "sha256": "13d4fa46d51a0797941b8d71e63d09b2a8e126d803ddbe5a05bcdc4051d7f0c0"
+          "sha256": "02371f7444c724a62d1059523b813ba7af0f47a58466c07048d0cca61e5f90bf"
         },
         {
           "path": "content/_components/hubspot/technical-notes.md",
-          "sha256": "af2c8747bb54c6427312c25c0509e87b9d5fb8cd8b23e550b1f8aab1e7f06ab0"
+          "sha256": "9abb2ea0ff92ad82b3104e77e05aec817f634c4cf722e0b545b550dc73621758"
         }
-      ]
+      ],
+      "intake_git_blob_sha": "edc653ee18920d05f70e4989811620bee49b4057"
     },
     {
       "slug": "aws-lambda",
@@ -372,18 +373,18 @@
       "repository": "https://github.com/thatapp/connector-google-drive",
       "tag": "1.0.0",
       "commit": "b78d256edfa39d5123f17e52b33111481a26dfd5",
-      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth integration, #72 redaction and #75 binary transport/scoped storage; #80 URL/size/polling qualifications",
+      "status": "PUBLISHED 1.0.0; first-run polling BLOCKED #80; PUBLISHED scoped; WAITING HOST #57 OAuth integration, #72 redaction and #75 binary transport/scoped storage; #80 URL/size/polling qualifications",
       "intake_url": "https://github.com/thatapp/connector-google-drive/blob/b78d256edfa39d5123f17e52b33111481a26dfd5/INTAKE.json",
       "intake_sha256": "85ee02572314b48a90475d421feba2cebd8db235cb9959ef67b68b1dc36328e3",
       "intake_review": "Independently read the immutable published report and accepted INTAKE.json: 71 tests, 40 canonical workers, zero network; remote annotated tag and absent main verified. Additional sealed/supplemental results are publisher-reported.",
       "pages": [
         {
           "path": "content/_components/google-drive/index.md",
-          "sha256": "ce8f63dffdc93f3b74c8d07b6ed00f66b61709f9ae9831f874ff2f47dd336714"
+          "sha256": "fa798f23b87a42d25559c613ce8bed15789e94af3748449f78286c746f2ac3d9"
         },
         {
           "path": "content/_components/google-drive/technical-notes.md",
-          "sha256": "f94a8e72ee8c3578d88e0c65c9240c524d5a92889715c7e52d9a66e4462e7757"
+          "sha256": "b11f283757107ebae681e00a96b7d80ce6af2a5b907c3f49971b8cad4fd737b1"
         }
       ]
     },
@@ -487,6 +488,69 @@
         {
           "path": "content/_components/amazon-selling-partner-api/technical-notes.md",
           "sha256": "6c6573c9b5d1be51ac134ad98c9cb805b9f10a929664ab450ea363190167ce33"
+        }
+      ]
+    },
+    {
+      "slug": "shopware-6",
+      "repository": "https://github.com/thatapp/connector-shopware-6",
+      "tag": "1.0.0",
+      "commit": "535a56fdc3a8b0109dd6a1ec6a9de7238a23a9d2",
+      "status": "PUBLISHED scoped; WAITING HOST #57 metadata authentication and #72 integration; #80 parity limits",
+      "intake_url": "https://github.com/thatapp/connector-shopware-6/blob/535a56fdc3a8b0109dd6a1ec6a9de7238a23a9d2/INTAKE.json",
+      "intake_git_blob_sha": "9aef4765ffc6d7bf31ccf68348e53ee261b41eb3",
+      "intake_sha256": "518caa989a6fcab92be57bb4b3eb776431f9d80009de8bacb6cd62679a7e6111",
+      "intake_review": "This documentation chat independently read the published report scope and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/shopware-6/index.md",
+          "sha256": "e7b9f1217cc29df3b5de4e99c611049290af737b52b7521b4c539a264e8d6601"
+        },
+        {
+          "path": "content/_components/shopware-6/technical-notes.md",
+          "sha256": "a85d85fd2f65be52cb6c94955476959186bf4b6d15e23d2442f169b01042284f"
+        }
+      ]
+    },
+    {
+      "slug": "google-analytics-component",
+      "repository": "https://github.com/thatapp/connector-google-analytics-component",
+      "tag": "1.0.0",
+      "commit": "4cab7ab42d25d787a597fba22f4c67397f893076",
+      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth and #72 integration; #80 polling limits and #79 source-contract gaps",
+      "intake_url": "https://github.com/thatapp/connector-google-analytics-component/blob/4cab7ab42d25d787a597fba22f4c67397f893076/INTAKE.json",
+      "intake_git_blob_sha": "3fddb9c631b5523ceee6e86f7ab69e839b5faa0e",
+      "intake_sha256": "7c4c551c850cc836285684b987d01ad38a787b68c0fdafff56916f8dd69e38ba",
+      "intake_review": "This documentation chat independently read the published report scope and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/google-analytics-component/index.md",
+          "sha256": "24b9915d3a40d70b94d638369a00c9a4f0a28fdb4b237f4f29922bb951326c0e"
+        },
+        {
+          "path": "content/_components/google-analytics-component/technical-notes.md",
+          "sha256": "4d54670802f876dd891eb1536fa335917808b4b71f952b724faa04ea854df7f3"
+        }
+      ]
+    },
+    {
+      "slug": "pimcore",
+      "repository": "https://github.com/thatapp/connector-pimcore",
+      "tag": "1.0.0",
+      "commit": "72c2388acc93bece3b02eef95519ff38c1c41e09",
+      "status": "PUBLISHED scoped; WAITING HOST #72 secret-recording integration",
+      "intake_url": "https://github.com/thatapp/connector-pimcore/blob/72c2388acc93bece3b02eef95519ff38c1c41e09/evidence/pimcore-precommit-intake-node24.json",
+      "intake_git_blob_sha": "fc2ccb9587260ef098eefca4d90684c46d61e510",
+      "intake_sha256": "05fcc91596b584d80ed1090268af228affdd85239f6caf558c5f460aec996d8d",
+      "intake_review": "This documentation chat independently read the published report scope and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/pimcore/index.md",
+          "sha256": "bbaee78bd607242a55a1f570d76f6632747ac5fbcbcb64e2feb29e0be9c0fffa"
+        },
+        {
+          "path": "content/_components/pimcore/technical-notes.md",
+          "sha256": "dd7347be315b78427ef14c845b6c4325db693b5d4a1d7d69e6f9771cebf8c74d"
         }
       ]
     }
@@ -635,6 +699,59 @@
       "tag_object": "21beb656ee0e87df17276a2ef7eaafe6df65f53e",
       "main": null,
       "status": "PASS"
+    },
+    {
+      "slug": "shopware-6",
+      "commit": "535a56fdc3a8b0109dd6a1ec6a9de7238a23a9d2",
+      "tag_object": "32ccd399037f34452186f78b267f72e9d4fe9ae6",
+      "main": "2a5c03bfd2dac49ffc65465fe1a882b080de5a82",
+      "status": "PASS"
+    },
+    {
+      "slug": "google-analytics-component",
+      "commit": "4cab7ab42d25d787a597fba22f4c67397f893076",
+      "tag_object": "e052fb8981c44b623ff792f20cb1475f0c5620ed",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "pimcore",
+      "commit": "72c2388acc93bece3b02eef95519ff38c1c41e09",
+      "tag_object": "9b853084a45d5856bc4aff85807becf3805d5c7e",
+      "main": "54943455d655c3d6cfd44c81f3d3adfbf0b92ce7",
+      "status": "PASS"
+    },
+    {
+      "slug": "hubspot",
+      "tag": "1.0.1",
+      "commit": "491571cc0590cbe60e216656997b37ba9779ca83",
+      "tag_object": "31b8c72c74ccc3444ac6b79342430c85de94cbec",
+      "main": "49b6428568ece50b046241b0f230266e1d2e491c",
+      "status": "PASS"
+    }
+  ],
+  "superseded_releases": [
+    {
+      "slug": "hubspot",
+      "repository": "https://github.com/thatapp/connector-hubspot",
+      "tag": "1.0.0",
+      "commit": "6479855a0bcb20ace70af2ed0b4d3763412531e1",
+      "status": "PUBLISHED scoped; WAITING HOST #57 credentials/OAuth and #75 binary transport/scoped storage; custom environment #58, deprecated webhook #74 and polling limitations #80 remain qualified",
+      "intake_url": "https://github.com/thatapp/connector-hubspot/blob/6479855a0bcb20ace70af2ed0b4d3763412531e1/INTAKE.json",
+      "intake_sha256": "09c3f6675eeced3e1b2f4ebf1d3912508dcc8de9bb213f5f96e4dc4bf9613eb0",
+      "intake_review": "This chat ran four gates on Node20 and24; 71 npm tests, 35 exact cases, 53 workers, five supplemental checks (four workers, one parent scope probe), zero network.",
+      "pages": [
+        {
+          "path": "content/_components/hubspot/index.md",
+          "sha256": "13d4fa46d51a0797941b8d71e63d09b2a8e126d803ddbe5a05bcdc4051d7f0c0"
+        },
+        {
+          "path": "content/_components/hubspot/technical-notes.md",
+          "sha256": "af2c8747bb54c6427312c25c0509e87b9d5fb8cd8b23e550b1f8aab1e7f06ab0"
+        }
+      ],
+      "superseded_by": "1.0.1",
+      "pages_are_historical": true
     }
   ]
 }

@@ -10,9 +10,13 @@ ComponentVersion: 1.0.0
 updatedDate: 2026-02-11
 ---
 
+## Initial polling defect in 1.0.0 — 2026-10-30
+
+**First-run polling is blocked under #80.** The coordinated publisher reproduced failure with null or omitted initial snapshots on Node 20.20.2 and 24.13.0 using the actual isolated host, synthetic replies and zero network. An explicit empty-object snapshot succeeds. The earlier fixture harness substituted an empty object, so the historical passing intake did not prove the first-run boundary. The immutable 1.0.0 tag remains preserved; a separately tagged patch requires fresh intake. Follow [#62](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62) for the qualified replacement. This documentation chat read the publisher's finding; it did not rerun these two connectors.
+
 ## AVA 1.0.0 release status — 2026-10-30
 
-**READY for scoped source installation; vendor and installation checks UNVERIFIED**. [Published source](https://github.com/thatapp/connector-google-calendar/tree/35be581702443f31927072be2a01b769022b8040) · [Release scope](https://github.com/thatapp/connector-google-calendar/blob/35be581702443f31927072be2a01b769022b8040/REPORT.md) · [Intake evidence](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/0fbb6b5b4d40c9c60491ffc8b5f73f590203dd3f/docs/ipaas/connector-submissions/google-calendar-evidence/intake-standalone.json).
+**PUBLISHED; first-run polling BLOCKED #80; vendor and installation checks UNVERIFIED**. [Published source](https://github.com/thatapp/connector-google-calendar/tree/35be581702443f31927072be2a01b769022b8040) · [Release scope](https://github.com/thatapp/connector-google-calendar/blob/35be581702443f31927072be2a01b769022b8040/REPORT.md) · [Intake evidence](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/0fbb6b5b4d40c9c60491ffc8b5f73f590203dd3f/docs/ipaas/connector-submissions/google-calendar-evidence/intake-standalone.json).
 
 53 offline npm tests and 11 exact isolated-worker outcomes pass; the additional sealed suite has 54 tests including a matrix of 28 host outcomes. Require allowlist and secret scan pass with zero network attempts. Host `1cfd955f35804ddc03a134c048fe70f741f5c84a` and harness `8cd83582eef099b47cf044cee1b9a560c90ba300` are pinned. The harness supplies a test-only clock to verify exact millisecond checkpoints without changing production polling or timers.
 

@@ -10,6 +10,26 @@ ComponentVersion: 1.0.0
 updatedDate: 2024-09-03
 ---
 
+## AVA 1.0.0 release status — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST #57 OAuth and #72 integration; #80 polling limits and #79 source-contract gaps.** [Published source](https://github.com/thatapp/connector-google-analytics-component/tree/4cab7ab42d25d787a597fba22f4c67397f893076) · [Contract report](https://github.com/thatapp/connector-google-analytics-component/blob/4cab7ab42d25d787a597fba22f4c67397f893076/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-google-analytics-component/blob/4cab7ab42d25d787a597fba22f4c67397f893076/INTAKE.json).
+
+Polling performs bounded complete Analytics report rescans and detects changed aggregate rows, including historical changes within configured Start Time. It is not an event/object modification stream. Raw Request supports same-origin v1beta/v1alpha GET/POST and preserves the statusCode, headers and responseBody envelope. This chat read the immutable report and accepted intake: 129 offline tests, 39 canonical isolated-worker outcomes, allowlist and secret scan passing (33 files). The publisher reports 36 sealed tests, 16 additional actual-worker checks and eight stored-OAuth checks on both runtimes; these supplemental suites were not rerun here.
+
+Version 2 checkpoints contain the completed baseline and optionally pending buffered pages. Null, omitted and empty initial snapshots are supported. Incompatible, corrupted or configuration-mismatched state fails before HTTP; explicit reset may replay prior output. Actual emitted/redacted snapshots were resumed in publisher tests. All report pages must validate before delivery; single-page mode buffers across invocations and emits changes only after completion. Bounds are 10000 rows, 100 HTTP pages per invocation, 3 MiB buffered row JSON, 4 MiB checkpoint and a 55-second scheduling budget. Delivery is not transactional and retries can replay already delivered rows.
+
+Comparisons participate in identity/change detection. Compatible custom ordering preserves numeric precision; current alpha conversion attributes are forwarded with structural checks. Metrics and dimensions use property metadata, with one automatic dateHourMinute dimension. Only UTC-equivalent property timezones and minute-aligned windows are accepted. Non-UTC/DST, sub-minute windows and typed cohort polling explicitly refuse. Raw requests may express cohort reports. A nonempty alpha nextPageToken also refuses because the reviewed request contract lacks its continuation field; no invented pagination is used.
+
+Full rescans suppress unchanged metrics and emit changed or new historical rows. Removed rows do not fabricate deletion events. Offset scans are not frozen vendor snapshots, so same-count concurrent changes can evade consistency checks; later scans can recover stable changes, not every intermediate state. Exactly-once delivery and unbounded retention are not claimed.
+
+The connector consumes host-owned OAuth access tokens. Publisher tests use the actual credential catalog, in-memory auth-client persistence, OAuth start/complete, resolver, verifier and dispatcher. A separate #57 host candidate demonstrates persisted Property ID/configuration and safe GET-401 renewal; report POST-401 is not renewed or replayed under that policy. UI/model-route wiring and real consent/grants remain unverified. POST clean-room previews are paired with positive closed-response fixtures and never count as vendor success.
+
+Four-gate runtime is host `4576be108e21b597d1fbffd4163fb05cd821c834`, harness `c54cbed14ccfcc73e059e7bc1d7801fc134a7187`; stored-OAuth qualification separately pins `3af6acd2b6340e4d46567c3ad2643e428210a9fa`. These candidates are not claimed merged together. This chat independently verified the immutable tag and absence of a main ref.
+
+Installation, deployment, live vendor/account acceptance and UI behavior remain **UNVERIFIED**. Follow the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). Historical metadata and reference text below remain for context; the published scope and limitations above supersede conflicting runtime claims.
+
+---
+
 ## Table of Contents
 
 * [Description](#description)

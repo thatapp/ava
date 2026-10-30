@@ -10,6 +10,10 @@ ComponentVersion: 1.0.0
 updatedDate: 2025-01-09
 ---
 
+## Initial polling defect in 1.0.0 — 2026-10-30
+
+**First-run polling is blocked under #80.** The coordinated publisher reproduced failure with null or omitted initial snapshots on Node 20.20.2 and 24.13.0 using the actual isolated host, synthetic replies and zero network. An explicit empty-object snapshot succeeds. The earlier fixture harness substituted an empty object, so the historical passing intake did not prove the first-run boundary. The immutable 1.0.0 tag remains preserved; a separately tagged patch requires fresh intake. Follow [#62](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62) for the qualified replacement. This documentation chat read the publisher's finding; it did not rerun these two connectors.
+
 ## AVA 1.0.0 release status — 2026-10-30
 
 **PUBLISHED scoped; WAITING HOST #57 OAuth integration, #72 redaction and #75 binary transport/scoped storage; #80 URL/size/polling qualifications.** [Published source](https://github.com/thatapp/connector-google-drive/tree/b78d256edfa39d5123f17e52b33111481a26dfd5) · [Contract report](https://github.com/thatapp/connector-google-drive/blob/b78d256edfa39d5123f17e52b33111481a26dfd5/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-google-drive/blob/b78d256edfa39d5123f17e52b33111481a26dfd5/INTAKE.json).

@@ -9,6 +9,14 @@ updatedDate: 2026-07-01
 ComponentVersion: 1.7.1
 ---
 
+## AVA 1.0.1 polling correction — 2026-10-30
+
+**Published 1.0.1 replaces the defective 1.0.0 polling path; existing conditional host requirements remain.** [Exact source](https://github.com/thatapp/connector-hubspot/tree/491571cc0590cbe60e216656997b37ba9779ca83) · [Report](https://github.com/thatapp/connector-hubspot/blob/491571cc0590cbe60e216656997b37ba9779ca83/REPORT.md) · [Intake](https://github.com/thatapp/connector-hubspot/blob/491571cc0590cbe60e216656997b37ba9779ca83/INTAKE.json).
+
+This chat reproduced 1.0.0 failure with null or omitted snapshots, then corrected null initial state without accepting malformed or incompatible checkpoints. The final 1.0.1 commit passes 74 offline tests, 53 canonical actual-worker outcomes, allowlist and secret scan (59 files) on Node 20.20.2 and 24.13.0. Seven direct worker probes per runtime cover null/omitted/empty state and four invalid-state controls. Hostcheck passes. Runtime host is `4576be108e21b597d1fbffd4163fb05cd821c834`; corrected harness `f05a0c4d81f8b79dde6912da8b2b8f8384b40cf7` preserves explicit null and omits absent snapshot instead of substituting an object. Zero network attempts; no real credentials or customer data.
+
+The immutable 1.0.0 tag and main branch are unchanged. Its scope and original receipts below are historical; they do not establish initial-state correctness. Version 1.0.1 fixes that defect only. OAuth, environment delivery, inbound webhook, scoped storage and other polling qualifications remain. Installation and live vendor behavior remain UNVERIFIED.
+
 ## AVA 1.0.0 release status — 2026-10-30
 
 **PUBLISHED scoped; WAITING HOST #57 credentials/OAuth and #75 binary transport/scoped storage; custom environment #58, deprecated webhook #74 and polling limitations #80 remain qualified**. [Published source](https://github.com/thatapp/connector-hubspot/tree/6479855a0bcb20ace70af2ed0b4d3763412531e1) · [Contract report](https://github.com/thatapp/connector-hubspot/blob/6479855a0bcb20ace70af2ed0b4d3763412531e1/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-hubspot/blob/6479855a0bcb20ace70af2ed0b4d3763412531e1/INTAKE.json).

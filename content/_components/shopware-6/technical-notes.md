@@ -13,6 +13,10 @@ ComponentVersion: 1.1.3
 
 > **Historical component releases.** The entries below record upstream/component release facts. They do not establish the build installed on the current host. Sailor versions and renamed package coordinates in these entries are historical references, not installation instructions or a current runtime support matrix.
 
+## AVA 1.0.0 source release — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST #57 metadata authentication and #72 integration; #80 parity limits.** The immutable [1.0.0 source](https://github.com/thatapp/connector-shopware-6/tree/535a56fdc3a8b0109dd6a1ec6a9de7238a23a9d2) is separate from the historical versions below. See the [current scope and limitations](index#ava-100-release-status--2026-10-30) and [full report](https://github.com/thatapp/connector-shopware-6/blob/535a56fdc3a8b0109dd6a1ec6a9de7238a23a9d2/REPORT.md). All four local intake gates pass; installation, live vendor acceptance and UI behavior remain **UNVERIFIED**.
+
 ## Chagelog
 
 ### 1.1.3 (October 31, 2023)
