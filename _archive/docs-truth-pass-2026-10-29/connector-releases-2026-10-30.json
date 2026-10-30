@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T06:19:36.284627+00:00",
+  "checked_at_utc": "2026-10-30T06:49:30.386849+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -346,10 +346,70 @@
           "sha256": "21f8b4fab04db969ca678d9f9a097aa0a57c3b7fab66b9b445073c5b6ff06848"
         }
       ]
+    },
+    {
+      "slug": "aws-s3",
+      "repository": "https://github.com/thatapp/connector-amazon-aws-s3",
+      "tag": "1.0.0",
+      "commit": "f6fca04376efac05852bbc93f6608bd6db803e12",
+      "status": "PUBLISHED scoped; WAITING HOST #72/#75 text/binary transport and scoped storage; #58 custom environment and #80 URL/size/CSV/polling qualifications",
+      "intake_url": "https://github.com/thatapp/connector-amazon-aws-s3/blob/f6fca04376efac05852bbc93f6608bd6db803e12/INTAKE.json",
+      "intake_sha256": "991eb3323f1cf64b05b7471b4052cab6b5ea0bb7699b4db8d2f9be88474ffd42",
+      "intake_review": "This chat ran all four gates on Node20/24: 69 npm tests, 42 cases/49 canonical workers and six supplemental workers; zero network attempts.",
+      "pages": [
+        {
+          "path": "content/_components/aws-s3/index.md",
+          "sha256": "707efd7b5fd15cffcccaf9817b7b1ad0a8d924c47277b25c0f4112ecbab6d80a"
+        },
+        {
+          "path": "content/_components/aws-s3/technical-notes.md",
+          "sha256": "7b45d59b61a3f485d3ae531ee60612c7b61b769776ddf47b68c77837297deae3"
+        }
+      ]
+    },
+    {
+      "slug": "google-drive",
+      "repository": "https://github.com/thatapp/connector-google-drive",
+      "tag": "1.0.0",
+      "commit": "b78d256edfa39d5123f17e52b33111481a26dfd5",
+      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth integration, #72 redaction and #75 binary transport/scoped storage; #80 URL/size/polling qualifications",
+      "intake_url": "https://github.com/thatapp/connector-google-drive/blob/b78d256edfa39d5123f17e52b33111481a26dfd5/INTAKE.json",
+      "intake_sha256": "85ee02572314b48a90475d421feba2cebd8db235cb9959ef67b68b1dc36328e3",
+      "intake_review": "Independently read the immutable published report and accepted INTAKE.json: 71 tests, 40 canonical workers, zero network; remote annotated tag and absent main verified. Additional sealed/supplemental results are publisher-reported.",
+      "pages": [
+        {
+          "path": "content/_components/google-drive/index.md",
+          "sha256": "ce8f63dffdc93f3b74c8d07b6ed00f66b61709f9ae9831f874ff2f47dd336714"
+        },
+        {
+          "path": "content/_components/google-drive/technical-notes.md",
+          "sha256": "f94a8e72ee8c3578d88e0c65c9240c524d5a92889715c7e52d9a66e4462e7757"
+        }
+      ]
+    },
+    {
+      "slug": "dropbox",
+      "repository": "https://github.com/thatapp/connector-dropbox",
+      "tag": "1.0.0",
+      "commit": "cb21f9ffab268150e4236add52e86afb9efe699e",
+      "status": "PUBLISHED scoped; WAITING HOST #72/#75 transport/scoped storage, #58 custom environment and #80 legacy attachment URL parity",
+      "intake_url": "https://github.com/thatapp/connector-dropbox/blob/cb21f9ffab268150e4236add52e86afb9efe699e/evidence/intake.json",
+      "intake_sha256": "57e12a1b98d1adcd9590e2b5f90f6489e2344bde03dbfdc3ce810105908baa4d",
+      "intake_review": "Independently read immutable published report and accepted evidence/intake.json: 80 tests, 34 canonical workers, zero network; remote tag and unchanged main verified. Additional 82 sealed tests/23 audits are publisher-reported.",
+      "pages": [
+        {
+          "path": "content/_components/dropbox/index.md",
+          "sha256": "1347fd31de20976cc65bd5ebe70a503add63b1d2cc82d76ee5e3b911873867c0"
+        },
+        {
+          "path": "content/_components/dropbox/technical-notes.md",
+          "sha256": "c7dcb2e2fa356024dd3f07ba708be535f6ba47c13994868b17455c13da13a27b"
+        }
+      ]
     }
   ],
   "checks": [
-    "All 16 release tags resolve to the stated commits: ten from this chat and six coordinated releases previously independently read with git ls-remote. HubSpot and Lambda additionally verified at publication.",
+    "All 19 release tags resolve to the stated commits: eleven from this chat and eight coordinated releases independently read. S3, Drive and Dropbox tags/main state independently rechecked October30.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
@@ -440,6 +500,29 @@
       "commit": "df3d81d3c70644aed52db0034adf0a289f56014e",
       "tag_object": "4f1a1dfa45f9c9fb44d55029fcf62ece90404828",
       "main": "df3d81d3c70644aed52db0034adf0a289f56014e",
+      "status": "PASS"
+    }
+  ],
+  "priority_release_tag_checks": [
+    {
+      "slug": "aws-s3",
+      "commit": "f6fca04376efac05852bbc93f6608bd6db803e12",
+      "tag_object": "439048aacc0b153dbc676027273c480f10367c99",
+      "main": "a8e298db7dfa90235d2a67134155f6aa69de14f7",
+      "status": "PASS"
+    },
+    {
+      "slug": "google-drive",
+      "commit": "b78d256edfa39d5123f17e52b33111481a26dfd5",
+      "tag_object": "c20371f3b34080b744f44cc33c9cc31e3e9a6456",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "dropbox",
+      "commit": "cb21f9ffab268150e4236add52e86afb9efe699e",
+      "tag_object": "e2d068220963366ddbbfec03c54ec8822c39fd01",
+      "main": "f8e487d35cf8a78f76de621a43af86c2b95d6dc9",
       "status": "PASS"
     }
   ]
