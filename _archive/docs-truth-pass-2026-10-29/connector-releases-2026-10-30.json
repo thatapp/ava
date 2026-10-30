@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T16:55:15.086557+00:00",
+  "checked_at_utc": "2026-10-30T17:21:41.780779+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -782,6 +782,27 @@
           "sha256": "31b5f5256aae9adc53be0cd8f043eb51d2baa79d7710eb7717a7445fd3d85aaa"
         }
       ]
+    },
+    {
+      "slug": "facebook",
+      "repository": "https://github.com/thatapp/connector-facebook",
+      "tag": "1.0.0",
+      "commit": "036b3f8216df6504412a67566ae46e4bddd46cbd",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80; not installed or live verified",
+      "intake_url": "https://github.com/thatapp/connector-facebook/blob/036b3f8216df6504412a67566ae46e4bddd46cbd/evidence/precommit-intake-24.json",
+      "intake_git_blob_sha": "b495774dbe227bcc17a7fd1ca7f8ffbfaf20747a",
+      "intake_sha256": "41a20c7c97570305fc3692701ae4df2b8d2de4a601656abc54cf722aacbfe3e1",
+      "intake_review": "Accepted packaged receipt; publisher/root final audits attributed, eight final receipt hashes checked here.",
+      "pages": [
+        {
+          "path": "content/_components/facebook/index.md",
+          "sha256": "9140196a65f60d00a9d6917e9d9ae2858a009a5e36336f99e611a0f22df3ee9d"
+        },
+        {
+          "path": "content/_components/facebook/technical-notes.md",
+          "sha256": "99cf1021b128db6f7fa8c088510997940d074014e695bd2c8da0354882c8202b"
+        }
+      ]
     }
   ],
   "checks": [
@@ -1069,6 +1090,14 @@
       "main": "d7a51040c2dfd01b2aee62afaefbca13fd910f66",
       "tag": "1.0.0",
       "status": "PASS"
+    },
+    {
+      "slug": "facebook",
+      "commit": "036b3f8216df6504412a67566ae46e4bddd46cbd",
+      "tag_object": "7bc37167bd032dae97d5ad32cd4e7168a074a6ca",
+      "main": null,
+      "tag": "1.0.0",
+      "status": "PASS; main absent"
     }
   ],
   "superseded_releases": [
@@ -1224,6 +1253,50 @@
       "notice": "A coordinating actual-worker audit reproduced a short-credential defect in published1.0.0: masking its string configuration hash makes a resumed poll fail409. A checkpoint/size redesign is under review; it is not yet a verified published replacement.",
       "source": "Coordinating chat actual-worker audit; reported on issue62. No new release asserted.",
       "superseded_by": "1.0.1"
+    }
+  ],
+  "blocked_candidates": [
+    {
+      "slug": "csv",
+      "repository": "https://github.com/thatapp/connector-csv",
+      "commit": "62f1e8d70e6b56080bde355194232df89893b9f0",
+      "pr": "https://github.com/thatapp/connector-csv/pull/1",
+      "tag": null,
+      "status": "BLOCKED #87; full canonical/standalone intake rejected, no whole-connector acceptance",
+      "unit_tests_per_node": 64,
+      "supplemental_execution_workers_per_node": 49,
+      "metadata_workers_per_node": 3,
+      "secret_files_per_node": 106,
+      "blocker": 87,
+      "pages": [
+        {
+          "path": "content/_components/csv/index.md",
+          "sha256": "4cb6b10390f602e705ce5a57d6009c3fc6f71709d8fbab162d7ca53bb12eeee8"
+        },
+        {
+          "path": "content/_components/csv/actions.md",
+          "sha256": "7fba2414c7971d566c442b14778fc0d753e587a839845f4f10240b09b5456467"
+        },
+        {
+          "path": "content/_components/csv/technical-notes.md",
+          "sha256": "42eba9c40f4e907fa61b7ce3fea7ea74f5af11ecef2e6fd1b4ecc1e43a5e80e9"
+        },
+        {
+          "path": "content/_components/csv/deprecated-functions.md",
+          "sha256": "5123fe4982de9e831aa3d8347f4418fef35da538d4cd31730e64b4d6cd059885"
+        }
+      ],
+      "committed_receipts": {
+        "csv-62f1e8d-committed-intake-node20.json": "eea197ee7b09d15c1aff9e3088a9f98165b8a91d2da1723b04e7b96912a7edb3",
+        "csv-62f1e8d-committed-hostcheck-node20.json": "cd00c19afaaf47cdd9b269f98bb3006c8cf3b4fd4b86ba5e98637627b2442519",
+        "csv-62f1e8d-committed-proof-node20.json": "37373014474bd810341edab385cb464722fc200c5421303ff48de5764ac08092",
+        "csv-62f1e8d-committed-intake-node24.json": "286688edf21111e27992b3c5ef5b9dd67d071a7e29e5f486358313d297827e79",
+        "csv-62f1e8d-committed-hostcheck-node24.json": "cd00c19afaaf47cdd9b269f98bb3006c8cf3b4fd4b86ba5e98637627b2442519",
+        "csv-62f1e8d-committed-proof-node24.json": "ee55a9565fdca67acc1a668f59e6eed023a19357a8d1bf89fd08936cadeaf52a"
+      },
+      "evidence_followup_commit": "eb611a398d4aa2fa8f2e4a79c93568ec66de4e89",
+      "receipt_url": "https://github.com/thatapp/connector-csv/blob/eb611a398d4aa2fa8f2e4a79c93568ec66de4e89/evidence/csv-62f1e8d-committed-intake-node24.json",
+      "followup_secret_files_per_node": 113
     }
   ]
 }

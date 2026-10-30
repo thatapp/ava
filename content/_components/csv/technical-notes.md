@@ -11,6 +11,22 @@ redirect_from:
   - /components/csv/changelog.html
 ---
 
+## AVA candidate status — stream aggregation blocked
+
+**Not released or installed.** [Draft PR1](https://github.com/thatapp/connector-csv/pull/1) and [full contract report](https://github.com/thatapp/connector-csv/blob/62f1e8d70e6b56080bde355194232df89893b9f0/REPORT.md) pin candidate62f1e8d70e6b56080bde355194232df89893b9f0. The recovered2.2.2 source is deprecated; the current3.3.0 contract was checked against public elasticio/csv-component-v3 at26de77ac8a1efd2b89714b6ae75e48f1135b2e3f. Both source trees and all four documentation pages/14screenshots are preserved.
+
+Read CSV attachment, Create CSV From JSON Array and Read CSV file from URL have supplemental actual-worker proofs. Reads support Fetch All/Individual/Batch, headers, delimiter detection, comments, empty-line policy and bounded numeric/boolean conversion. Arrays use current mapped items/header, optional column order/separator/newline and the page's backtick formula prefix. No credentials are required. Anonymous HTTPS downloads must preserve complete200 binary bytes; partial206/Content-Range refuses before emission. Scoped input references are caller-owned. Output attachmentUrl is an explicit scoped reference object, not a legacy downloadable URL; #75/#80 remain.
+
+Create CSV From Message Stream is unavailable and refuses501 before I/O. The original v3 source was tested in six sealed isolated workers per Node20/24: arrays emit correctly, but separate stream calls return success without data before their unawaited10second timers, after which each worker exits. [Host #87](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/87) requires durable scoped aggregation, inactivity deadlines, leased flush/delivery, generation fencing and crash recovery. A single-row output or an in-memory timer does not satisfy that contract.
+
+Final committed checks on both Node20.20.2/24.13.0 pass64 unit tests, the require allowlist,106-file secret scans and49 execution/verifier plus3 metadata workers. Canonical intake and standalone hostcheck deliberately remain REJECTED because the full descriptor has no positive stream-window case. No tag exists and no release count includes this candidate. All tests use synthetic data with zero external network attempts.
+
+Current bounds are4MiB input bytes/aggregate serialized output,5000rows,256columns; duplicate/empty/reserved headers and invalid UTF8 refuse. The trigger rereads the whole file, then emits an empty completion snapshot; it has no deduplication/change watermark. Custom environment overrides and historical10MB/RAM-only sizes are not qualified (#58). Typed conversion preserves dates, empty fields and out-of-safe-range numbers as strings. Column-order inference uses all row keys; false/zero are preserved; nonprimitive cells become [object Object]. UI mapping, spreadsheet-client formula interpretation, realtime operation and deployed storage remain unverified. Deprecated functions and historical release notes below remain historical.
+
+The [evidence-only follow-up](https://github.com/thatapp/connector-csv/tree/eb611a398d4aa2fa8f2e4a79c93568ec66de4e89) preserves all six exact runtime receipts and their hashes, including the [rejected Node 24 intake](https://github.com/thatapp/connector-csv/blob/eb611a398d4aa2fa8f2e4a79c93568ec66de4e89/evidence/csv-62f1e8d-committed-intake-node24.json). Runtime and fixtures are unchanged. Both Node 20/24 checks were rerun on that packaging commit: 64 unit tests, the require allowlist, 113-file scans and 52 supplemental workers pass; canonical intake and standalone hostcheck remain rejected for the same stream-window blocker.
+
+---
+
 > **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
 
 > **Historical component releases.** The entries below record upstream/component release facts. They do not establish the build installed on the current host. Sailor versions and renamed package coordinates in these entries are historical references, not installation instructions or a current runtime support matrix.
