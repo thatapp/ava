@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T18:26:41.048471+00:00",
+  "checked_at_utc": "2026-10-30T19:10:15.410983+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -846,10 +846,34 @@
           "sha256": "a9055a340513221c2e80541bdf5767490bab410c4d7615e5fa80dacb8624bdc3"
         }
       ]
+    },
+    {
+      "slug": "graphql",
+      "repository": "https://github.com/thatapp/connector-blendededge-graphql-component-oih",
+      "tag": "1.0.0",
+      "commit": "a76d6ddc58a5ae043797cc86ea4104166717715b",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80/#88; not installed",
+      "intake_url": "https://github.com/thatapp/connector-blendededge-graphql-component-oih/blob/a76d6ddc58a5ae043797cc86ea4104166717715b/evidence/release-qualification/connector-9e5-intake-node24.json",
+      "intake_git_blob_sha": "e11373d7504b5cdb5414bf8804bf84550d83e595",
+      "intake_sha256": "71a71bc3f74295db320008e3dbe315c175f2b3eb3dfbcfa1fe333eb40a5c3d25",
+      "intake_review": "Packaged prior-runtime accepted intake and complete REPORT read; final release-specific all-four-gate and exact-package host88 receipts immutably archived in engine1e02a2fc. Independent package audit verifies89rawfiles/13packagedreceipt hashes.",
+      "final_intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/1e02a2fc121b3ef7ff4208b401e299f254098a58/docs/ipaas/source-inventory-2026-10-30/graphql-release-intake/qualification.json",
+      "publication_receipt_sha256": "838a79a641198b109585fe3daf4215fadc40849035c401e342ff18d39f0374de",
+      "host_dependency": "cac38ac10c623706b086454a5ccf91f84adab89b",
+      "pages": [
+        {
+          "path": "content/_components/graphql/index.md",
+          "sha256": "2dd0d56bdc662482b4ef32a72777e587beeab21126b8ad3b69164511f90302fb"
+        },
+        {
+          "path": "content/_components/graphql/technical-notes.md",
+          "sha256": "d3eb731e03ba987ef8f6408e6dce934f99f60b5092a693065deb53789ac9add8"
+        }
+      ]
     }
   ],
   "checks": [
-    "All 38 current release tags resolve to recorded commits; tag/main readbacks are retained with publication qualifications. Historical superseded releases remain separate.",
+    "All39 current release tags resolve to recorded commits; tag/main readbacks are retained with publication qualifications. Historical superseded releases remain separate.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
@@ -1157,6 +1181,14 @@
       "main": null,
       "tag": "1.0.0",
       "status": "PASS"
+    },
+    {
+      "slug": "graphql",
+      "commit": "a76d6ddc58a5ae043797cc86ea4104166717715b",
+      "tag_object": "d2adce7e0974f698386c34e8c4aaef1b4e29e5ee",
+      "main": "d929bb232b174aed06ad4d5286989ebfa5946feb",
+      "tag": "1.0.0",
+      "status": "PASS"
     }
   ],
   "superseded_releases": [
@@ -1360,41 +1392,6 @@
       "extra_roundtrip_workers_per_node": 24,
       "independent_checks_per_node": 95,
       "independent_workers_per_node": 106
-    },
-    {
-      "slug": "graphql",
-      "repository": "https://github.com/thatapp/connector-blendededge-graphql-component-oih",
-      "commit": "9e5e8073962c9a7ade70e6cafb17f3e78a2641fc",
-      "pr": "https://github.com/thatapp/connector-blendededge-graphql-component-oih/pull/4",
-      "tag": null,
-      "status": "BLOCKED #88; connector review clear, host MR164 review and integration pending",
-      "blocker": 88,
-      "unit_tests_per_node": 72,
-      "canonical_workers_per_node": 18,
-      "supplemental_workers_per_node": 31,
-      "secret_files_per_node": 71,
-      "pages": [
-        {
-          "path": "content/_components/graphql/index.md",
-          "sha256": "965d66dee006d1ba7eb3bc520ac7f1155202abbd861c3427a7a0ed17249ecbf1"
-        },
-        {
-          "path": "content/_components/graphql/technical-notes.md",
-          "sha256": "ead1fcb24ae58d5136663badb2ab41ef737633f05543b00ff11f05d37f3422b5"
-        }
-      ],
-      "committed_receipts": {
-        "graphql-correction3-final-hostcheck-node20.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
-        "graphql-correction3-final-hostcheck-node24.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
-        "graphql-correction3-final-intake-node20.json": "124f54dcf6462ddf6c2d47d493e254b934e2d3a39ccfe2a714df5855a306df67",
-        "graphql-correction3-final-intake-node24.json": "71a71bc3f74295db320008e3dbe315c175f2b3eb3dfbcfa1fe333eb40a5c3d25",
-        "graphql-correction3-final-proof-node20.json": "32c898eaf1fb765481394755cdedaf749d9754fa5ca4e3b13c6b496f12c75019",
-        "graphql-correction3-final-proof-node24.json": "946f30b4c74d8a0dbdcd430c21761ea9bb980172b8685cb1d8f3ca64147ee496"
-      },
-      "runtime_commit": "ddda174c4b72524e2aba755ba14c0cad89f43246",
-      "independent_workers_per_node": 125,
-      "host_candidate_commit": "8ef36036afd4e7c3bc3a9dad117a9558c380ae54",
-      "host_mr": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/merge_requests/164"
     }
   ],
   "superseded_blocked_candidates": [
@@ -1471,6 +1468,42 @@
         "graphql-committed-hostcheck-node24.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
         "graphql-committed-proof-node24.json": "a095707fc507a4f91e5838c2f0e4a2dc1fe6621e794ce3d6c1a0513744d4f432"
       },
+      "pages_are_historical": true
+    },
+    {
+      "slug": "graphql",
+      "repository": "https://github.com/thatapp/connector-blendededge-graphql-component-oih",
+      "commit": "9e5e8073962c9a7ade70e6cafb17f3e78a2641fc",
+      "pr": "https://github.com/thatapp/connector-blendededge-graphql-component-oih/pull/4",
+      "tag": null,
+      "status": "BLOCKED #88; connector review clear, host MR164 review and integration pending",
+      "blocker": 88,
+      "unit_tests_per_node": 72,
+      "canonical_workers_per_node": 18,
+      "supplemental_workers_per_node": 31,
+      "secret_files_per_node": 71,
+      "pages": [
+        {
+          "path": "content/_components/graphql/index.md",
+          "sha256": "965d66dee006d1ba7eb3bc520ac7f1155202abbd861c3427a7a0ed17249ecbf1"
+        },
+        {
+          "path": "content/_components/graphql/technical-notes.md",
+          "sha256": "ead1fcb24ae58d5136663badb2ab41ef737633f05543b00ff11f05d37f3422b5"
+        }
+      ],
+      "committed_receipts": {
+        "graphql-correction3-final-hostcheck-node20.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
+        "graphql-correction3-final-hostcheck-node24.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
+        "graphql-correction3-final-intake-node20.json": "124f54dcf6462ddf6c2d47d493e254b934e2d3a39ccfe2a714df5855a306df67",
+        "graphql-correction3-final-intake-node24.json": "71a71bc3f74295db320008e3dbe315c175f2b3eb3dfbcfa1fe333eb40a5c3d25",
+        "graphql-correction3-final-proof-node20.json": "32c898eaf1fb765481394755cdedaf749d9754fa5ca4e3b13c6b496f12c75019",
+        "graphql-correction3-final-proof-node24.json": "946f30b4c74d8a0dbdcd430c21761ea9bb980172b8685cb1d8f3ca64147ee496"
+      },
+      "runtime_commit": "ddda174c4b72524e2aba755ba14c0cad89f43246",
+      "independent_workers_per_node": 125,
+      "host_candidate_commit": "8ef36036afd4e7c3bc3a9dad117a9558c380ae54",
+      "host_mr": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/merge_requests/164",
       "pages_are_historical": true
     }
   ]
