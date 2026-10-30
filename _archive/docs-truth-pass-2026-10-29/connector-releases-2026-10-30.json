@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T17:21:41.780779+00:00",
+  "checked_at_utc": "2026-10-30T17:42:36.366777+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -803,6 +803,27 @@
           "sha256": "99cf1021b128db6f7fa8c088510997940d074014e695bd2c8da0354882c8202b"
         }
       ]
+    },
+    {
+      "slug": "linkedin",
+      "repository": "https://github.com/thatapp/connector-linkedin",
+      "tag": "1.0.0",
+      "commit": "4d7da148f840eaa9050fb0c34660f65f1d3754ea",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#75/#80; not installed or live verified",
+      "intake_url": "https://github.com/thatapp/connector-linkedin/blob/4d7da148f840eaa9050fb0c34660f65f1d3754ea/evidence/prepared/intake-24.json",
+      "intake_git_blob_sha": "8e8102d880cd313d9f0188a564e8456ca060d4a4",
+      "intake_sha256": "ac30947284d2425414cb79b46d5c2b320fe9d071e8cbd1a5bb23e42995717b74",
+      "intake_review": "Accepted packaged receipt; complete report and 12 external final receipt hashes verified, publisher/reviewer tests attributed.",
+      "pages": [
+        {
+          "path": "content/_components/linkedin/index.md",
+          "sha256": "426c7ba6e1f8728d1dcbf23a71e74ce402fe5b3539025c0f633c1d765cdeb024"
+        },
+        {
+          "path": "content/_components/linkedin/technical-notes.md",
+          "sha256": "b8f4d082551593e28cd8575e34b3ed49e38184db4aa63eff657be8db828b9835"
+        }
+      ]
     }
   ],
   "checks": [
@@ -1098,6 +1119,14 @@
       "main": null,
       "tag": "1.0.0",
       "status": "PASS; main absent"
+    },
+    {
+      "slug": "linkedin",
+      "commit": "4d7da148f840eaa9050fb0c34660f65f1d3754ea",
+      "tag_object": "a92964c08c1608373946ae921791f78acbd31f87",
+      "main": "7562706d9814b9fea8cfed9ebbfc4d9a1ea1aa53",
+      "tag": "1.0.0",
+      "status": "PASS"
     }
   ],
   "superseded_releases": [
@@ -1259,6 +1288,85 @@
     {
       "slug": "csv",
       "repository": "https://github.com/thatapp/connector-csv",
+      "commit": "b3c2864b91f6c9f3518e30b2c85c5654d27bcbac",
+      "pr": "https://github.com/thatapp/connector-csv/pull/1",
+      "tag": null,
+      "status": "BLOCKED #87; full canonical/standalone intake rejected, no whole-connector acceptance",
+      "unit_tests_per_node": 78,
+      "supplemental_execution_workers_per_node": 49,
+      "metadata_workers_per_node": 3,
+      "secret_files_per_node": 126,
+      "blocker": 87,
+      "pages": [
+        {
+          "path": "content/_components/csv/index.md",
+          "sha256": "42b87c3a2562524bb9310f17bdef8c943281bc1e8894f5a35d65ad45ab15c89e"
+        },
+        {
+          "path": "content/_components/csv/actions.md",
+          "sha256": "6a6f9b32e7d73e3b0061c8d2d5a487af5e46993495ef188598a5b2f0a110dfd7"
+        },
+        {
+          "path": "content/_components/csv/technical-notes.md",
+          "sha256": "c45f2e0a5c34e92e6f835b71548f19cb10a65c17973a0cbf5638a9bcdf4e4ad8"
+        },
+        {
+          "path": "content/_components/csv/deprecated-functions.md",
+          "sha256": "b98abb84bd7b289edccf8f7d9ad1f4e0bb77b9bd854d1e4cd91291fa564c0fe7"
+        }
+      ],
+      "committed_receipts": {
+        "csv-empty-row-final-intake-node20.json": "a4baddd407051ba51dd45fcee89ef0f62f03199389121d07457e951399a6fcc2",
+        "csv-empty-row-final-hostcheck-node20.json": "cd00c19afaaf47cdd9b269f98bb3006c8cf3b4fd4b86ba5e98637627b2442519",
+        "csv-empty-row-final-proof-node20.json": "37373014474bd810341edab385cb464722fc200c5421303ff48de5764ac08092",
+        "csv-empty-row-final-empty-row-proof-node20.json": "7d2e79b574a31ab8b4e5e576532f1132ff5545f907abfa83d83f8120f8d01345",
+        "csv-empty-row-final-intake-node24.json": "8a6c5dfe3b33dc2559b9246237daa08c2ea76ad8d3866156be0bc5c4774b5fc6",
+        "csv-empty-row-final-hostcheck-node24.json": "cd00c19afaaf47cdd9b269f98bb3006c8cf3b4fd4b86ba5e98637627b2442519",
+        "csv-empty-row-final-proof-node24.json": "ee55a9565fdca67acc1a668f59e6eed023a19357a8d1bf89fd08936cadeaf52a",
+        "csv-empty-row-final-empty-row-proof-node24.json": "02ec5de58c53b82bea4d5436c5c58c1f3f4608039a9bb50c744b92cf26b359e8"
+      },
+      "evidence_followup_commit": "2b19ba3bc1feaedc656dbcdf0a940acbb59ec199",
+      "receipt_url": "https://github.com/thatapp/connector-csv/blob/2b19ba3bc1feaedc656dbcdf0a940acbb59ec199/evidence/empty-row-qualified/csv-empty-row-final-intake-node24.json",
+      "extra_roundtrip_workers_per_node": 24,
+      "independent_checks_per_node": 95,
+      "independent_workers_per_node": 106
+    },
+    {
+      "slug": "graphql",
+      "repository": "https://github.com/thatapp/connector-blendededge-graphql-component-oih",
+      "commit": "3aa2f2be0d2a165b5820f48b705a1e99ce524462",
+      "pr": "https://github.com/thatapp/connector-blendededge-graphql-component-oih/pull/4",
+      "tag": null,
+      "status": "BLOCKED #88; action intake passes, config-time metadata unavailable",
+      "blocker": 88,
+      "unit_tests_per_node": 60,
+      "canonical_workers_per_node": 18,
+      "supplemental_workers_per_node": 23,
+      "secret_files_per_node": 61,
+      "pages": [
+        {
+          "path": "content/_components/graphql/index.md",
+          "sha256": "44f28c5ca59d2643a5265cbfa18d667b210de81ea31e82ea955e8ff538838214"
+        },
+        {
+          "path": "content/_components/graphql/technical-notes.md",
+          "sha256": "4a944b8dd4b40480c9d09e3564314fc7997f41dd3f65b0f887c48e67341e02e7"
+        }
+      ],
+      "committed_receipts": {
+        "graphql-committed-intake-node20.json": "3945249d2c9a726665a086b2adb68c95341ae9e7e9a600dd4623d86a5bda70b8",
+        "graphql-committed-hostcheck-node20.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
+        "graphql-committed-proof-node20.json": "1de7940f45fda866028acfb805be5cd8e9f964a3a5f406829e6815fc03afea96",
+        "graphql-committed-intake-node24.json": "4ba5a4a80a2989bacffb8028463b2364a0b3a5ffe49363f15afa79d7ba860790",
+        "graphql-committed-hostcheck-node24.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
+        "graphql-committed-proof-node24.json": "a095707fc507a4f91e5838c2f0e4a2dc1fe6621e794ce3d6c1a0513744d4f432"
+      }
+    }
+  ],
+  "superseded_blocked_candidates": [
+    {
+      "slug": "csv",
+      "repository": "https://github.com/thatapp/connector-csv",
       "commit": "62f1e8d70e6b56080bde355194232df89893b9f0",
       "pr": "https://github.com/thatapp/connector-csv/pull/1",
       "tag": null,
@@ -1296,7 +1404,8 @@
       },
       "evidence_followup_commit": "eb611a398d4aa2fa8f2e4a79c93568ec66de4e89",
       "receipt_url": "https://github.com/thatapp/connector-csv/blob/eb611a398d4aa2fa8f2e4a79c93568ec66de4e89/evidence/csv-62f1e8d-committed-intake-node24.json",
-      "followup_secret_files_per_node": 113
+      "followup_secret_files_per_node": 113,
+      "pages_are_historical": true
     }
   ]
 }
