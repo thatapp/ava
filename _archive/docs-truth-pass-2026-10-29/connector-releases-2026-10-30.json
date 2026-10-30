@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T20:46:24.993047+00:00",
+  "checked_at_utc": "2026-10-30T21:33:06.098915+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -920,10 +920,33 @@
           "sha256": "adf8be9ae280c960caeb5f7fdfebbd60265742e9d248d5c6956e69ae84ae3fbc"
         }
       ]
+    },
+    {
+      "slug": "open-api",
+      "repository": "https://github.com/thatapp/connector-open-api",
+      "tag": "1.0.0",
+      "commit": "7dd00dbbaad6222c525d24162a0239b3164ccda9",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#75/#80; not installed",
+      "intake_url": "https://github.com/thatapp/connector-open-api/blob/7dd00dbbaad6222c525d24162a0239b3164ccda9/evidence/release-qualification/owner/open-api-correction-review-intake-node24.json",
+      "intake_git_blob_sha": "9e628ab7869988782fe8e08841db8fe0cf42a478",
+      "intake_sha256": "ad9a55fd6595e3567aff81418feb6dce8ddc1cd827a3e3e6b847eb620e21b4ec",
+      "intake_review": "Packaged reviewed032b source intake accepted138/31/166; exact final7dd package separately passes138/31/256 both runtimes, archived at engine8a6b949. B172cases262HTTP; C260invocations184metadata76actions295HTTP each. Root verifies263rawfiles87neworiginalartifacts64baselinepaths. Six findings resolved; original failures preserved.",
+      "final_intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/8a6b949c1d4290a8ff7ce7689f53cf4e67edcc07/docs/ipaas/source-inventory-2026-10-30/open-api-release-intake/qualification.json",
+      "publication_receipt_sha256": "774114b3de99407ac3925a35afeecdcc4f85bef25ddb63a132e10f9c29a54ada",
+      "pages": [
+        {
+          "path": "content/_components/open-api/index.md",
+          "sha256": "cc429ffcc1a44bd294f2632821738573c3a023f684db0d3a162dda53723e02cf"
+        },
+        {
+          "path": "content/_components/open-api/technical-notes.md",
+          "sha256": "9069a11b3e4850428b9e0d9dc74958ce20f62a97837001b85fb5e3783a1741cd"
+        }
+      ]
     }
   ],
   "checks": [
-    "All41 current release tags resolve to recorded commits; tag/main readbacks are retained with publication qualifications. Historical superseded releases remain separate.",
+    "All42 current release tags resolve to recorded commits; tag/main readbacks are retained with publication qualifications. Historical superseded releases remain separate.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
@@ -1253,6 +1276,14 @@
       "commit": "466adc8944ba02297fd499bc6120081137c725ae",
       "tag_object": "5960a37c6c7af66538c053e6013894af7e1c0f48",
       "main": "6af05a6c9509800a2f12c6a5ee291afbdcb181c5",
+      "tag": "1.0.0",
+      "status": "PASS"
+    },
+    {
+      "slug": "open-api",
+      "commit": "7dd00dbbaad6222c525d24162a0239b3164ccda9",
+      "tag_object": "f98f1c9634a2d32dbf217ab81edab73f56b8324d",
+      "main": "2bdcbd961d90eeb8629c3493b4520c47027b65bf",
       "tag": "1.0.0",
       "status": "PASS"
     }
