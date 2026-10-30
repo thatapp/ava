@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T09:44:30.851419+00:00",
+  "checked_at_utc": "2026-10-30T10:25:10.890921+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -201,22 +201,21 @@
     {
       "slug": "google-calendar",
       "repository": "https://github.com/thatapp/connector-google-calendar",
-      "tag": "1.0.0",
-      "commit": "35be581702443f31927072be2a01b769022b8040",
-      "status": "PUBLISHED 1.0.0; first-run polling BLOCKED #80; vendor and installation checks UNVERIFIED",
-      "intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/0fbb6b5b4d40c9c60491ffc8b5f73f590203dd3f/docs/ipaas/connector-submissions/google-calendar-evidence/intake-standalone.json",
-      "intake_sha256": "ea19189c1e4d562b6db4758862a4438ed4cff977e03b4ee9f65089db25052869",
-      "evidence_commit": "0fbb6b5b4d40c9c60491ffc8b5f73f590203dd3f",
-      "intake_review": "Coordinated build chat ran release intake; this docs chat read and hashed the pinned standalone four-gate receipt.",
-      "report_git_blob_sha": "4764b3494a2a7a0f0c7a94b93ebb1ef5dc5d1741",
+      "tag": "1.0.1",
+      "commit": "987fe5b867e1a1a7e1741a6de8a4e0548b76cf62",
+      "status": "PUBLISHED 1.0.1 initial/numeric polling correction; conditional #57/#72/#80",
+      "intake_url": "https://github.com/thatapp/connector-google-calendar/blob/987fe5b867e1a1a7e1741a6de8a4e0548b76cf62/INTAKE.json",
+      "intake_git_blob_sha": "f4fed5d01526adce8a445ce3ddafe0fe184e0890",
+      "intake_sha256": "63931c6c38c9ca3236dc68d5b4f62028b01c44d7e7b73cb9e518ca0d89ecac61",
+      "intake_review": "Remote accepted receipt and exact tag readback checked by documentation chat; publisher/reviewer dual-runtime suites attributed, not rerun here. Packaged and final external scan counts are distinguished.",
       "pages": [
         {
           "path": "content/_components/google-calendar/index.md",
-          "sha256": "18f461695c4ef670601cca47c3cc687fcbe3eea5ef41d8d0f36d3cdeb09358ee"
+          "sha256": "c314de56a1119fb7b17ea69bd80a94b9a1ea126269ceb3f9c398bc985691671e"
         },
         {
           "path": "content/_components/google-calendar/technical-notes.md",
-          "sha256": "0552417f79757d25ab60178ac21225be5d0232a0f392eef13ce4925960afc82f"
+          "sha256": "5ca65dd3313dc178919ac04ef748fa58a048bd0ce8b8c494dc2ff0d64d3415fd"
         }
       ]
     },
@@ -371,20 +370,21 @@
     {
       "slug": "google-drive",
       "repository": "https://github.com/thatapp/connector-google-drive",
-      "tag": "1.0.0",
-      "commit": "b78d256edfa39d5123f17e52b33111481a26dfd5",
-      "status": "PUBLISHED 1.0.0; first-run polling BLOCKED #80; PUBLISHED scoped; WAITING HOST #57 OAuth integration, #72 redaction and #75 binary transport/scoped storage; #80 URL/size/polling qualifications",
-      "intake_url": "https://github.com/thatapp/connector-google-drive/blob/b78d256edfa39d5123f17e52b33111481a26dfd5/INTAKE.json",
-      "intake_sha256": "85ee02572314b48a90475d421feba2cebd8db235cb9959ef67b68b1dc36328e3",
-      "intake_review": "Independently read the immutable published report and accepted INTAKE.json: 71 tests, 40 canonical workers, zero network; remote annotated tag and absent main verified. Additional sealed/supplemental results are publisher-reported.",
+      "tag": "1.0.1",
+      "commit": "e4d33fef5feb955f4120072e1c63b1815b30ec64",
+      "status": "PUBLISHED 1.0.1 initial/numeric polling correction; conditional #57/#72/#75/#80",
+      "intake_url": "https://github.com/thatapp/connector-google-drive/blob/e4d33fef5feb955f4120072e1c63b1815b30ec64/INTAKE.json",
+      "intake_git_blob_sha": "4b9ccb895764105365291692841caf83da2a8808",
+      "intake_sha256": "6b253e2768aef9db891b16ca7ffa7030e4bd064522dc2a599b7a22517de4cf58",
+      "intake_review": "Remote accepted receipt and exact tag readback checked by documentation chat; publisher/reviewer dual-runtime suites attributed, not rerun here. Packaged and final external scan counts are distinguished.",
       "pages": [
         {
           "path": "content/_components/google-drive/index.md",
-          "sha256": "fa798f23b87a42d25559c613ce8bed15789e94af3748449f78286c746f2ac3d9"
+          "sha256": "ae7e86780c9fbd115d32227a1905e3e58a5a049c6d0aa00a5e13c0b31fd90eba"
         },
         {
           "path": "content/_components/google-drive/technical-notes.md",
-          "sha256": "b11f283757107ebae681e00a96b7d80ce6af2a5b907c3f49971b8cad4fd737b1"
+          "sha256": "ef8199a8cf2641cd6bea2cbf49bcc213de01177c2a84deaf6e1b0fcfb23f1887"
         }
       ]
     },
@@ -433,7 +433,7 @@
       "repository": "https://github.com/thatapp/connector-gmail",
       "tag": "1.0.0",
       "commit": "3955a08310b705dfe97448f6e610b10bbf7d3055",
-      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth, #72/#75 transport/scoped storage, #58 custom environment and #80 URL/size/polling parity",
+      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth, #72/#75 transport/scoped storage, #58 custom environment and #80 URL/size/polling parity; KNOWN short-credential polling checkpoint defect, correction not yet verified published",
       "intake_url": "https://github.com/thatapp/connector-gmail/blob/3955a08310b705dfe97448f6e610b10bbf7d3055/evidence/intake.json",
       "intake_git_blob_sha": "75d0995eec325030451f0d7e0431ab0d66d961b8",
       "intake_sha256": "ec6de269c9db329dab58eb6a6f8251f4494d7aa084585aeebaa3f72b25bfbfc9",
@@ -441,11 +441,11 @@
       "pages": [
         {
           "path": "content/_components/gmail/index.md",
-          "sha256": "7d22f46b069162b3d7b04af23e0062545b44801bf25b042277333d5ca250f757"
+          "sha256": "387edf3647dfd53f6bbec59952569ab607a1fc064bb8b157de6003d86fa826fb"
         },
         {
           "path": "content/_components/gmail/technical-notes.md",
-          "sha256": "7eb4eb4a2cdc731f11b79cb15c0c15e18ca75f8bee2fca121222b41348b54c62"
+          "sha256": "cb59a30730128177b54313e04a88f450fc9f69a73f308151efb42fc1f873645c"
         }
       ]
     },
@@ -515,21 +515,21 @@
     {
       "slug": "google-analytics-component",
       "repository": "https://github.com/thatapp/connector-google-analytics-component",
-      "tag": "1.0.0",
-      "commit": "4cab7ab42d25d787a597fba22f4c67397f893076",
-      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth and #72 integration; #80 polling limits and #79 source-contract gaps",
-      "intake_url": "https://github.com/thatapp/connector-google-analytics-component/blob/4cab7ab42d25d787a597fba22f4c67397f893076/INTAKE.json",
-      "intake_git_blob_sha": "3fddb9c631b5523ceee6e86f7ab69e839b5faa0e",
-      "intake_sha256": "7c4c551c850cc836285684b987d01ad38a787b68c0fdafff56916f8dd69e38ba",
-      "intake_review": "This documentation chat independently read the published report scope and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "tag": "1.0.1",
+      "commit": "76187ceef1ae0881ebb092594277a3ba7b4b0737",
+      "status": "PUBLISHED 1.0.1 numeric v3 /50-row /5120-byte checkpoint correction; #57/#72/#79/#80 remain conditional",
+      "intake_url": "https://github.com/thatapp/connector-google-analytics-component/blob/76187ceef1ae0881ebb092594277a3ba7b4b0737/INTAKE.json",
+      "intake_git_blob_sha": "60c62a01791ca4bb126bbdf36e64edfcacc5da27",
+      "intake_sha256": "6ef036bffbb6e114e7455f427c60c869420a3b6f7ea94a687e626e28187793b3",
+      "intake_review": "Accepted remote receipt/tag readback verified by documentation chat; published dual-runtime suites attributed to coordinating reviewer, not rerun here.",
       "pages": [
         {
           "path": "content/_components/google-analytics-component/index.md",
-          "sha256": "24b9915d3a40d70b94d638369a00c9a4f0a28fdb4b237f4f29922bb951326c0e"
+          "sha256": "ec04305622237c6669320284228fdef91dd423790b6c8cfc817d1593c68249eb"
         },
         {
           "path": "content/_components/google-analytics-component/technical-notes.md",
-          "sha256": "4d54670802f876dd891eb1536fa335917808b4b71f952b724faa04ea854df7f3"
+          "sha256": "e64b0b210164c63113b6014191181d7aa53226907c80434b82185b4f69a401b7"
         }
       ]
     },
@@ -592,6 +592,106 @@
         {
           "path": "content/_components/gspreadsheet-v2/technical-notes.md",
           "sha256": "f85ae971cf9c2711e131c0f354764a9c91899989d8634ac22de2f6e8c6e20861"
+        }
+      ]
+    },
+    {
+      "slug": "magento1",
+      "repository": "https://github.com/thatapp/connector-magento1",
+      "tag": "1.0.0",
+      "commit": "a29252e6229acde3129b82388e4a014c9df940d0",
+      "status": "PUBLISHED conditional #57 metadata authentication, #72 dynamic session integration, #80 bounded enumeration/field parity",
+      "intake_url": "https://github.com/thatapp/connector-magento1/blob/a29252e6229acde3129b82388e4a014c9df940d0/INTAKE.json",
+      "intake_git_blob_sha": "d67ed0bef2711d04675b4758a23494dda6c9a2ea",
+      "intake_sha256": "8740d9355246846a4a09df79a41ac6302e1d755b5084ab404650c8f4b2578df8",
+      "intake_review": "Remote accepted receipt and exact tag readback checked by documentation chat; publisher/reviewer dual-runtime suites attributed, not rerun here. Packaged and final external scan counts are distinguished.",
+      "pages": [
+        {
+          "path": "content/_components/magento1/index.md",
+          "sha256": "b2b4299ebadeac8df73e162d2719dd22b784fd02ec681f3de9309bae1b60d476"
+        },
+        {
+          "path": "content/_components/magento1/technical-notes.md",
+          "sha256": "cbda7fa01a27e1e2da697ae293c726dbc6e51afc3aa6e4a7e12ca81b4b335c7a"
+        },
+        {
+          "path": "content/_components/magento1/set-api-login-password.md",
+          "sha256": "8f37b1a0eb7a6ed13e9f2cfeb753429429d9dfe1af5eae600311f884aa41c61c"
+        }
+      ]
+    },
+    {
+      "slug": "magento2",
+      "repository": "https://github.com/thatapp/connector-magento2",
+      "tag": "1.0.0",
+      "commit": "5751114b2de4a3e05359d40d9f6e08ddd70f270b",
+      "status": "PUBLISHED conditional #58 custom environment, #72 host integration, #79 source/UI, #80 polling/workflow parity",
+      "intake_url": "https://github.com/thatapp/connector-magento2/blob/5751114b2de4a3e05359d40d9f6e08ddd70f270b/INTAKE.json",
+      "intake_git_blob_sha": "2242e2084b9d1a7afd31e6412b03be7830805b8f",
+      "intake_sha256": "a1bac744cc119fada90078ab98353e19e23cfd5866e77919cce2e6b5152dc7f6",
+      "intake_review": "Remote accepted receipt and exact tag readback checked by documentation chat; publisher/reviewer dual-runtime suites attributed, not rerun here. Packaged and final external scan counts are distinguished.",
+      "pages": [
+        {
+          "path": "content/_components/magento2/index.md",
+          "sha256": "0ef76442e7da50ecc9932f64b3ee1d71fc7f6d19a99c20776ffd2dec10484196"
+        },
+        {
+          "path": "content/_components/magento2/technical-notes.md",
+          "sha256": "0070ac94f7622b96c9304f3d5e0d71dbda70ef3e2d5d70eecba379d5c21f4f79"
+        },
+        {
+          "path": "content/_components/magento2/actions.md",
+          "sha256": "be9bbe02c1e9f255c4b089a2bc8523eb0abb8114a2d01a0e5bc7d1437e64fecd"
+        },
+        {
+          "path": "content/_components/magento2/triggers.md",
+          "sha256": "9628f2d50fcde61ed55479369d8ec625ee32faaed5d500c652e0019388d1ce83"
+        }
+      ]
+    },
+    {
+      "slug": "bazaarvoice",
+      "repository": "https://github.com/thatapp/connector-bazaarvoice",
+      "tag": "1.0.0",
+      "commit": "8c170b4498387191984752897f077c8ee0386156",
+      "status": "PUBLISHED conditional #72 recording integration and documented source/account/Curations limits",
+      "intake_url": "https://github.com/thatapp/connector-bazaarvoice/blob/8c170b4498387191984752897f077c8ee0386156/INTAKE.json",
+      "intake_git_blob_sha": "ea470c144480d45f06265a970a93f0e6529f4f96",
+      "intake_sha256": "c8ccdc84523fc148608c8dec1d6a76722778095738066de61aee3886c8af6d61",
+      "intake_review": "Remote accepted receipt and exact tag readback checked by documentation chat; publisher/reviewer dual-runtime suites attributed, not rerun here. Packaged and final external scan counts are distinguished.",
+      "pages": [
+        {
+          "path": "content/_components/bazaarvoice/index.md",
+          "sha256": "820206600f57e0baad2a5574ef103c2388e4304fad674b50161e6993899fa7af"
+        },
+        {
+          "path": "content/_components/bazaarvoice/technical-notes.md",
+          "sha256": "7500e0329837a1c35563647be2c9e953f9f82664d411af2fa209034b4bd91aa2"
+        },
+        {
+          "path": "content/_components/bazaarvoice/actions.md",
+          "sha256": "bdfdcf6caffd188c994751ee09407416c65b021514066b18a63252169d6cf28a"
+        }
+      ]
+    },
+    {
+      "slug": "commercetools",
+      "repository": "https://github.com/thatapp/connector-commercetools",
+      "tag": "1.0.1",
+      "commit": "02fe3b4ad8a3c2c80d1ff2dbf6e0b0c2fc909631",
+      "status": "PUBLISHED 1.0.1 numeric polling correction; conditional #72/#75 integration, #79 source contract, #80 size/parity",
+      "intake_url": "https://github.com/thatapp/connector-commercetools/blob/02fe3b4ad8a3c2c80d1ff2dbf6e0b0c2fc909631/evidence/prepared-1.0.1-intake-24.json",
+      "intake_git_blob_sha": "235b7e367f46353add21e0ae26850ed5c145fb63",
+      "intake_sha256": "dc5876083ccde3c10b9e29db88cee29ccbdf5d6b71169dd9eb8274618ceb6034",
+      "intake_review": "Remote accepted receipt and exact tag readback checked by documentation chat; publisher/reviewer dual-runtime suites attributed, not rerun here. Packaged and final external scan counts are distinguished.",
+      "pages": [
+        {
+          "path": "content/_components/commercetools/index.md",
+          "sha256": "ad5bf63cc84be3d18743209eaa97b5b31d7c99a7de591dc360cbbfbc5256a2e3"
+        },
+        {
+          "path": "content/_components/commercetools/technical-notes.md",
+          "sha256": "3f7b33bd9deb13b8e092d4c00f4621f4d0e8e600ea7570444a883d13d64d474f"
         }
       ]
     }
@@ -785,6 +885,62 @@
       "tag_object": "f23ebf100f2f422906dcd4c9d2f58c2322a3a03e",
       "main": "49b6428568ece50b046241b0f230266e1d2e491c",
       "status": "PASS"
+    },
+    {
+      "slug": "magento1",
+      "tag": "1.0.0",
+      "commit": "a29252e6229acde3129b82388e4a014c9df940d0",
+      "tag_object": "e22c688c4e12fc962c43c2faf13b7da1b05796b8",
+      "main": "ea59cd59790989009cd2e41cf7fc3cf16ae36af8",
+      "status": "PASS"
+    },
+    {
+      "slug": "magento2",
+      "tag": "1.0.0",
+      "commit": "5751114b2de4a3e05359d40d9f6e08ddd70f270b",
+      "tag_object": "a6d96ffc0bfd3fcdd7f2827f717797e2ba3fe9ef",
+      "main": "785654de0b361340d34709534a300a72b33c01be",
+      "status": "PASS"
+    },
+    {
+      "slug": "bazaarvoice",
+      "tag": "1.0.0",
+      "commit": "8c170b4498387191984752897f077c8ee0386156",
+      "tag_object": "c3270f41172c28c8fb2e79f2ec4867168717bac3",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "commercetools",
+      "tag": "1.0.1",
+      "commit": "02fe3b4ad8a3c2c80d1ff2dbf6e0b0c2fc909631",
+      "tag_object": "1ae37a2ee4905c535ea7640f8f724f75724eaea8",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "google-calendar",
+      "tag": "1.0.1",
+      "commit": "987fe5b867e1a1a7e1741a6de8a4e0548b76cf62",
+      "tag_object": "487e55800c9262db95a2c13dc8a4e416a5677b01",
+      "main": "35be581702443f31927072be2a01b769022b8040",
+      "status": "PASS"
+    },
+    {
+      "slug": "google-drive",
+      "tag": "1.0.1",
+      "commit": "e4d33fef5feb955f4120072e1c63b1815b30ec64",
+      "tag_object": "e1a66223f8a64c963f0fedcc9a62cd98fce87a02",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "google-analytics-component",
+      "tag": "1.0.1",
+      "commit": "76187ceef1ae0881ebb092594277a3ba7b4b0737",
+      "tag_object": "d18e0b685e2a6ee6e63d3a9507e3e4b1c6b95f02",
+      "main": null,
+      "status": "PASS"
     }
   ],
   "superseded_releases": [
@@ -832,6 +988,90 @@
       "intake_git_blob_sha": "edc653ee18920d05f70e4989811620bee49b4057",
       "superseded_by": "1.0.2",
       "pages_are_historical": true
+    },
+    {
+      "slug": "google-calendar",
+      "repository": "https://github.com/thatapp/connector-google-calendar",
+      "tag": "1.0.0",
+      "commit": "35be581702443f31927072be2a01b769022b8040",
+      "status": "PUBLISHED 1.0.0; first-run polling BLOCKED #80; vendor and installation checks UNVERIFIED",
+      "intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/0fbb6b5b4d40c9c60491ffc8b5f73f590203dd3f/docs/ipaas/connector-submissions/google-calendar-evidence/intake-standalone.json",
+      "intake_sha256": "ea19189c1e4d562b6db4758862a4438ed4cff977e03b4ee9f65089db25052869",
+      "evidence_commit": "0fbb6b5b4d40c9c60491ffc8b5f73f590203dd3f",
+      "intake_review": "Coordinated build chat ran release intake; this docs chat read and hashed the pinned standalone four-gate receipt.",
+      "report_git_blob_sha": "4764b3494a2a7a0f0c7a94b93ebb1ef5dc5d1741",
+      "pages": [
+        {
+          "path": "content/_components/google-calendar/index.md",
+          "sha256": "18f461695c4ef670601cca47c3cc687fcbe3eea5ef41d8d0f36d3cdeb09358ee"
+        },
+        {
+          "path": "content/_components/google-calendar/technical-notes.md",
+          "sha256": "0552417f79757d25ab60178ac21225be5d0232a0f392eef13ce4925960afc82f"
+        }
+      ],
+      "superseded_by": "1.0.1",
+      "pages_are_historical": true
+    },
+    {
+      "slug": "google-drive",
+      "repository": "https://github.com/thatapp/connector-google-drive",
+      "tag": "1.0.0",
+      "commit": "b78d256edfa39d5123f17e52b33111481a26dfd5",
+      "status": "PUBLISHED 1.0.0; first-run polling BLOCKED #80; PUBLISHED scoped; WAITING HOST #57 OAuth integration, #72 redaction and #75 binary transport/scoped storage; #80 URL/size/polling qualifications",
+      "intake_url": "https://github.com/thatapp/connector-google-drive/blob/b78d256edfa39d5123f17e52b33111481a26dfd5/INTAKE.json",
+      "intake_sha256": "85ee02572314b48a90475d421feba2cebd8db235cb9959ef67b68b1dc36328e3",
+      "intake_review": "Independently read the immutable published report and accepted INTAKE.json: 71 tests, 40 canonical workers, zero network; remote annotated tag and absent main verified. Additional sealed/supplemental results are publisher-reported.",
+      "pages": [
+        {
+          "path": "content/_components/google-drive/index.md",
+          "sha256": "fa798f23b87a42d25559c613ce8bed15789e94af3748449f78286c746f2ac3d9"
+        },
+        {
+          "path": "content/_components/google-drive/technical-notes.md",
+          "sha256": "b11f283757107ebae681e00a96b7d80ce6af2a5b907c3f49971b8cad4fd737b1"
+        }
+      ],
+      "superseded_by": "1.0.1",
+      "pages_are_historical": true
+    },
+    {
+      "slug": "google-analytics-component",
+      "repository": "https://github.com/thatapp/connector-google-analytics-component",
+      "tag": "1.0.0",
+      "commit": "4cab7ab42d25d787a597fba22f4c67397f893076",
+      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth and #72 integration; #80 polling limits and #79 source-contract gaps; KNOWN short-credential polling checkpoint defect, correction not yet verified published",
+      "intake_url": "https://github.com/thatapp/connector-google-analytics-component/blob/4cab7ab42d25d787a597fba22f4c67397f893076/INTAKE.json",
+      "intake_git_blob_sha": "3fddb9c631b5523ceee6e86f7ab69e839b5faa0e",
+      "intake_sha256": "7c4c551c850cc836285684b987d01ad38a787b68c0fdafff56916f8dd69e38ba",
+      "intake_review": "This documentation chat independently read the published report scope and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/google-analytics-component/index.md",
+          "sha256": "f1d74d555c75d0c0bccc041e0fdc6ba45ad891cbd6cb9b1f0ac95f98fca1e290"
+        },
+        {
+          "path": "content/_components/google-analytics-component/technical-notes.md",
+          "sha256": "4964c19cb7549923e3cccd8fa5c8a719f1c92936a873e1e29264d38f94e54839"
+        }
+      ],
+      "superseded_by": "1.0.1",
+      "pages_are_historical": true
+    }
+  ],
+  "qualification_notices": [
+    {
+      "slug": "gmail",
+      "tag": "1.0.0",
+      "notice": "A coordinating actual-worker audit reproduced a short-credential defect in published1.0.0: string ISO lastUpdated can be masked, then the next poll fails400 before HTTP. A long-token control passes. The old tag is preserved; a corrective source patch is under review and is not yet a verified published replacement.",
+      "source": "Coordinating chat actual-worker audit; reported on issue62. No new release asserted."
+    },
+    {
+      "slug": "google-analytics-component",
+      "tag": "1.0.0",
+      "notice": "A coordinating actual-worker audit reproduced a short-credential defect in published1.0.0: masking its string configuration hash makes a resumed poll fail409. A checkpoint/size redesign is under review; it is not yet a verified published replacement.",
+      "source": "Coordinating chat actual-worker audit; reported on issue62. No new release asserted.",
+      "superseded_by": "1.0.1"
     }
   ]
 }

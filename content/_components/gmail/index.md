@@ -10,6 +10,14 @@ updatedDate: 2023-09-08
 ComponentVersion: 1.0.1
 ---
 
+## Known polling defect in AVA 1.0.0 — 2026-10-30
+
+**Polling qualification is restricted by a reproduced checkpoint defect.** A coordinating actual-worker audit reproduced a short-credential defect in published1.0.0: string ISO lastUpdated can be masked, then the next poll fails400 before HTTP. A long-token control passes. The old tag is preserved; a corrective source patch is under review and is not yet a verified published replacement.
+
+This qualification supplements the earlier release evidence below; it does not erase the narrower tests that passed. Installation and live acceptance remain unverified. Follow the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62) for the reviewed replacement and exact pins. An explicit reset may replay records; no automatic recovery is promised.
+
+---
+
 ## AVA 1.0.0 release status — 2026-10-30
 
 **PUBLISHED scoped; WAITING HOST #57 OAuth, #72/#75 transport/scoped storage, #58 custom environment and #80 URL/size/polling parity.** [Published source](https://github.com/thatapp/connector-gmail/tree/3955a08310b705dfe97448f6e610b10bbf7d3055) · [Contract report](https://github.com/thatapp/connector-gmail/blob/3955a08310b705dfe97448f6e610b10bbf7d3055/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-gmail/blob/3955a08310b705dfe97448f6e610b10bbf7d3055/evidence/intake.json).
