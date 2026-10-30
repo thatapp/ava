@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T06:49:30.386849+00:00",
+  "checked_at_utc": "2026-10-30T06:58:34.602243+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -406,10 +406,30 @@
           "sha256": "c7dcb2e2fa356024dd3f07ba708be535f6ba47c13994868b17455c13da13a27b"
         }
       ]
+    },
+    {
+      "slug": "aws-sns",
+      "repository": "https://github.com/thatapp/connector-amazon-aws-sns",
+      "tag": "1.0.0",
+      "commit": "5cabb841947edb99e14b2ee062cb22f071064036",
+      "status": "PUBLISHED scoped; WAITING HOST #72 credential redaction and #75 text/XML transport",
+      "intake_url": "https://github.com/thatapp/connector-amazon-aws-sns/blob/5cabb841947edb99e14b2ee062cb22f071064036/INTAKE.json",
+      "intake_sha256": "ceeb1b4b60a9232efc27849e41d1809a3d0d0f3b57dde48e618139ac79322421",
+      "intake_review": "This chat ran four gates on Node20/24:42 npm tests,17 cases/24 canonical workers,six supplemental workers,zero network attempts.",
+      "pages": [
+        {
+          "path": "content/_components/aws-sns/index.md",
+          "sha256": "cda71b342945e704583204324616d2b377550cfd878b2d5ac6167165cf9ecfa7"
+        },
+        {
+          "path": "content/_components/aws-sns/technical-notes.md",
+          "sha256": "d07924917a6a9e8659ca3a9a9f37abdbac6f7bd258a993ee1f6f49c3818c8ce4"
+        }
+      ]
     }
   ],
   "checks": [
-    "All 19 release tags resolve to the stated commits: eleven from this chat and eight coordinated releases independently read. S3, Drive and Dropbox tags/main state independently rechecked October30.",
+    "All 20 release tags resolve to stated commits: twelve own releases and eight independently read coordinated releases. SNS tag/main independently verified at publication.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
@@ -523,6 +543,13 @@
       "commit": "cb21f9ffab268150e4236add52e86afb9efe699e",
       "tag_object": "e2d068220963366ddbbfec03c54ec8822c39fd01",
       "main": "f8e487d35cf8a78f76de621a43af86c2b95d6dc9",
+      "status": "PASS"
+    },
+    {
+      "slug": "aws-sns",
+      "commit": "5cabb841947edb99e14b2ee062cb22f071064036",
+      "tag_object": "ae8cdadbdfaa1d5f25bb640ac46a5d73560fabc8",
+      "main": "c69ad16819b358c2ad6f506ed273b8a28f1ad8e4",
       "status": "PASS"
     }
   ]
