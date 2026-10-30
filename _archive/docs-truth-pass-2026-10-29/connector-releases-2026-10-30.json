@@ -143,14 +143,177 @@
           "sha256": "28ad0df9cac1043a64b839e8e460940024fb9344365ce94ed86b544a18340c79"
         }
       ]
+    },
+    {
+      "slug": "postgresql",
+      "repository": "https://github.com/thatapp/connector-postgresql",
+      "tag": "1.0.0",
+      "commit": "e26d73905143b440a4dd70cf6bcbcfe64ea8c1d3",
+      "status": "PUBLISHED scoped; WAITING HOST #78 SQL provider provisioning/injection; custom trust #82 unbuilt",
+      "intake_url": "https://github.com/thatapp/connector-postgresql/blob/e26d73905143b440a4dd70cf6bcbcfe64ea8c1d3/INTAKE.json",
+      "intake_sha256": "acb8dc373c8056bf0aaa0925ac4482feffcd46d0495595f95238f241dab99a1a",
+      "intake_review": "This chat ran all four gates; 15 npm tests, 21 exact cases, 27 worker executions, zero network.",
+      "pages": [
+        {
+          "path": "content/_components/postgresql/index.md",
+          "sha256": "8c00016ce20a0f01982e54cda491d76f4552c298c634132457335625a2589a24"
+        },
+        {
+          "path": "content/_components/postgresql/technical-notes.md",
+          "sha256": "25a1fcdcec633fa53ba913d1e88807e9c1fc327a087277320499cb557b2bf9b7"
+        },
+        {
+          "path": "content/_components/postgresql/actions.md",
+          "sha256": "880fafec30f62a3780a45098bc9cd49a3147be7c16d9f023c671e5bf5398c5df"
+        },
+        {
+          "path": "content/_components/postgresql/triggers.md",
+          "sha256": "4f09ab974f8f28056d1c13cf62938d38026922487b56224ec7e79309ea0c3b81"
+        },
+        {
+          "path": "content/_components/postgresql/usage-example.md",
+          "sha256": "a74407294800e050b43e1c63ee51f88ee2c0e4ad90884865b2d9239136ed89d9"
+        }
+      ]
+    },
+    {
+      "slug": "bigcommerce",
+      "repository": "https://github.com/thatapp/connector-bigcommerce",
+      "tag": "1.0.0",
+      "commit": "8c4738ec0588480a6c35bf23eaf182e4e3dded29",
+      "status": "READY for scoped source installation; vendor and installation checks UNVERIFIED",
+      "intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/7c670fd3b239019a81d575c62f91e12113323455/docs/ipaas/connector-submissions/bigcommerce-evidence/intake-standalone.json",
+      "intake_sha256": "583a34be4b97a3e9b59cc783c242d2c2310fef55f8c49f655046b54305239371",
+      "evidence_commit": "7c670fd3b239019a81d575c62f91e12113323455",
+      "intake_review": "Coordinated build chat ran release intake; this docs chat read and hashed the pinned standalone four-gate receipt.",
+      "report_git_blob_sha": "ff0fa34e55789efb2ac6aa39288c11a7b7bef081",
+      "pages": [
+        {
+          "path": "content/_components/bigcommerce/index.md",
+          "sha256": "08967123f5ebef145b0263d193b9b151bbc939d03a76655c30b9b63dd1353a54"
+        },
+        {
+          "path": "content/_components/bigcommerce/technical-notes.md",
+          "sha256": "986e65bcd7c4b2532662d2ea1c1c4368d07c1453d63727e8ebde633ab3075ebb"
+        }
+      ]
+    },
+    {
+      "slug": "google-calendar",
+      "repository": "https://github.com/thatapp/connector-google-calendar",
+      "tag": "1.0.0",
+      "commit": "35be581702443f31927072be2a01b769022b8040",
+      "status": "READY for scoped source installation; vendor and installation checks UNVERIFIED",
+      "intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/0fbb6b5b4d40c9c60491ffc8b5f73f590203dd3f/docs/ipaas/connector-submissions/google-calendar-evidence/intake-standalone.json",
+      "intake_sha256": "ea19189c1e4d562b6db4758862a4438ed4cff977e03b4ee9f65089db25052869",
+      "evidence_commit": "0fbb6b5b4d40c9c60491ffc8b5f73f590203dd3f",
+      "intake_review": "Coordinated build chat ran release intake; this docs chat read and hashed the pinned standalone four-gate receipt.",
+      "report_git_blob_sha": "4764b3494a2a7a0f0c7a94b93ebb1ef5dc5d1741",
+      "pages": [
+        {
+          "path": "content/_components/google-calendar/index.md",
+          "sha256": "f97610b09f715914436931fd0e736c2dc86425894a5eff679a6a4d2ae2911545"
+        },
+        {
+          "path": "content/_components/google-calendar/technical-notes.md",
+          "sha256": "bfda088501056743b855722567cf6d178c0e5abf00564cbd79b2776d9a823c72"
+        }
+      ]
+    },
+    {
+      "slug": "netsuite-rest-api-client-credentials",
+      "repository": "https://github.com/thatapp/connector-netsuite-rest-api-client-credentials",
+      "tag": "1.0.0",
+      "commit": "dc836c968c505d2dfca4a0a03e4be9da405ed293",
+      "status": "READY for scoped source installation; vendor and installation checks UNVERIFIED",
+      "intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/795641eb286faba8ca12c44f067342e44a73201e/docs/ipaas/connector-submissions/netsuite-rest-api-client-credentials-evidence/audit-standalone-intake.json",
+      "intake_sha256": "f7e38d6becc4dcdf2cb877a7f9a5581d8b3b352bc765219f7b9d467d8f26003e",
+      "evidence_commit": "795641eb286faba8ca12c44f067342e44a73201e",
+      "intake_review": "Coordinated build chat ran release intake; this docs chat read and hashed the pinned standalone four-gate receipt.",
+      "report_git_blob_sha": "8ac8c21073dc068e4a99fd603677f4ccc528984f",
+      "pages": [
+        {
+          "path": "content/_components/netsuite-rest-api-client-credentials/index.md",
+          "sha256": "4e117d4c65480df77d4e517511e9ee8f192f96139a4eee41697e2ddde8dcba23"
+        },
+        {
+          "path": "content/_components/netsuite-rest-api-client-credentials/technical-notes.md",
+          "sha256": "82a9919112c25cfafbc3420f87cc3c0415b9610f1a082fcb309e8d5e129811f9"
+        }
+      ]
+    },
+    {
+      "slug": "sharepoint",
+      "repository": "https://github.com/thatapp/connector-ai-now-ag-aibox-sharepoint-connector",
+      "tag": "1.0.0",
+      "commit": "914464792ac1910a344455ba8f3d79a234ad01b8",
+      "status": "PUBLISHED scoped; NOT READY: host #57/#72/#75 and contract/parity limits remain",
+      "intake_url": "https://github.com/thatapp/connector-ai-now-ag-aibox-sharepoint-connector/blob/914464792ac1910a344455ba8f3d79a234ad01b8/evidence/intake.json",
+      "intake_git_blob_sha": "91adc3a8d196b44021d89f4d8da911bff079e377",
+      "intake_review": "Coordinated build chat ran release intake; this docs chat read immutable evidence/intake.json and confirmed all four gates, 85 tests, 82 worker rows and zero network.",
+      "report_git_blob_sha": "1710d968c22d8a14315785c337bcc79405746dea",
+      "pages": [
+        {
+          "path": "content/_components/sharepoint/index.md",
+          "sha256": "0006be127991fc070f9154a68264c1ff8cb373ebfe660ed69160d4d527a5fe91"
+        },
+        {
+          "path": "content/_components/sharepoint/technical-notes.md",
+          "sha256": "1742951d095dea1eafeb831253b0596aca740c060e5413cd0c069f6e25d0e8fd"
+        }
+      ]
+    },
+    {
+      "slug": "airtable",
+      "repository": "https://github.com/thatapp/connector-airtable",
+      "tag": "1.0.0",
+      "commit": "54f43d38e62f17d418741241c5b488f1db535468",
+      "status": "READY for scoped source installation; vendor and installation checks UNVERIFIED",
+      "intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/719e89c00ab312ff61e1a9ab5e7e532760db61ce/docs/ipaas/connector-submissions/airtable-evidence/standalone-intake.json",
+      "evidence_commit": "719e89c00ab312ff61e1a9ab5e7e532760db61ce",
+      "intake_sha256": "3dd74552535cb331bce660d8aceff77ccf73abbebc7655bc9484f5698b63c2ac",
+      "report_git_blob_sha": "9c1f495fb0c3694aa566772575e612b13fd275dd",
+      "intake_review": "Coordinated build chat ran intake and detailed sealed suite; this docs chat read immutable REPORT and the pinned accepted four-gate receipt. Legacy smoke and detailed worker assertions remain separately counted.",
+      "pages": [
+        {
+          "path": "content/_components/airtable/index.md",
+          "sha256": "085477e437f36f8094c4a378b1ec8b0dce065a9f675d10f837d9e40d2b32016a"
+        },
+        {
+          "path": "content/_components/airtable/technical-notes.md",
+          "sha256": "b792590fbfa76fd279423d4864b8f7f05b7c4844985e1dfb6a11f09cc85d31e7"
+        }
+      ]
+    },
+    {
+      "slug": "klaviyo-component",
+      "repository": "https://github.com/thatapp/connector-klaviyo-component",
+      "tag": "1.0.0",
+      "commit": "df3d81d3c70644aed52db0034adf0a289f56014e",
+      "status": "PUBLISHED scoped; WAITING HOST #72 encoded credential recording",
+      "intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/e624e8dd9d8b5bba8d56818c85468651f1b24d1c/docs/ipaas/connector-submissions/klaviyo-component-evidence/intake-release.json",
+      "evidence_commit": "e624e8dd9d8b5bba8d56818c85468651f1b24d1c",
+      "intake_sha256": "2e26d81ada0064fa6c96d891c0b0a5dade70ca1b583bed73475ce1f8d32a1b21",
+      "report_git_blob_sha": "a4d82e108fdaaab9ad04e27f5d44570519e042f9",
+      "intake_review": "Coordinated build chat ran intake and detailed sealed suite; this docs chat read immutable REPORT and the pinned accepted four-gate receipt. Legacy smoke and detailed worker assertions remain separately counted.",
+      "pages": [
+        {
+          "path": "content/_components/klaviyo-component/index.md",
+          "sha256": "e2a95f9c4f1e1d93388aa9ff1ee0019d137279f5482443e3a2da73ce4c675b11"
+        },
+        {
+          "path": "content/_components/klaviyo-component/technical-notes.md",
+          "sha256": "f42d203a3c1b3594fc0e36e38ec750df5d64ae24fae6cabcf373b1f5b008cd95"
+        }
+      ]
     }
   ],
   "checks": [
-    "Local release tag resolves to the stated published commit for all four connectors",
-    "Each source-pinned INTAKE.json parses",
-    "All eight pages retain layout, redirects and historical body; checked by components-checks.json",
-    "Every release block links to immutable source, scope and intake evidence",
-    "Source claims explicitly distinguish tested mock behavior, published status and unverified installation"
+    "All14 release tags resolve to the stated commits: eight from local release checkouts and six independently reread with git ls-remote.",
+    "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
+    "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
+    "Every release block links immutable source, scope and intake evidence.",
+    "Tested mocked behavior, published status, installation prerequisites and unverified live behavior remain distinct."
   ],
   "limitations": [
     "Jekyll build UNVERIFIED; no Ruby/Bundler runtime",
@@ -180,6 +343,64 @@
       "upstream_sha256_lf": "1e3c08f4a86fde1e2319d4680a2249a915c1a2b3880a7369f7bc78c27d70c7a5",
       "reviewed_sha256_lf": "e8899f456bb7a7bfa71b70232ef7bc6d0408ea0dad7075fb09f9a382f9efaa08",
       "scope": "The immutable tag docs-map source_commit mislabeled the reviewed technical-notes hash as upstream; the branch correction distinguishes both source pins. Runtime and release tag unchanged."
+    },
+    "coordinated_main_publication": {
+      "connectors": [
+        "airtable",
+        "bigcommerce",
+        "google-calendar",
+        "klaviyo-component"
+      ],
+      "branch": "main",
+      "direct_user_instruction": "Never push to main. No deploys, no secrets, no customer data.",
+      "instruction_source": "Direct human request in this task, turn01a18a0b-87c4-70d0-8029-253623b65f71; attached-document instructions were explicitly distinguished from the request.",
+      "observation": "Independent git ls-remote confirms these four connector main refs equal their tagged release commits. The coordinated build chat acknowledged using the narrower attached brief instead of the direct instruction and agreed to no further main pushes. Existing tags/history are preserved; no rollback or force push is performed. This docs branch and the eight releases built in this chat use feature branches. No backend-main write is reported."
     }
-  }
+  },
+  "reviewed_docs_before_additional_releases": "db4e7c637cee9467a0f7a5195c11dfa14547ccae",
+  "page_hash_scope": "UTF-8 page text normalized to LF; intake_sha256 hashes exact Git blob bytes, while *_git_blob_sha records the separate Git object identity.",
+  "coordinated_release_remote_verification": [
+    {
+      "slug": "bigcommerce",
+      "commit": "8c4738ec0588480a6c35bf23eaf182e4e3dded29",
+      "tag_object": "f471180eca5c63a65f2aecb8c0d4a551741f8ce0",
+      "main": "8c4738ec0588480a6c35bf23eaf182e4e3dded29",
+      "status": "PASS"
+    },
+    {
+      "slug": "google-calendar",
+      "commit": "35be581702443f31927072be2a01b769022b8040",
+      "tag_object": "622d8ba0dac816ac51b027a782ac6bba25abe031",
+      "main": "35be581702443f31927072be2a01b769022b8040",
+      "status": "PASS"
+    },
+    {
+      "slug": "netsuite-rest-api-client-credentials",
+      "commit": "dc836c968c505d2dfca4a0a03e4be9da405ed293",
+      "tag_object": "f5336d4c4f56aa8acb1b881b629a2e5ee954b702",
+      "main": "eb7395873bfe72c7659d7b5de6cb32905ac4ef86",
+      "status": "PASS"
+    },
+    {
+      "slug": "sharepoint",
+      "commit": "914464792ac1910a344455ba8f3d79a234ad01b8",
+      "tag_object": "71c737f2691d34446ea30e3dd571f17bbfd6294b",
+      "main": "d976832ff35388dc954fdd669c2faeb05b59377d",
+      "status": "PASS"
+    },
+    {
+      "slug": "airtable",
+      "commit": "54f43d38e62f17d418741241c5b488f1db535468",
+      "tag_object": "734e37d81bd30b79b9760e9c9e86e79a2cf73353",
+      "main": "54f43d38e62f17d418741241c5b488f1db535468",
+      "status": "PASS"
+    },
+    {
+      "slug": "klaviyo-component",
+      "commit": "df3d81d3c70644aed52db0034adf0a289f56014e",
+      "tag_object": "4f1a1dfa45f9c9fb44d55029fcf62ece90404828",
+      "main": "df3d81d3c70644aed52db0034adf0a289f56014e",
+      "status": "PASS"
+    }
+  ]
 }
