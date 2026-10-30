@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T08:49:28.903798+00:00",
+  "checked_at_utc": "2026-10-30T09:44:30.851419+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -310,23 +310,23 @@
     {
       "slug": "hubspot",
       "repository": "https://github.com/thatapp/connector-hubspot",
-      "tag": "1.0.1",
-      "commit": "491571cc0590cbe60e216656997b37ba9779ca83",
-      "status": "PUBLISHED 1.0.1; initial-snapshot defect corrected; existing #57/#58/#72/#74/#75 and polling qualifications remain conditional",
-      "intake_url": "https://github.com/thatapp/connector-hubspot/blob/491571cc0590cbe60e216656997b37ba9779ca83/INTAKE.json",
-      "intake_sha256": "a3aefaf9d489da60ed348ffb0d9695a0e6d44a6c2a599d864d2c7adb72718bef",
-      "intake_review": "This chat ran final committed-head four gates and direct snapshot regressions on Node20/24, preserving the 1.0.0 defect receipt.",
+      "tag": "1.0.2",
+      "commit": "20b4cce794da5dc9f92657de46d403fccaaa6590",
+      "status": "PUBLISHED 1.0.2 dense numeric checkpoint and version correction; #57/#58/#72/#74/#75/#80 remain conditional",
+      "intake_url": "https://github.com/thatapp/connector-hubspot/blob/20b4cce794da5dc9f92657de46d403fccaaa6590/INTAKE.json",
+      "intake_git_blob_sha": "e6109b43c7a2c5cee60f917197a34b1b017a14b6",
+      "intake_sha256": "2260721ff627bb0dce38e8bc9fbecf4c0ddd6fd7b8d0eeaf08fba07bb069daa8",
+      "intake_review": "This authoring/documentation chat ran committed-head intake and standalone hostcheck on Node20/24. Independent review counts are attributed separately; final post-commit scan receipts remain outside the release.",
       "pages": [
         {
           "path": "content/_components/hubspot/index.md",
-          "sha256": "02371f7444c724a62d1059523b813ba7af0f47a58466c07048d0cca61e5f90bf"
+          "sha256": "0ab943aaba88ef4e79de25f271ac62ae3dc5d0e04740fbe454c789dcc48f2308"
         },
         {
           "path": "content/_components/hubspot/technical-notes.md",
-          "sha256": "9abb2ea0ff92ad82b3104e77e05aec817f634c4cf722e0b545b550dc73621758"
+          "sha256": "9f925c9ad0ce35bad86261169248be0ed71f6479ca9001c09cb6c900f6f99bb8"
         }
-      ],
-      "intake_git_blob_sha": "edc653ee18920d05f70e4989811620bee49b4057"
+      ]
     },
     {
       "slug": "aws-lambda",
@@ -553,6 +553,47 @@
           "sha256": "dd7347be315b78427ef14c845b6c4325db693b5d4a1d7d69e6f9771cebf8c74d"
         }
       ]
+    },
+    {
+      "slug": "gspreadsheet",
+      "repository": "https://github.com/thatapp/connector-gspreadsheets",
+      "tag": "1.0.0",
+      "commit": "d62d1881439c669408752fbef477f03e5bdefbf1",
+      "status": "PUBLISHED conditional #57 OAuth/UI, #58 environment, #72 recording, #80 append-position/bounds/parity",
+      "intake_url": "https://github.com/thatapp/connector-gspreadsheets/blob/d62d1881439c669408752fbef477f03e5bdefbf1/INTAKE.json",
+      "intake_git_blob_sha": "ac5e7a2a153ab7e9568c5877d7df14281fcf9836",
+      "intake_sha256": "29dad614edb1de497b5777abfab5e1b48b09efd82e72dc57c2ae352e3666a1e9",
+      "intake_review": "This authoring/documentation chat ran committed-head intake and standalone hostcheck on Node20/24. Independent review counts are attributed separately; final post-commit scan receipts remain outside the release.",
+      "pages": [
+        {
+          "path": "content/_components/gspreadsheet/index.md",
+          "sha256": "0b670e800cfede09939dd13cd18759dd487eb1fa01beefc03dc9311b988e069f"
+        },
+        {
+          "path": "content/_components/gspreadsheet/actions.md",
+          "sha256": "26177cc28a20782bdaee136d4f993318f4edcd67f041ee16c720aa7b9974f5b0"
+        },
+        {
+          "path": "content/_components/gspreadsheet/triggers.md",
+          "sha256": "1af53058707b3f80a5fc5e668b90246653f72f667966d0df53e0ba517ec3cd1e"
+        },
+        {
+          "path": "content/_components/gspreadsheet/technical-notes.md",
+          "sha256": "cb22f0f247cc8296372a1d7254eec37bbe1842c2b6ddd77a351a4fbc57a9474b"
+        },
+        {
+          "path": "content/_components/gspreadsheet/usage-example.md",
+          "sha256": "8094ad15af2285ebb5965d4001880e383c52332388f1490d61be20ea333b282a"
+        },
+        {
+          "path": "content/_components/gspreadsheet-v2/index.md",
+          "sha256": "de40ac574a168c148977e8b0fddc7c23a98af0ffe01cc99af29e77e5735a1d89"
+        },
+        {
+          "path": "content/_components/gspreadsheet-v2/technical-notes.md",
+          "sha256": "f85ae971cf9c2711e131c0f354764a9c91899989d8634ac22de2f6e8c6e20861"
+        }
+      ]
     }
   ],
   "checks": [
@@ -728,6 +769,22 @@
       "tag_object": "31b8c72c74ccc3444ac6b79342430c85de94cbec",
       "main": "49b6428568ece50b046241b0f230266e1d2e491c",
       "status": "PASS"
+    },
+    {
+      "slug": "gspreadsheet",
+      "tag": "1.0.0",
+      "commit": "d62d1881439c669408752fbef477f03e5bdefbf1",
+      "tag_object": "9da34b04b9223d8b009011df22c04958c37c704f",
+      "main": "94e4b22c28ed862d6d0a61295487dca7c0e7c9d6",
+      "status": "PASS"
+    },
+    {
+      "slug": "hubspot",
+      "tag": "1.0.2",
+      "commit": "20b4cce794da5dc9f92657de46d403fccaaa6590",
+      "tag_object": "f23ebf100f2f422906dcd4c9d2f58c2322a3a03e",
+      "main": "49b6428568ece50b046241b0f230266e1d2e491c",
+      "status": "PASS"
     }
   ],
   "superseded_releases": [
@@ -751,6 +808,29 @@
         }
       ],
       "superseded_by": "1.0.1",
+      "pages_are_historical": true
+    },
+    {
+      "slug": "hubspot",
+      "repository": "https://github.com/thatapp/connector-hubspot",
+      "tag": "1.0.1",
+      "commit": "491571cc0590cbe60e216656997b37ba9779ca83",
+      "status": "PUBLISHED 1.0.1; initial-snapshot defect corrected; existing #57/#58/#72/#74/#75 and polling qualifications remain conditional",
+      "intake_url": "https://github.com/thatapp/connector-hubspot/blob/491571cc0590cbe60e216656997b37ba9779ca83/INTAKE.json",
+      "intake_sha256": "a3aefaf9d489da60ed348ffb0d9695a0e6d44a6c2a599d864d2c7adb72718bef",
+      "intake_review": "This chat ran final committed-head four gates and direct snapshot regressions on Node20/24, preserving the 1.0.0 defect receipt.",
+      "pages": [
+        {
+          "path": "content/_components/hubspot/index.md",
+          "sha256": "02371f7444c724a62d1059523b813ba7af0f47a58466c07048d0cca61e5f90bf"
+        },
+        {
+          "path": "content/_components/hubspot/technical-notes.md",
+          "sha256": "9abb2ea0ff92ad82b3104e77e05aec817f634c4cf722e0b545b550dc73621758"
+        }
+      ],
+      "intake_git_blob_sha": "edc653ee18920d05f70e4989811620bee49b4057",
+      "superseded_by": "1.0.2",
       "pages_are_historical": true
     }
   ]

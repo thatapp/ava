@@ -9,6 +9,18 @@ updatedDate: 2026-07-01
 ComponentVersion: 1.7.1
 ---
 
+## AVA 1.0.2 checkpoint correction — 2026-10-30
+
+**Published 1.0.2 replaces the older polling checkpoints; existing conditional requirements remain.** [Exact source](https://github.com/thatapp/connector-hubspot/tree/20b4cce794da5dc9f92657de46d403fccaaa6590) · [Report](https://github.com/thatapp/connector-hubspot/blob/20b4cce794da5dc9f92657de46d403fccaaa6590/REPORT.md) · [Intake](https://github.com/thatapp/connector-hubspot/blob/20b4cce794da5dc9f92657de46d403fccaaa6590/INTAKE.json).
+
+Actual host workers reproduced string-checkpoint corruption in 1.0.1 with short synthetic credentials. Version 1.0.2 emits version-2 checkpoints with 32 numeric SHA-256 bytes, requiring every byte to be an own integer at the expected index. Sparse arrays cannot bypass state/configuration validation. Valid uncorrupted legacy version-1 checkpoints migrate on the next emission; already masked state needs an explicit reset and can replay records. Component, package and lock metadata now all identify 1.0.2; 1.0.1 had retained component version 1.0.0.
+
+The final committed source passes 84 offline tests, 55 canonical actual-worker outcomes, allowlist, secret scan (74 files) and standalone hostcheck on both supported runtimes. Fourteen supplemental state workers cover initial state, short-token resume and sparse refusals. Independent bounded review ran 49 actual workers and 84 unit tests per runtime, then repeated against exact LF Git bytes after documenting a CRLF review-archive difference. Zero network attempts. These checks concern checkpoint/version behavior, not complete HubSpot vendor parity.
+
+Host `4576be108e21b597d1fbffd4163fb05cd821c834` and harness `f05a0c4d81f8b79dde6912da8b2b8f8384b40cf7` remain the qualification pins. Tags 1.0.0/1.0.1 and main remain immutable. OAuth, environment settings, recording, deprecated webhook, scoped file storage and the original polling bounds/limitations remain conditional under #57/#58/#72/#74/#75/#80. Installation and live account behavior remain **UNVERIFIED**. Earlier release descriptions below are historical and do not override this correction.
+
+---
+
 ## AVA 1.0.1 polling correction — 2026-10-30
 
 **Published 1.0.1 replaces the defective 1.0.0 polling path; existing conditional host requirements remain.** [Exact source](https://github.com/thatapp/connector-hubspot/tree/491571cc0590cbe60e216656997b37ba9779ca83) · [Report](https://github.com/thatapp/connector-hubspot/blob/491571cc0590cbe60e216656997b37ba9779ca83/REPORT.md) · [Intake](https://github.com/thatapp/connector-hubspot/blob/491571cc0590cbe60e216656997b37ba9779ca83/INTAKE.json).
