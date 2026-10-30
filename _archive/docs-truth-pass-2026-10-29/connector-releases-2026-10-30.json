@@ -1,0 +1,90 @@
+{
+  "checked_at_utc": "2026-10-30",
+  "purpose": "Post-publication connector contract corrections for issue63",
+  "releases": [
+    {
+      "slug": "slack",
+      "repository": "https://github.com/thatapp/connector-slack",
+      "tag": "1.0.0",
+      "commit": "3effc2853be155437516bbdbe84c5ee56a94e51a",
+      "status": "READY for scoped stored-token action installation; vendor and installation checks UNVERIFIED",
+      "intake_sha256": "6810da733cdd82cb2022a36ecbb1967d9f3b29d1d4f1facc56e11d52be11ae16",
+      "pages": [
+        {
+          "path": "content/_components/slack/index.md",
+          "sha256": "c7b0c39734243483995c3ae4dd1074bddaf199e698fcefcd901bf06fec78c234"
+        },
+        {
+          "path": "content/_components/slack/technical-notes.md",
+          "sha256": "80e1956bb6f7e8b1058547ad07c09c365d64e6880ed582645ee512bd7d7f58f6"
+        }
+      ]
+    },
+    {
+      "slug": "jira-cloud",
+      "repository": "https://github.com/thatapp/connector-cloudecosystemdev-jira-component",
+      "tag": "1.0.0",
+      "commit": "f6ae1acb42a12f6a53f32f56ab579c8921dfd1bc",
+      "status": "PUBLISHED scoped; full installation WAITING HOST #75/!129 and #72/!127",
+      "intake_sha256": "023c30738a1ed01fb5f78330714d33a13b45d116ee9edafe871db0a2f8998a69",
+      "pages": [
+        {
+          "path": "content/_components/jira-cloud/index.md",
+          "sha256": "f120a885b19420557c113d893dcebb77c18df706ae7554860e9d918e26188187"
+        },
+        {
+          "path": "content/_components/jira-cloud/technical-notes.md",
+          "sha256": "d00b6343c8bc67d4efb7432456fcd70d4ed507cfb9efd939d0bf4f25501e4021"
+        }
+      ]
+    },
+    {
+      "slug": "outlook",
+      "repository": "https://github.com/thatapp/connector-outlook",
+      "tag": "1.0.0",
+      "commit": "1829c84b84a9fdf12209ddeb7691eac9004b0e74",
+      "status": "PUBLISHED scoped; WAITING HOST approved Node20 sidecar #69, #75/!129 and #72/!127",
+      "intake_sha256": "5841ba12057758243515aee180a1985f34a7b838b79adf79f135c561411876f5",
+      "pages": [
+        {
+          "path": "content/_components/outlook/index.md",
+          "sha256": "ca24ee78c352efd8b8507e85550df661a585126b172dfc6f95d82f53148d46df"
+        },
+        {
+          "path": "content/_components/outlook/technical-notes.md",
+          "sha256": "df9d4abad9a8dac8ea58118618c8dd67f8261c8ea82ce58150c207c3383d246b"
+        }
+      ]
+    },
+    {
+      "slug": "onedrive",
+      "repository": "https://github.com/thatapp/connector-onedrive",
+      "tag": "1.0.0",
+      "commit": "cc202fcd9fd328d23d729d808fb109b0bbe1d7b3",
+      "status": "PUBLISHED scoped; WAITING HOST #75/!129 and #72/!127",
+      "intake_sha256": "08021b82d81eca98b5df5236441e963ba234e7cf1c7bddf18c6577ec00dab253",
+      "pages": [
+        {
+          "path": "content/_components/onedrive/index.md",
+          "sha256": "6c6ea8a203e913b07305031d36f26aa10f87467562d36cf32f42084f264a3a24"
+        },
+        {
+          "path": "content/_components/onedrive/technical-notes.md",
+          "sha256": "06e1826107356265166cf173b0c41d444c48d0fd1a8a724d899f5167eb9732c8"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "Local release tag resolves to the stated published commit for all four connectors",
+    "Each source-pinned INTAKE.json parses",
+    "All eight pages retain layout, redirects and historical body; checked by components-checks.json",
+    "Every release block links to immutable source, scope and intake evidence",
+    "Source claims explicitly distinguish tested mock behavior, published status and unverified installation"
+  ],
+  "limitations": [
+    "Jekyll build UNVERIFIED; no Ruby/Bundler runtime",
+    "No deployment, vendor authentication, install or live customer-data checks",
+    "Earlier area-publication.json remains the historical receipt for the first docs pass; this is an additive publication receipt"
+  ]
+}

@@ -10,6 +10,24 @@ ComponentVersion: 2.0.0
 updatedDate: 2023-05-19
 ---
 
+## AVA 1.0.0 release status — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST #75/!129 and #72/!127**. [Published source](https://github.com/thatapp/connector-onedrive/tree/cc202fcd9fd328d23d729d808fb109b0bbe1d7b3) · [Release scope](https://github.com/thatapp/connector-onedrive/blob/cc202fcd9fd328d23d729d808fb109b0bbe1d7b3/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-onedrive/blob/cc202fcd9fd328d23d729d808fb109b0bbe1d7b3/INTAKE.json).
+
+38 npm tests including lint/TypeScript compilation on Node 24.13.0; 12 exact cases across five entries; 4 additional attachment worker cases; require allowlist and secret scan PASS; zero network attempts.
+
+All five documented entries are exercised: Create Folder, Delete File, Get File, Upsert File, and New/Updated Objects Polling. Each invocation has a fresh stored-OAuth client. Drive/path segments are encoded separately; public HTTPS file downloads receive no Graph token. OAuth lifecycle remains host #57.
+
+Files are limited to 5 MiB each and 20 upload mappings per invocation. Upsert uses direct content PUT; large upload sessions are not implemented. `attachmentReference` replaces `attachmentUrl`; upsert accepts exactly one HTTPS `url` or scoped `reference`, plus `path`. Optional storage needs an injected scoped store. Short-lived Graph download capabilities are omitted from metadata.
+
+Polling drains pages/descendants before data emission, filters inclusive start/exclusive end, preserves the caller snapshot, and saves the end bound only after success. Limits are 100 pages, 100 visited folders and10000 scanned items; exceeding a limit fails without cursor advance. Delivery and multi-file writes are not transactional. `cfg.retries` 0..10 replaces inherited environment knobs. Retrieve Sample-specific debug behavior is not implemented.
+
+Installation is handed off through the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). Publication is not installation. No live vendor account, customer data, server access or deployment was used to establish these results.
+
+The older reference below describes its source version. The scope and limits above supersede any conflicting runtime, attachment, environment-variable, or availability claim; historical release facts remain preserved.
+
+---
+
 ## Description
 
 Microsoft OneDrive Component is designed to manage files and folders in OneDrive service using [Microsoft Graph API](https://learn.microsoft.com/en-us/graph/use-the-api).
