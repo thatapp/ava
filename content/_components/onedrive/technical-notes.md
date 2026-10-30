@@ -22,7 +22,7 @@ All five documented entries are exercised: Create Folder, Delete File, Get File,
 
 Files are limited to 5 MiB each and 20 upload mappings per invocation. Upsert uses direct content PUT; large upload sessions are not implemented. `attachmentReference` replaces `attachmentUrl`; upsert accepts exactly one HTTPS `url` or scoped `reference`, plus `path`. Optional storage needs an injected scoped store. Short-lived Graph download capabilities are omitted from metadata.
 
-Polling drains pages/descendants before data emission, filters inclusive start/exclusive end, preserves the caller snapshot, and saves the end bound only after success. Limits are 100 pages, 100 visited folders and10000 scanned items; exceeding a limit fails without cursor advance. Delivery and multi-file writes are not transactional. `cfg.retries` 0..10 replaces inherited environment knobs. Retrieve Sample-specific debug behavior is not implemented.
+Polling drains pages/descendants before data emission, filters inclusive start/exclusive end, preserves the caller snapshot, and saves the end bound only after success. Limits are 100 pages, 100 visited folders and 10,000 scanned items; exceeding a limit fails without cursor advance. Delivery and multi-file writes are not transactional. `cfg.retries` 0..10 replaces inherited environment knobs. Retrieve Sample-specific debug behavior is not implemented.
 
 Installation is handed off through the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). Publication is not installation. No live vendor account, customer data, server access or deployment was used to establish these results.
 

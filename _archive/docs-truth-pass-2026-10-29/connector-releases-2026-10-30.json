@@ -66,11 +66,81 @@
       "pages": [
         {
           "path": "content/_components/onedrive/index.md",
-          "sha256": "6c6ea8a203e913b07305031d36f26aa10f87467562d36cf32f42084f264a3a24"
+          "sha256": "483a8139aac5dec52fec390e9548bfb7725552e741dc7a1e713a156edc3dfea2"
         },
         {
           "path": "content/_components/onedrive/technical-notes.md",
-          "sha256": "06e1826107356265166cf173b0c41d444c48d0fd1a8a724d899f5167eb9732c8"
+          "sha256": "0dbf5b22361000b1201a4c4497a058418b5d652615ccd16286e1405f09961810"
+        }
+      ]
+    },
+    {
+      "slug": "salesforce",
+      "repository": "https://github.com/thatapp/connector-salesforce",
+      "tag": "1.0.0",
+      "commit": "7ab53e19b9e442b80fa4f067c418f346f47b3f28",
+      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth, #72 credential recording, #75 attachment storage; streaming #83 unbuilt",
+      "intake_sha256": "5f892c15cbfd9a31222413893ff179dcc90c7af4955ad89d8ac8a9bc03c0097f",
+      "pages": [
+        {
+          "path": "content/_components/salesforce/actions.md",
+          "sha256": "47424fba78a91fb72961d3802dbd95615d2146a34cad129a3ecbe5c330666e9b"
+        },
+        {
+          "path": "content/_components/salesforce/creating-oauth-app-for-salesforce.md",
+          "sha256": "0d4b5760a058fafefe653f2f67b6d42a7dd58dd53e2c39ba99cda35111abe3c6"
+        },
+        {
+          "path": "content/_components/salesforce/deprecated-functions.md",
+          "sha256": "3152cedfd39eff03e83383c17e742de274a31607d79c5453c44c154246bfc1a4"
+        },
+        {
+          "path": "content/_components/salesforce/index.md",
+          "sha256": "70965f29672e7b55697989693e948c64fb671d7c88bcb382f69c040231143a65"
+        },
+        {
+          "path": "content/_components/salesforce/technical-notes.md",
+          "sha256": "02e0373a7caad4d5fa938de4bf94ac30451e188f3fc987d7a6f2ce6b02bf7388"
+        },
+        {
+          "path": "content/_components/salesforce/triggers.md",
+          "sha256": "dbf21a4740e2d0033d2460b4aec3241abb0ce0829dcccc49acc67310b3bd5510"
+        }
+      ]
+    },
+    {
+      "slug": "mssql",
+      "repository": "https://github.com/thatapp/connector-mssql",
+      "tag": "1.0.0",
+      "commit": "d3f6a8d3aae408227b1c5609bc7e0ddd1144cf09",
+      "status": "PUBLISHED scoped; WAITING HOST #78 SQL provider provisioning/injection; custom trust #82 unbuilt",
+      "intake_sha256": "7ce543281a72942461b6694fdb67a97ce15496155146a70ec30f7e9bbfbf2166",
+      "pages": [
+        {
+          "path": "content/_components/mssql/index.md",
+          "sha256": "686934a29d1e4caa568384b62b784098fa98f9938cd208bbc6e1b268d4f508b9"
+        },
+        {
+          "path": "content/_components/mssql/technical-notes.md",
+          "sha256": "d21e0835c391158b65e3bb0b6cde42b0e6e2db5231455e8c5d707b6a9e650a5d"
+        }
+      ]
+    },
+    {
+      "slug": "mysql",
+      "repository": "https://github.com/thatapp/connector-mysql",
+      "tag": "1.0.0",
+      "commit": "5bc8892d4a9f2465025d3dbe93d14c27ad31b25f",
+      "status": "PUBLISHED scoped; WAITING HOST #78 SQL provider provisioning/injection; custom trust #82 unbuilt",
+      "intake_sha256": "62372457f5e663b37f1b69913f5ad5fb68b25e70747a34d0b77745d076b301ac",
+      "pages": [
+        {
+          "path": "content/_components/mysql/index.md",
+          "sha256": "77bb4ece05023715879231121a9d65e3eebb9a2b5a7b0f0f680e2e94e0199131"
+        },
+        {
+          "path": "content/_components/mysql/technical-notes.md",
+          "sha256": "28ad0df9cac1043a64b839e8e460940024fb9344365ce94ed86b544a18340c79"
         }
       ]
     }
@@ -86,5 +156,30 @@
     "Jekyll build UNVERIFIED; no Ruby/Bundler runtime",
     "No deployment, vendor authentication, install or live customer-data checks",
     "Earlier area-publication.json remains the historical receipt for the first docs pass; this is an additive publication receipt"
-  ]
+  ],
+  "reviewed_docs_before_changes": "6ca7d555d1b048c9a8be32d62523ef96fa778462",
+  "post_tag_qualifications": {
+    "ci": {
+      "connectors": [
+        "salesforce",
+        "onedrive",
+        "outlook"
+      ],
+      "branch_commits": [
+        "d1f93a05d0d7bdabdd2a02d4b25a47051d5656ff",
+        "db05d54a6239ea3ad86fe419f52e42676b87af7f",
+        "7deebdb5ada8924ce051182786e358e99c6bba70"
+      ],
+      "scope": "Branches replace inherited CircleCI Docker publication/Slack notifications with tests-only CI ignoring tags. Immutable 1.0.0 tags predate this CI-only follow-up; runtime unchanged. GitHub combined statuses were empty; external CircleCI activity is not thereby disproved. No deployment was intentionally initiated."
+    },
+    "salesforce_docs_map": {
+      "correction_commit": "b6af8de1e6470aca83d7ada3b37d313921081dc1",
+      "upstream_source_commit": "2b7b2051c922dd4083281f67bc28754ff51844ee",
+      "reviewed_docs_commit": "6ca7d555d1b048c9a8be32d62523ef96fa778462",
+      "path": "content/_components/salesforce/technical-notes.md",
+      "upstream_sha256_lf": "1e3c08f4a86fde1e2319d4680a2249a915c1a2b3880a7369f7bc78c27d70c7a5",
+      "reviewed_sha256_lf": "e8899f456bb7a7bfa71b70232ef7bc6d0408ea0dad7075fb09f9a382f9efaa08",
+      "scope": "The immutable tag docs-map source_commit mislabeled the reviewed technical-notes hash as upstream; the branch correction distinguishes both source pins. Runtime and release tag unchanged."
+    }
+  }
 }
