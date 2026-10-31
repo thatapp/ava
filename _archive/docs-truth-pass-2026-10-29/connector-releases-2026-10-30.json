@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-30T21:33:06.098915+00:00",
+  "checked_at_utc": "2026-10-31T23:02:54.964873+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -943,10 +943,87 @@
           "sha256": "9069a11b3e4850428b9e0d9dc74958ce20f62a97837001b85fb5e3783a1741cd"
         }
       ]
+    },
+    {
+      "slug": "shopify-admin-component-v2",
+      "repository": "https://github.com/thatapp/connector-shopify-admin-component-v2",
+      "tag": "1.0.0",
+      "commit": "8c546552d2aae048a1b5d120aecc55624f2cca36",
+      "status": "PUBLISHED CONDITIONAL; final combined-host qualification pending; no READY upgrade",
+      "publication_review": "Author verified remote tag/peel, feature branch, full REPORT PR and preserved main; coordinated review pending for latest releases.",
+      "intake_url": "https://github.com/thatapp/connector-shopify-admin-component-v2/blob/8c546552d2aae048a1b5d120aecc55624f2cca36/evidence/inbound-qualified/qualification.json",
+      "pages": [
+        {
+          "path": "content/_components/shopify-admin-v2/index.md",
+          "sha256": "63917ce6abb01c7d624fac1cded0ddcadbda21a14be02823cd66580e216bffaf"
+        },
+        {
+          "path": "content/_components/shopify-admin-v2/technical-notes.md",
+          "sha256": "c418e01eaf455acdc916a9bb5f59c0e66f94ee8a4e561a19add5b968e21cbfff"
+        },
+        {
+          "path": "content/_components/shopify/actions.md",
+          "sha256": "88e25ebbe30060db058d4d0cd26f5edc2a6949e0bf748fe59ca5e7ffd1db6069"
+        },
+        {
+          "path": "content/_components/shopify/deprecated-actions.md",
+          "sha256": "90cf8611175e6440a5b581e04ca8176f3ea808d42eee6e7d49ee987a56662557"
+        },
+        {
+          "path": "content/_components/shopify/index.md",
+          "sha256": "f08fb5bb8d9ae44af008215f01065db434b83299e117f1a02a5f1428550ddcdf"
+        },
+        {
+          "path": "content/_components/shopify/technical-notes.md",
+          "sha256": "8ec6f9f4c6e7621b5587a6e78cb6293fda677eb726a2426897800d064e7e4b9d"
+        },
+        {
+          "path": "content/_components/shopify/triggers.md",
+          "sha256": "e2d537b0638ff2cb61933a8778d8222ee6094226d4d422ca8f75513a8d85d20c"
+        }
+      ]
+    },
+    {
+      "slug": "stripe",
+      "repository": "https://github.com/thatapp/connector-stripe",
+      "tag": "1.0.0",
+      "commit": "9e2363812ea695efa6957b53020c2ebb871782d1",
+      "status": "PUBLISHED CONDITIONAL; final combined-host qualification pending; no READY upgrade",
+      "publication_review": "Author verified remote tag/peel, feature branch, full REPORT PR and preserved main; coordinated review pending for latest releases.",
+      "intake_url": "https://github.com/thatapp/connector-stripe/blob/9e2363812ea695efa6957b53020c2ebb871782d1/evidence/qualified/qualification.json",
+      "pages": [
+        {
+          "path": "content/_components/stripe/index.md",
+          "sha256": "3bd03994c26899595f13bd53c29879cd85c7d458664bbf1a42469cc966f21675"
+        },
+        {
+          "path": "content/_components/stripe/technical-notes.md",
+          "sha256": "1e5be12986b727b9b3a3b3f86078191ac64f05199e83561cd2ac47b146dd8a12"
+        }
+      ]
+    },
+    {
+      "slug": "keenio",
+      "repository": "https://github.com/thatapp/connector-keenio",
+      "tag": "1.0.0",
+      "commit": "c39771157905f7211d72ac89de7af21495c23338",
+      "status": "PUBLISHED CONDITIONAL; final combined-host qualification pending; no READY upgrade",
+      "publication_review": "Author verified remote tag/peel, feature branch, full REPORT PR and preserved main; coordinated review pending for latest releases.",
+      "intake_url": "https://github.com/thatapp/connector-keenio/blob/c39771157905f7211d72ac89de7af21495c23338/evidence/qualified/qualification.json",
+      "pages": [
+        {
+          "path": "content/_components/keenio/index.md",
+          "sha256": "b83bf66ec89b9781e592ab16587dfd99f4465d9ccb5450200248894d155bafe4"
+        },
+        {
+          "path": "content/_components/keenio/technical-notes.md",
+          "sha256": "2e1f3783605d624f9aae138741c1d145bad3e3e7483bd9f9278128fc7c64c361"
+        }
+      ]
     }
   ],
   "checks": [
-    "All42 current release tags resolve to recorded commits; tag/main readbacks are retained with publication qualifications. Historical superseded releases remain separate.",
+    "45 current published release references:42 prior verified plus3 author-verified Shopify/Stripe/Keenio candidates. Remote publication readbacks retain exact tags and unchanged main; root integration audit remains separate.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
@@ -1603,5 +1680,23 @@
       "host_mr": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/merge_requests/164",
       "pages_are_historical": true
     }
-  ]
+  ],
+  "latest_three_release_scope": {
+    "before_docs": "f51428d72818c3cc6000f2246263a2d220842d87",
+    "prior_hashes": {
+      "content/_components/shopify-admin-v2/index.md": "3cafefe931ebc91dc188ce65b063785c1eef18cff0fe92007da5137b5b5586ff",
+      "content/_components/shopify-admin-v2/technical-notes.md": "a7cb0757c1bcd90de06b5df868ab017fc82f6beb3cb25d27863caa94459f3af4",
+      "content/_components/shopify/actions.md": "5032a7b5ee2f1e940c6a1349072e6ca26378f3c8c2bc4183b5b16da2e4fcc195",
+      "content/_components/shopify/deprecated-actions.md": "85b2b0a21b2ed22bd9db1caf63b638c7144425c51a440ee1ed37fdc7d2fbb754",
+      "content/_components/shopify/index.md": "c9e9b146febb4c8ad91bd3e0b9684557797212c119237d891bf090a7e925d6a9",
+      "content/_components/shopify/technical-notes.md": "30b56556e58338b48c73cefccfd7d2b561d89a26756f7550923471493ee4eb57",
+      "content/_components/shopify/triggers.md": "b1e95e3e649cf8417dab83a949fa23033afafc6d15ad8d6e15cebd5cf1af35b6",
+      "content/_components/stripe/index.md": "f2dc94ae08bd9a003e0111e9c3879850bf728d499432233df2d6789e789bfeda",
+      "content/_components/stripe/technical-notes.md": "a255957533bf4912fc933ba1c843e6cb40e3ddcc2c37dd2f8f70591b13718a5a",
+      "content/_components/keenio/index.md": "53017774ee8c388cf8bcce0ec943a6853f218a5bf932c76050bbd16a7447a4fc",
+      "content/_components/keenio/technical-notes.md": "dcc847984ea904188b569af498629b63d2a662bd901dbba280c6931fd23aed87"
+    },
+    "ready_count_unchanged": 4,
+    "final_combined_qualification": "PENDING"
+  }
 }
