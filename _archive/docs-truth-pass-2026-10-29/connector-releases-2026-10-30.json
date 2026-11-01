@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-31T23:02:54.964873+00:00",
+  "checked_at_utc": "2026-11-01T01:06:58.731235+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -1020,10 +1020,30 @@
           "sha256": "2e1f3783605d624f9aae138741c1d145bad3e3e7483bd9f9278128fc7c64c361"
         }
       ]
+    },
+    {
+      "slug": "google-pubsub",
+      "repository": "https://github.com/thatapp/connector-blendededge-google-pubsub-oih",
+      "tag": "1.0.0",
+      "commit": "2110e96fc88b57be1b979772bad5bfd5c87455de",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80/#83; no READY or final combined-host qualification",
+      "publication_review": "Author and root independently verified remote annotated tag, peeled commit, branch, unchanged main and full Draft PR3 REPORT. Root verified all8 source blobs and26 committed artifacts; two final package rechecks remain separately retained.",
+      "intake_url": "https://github.com/thatapp/connector-blendededge-google-pubsub-oih/blob/2110e96fc88b57be1b979772bad5bfd5c87455de/evidence/event-decoder-v1/qualification.json",
+      "intake_sha256": "49927ceebba32b3ad03d1a1f9847a156f59a63cc28e331a927650675318697d2",
+      "pages": [
+        {
+          "path": "content/_components/google-pubsub/index.md",
+          "sha256": "514c9fb7a0c87a44e1f336832c3792bf9557f902f72fc40db29ea402a59a8c14"
+        },
+        {
+          "path": "content/_components/google-pubsub/technical-notes.md",
+          "sha256": "5a0cb9c9b273c70a726930ce01c0f40b8749c4fce832352f03fb18edabf16c0c"
+        }
+      ]
     }
   ],
   "checks": [
-    "45 current published release references:42 prior verified plus3 author-verified Shopify/Stripe/Keenio candidates. Remote publication readbacks retain exact tags and unchanged main; root integration audit remains separate.",
+    "46 current published release references:45 prior plus independently author/root-verified Pub/Sub1.0.0. Four historical READY unchanged;42 conditional and0 new final combined-host-qualified.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
@@ -1695,6 +1715,15 @@
       "content/_components/stripe/technical-notes.md": "a255957533bf4912fc933ba1c843e6cb40e3ddcc2c37dd2f8f70591b13718a5a",
       "content/_components/keenio/index.md": "53017774ee8c388cf8bcce0ec943a6853f218a5bf932c76050bbd16a7447a4fc",
       "content/_components/keenio/technical-notes.md": "dcc847984ea904188b569af498629b63d2a662bd901dbba280c6931fd23aed87"
+    },
+    "ready_count_unchanged": 4,
+    "final_combined_qualification": "PENDING"
+  },
+  "pubsub_release_scope": {
+    "before_docs": "3aa604cc65de9f8b9cd5da84d0b4b7ae09ab2925",
+    "prior_hashes": {
+      "content/_components/google-pubsub/index.md": "76aee1fb9e42704c60afeee0e73c5eaaff533b15a63f0048d437791131c6819e",
+      "content/_components/google-pubsub/technical-notes.md": "c0cb02a4ffcfa3fb2bcd7bee245af9b705663c8f05f9b6d13663a84fa7e633c5"
     },
     "ready_count_unchanged": 4,
     "final_combined_qualification": "PENDING"
