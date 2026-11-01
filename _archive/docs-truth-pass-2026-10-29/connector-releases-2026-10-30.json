@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-01T04:41:00.743645+00:00",
+  "checked_at_utc": "2026-11-01T05:38:58.634712+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -1145,7 +1145,7 @@
       "commit": "5058b1a15e8cedf9e03eb264b579262dca8174b9",
       "status": "PUBLISHED CONDITIONAL #57/#58/#72/#75/#80/#85 and trusted host-key/server-confined policy; no final combined-host qualification",
       "qualification_sha256": "e4fcba15f0c81b280f2196fac4124697f031b69e305f4d40aeec7734f8cd55c4",
-      "publication_review": "Exact branch/tag/main and full PR REPORT readback verified; coordinating root independent release audit pending.",
+      "publication_review": "Coordinating root independently audited tag/main/full report,16sourceblobs/19currentartifacts and both179-file final gates; combined runtime f76122a55e9c3fbbab5d1d6f075e13c001bd61d3 replays268focused+250shared regressions each runtime, including actual published SFTP/native/mapper/persisted-resume/short-password cases. Conditions and final-host/install/live limits remain.",
       "pages": [
         {
           "path": "content/_components/sftp/index.md",
@@ -1168,10 +1168,38 @@
           "sha256": "0521b8f55bbfe139a41205558af8ed0345311cb2c3955a410b073fc8c7a7f275"
         }
       ]
+    },
+    {
+      "slug": "csv",
+      "repository": "https://github.com/thatapp/connector-csv",
+      "tag": "1.0.1",
+      "commit": "6f272f25722604283340fa1ac477baee59ded31c",
+      "status": "PUBLISHED CONDITIONAL #57/#58/#72/#75/#80/#87 and trusted production storage/clock; no final combined-host qualification",
+      "qualification_sha256": "4f671db2a8b9b556d45ab8718e282ad01248e893c4e5e6233bc8f3904a765d2c",
+      "final_intake_sha256": "8da1a637be2368d8f3c7d0c9ef71da9cd566fb4912daca0ec5c3781f5762d3ef",
+      "publication_review": "Author verified remote annotated tags/feature branch/unchanged main and exact UTF-8 PR report; both final four-gate receipts pass211textfiles. Coordinating root final release audit pending.",
+      "pages": [
+        {
+          "path": "content/_components/csv/actions.md",
+          "sha256": "62857a71c69e45e23f528dab4193ad93722ec93e085853f10b69c7d9919c9f50"
+        },
+        {
+          "path": "content/_components/csv/deprecated-functions.md",
+          "sha256": "81ea8676d007d0a8bee1578bd159f7506a264dff2fce14452ad83947d03f2456"
+        },
+        {
+          "path": "content/_components/csv/index.md",
+          "sha256": "ac359d13bddd9182999a3ce3e6bdfc0c0d03f5c185a519c544cbdb8c4680ae0a"
+        },
+        {
+          "path": "content/_components/csv/technical-notes.md",
+          "sha256": "4053eeb4685fd77a295bd784577992351ddbc6c724019d86831f1f3642838b7b"
+        }
+      ]
     }
   ],
   "checks": [
-    "48 current published release references:47 prior plus author-verified X/Twitter1.0.0. Four historical READY unchanged;44 conditional and0 new final combined-host-qualified.",
+    "53 current published connector references:52 prior plus CSV1.0.1, with its immutable1.0.0 retained as superseded history. Four historical READY unchanged;49 conditional and0 new final combined-host-qualified.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
@@ -1543,6 +1571,22 @@
       "tag_object": "6e871ae5180856d53845683499de56f8edc12d1f",
       "main": "92b3aba1b60848f126a1e123ca4c82a433f485c2",
       "status": "PASS"
+    },
+    {
+      "slug": "csv",
+      "tag": "1.0.0",
+      "commit": "a5083afbb0670bc6d299102749dab2245e92d04d",
+      "tag_object": "eaa8026fd280c21f6fcb1670e5e29c8d05e1a910",
+      "main": "a4ea2b6bb0a65a38219d8c71abefca6148a05125",
+      "status": "PASS immutable reference; report encoding corrected forward1.0.1"
+    },
+    {
+      "slug": "csv",
+      "tag": "1.0.1",
+      "commit": "6f272f25722604283340fa1ac477baee59ded31c",
+      "tag_object": "fe885d57867d7fd14bb3b732ea57be8cf4729e1a",
+      "main": "a4ea2b6bb0a65a38219d8c71abefca6148a05125",
+      "status": "PASS"
     }
   ],
   "superseded_releases": [
@@ -1682,6 +1726,16 @@
       ],
       "superseded_by": "1.0.1",
       "pages_are_historical": true
+    },
+    {
+      "slug": "csv",
+      "repository": "https://github.com/thatapp/connector-csv",
+      "tag": "1.0.0",
+      "commit": "a5083afbb0670bc6d299102749dab2245e92d04d",
+      "status": "Functional four gates passed; report Windows em-dash byte prevented UTF-8 PR-body publication after atomic tag push; unchanged action code retained, corrected forward1.0.1.",
+      "superseded_by": "1.0.1",
+      "pages_are_historical": true,
+      "pages": []
     }
   ],
   "qualification_notices": [
@@ -1906,5 +1960,11 @@
     },
     "ready_count_unchanged": 4,
     "final_combined_qualification": "PENDING"
+  },
+  "csv_release_scope": {
+    "before_docs": "cec11bc4065ff935d229ae9f6ebfed9e79b2a2a9",
+    "ready_count_unchanged": 4,
+    "final_combined_qualification": "PENDING",
+    "release_report_encoding": "Forward1.0.1;1.0.0tagretained"
   }
 }
