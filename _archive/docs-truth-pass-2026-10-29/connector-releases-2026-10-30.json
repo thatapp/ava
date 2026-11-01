@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-01T03:57:31.255132+00:00",
+  "checked_at_utc": "2026-11-01T04:41:00.743645+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -1126,7 +1126,7 @@
       "commit": "a0ca09dc7ecb615d90205171e7108709da8909f1",
       "status": "PUBLISHED CONDITIONAL #57/#58/#72/#80/#83/#86; no final combined-host qualification",
       "qualification_sha256": "61023da2d3ce748eeabf3f1d71f257b36c67a5372844a0d32077642f11de3802",
-      "publication_review": "Exact branch/tag/main and full PR report readback verified; coordinating root independent release audit pending.",
+      "publication_review": "Coordinating root independently verified release/tag/main/full REPORT, ten source blobs,49 artifacts and104-file release-final gates; sole #62 row confirmed. No readiness upgrade.",
       "pages": [
         {
           "path": "content/_components/amqp/index.md",
@@ -1135,6 +1135,37 @@
         {
           "path": "content/_components/amqp/technical-notes.md",
           "sha256": "e8664b7dca940f44310ed349e85127534a207bd123bad560dcf66d002e194b1c"
+        }
+      ]
+    },
+    {
+      "slug": "sftp",
+      "repository": "https://github.com/thatapp/connector-blendededge-sftp-component-oih",
+      "tag": "1.0.0",
+      "commit": "5058b1a15e8cedf9e03eb264b579262dca8174b9",
+      "status": "PUBLISHED CONDITIONAL #57/#58/#72/#75/#80/#85 and trusted host-key/server-confined policy; no final combined-host qualification",
+      "qualification_sha256": "e4fcba15f0c81b280f2196fac4124697f031b69e305f4d40aeec7734f8cd55c4",
+      "publication_review": "Exact branch/tag/main and full PR REPORT readback verified; coordinating root independent release audit pending.",
+      "pages": [
+        {
+          "path": "content/_components/sftp/index.md",
+          "sha256": "cbf607aead6ae41d644bad6ed3ba805bc09e721e5199e5bb149b491617d68baf"
+        },
+        {
+          "path": "content/_components/sftp/actions.md",
+          "sha256": "ef01288dbe38c951e47bec5cb81df18c52ecad084946854c1a82bba59b77b23c"
+        },
+        {
+          "path": "content/_components/sftp/triggers.md",
+          "sha256": "c80e09db74e3f77e2f98c42331eefd4979d8d9d6342006502fe7272a5a830afc"
+        },
+        {
+          "path": "content/_components/sftp/technical-notes.md",
+          "sha256": "0a925096bd2f294f8448d7f3a615315c66de40e72a7886c9208d591cab2da674"
+        },
+        {
+          "path": "content/_components/sftp/usage-example.md",
+          "sha256": "0521b8f55bbfe139a41205558af8ed0345311cb2c3955a410b073fc8c7a7f275"
         }
       ]
     }
@@ -1503,6 +1534,14 @@
       "commit": "a0ca09dc7ecb615d90205171e7108709da8909f1",
       "tag_object": "54fe191bde418bc28d1150a8268340c411095cab",
       "main": "8b885def55bfe2e70e84cb589bb248e699fb78f3",
+      "status": "PASS"
+    },
+    {
+      "slug": "sftp",
+      "tag": "1.0.0",
+      "commit": "5058b1a15e8cedf9e03eb264b579262dca8174b9",
+      "tag_object": "6e871ae5180856d53845683499de56f8edc12d1f",
+      "main": "92b3aba1b60848f126a1e123ca4c82a433f485c2",
       "status": "PASS"
     }
   ],
