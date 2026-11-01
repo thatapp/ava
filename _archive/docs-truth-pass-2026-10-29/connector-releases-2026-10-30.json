@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-01T02:22:04.910945+00:00",
+  "checked_at_utc": "2026-11-01T02:57:15.163713+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -1088,7 +1088,7 @@
       "commit": "c08916c81599154fe7feae666c1b79e9a0daf780",
       "status": "PUBLISHED CONDITIONAL #57/#72/#74/#80; no final combined-host qualification",
       "qualification_sha256": "bdfd9aa6db3c05cd3e2a75903177015b72838d3b1d1ac90245f9d0f505fbf5f5",
-      "publication_review": "Exact branch/tag/main and full PR report readback verified; coordinating root independent review pending.",
+      "publication_review": "Coordinating root independently verified release/tag/main, ten source blobs,38 raw artifacts and both89-file final gates; #62 row confirmed. No readiness upgrade.",
       "pages": [
         {
           "path": "content/_components/mandrillapp/index.md",
@@ -1097,6 +1097,25 @@
         {
           "path": "content/_components/mandrillapp/technical-notes.md",
           "sha256": "ffe4ed1462df943f19a60f661452ba6f1b498c5b9f062a1f8b548d7696b3e9d5"
+        }
+      ]
+    },
+    {
+      "slug": "kafka",
+      "repository": "https://github.com/thatapp/connector-blendededge-kafka-component-oih",
+      "tag": "1.0.0",
+      "commit": "fc7788a42313d5776e5fc71d689cced7c95ab2bc",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80/#83/#86; no final combined-host qualification",
+      "qualification_sha256": "2abe321aab2ff1b9819bd100d7cee5dda1518b4e3e6070b9eedfb7682f301619",
+      "publication_review": "Exact branch/tag/main and full PR report readback verified; coordinating root independent release audit pending.",
+      "pages": [
+        {
+          "path": "content/_components/kafka/index.md",
+          "sha256": "9d929e72764dfd13b5eee43b5a30acd42d8e3d8f6149487d74ca61dca2ae71da"
+        },
+        {
+          "path": "content/_components/kafka/technical-notes.md",
+          "sha256": "695e0d6fb47e2b9225685176736b5b0a475e7acd008a5fd8de633875a01f6f3c"
         }
       ]
     }
@@ -1449,6 +1468,14 @@
       "commit": "c08916c81599154fe7feae666c1b79e9a0daf780",
       "tag_object": "e803d158d43f574391d2ab1f671ba03b7e8aa0c6",
       "main": "db38b593e49132d4446651530d1db6b1d57fd80d",
+      "status": "PASS"
+    },
+    {
+      "slug": "kafka",
+      "tag": "1.0.0",
+      "commit": "fc7788a42313d5776e5fc71d689cced7c95ab2bc",
+      "tag_object": "7b7479850c1e7800b6f7ba7237a0a2cf5b80fa88",
+      "main": "c84db18e216325fb3701d3ff719ceb6c57e0772d",
       "status": "PASS"
     }
   ],
