@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-01T01:42:07.355981+00:00",
+  "checked_at_utc": "2026-11-01T02:22:04.910945+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -1067,7 +1067,7 @@
       "tag": "1.0.0",
       "commit": "e3ece748e6bc1159f622eb8606d02b4166a2e53a",
       "status": "PUBLISHED CONDITIONAL #57/#72/#80; no READY or final combined-host qualification",
-      "publication_review": "Author verified annotated tag, peel, release branch, unchanged main and full Draft PR1 report. Root independent readback pending. Successful push followed by readback transport failure was reconciled without repeating push or overwriting tag.",
+      "publication_review": "Coordinating root independently verified release/tag/main, ten source blobs,24 raw artifacts and both76-file final gates; #62 row confirmed. No readiness upgrade.",
       "intake_url": "https://github.com/thatapp/connector-x-twitter-component/blob/e3ece748e6bc1159f622eb8606d02b4166a2e53a/evidence/qualified/qualification.json",
       "intake_sha256": "cd6088d124d817ebbf5680c58b3a66b597d9f5a75028b31f99b595a4a9800e50",
       "pages": [
@@ -1078,6 +1078,25 @@
         {
           "path": "content/_components/x-twitter-component/technical-notes.md",
           "sha256": "3cc5c72b9f4bb98bfaabdea1d53d7745f5f8f8110130aaf71a6860dae9d11530"
+        }
+      ]
+    },
+    {
+      "slug": "mandrillapp",
+      "repository": "https://github.com/thatapp/connector-mandrillapp",
+      "tag": "1.0.0",
+      "commit": "c08916c81599154fe7feae666c1b79e9a0daf780",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#74/#80; no final combined-host qualification",
+      "qualification_sha256": "bdfd9aa6db3c05cd3e2a75903177015b72838d3b1d1ac90245f9d0f505fbf5f5",
+      "publication_review": "Exact branch/tag/main and full PR report readback verified; coordinating root independent review pending.",
+      "pages": [
+        {
+          "path": "content/_components/mandrillapp/index.md",
+          "sha256": "3fd716ccbda8eb3620ed4225c5a186ba9562f16a631f13ae9081970d6b1bc986"
+        },
+        {
+          "path": "content/_components/mandrillapp/technical-notes.md",
+          "sha256": "ffe4ed1462df943f19a60f661452ba6f1b498c5b9f062a1f8b548d7696b3e9d5"
         }
       ]
     }
@@ -1422,6 +1441,14 @@
       "tag_object": "f98f1c9634a2d32dbf217ab81edab73f56b8324d",
       "main": "2bdcbd961d90eeb8629c3493b4520c47027b65bf",
       "tag": "1.0.0",
+      "status": "PASS"
+    },
+    {
+      "slug": "mandrillapp",
+      "tag": "1.0.0",
+      "commit": "c08916c81599154fe7feae666c1b79e9a0daf780",
+      "tag_object": "e803d158d43f574391d2ab1f671ba03b7e8aa0c6",
+      "main": "db38b593e49132d4446651530d1db6b1d57fd80d",
       "status": "PASS"
     }
   ],
