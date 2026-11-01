@@ -10,6 +10,30 @@ updatedDate: 2026-01-21
 ComponentVersion: 1.6.0
 ---
 
+## AVA 1.0.0 release status — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST #72/#75 text/binary transport and scoped storage; #58 custom environment and #80 URL/size/CSV/polling qualifications.** [Published source](https://github.com/thatapp/connector-amazon-aws-s3/tree/f6fca04376efac05852bbc93f6608bd6db803e12) · [Contract report](https://github.com/thatapp/connector-amazon-aws-s3/blob/f6fca04376efac05852bbc93f6608bd6db803e12/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-amazon-aws-s3/blob/f6fca04376efac05852bbc93f6608bd6db803e12/INTAKE.json).
+
+Seven action entries and one polling trigger use recorded SigV4 HTTP instead of the AWS SDK. The five current actions are provided-attachment upload, read, filenames, delete and rename; deprecated Write/Read aliases remain. Deprecated cross-message Stream to CSV is withheld because durable aggregation is not implemented. The current CSV/Batch-then-upload guidance still applies.
+
+The five credential fields remain Access Key Id, Secret Access Key, Region, Custom Endpoint and Force Path Style. Verification performs authenticated ListBuckets with max-buckets=1; it needs bucket-list permission and does not establish object permissions. Static credentials and general-purpose buckets only. Default endpoints support commercial AWS regions. Custom endpoints must be HTTPS origins and remain subject to host network/trust policy; live S3-compatible provider acceptance is unverified.
+
+Read parses UTF-8 JSON/XML by extension or creates a scoped binary reference. JSON objects are emitted directly; arrays/scalars/null use `{value}`. XML uses ordered elements, rejects DTD/entities and omits whitespace-only text nodes. Binary output uses `body.attachment` and `msg.attachments[filename]`, replacing the legacy `attachmentUrl` promise. Upload accepts a scoped reference in `attachmentUrl` or an anonymous HTTPS URL; AWS authentication is never sent to that source URL. Authenticated legacy Maester URLs are unsupported. Pre-signed reads use HEAD only, including large objects; URL expiry is 1–604800 seconds, default 3600. Polling adds either reference or URL only when Enable File Attachments is selected.
+
+The transfer limit is 4 MiB per file and aggregate, with at most 20 stored attachments per step. ATTACHMENT_MAX_SIZE can lower that limit; isolated custom environment forwarding still needs #58. The historical 100 MB attachment/5 GB upload statements below do not describe this release. No multipart upload, custom metadata, tags, storage-class or encryption options are exposed; AWS default/bucket encryption still applies. Rename can copy at most 5 GiB without downloading.
+
+Get filenames emits individual summaries, or `{}` for an empty bucket. It enforces the current index's 1000-object limit, despite the historical changelog's larger-list claim. Delete checks presence and uses an ETag precondition; versioned buckets use AWS delete-marker semantics. Rename refuses an existing destination, conditionally copies, verifies ETag/size/listing, and then conditionally deletes the source. HTTP 200 copy errors are rejected. Rename is not atomic; a final-delete failure can leave both objects, and ETags do not capture every metadata-only change. Mutations are never automatically retried.
+
+Polling scans at most 100 pages/10000 objects and 4 MiB metadata. Its timestamp range is inclusive at the start and exclusive at the end, excluding the current second. It fully prepares downloads, awaits data, then emits one snapshot. A failed page/download/data emission does not advance the snapshot; retries may duplicate output already accepted. A new null snapshot works, and changed account/bucket/time configuration requires a reset. Listing is not an atomic change stream. Failed delivery removes undelivered scoped references; snapshot failure preserves delivered ones. Host TTL/reconciliation is still needed after worker termination or storage failure.
+
+This chat ran all four intake gates on Node 20.20.2 and 24.13.0: 69 npm tests, 42 canonical cases/49 actual sealed workers and six supplemental worker checks, zero network attempts. The tested runtime is MR129 at `2483881b48440a06b21288085ecf7d7e29c7634a`, with immutable MR157 harness `5acb7d929bb1a32ea36699ff0de8f4b034e06ef0`. No production store was provisioned. Main remains at `a8e298db7dfa90235d2a67134155f6aa69de14f7`.
+
+Installation, deployment, live vendor/account acceptance, storage provisioning and UI behavior remain **UNVERIFIED**. Follow the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). The older reference and historical metadata below remain for context; the published scope and limitations above supersede conflicting runtime, URL and size claims.
+
+---
+
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Table of Contents
 
 * [General information](#general-information)
@@ -536,4 +560,4 @@ Be careful: this action can process only one attachment - if it would be more or
 ## Known Limitations
 
 1. The maximum possible size for an attachment is 100 MB.
-2. Attachments mechanism does not work with [Local Agent Installation](/guides/vpn-agent)
+2. The platform VPN Agent / Local Agent service is **not offered**; the former Agent attachment limitation is not a current setup option.

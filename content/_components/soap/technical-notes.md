@@ -12,6 +12,12 @@ redirect_from:
   - /components/soap/changelog.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
+> **Not offered: this Java connector build.** Java component hosting is not offered on the current host. The action/schema and release details below are retained as reference for that Java build; they do not describe an installed Node.js replacement. Current installation and runtime remain **UNVERIFIED**.
+
+> **Historical component releases.** The entries below record upstream/component release facts. They do not establish the build installed on the current host. Sailor versions and renamed package coordinates in these entries are historical references, not installation instructions or a current runtime support matrix.
+
 ## Changelog
 
 ### 1.2.11 (May 18, 2026)

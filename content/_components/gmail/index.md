@@ -10,6 +10,48 @@ updatedDate: 2023-09-08
 ComponentVersion: 1.0.1
 ---
 
+## AVA 1.0.1 durable polling correction — 2026-10-30
+
+**Published with conditional requirements #57/#58/#72/#75/#80.** [Exact source](https://github.com/thatapp/connector-gmail/tree/1a688b3d965471b53d2da3a7df270a0780499721) · [Full report](https://github.com/thatapp/connector-gmail/blob/1a688b3d965471b53d2da3a7df270a0780499721/REPORT.md) · [Packaged intake](https://github.com/thatapp/connector-gmail/blob/1a688b3d965471b53d2da3a7df270a0780499721/INTAKE.json). This verified tag supersedes the1.0.0 short-credential checkpoint defect. Older release and defect text below is historical; the old tag is unchanged.
+
+Get New Emails now persists exactly numeric stateVersion2 and integer lastUpdatedMs, under64 serialized UTF-8 bytes. No business value or encoded business data is placed in the checkpoint. Null, omitted and empty-object state initialize normally. An exact legacy lastUpdated UTC ISO object migrates with millisecond precision. Corrupt timestamps, extra fields, partial/unknown versions, numeric strings, fractions and out-of-Date-range numbers refuse400 before HTTP or emission. An explicit reset can replay messages.
+
+Polling still resumes from the later of configured Start Time and saved time, with an inclusive start and exclusive end. Same/future windows make no HTTP call and retain the later time. Successful complete windows advance only after emission. The received-time query does not discover late-imported/backdated messages before the watermark and does not guarantee exactly-once delivery.
+
+The publisher and independent reviewer report148 offline tests,148 sealed-loader tests,43 canonical workers,95 independent actual workers with59 real emitted-state save/get round trips,23 attachment audits and16 saved-OAuth checks plus2 workers on each Node runtime. This documentation chat read the full remote report and accepted intake and verified the annotated tag/peeled commit; it did not rerun those suites. Host4576be and harnessf05a0c4d remain candidate dependencies. The OAuth proof deliberately combines separate MR154 credential code with the pinned host and exposes supplemental-config loss in the latter; it is not a merged integration or live-consent proof.
+
+Five actions, scoped attachment ownership and the earlier MIME/bounds qualifications remain. Legacy attachment URLs and15MB capacity remain unavailable;5MiB HTTP envelopes and base64 expansion constrain actual files. Default gmail.readonly does not authorize sending/deletion. Installation, UI, live OAuth/renewal and vendor acceptance remain unverified.
+
+---
+
+## Known polling defect in AVA 1.0.0 — 2026-10-30
+
+**Polling qualification is restricted by a reproduced checkpoint defect.** A coordinating actual-worker audit reproduced a short-credential defect in published1.0.0: string ISO lastUpdated can be masked, then the next poll fails400 before HTTP. A long-token control passes. The old tag is preserved; the verified1.0.1 correction above now supersedes this historical defect.
+
+This qualification supplements the earlier release evidence below; it does not erase the narrower tests that passed. Installation and live acceptance remain unverified. Follow the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62) for the reviewed replacement and exact pins. An explicit reset may replay records; no automatic recovery is promised.
+
+---
+
+## AVA 1.0.0 release status — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST #57 OAuth, #72/#75 transport/scoped storage, #58 custom environment and #80 URL/size/polling parity.** [Published source](https://github.com/thatapp/connector-gmail/tree/3955a08310b705dfe97448f6e610b10bbf7d3055) · [Contract report](https://github.com/thatapp/connector-gmail/blob/3955a08310b705dfe97448f6e610b10bbf7d3055/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-gmail/blob/3955a08310b705dfe97448f6e610b10bbf7d3055/evidence/intake.json).
+
+Five actions and Get New Emails polling are implemented using a supplied OAuth access token and a pure-JavaScript MIME parser. This documentation chat independently read the immutable report and accepted intake: 94 offline tests, 27 canonical isolated-worker outcomes, allowlist and secret scan passing, zero network attempts. The committed receipt scans 39 files; the publisher reports 40 in its final external scan. The publisher also records 94 sealed-loader tests, 23 guarded-worker audits and 19 independent review checks; this chat did not rerun those suites.
+
+The default gmail.readonly scope supports reads and verification. Send, trash and permanent deletion require wider user-selected scopes. Auth-client selection, consent, saved configuration, scope propagation and refresh remain unverified. Only GET requests retry selected HTTP failures within a 55-second budget; mutations and ambiguous transport errors do not retry. The host's 60-second step limit remains authoritative.
+
+Get/Search return parsed MIME fields and exact decoded attachment bytes through scoped references, also placed in message.attachments. Send consumes scoped references and builds MIME. Legacy internal, external and Maester attachment URLs are not implemented. The documented 15 MB capacity is not available: the tested host caps HTTP envelopes at 5 MiB, leaving less than 3.75 MiB for decoded raw MIME and less still for double-base64 Send attachments (2 MiB tested; 3 MiB refused). AVA_REQUIRED_RAM_MB cannot enlarge these limits.
+
+Search completes all fetches before any storage or emission, bounded at 100 pages, 5000 messages and 25 MiB of serialized body/file metadata plus attachment bytes. This is not a heap/RSS promise. Newly stored references are removed on preparation failure where removal succeeds; after an emission attempt they are retained because delivery may have occurred. Abrupt termination and ambiguous storage still require host expiry/reconciliation.
+
+Polling uses received-time windows: start inclusive, end exclusive, with a snapshot after successful emission. Failures do not advance it. Replay can duplicate messages, and late-imported/backdated mail before the watermark is not discovered. No exactly-once or Gmail history-ID guarantee is made.
+
+The receipt pins host `2483881b48440a06b21288085ecf7d7e29c7634a` and harness `c749ffb4d1fc694a2487509fb7dd257625c42a09`. This chat independently verified the tag and absence of a main ref. The conditional release uses feature branches; actual OAuth and scoped-storage integration remain required.
+
+Installation, deployment, live vendor/account acceptance and UI behavior remain **UNVERIFIED**. Follow the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). Historical metadata and reference text below remain for context; the published scope and limitations above supersede conflicting runtime claims.
+
+---
+
 ## Table of Contents
 
 * [Description](#description)

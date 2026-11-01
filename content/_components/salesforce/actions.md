@@ -9,6 +9,20 @@ updatedDate: 2026-02-26
 ComponentVersion: 2.9.2
 ---
 
+## AVA 1.0.0 release status — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST #57 OAuth, #72 credential recording, #75 attachment storage; streaming #83 unbuilt**. [Published source](https://github.com/thatapp/connector-salesforce/tree/7ab53e19b9e442b80fa4f067c418f346f47b3f28) · [Release scope](https://github.com/thatapp/connector-salesforce/blob/7ab53e19b9e442b80fa4f067c418f346f47b3f28/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-salesforce/blob/7ab53e19b9e442b80fa4f067c418f346f47b3f28/INTAKE.json).
+
+The 17 declared actions include current REST/query/Bulk operations and deprecated aliases. Bulk jobs return resumable pending IDs; Bulk Query requires API 47+, and additional result locators are refused. Binary outputs use scoped references; shared result caching and Retrieve Sample-specific behavior are unbuilt.
+
+See the [AVA release contract](index#ava-100-release-status--2026-10-30) for exact limits, evidence and host prerequisites.
+
+Installation is tracked in the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). Publication does not establish installation or live vendor behavior. Tests used synthetic data and refused networking. Runtime integration and live checks remain **UNVERIFIED**.
+
+The older reference below describes its source version, including the version in this page's metadata. The AVA scope and limits above supersede conflicting runtime, environment, attachment, and availability claims; historical release facts remain preserved.
+
+---
+
 ## Bulk Create/Update/Delete/Upsert
 
 Uses the Bulk API 2.0 to quickly load large amounts of data (up to 10,000 records) from a CSV file into Salesforce. This action takes a CSV file from an attachment as input. The required CSV format is described in the [Salesforce documentation](https://developer.salesforce.com/docs/atlas.en-us.api_bulk_v2.meta/api_bulk_v2/datafiles.htm).

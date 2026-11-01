@@ -9,6 +9,8 @@ updatedDate: 2026-08-14
 ComponentVersion: 2.2.7
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Deprecated authentication method
 
 To use the *REST API component* with any restricted access API provide the authorisation information.
@@ -213,8 +215,9 @@ for more information please see the
 
 ## HTTP Headers
 
-You can get HTTP response header only if ``Don`t throw Error on Failed Calls`` option is checked.
-In this case output structure of component will be:
+Returned HTTP outputs carry response headers: headers in the legacy Request-library shape and HTTPHeaders in the V2 shape.
+
+A thrown request may not return an output. The example below shows the legacy shape; it does not promise an output for every failure.
 
 ```js
     {

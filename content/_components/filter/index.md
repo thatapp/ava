@@ -10,6 +10,8 @@ ComponentVersion: 1.1.5
 updatedDate: 2026-01-05
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Description
 
 {{page.description}}
@@ -43,10 +45,9 @@ This action has two parameters and a checkbox:
 #### Parameters:
 
 `Filter condition` - A **JSONata** expression passed in through the cfg.
-The expression will be evaluated to a value of  `true` or `false`.
+The Simple JSONata Filter passes a message when its expression yields a truthy value.
 
-*   If `false` - a message will be logged to the console and the msg will not be sent forward to the next component.
-*   If `true` - a new message with empty body will be passed forward along with all data that passed the condition.
+A falsey result does not select the message for forwarding. This does not certify designer validation or the other filter options.
 
 #### Checkbox:
 

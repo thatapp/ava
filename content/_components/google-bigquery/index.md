@@ -10,6 +10,26 @@ ComponentVersion: 1.1.0
 updatedDate: 2023-02-10
 ---
 
+## AVA 1.0.0 release status — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST #72/MR159 credential redaction integration; #80 bounded execution, SDK, Arrow and continuous-query differences.** [Published source](https://github.com/thatapp/connector-google-bigquery/tree/19d62b19fc0fb53bf5b00bb7d7867a5791d4f0d6) · [Contract report](https://github.com/thatapp/connector-google-bigquery/blob/19d62b19fc0fb53bf5b00bb7d7867a5791d4f0d6/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-google-bigquery/blob/19d62b19fc0fb53bf5b00bb7d7867a5791d4f0d6/INTAKE.json).
+
+Query and Insert Rows as Stream execute through recorded REST requests using an in-memory RS256 service-account grant. This documentation chat independently read the immutable report and accepted intake: 52 offline tests, 26 canonical isolated-worker outcomes, allowlist and secret scan passing (33 files), zero network attempts. The publisher additionally records 54 sealed-loader tests on each of Node20/24, 32 supplemental host outcomes and 16 independently verified JWT signatures per runtime, plus eight adversarial credential probes with zero PEM-line leaks. This chat did not rerun those suites.
+
+Pasted service-account JSON uses the supported PasswordFieldView. Catalog/splitKeys tests establish secret-only placement, and the reviewed host registers both the JSON and inner PEM. Real UI persistence, account permissions and installation remain unverified. The token destination is fixed to Google's OAuth endpoint; there is no token cache, delegated subject or automatic mutation retry.
+
+Query buffers one final result array across bounded completion/pagination. It caps 100 continuation GETs, 10000 rows and 25 MiB decoded output, with a 55-second continuation budget after authentication. The tested host's 60-second step, 15-second HTTP and 5 MiB request/response limits remain authoritative. Requests are size-checked before authentication. Timed-out jobs may continue remotely; automatic cancellation/resume is not built.
+
+REST row decoding handles nested/repeated records and safe scalar values. Unsafe integers and precise numeric/date/time/bytes/JSON values retain string/REST representations instead of historical SDK wrappers. All current QueryRequest options have an explicit status in the report; vendor-specific semantics remain unverified. Continuous=true, Arrow output and arrowSerializationOptions refuse before authentication. Native SDK retry and unbounded/continuous behavior are not claimed.
+
+Insert accepts documented developer object and integrator array forms, filters null rows, and maps partial errors back to submitted rows. It does not retry or roll back partial inserts. Throw-on-error emits an error through the host, which omits the custom PartialFailureError name/errors array; return-errors mode preserves structured row details.
+
+Qualification depends on unmerged host MR159 runtime `4576be108e21b597d1fbffd4163fb05cd821c834`, whose parent is host2483881b; its follow-up c0a0f500 changes only the report. The preserved host248 credential probe exposed four PEM-line leaks; the new unseeded probes report zero. A canonical fixture pass alone is insufficient because that harness pre-registers generated keys. The intake harness is `5acb7d929bb1a32ea36699ff0de8f4b034e06ef0`. This chat independently verified the tag and unchanged main at `3ed1b1a641bc2bc3f5a3dced63848b6c78f9e498`. No attachment storage is required.
+
+Installation, deployment, live vendor/account acceptance and UI behavior remain **UNVERIFIED**. Follow the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). Historical metadata and reference text below remain for context; the published scope and limitations above supersede conflicting runtime claims.
+
+---
+
 ## Table of Contents
 * [General information](#general-information)
    * [Description](#description)

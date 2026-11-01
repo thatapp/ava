@@ -23,6 +23,8 @@ ComponentVersion: 1.0.12
 
 ## Description
 
+> **Separate contract:** this component publishes to workspace JSON-schema topics and starts subscriber flows. It does not use Google service-account credentials or Google Cloud topics, and the Google Pub/Sub repository does not implement it. Its source and host delivery support are being tracked under [#61](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/61) and [#83](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/83). No tagged AVA implementation or installed behavior is established by the historical guide below.
+
 Pub-Sub component is designed to implement a [publish–subscribe](https://en.wikipedia.org/wiki/Publish-subscribe_pattern) messaging pattern. The pattern characterizes a method of transferring data between publishers that generates messages according to a general pattern rather than for a specific client, called a Subscriber within this paradigm. The subscriber, in turn, receives only the necessary messages without knowing anything about the publishers, if they exist.
 In the {{site.data.tenant.name}} platform, working within this pattern is done with a *Pub-Sub component*, which can be both Publisher and Subscriber. As a result, we can create as many flows as we want with *Pub-Sub components* in Publisher mode, which will send messages to as many flows as we wish with *Pub-Sub components* in Subscriber mode, whose messages will be strictly limited to a template which the platform calls Topic.
 

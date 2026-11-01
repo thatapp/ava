@@ -9,6 +9,20 @@ updatedDate: 2025-11-14
 ComponentVersion: 1.4.3
 ---
 
+## AVA 1.0.0 release status — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST #78 SQL provider provisioning/injection; custom trust #82 unbuilt**. [Published source](https://github.com/thatapp/connector-postgresql/tree/e26d73905143b440a4dd70cf6bcbcfe64ea8c1d3) · [Release scope](https://github.com/thatapp/connector-postgresql/blob/e26d73905143b440a4dd70cf6bcbcfe64ea8c1d3/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-postgresql/blob/e26d73905143b440a4dd70cf6bcbcfe64ea8c1d3/INTAKE.json).
+
+The historical workflow below is illustrative. Its connection, statement and expression choices must fit the current restricted single-statement contract. Prepared scalar values, row/byte/time limits and verified TLS apply. PostgreSQL/Redshift interoperability and the pictured UI flow remain unverified; the old example is not evidence of a successful AVA installation.
+
+See the [AVA release contract](index#ava-100-release-status--2026-10-30) for fields, output shapes, bounds and host prerequisites.
+
+Installation is tracked in the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). These checks use synthetic data and refused networking. Publication and offline compatibility do not establish live vendor behavior, UI rendering or installation; those checks remain **UNVERIFIED**.
+
+The older reference below describes its source version, including the version in this page's metadata. The AVA scope and limits above supersede conflicting behavior, setup and availability claims. Historical release facts remain preserved.
+
+---
+
 ## Usage
 
 The PostgreSQL component is an open-source component for working with a [PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL) object-relational database management system on the platform it also works well with [AWS Redshift](https://aws.amazon.com/redshift/).

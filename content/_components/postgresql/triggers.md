@@ -9,6 +9,20 @@ updatedDate: 2025-11-14
 ComponentVersion: 1.4.3
 ---
 
+## AVA 1.0.0 release status — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST #78 SQL provider provisioning/injection; custom trust #82 unbuilt**. [Published source](https://github.com/thatapp/connector-postgresql/tree/e26d73905143b440a4dd70cf6bcbcfe64ea8c1d3) · [Release scope](https://github.com/thatapp/connector-postgresql/blob/e26d73905143b440a4dd70cf6bcbcfe64ea8c1d3/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-postgresql/blob/e26d73905143b440a4dd70cf6bcbcfe64ea8c1d3/INTAKE.json).
+
+SELECT polling and the deprecated SQL Query trigger are executable. SELECT checkpoints only after successful full reads and emissions. Optional bound timestamp markers support incremental queries; an unfiltered SELECT can reread rows. The deprecated parser supports a plain SELECT field list with type annotations and typed values, not arbitrary SQL expressions. No automatic deadlock replay or unlimited streaming is offered.
+
+See the [AVA release contract](index#ava-100-release-status--2026-10-30) for fields, output shapes, bounds and host prerequisites.
+
+Installation is tracked in the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). These checks use synthetic data and refused networking. Publication and offline compatibility do not establish live vendor behavior, UI rendering or installation; those checks remain **UNVERIFIED**.
+
+The older reference below describes its source version, including the version in this page's metadata. The AVA scope and limits above supersede conflicting behavior, setup and availability claims. Historical release facts remain preserved.
+
+---
+
 ## SELECT Trigger and Action
 
 This trigger and action are actually the same but can be used in two different

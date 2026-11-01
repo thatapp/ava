@@ -1,0 +1,1977 @@
+{
+  "checked_at_utc": "2026-11-01T05:43:11.244542+00:00",
+  "purpose": "Post-publication connector contract corrections for issue63",
+  "releases": [
+    {
+      "slug": "slack",
+      "repository": "https://github.com/thatapp/connector-slack",
+      "tag": "1.0.0",
+      "commit": "3effc2853be155437516bbdbe84c5ee56a94e51a",
+      "status": "READY for scoped stored-token action installation; vendor and installation checks UNVERIFIED",
+      "intake_sha256": "6810da733cdd82cb2022a36ecbb1967d9f3b29d1d4f1facc56e11d52be11ae16",
+      "pages": [
+        {
+          "path": "content/_components/slack/index.md",
+          "sha256": "c7b0c39734243483995c3ae4dd1074bddaf199e698fcefcd901bf06fec78c234"
+        },
+        {
+          "path": "content/_components/slack/technical-notes.md",
+          "sha256": "80e1956bb6f7e8b1058547ad07c09c365d64e6880ed582645ee512bd7d7f58f6"
+        }
+      ]
+    },
+    {
+      "slug": "jira-cloud",
+      "repository": "https://github.com/thatapp/connector-cloudecosystemdev-jira-component",
+      "tag": "1.0.0",
+      "commit": "f6ae1acb42a12f6a53f32f56ab579c8921dfd1bc",
+      "status": "PUBLISHED scoped; full installation WAITING HOST #75/!129 and #72/!127",
+      "intake_sha256": "023c30738a1ed01fb5f78330714d33a13b45d116ee9edafe871db0a2f8998a69",
+      "pages": [
+        {
+          "path": "content/_components/jira-cloud/index.md",
+          "sha256": "f120a885b19420557c113d893dcebb77c18df706ae7554860e9d918e26188187"
+        },
+        {
+          "path": "content/_components/jira-cloud/technical-notes.md",
+          "sha256": "d00b6343c8bc67d4efb7432456fcd70d4ed507cfb9efd939d0bf4f25501e4021"
+        }
+      ]
+    },
+    {
+      "slug": "outlook",
+      "repository": "https://github.com/thatapp/connector-outlook",
+      "tag": "1.0.0",
+      "commit": "1829c84b84a9fdf12209ddeb7691eac9004b0e74",
+      "status": "PUBLISHED scoped; WAITING HOST approved Node20 sidecar #69, #75/!129 and #72/!127",
+      "intake_sha256": "5841ba12057758243515aee180a1985f34a7b838b79adf79f135c561411876f5",
+      "pages": [
+        {
+          "path": "content/_components/outlook/index.md",
+          "sha256": "ca24ee78c352efd8b8507e85550df661a585126b172dfc6f95d82f53148d46df"
+        },
+        {
+          "path": "content/_components/outlook/technical-notes.md",
+          "sha256": "df9d4abad9a8dac8ea58118618c8dd67f8261c8ea82ce58150c207c3383d246b"
+        }
+      ]
+    },
+    {
+      "slug": "onedrive",
+      "repository": "https://github.com/thatapp/connector-onedrive",
+      "tag": "1.0.0",
+      "commit": "cc202fcd9fd328d23d729d808fb109b0bbe1d7b3",
+      "status": "PUBLISHED scoped; WAITING HOST #75/!129 and #72/!127",
+      "intake_sha256": "08021b82d81eca98b5df5236441e963ba234e7cf1c7bddf18c6577ec00dab253",
+      "pages": [
+        {
+          "path": "content/_components/onedrive/index.md",
+          "sha256": "483a8139aac5dec52fec390e9548bfb7725552e741dc7a1e713a156edc3dfea2"
+        },
+        {
+          "path": "content/_components/onedrive/technical-notes.md",
+          "sha256": "0dbf5b22361000b1201a4c4497a058418b5d652615ccd16286e1405f09961810"
+        }
+      ]
+    },
+    {
+      "slug": "salesforce",
+      "repository": "https://github.com/thatapp/connector-salesforce",
+      "tag": "1.0.0",
+      "commit": "7ab53e19b9e442b80fa4f067c418f346f47b3f28",
+      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth, #72 credential recording, #75 attachment storage; streaming #83 unbuilt",
+      "intake_sha256": "5f892c15cbfd9a31222413893ff179dcc90c7af4955ad89d8ac8a9bc03c0097f",
+      "pages": [
+        {
+          "path": "content/_components/salesforce/actions.md",
+          "sha256": "47424fba78a91fb72961d3802dbd95615d2146a34cad129a3ecbe5c330666e9b"
+        },
+        {
+          "path": "content/_components/salesforce/creating-oauth-app-for-salesforce.md",
+          "sha256": "0d4b5760a058fafefe653f2f67b6d42a7dd58dd53e2c39ba99cda35111abe3c6"
+        },
+        {
+          "path": "content/_components/salesforce/deprecated-functions.md",
+          "sha256": "3152cedfd39eff03e83383c17e742de274a31607d79c5453c44c154246bfc1a4"
+        },
+        {
+          "path": "content/_components/salesforce/index.md",
+          "sha256": "70965f29672e7b55697989693e948c64fb671d7c88bcb382f69c040231143a65"
+        },
+        {
+          "path": "content/_components/salesforce/technical-notes.md",
+          "sha256": "02e0373a7caad4d5fa938de4bf94ac30451e188f3fc987d7a6f2ce6b02bf7388"
+        },
+        {
+          "path": "content/_components/salesforce/triggers.md",
+          "sha256": "dbf21a4740e2d0033d2460b4aec3241abb0ce0829dcccc49acc67310b3bd5510"
+        }
+      ]
+    },
+    {
+      "slug": "mssql",
+      "repository": "https://github.com/thatapp/connector-mssql",
+      "tag": "1.0.0",
+      "commit": "d3f6a8d3aae408227b1c5609bc7e0ddd1144cf09",
+      "status": "PUBLISHED scoped; WAITING HOST #78 SQL provider provisioning/injection; custom trust #82 unbuilt",
+      "intake_sha256": "7ce543281a72942461b6694fdb67a97ce15496155146a70ec30f7e9bbfbf2166",
+      "pages": [
+        {
+          "path": "content/_components/mssql/index.md",
+          "sha256": "686934a29d1e4caa568384b62b784098fa98f9938cd208bbc6e1b268d4f508b9"
+        },
+        {
+          "path": "content/_components/mssql/technical-notes.md",
+          "sha256": "d21e0835c391158b65e3bb0b6cde42b0e6e2db5231455e8c5d707b6a9e650a5d"
+        }
+      ]
+    },
+    {
+      "slug": "mysql",
+      "repository": "https://github.com/thatapp/connector-mysql",
+      "tag": "1.0.0",
+      "commit": "5bc8892d4a9f2465025d3dbe93d14c27ad31b25f",
+      "status": "PUBLISHED scoped; WAITING HOST #78 SQL provider provisioning/injection; custom trust #82 unbuilt",
+      "intake_sha256": "62372457f5e663b37f1b69913f5ad5fb68b25e70747a34d0b77745d076b301ac",
+      "pages": [
+        {
+          "path": "content/_components/mysql/index.md",
+          "sha256": "77bb4ece05023715879231121a9d65e3eebb9a2b5a7b0f0f680e2e94e0199131"
+        },
+        {
+          "path": "content/_components/mysql/technical-notes.md",
+          "sha256": "28ad0df9cac1043a64b839e8e460940024fb9344365ce94ed86b544a18340c79"
+        }
+      ]
+    },
+    {
+      "slug": "postgresql",
+      "repository": "https://github.com/thatapp/connector-postgresql",
+      "tag": "1.0.0",
+      "commit": "e26d73905143b440a4dd70cf6bcbcfe64ea8c1d3",
+      "status": "PUBLISHED scoped; WAITING HOST #78 SQL provider provisioning/injection; custom trust #82 unbuilt",
+      "intake_url": "https://github.com/thatapp/connector-postgresql/blob/e26d73905143b440a4dd70cf6bcbcfe64ea8c1d3/INTAKE.json",
+      "intake_sha256": "acb8dc373c8056bf0aaa0925ac4482feffcd46d0495595f95238f241dab99a1a",
+      "intake_review": "This chat ran all four gates; 15 npm tests, 21 exact cases, 27 worker executions, zero network.",
+      "pages": [
+        {
+          "path": "content/_components/postgresql/index.md",
+          "sha256": "8c00016ce20a0f01982e54cda491d76f4552c298c634132457335625a2589a24"
+        },
+        {
+          "path": "content/_components/postgresql/technical-notes.md",
+          "sha256": "25a1fcdcec633fa53ba913d1e88807e9c1fc327a087277320499cb557b2bf9b7"
+        },
+        {
+          "path": "content/_components/postgresql/actions.md",
+          "sha256": "880fafec30f62a3780a45098bc9cd49a3147be7c16d9f023c671e5bf5398c5df"
+        },
+        {
+          "path": "content/_components/postgresql/triggers.md",
+          "sha256": "4f09ab974f8f28056d1c13cf62938d38026922487b56224ec7e79309ea0c3b81"
+        },
+        {
+          "path": "content/_components/postgresql/usage-example.md",
+          "sha256": "a74407294800e050b43e1c63ee51f88ee2c0e4ad90884865b2d9239136ed89d9"
+        }
+      ]
+    },
+    {
+      "slug": "bigcommerce",
+      "repository": "https://github.com/thatapp/connector-bigcommerce",
+      "tag": "1.0.0",
+      "commit": "8c4738ec0588480a6c35bf23eaf182e4e3dded29",
+      "status": "READY for scoped source installation; vendor and installation checks UNVERIFIED",
+      "intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/7c670fd3b239019a81d575c62f91e12113323455/docs/ipaas/connector-submissions/bigcommerce-evidence/intake-standalone.json",
+      "intake_sha256": "583a34be4b97a3e9b59cc783c242d2c2310fef55f8c49f655046b54305239371",
+      "evidence_commit": "7c670fd3b239019a81d575c62f91e12113323455",
+      "intake_review": "Coordinated build chat ran release intake; this docs chat read and hashed the pinned standalone four-gate receipt.",
+      "report_git_blob_sha": "ff0fa34e55789efb2ac6aa39288c11a7b7bef081",
+      "pages": [
+        {
+          "path": "content/_components/bigcommerce/index.md",
+          "sha256": "08967123f5ebef145b0263d193b9b151bbc939d03a76655c30b9b63dd1353a54"
+        },
+        {
+          "path": "content/_components/bigcommerce/technical-notes.md",
+          "sha256": "986e65bcd7c4b2532662d2ea1c1c4368d07c1453d63727e8ebde633ab3075ebb"
+        }
+      ]
+    },
+    {
+      "slug": "google-calendar",
+      "repository": "https://github.com/thatapp/connector-google-calendar",
+      "tag": "1.0.1",
+      "commit": "987fe5b867e1a1a7e1741a6de8a4e0548b76cf62",
+      "status": "PUBLISHED 1.0.1 initial/numeric polling correction; conditional #57/#72/#80",
+      "intake_url": "https://github.com/thatapp/connector-google-calendar/blob/987fe5b867e1a1a7e1741a6de8a4e0548b76cf62/INTAKE.json",
+      "intake_git_blob_sha": "f4fed5d01526adce8a445ce3ddafe0fe184e0890",
+      "intake_sha256": "63931c6c38c9ca3236dc68d5b4f62028b01c44d7e7b73cb9e518ca0d89ecac61",
+      "intake_review": "Remote accepted receipt and exact tag readback checked by documentation chat; publisher/reviewer dual-runtime suites attributed, not rerun here. Packaged and final external scan counts are distinguished.",
+      "pages": [
+        {
+          "path": "content/_components/google-calendar/index.md",
+          "sha256": "c314de56a1119fb7b17ea69bd80a94b9a1ea126269ceb3f9c398bc985691671e"
+        },
+        {
+          "path": "content/_components/google-calendar/technical-notes.md",
+          "sha256": "5ca65dd3313dc178919ac04ef748fa58a048bd0ce8b8c494dc2ff0d64d3415fd"
+        }
+      ]
+    },
+    {
+      "slug": "netsuite-rest-api-client-credentials",
+      "repository": "https://github.com/thatapp/connector-netsuite-rest-api-client-credentials",
+      "tag": "1.0.0",
+      "commit": "dc836c968c505d2dfca4a0a03e4be9da405ed293",
+      "status": "READY for scoped source installation; vendor and installation checks UNVERIFIED",
+      "intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/795641eb286faba8ca12c44f067342e44a73201e/docs/ipaas/connector-submissions/netsuite-rest-api-client-credentials-evidence/audit-standalone-intake.json",
+      "intake_sha256": "f7e38d6becc4dcdf2cb877a7f9a5581d8b3b352bc765219f7b9d467d8f26003e",
+      "evidence_commit": "795641eb286faba8ca12c44f067342e44a73201e",
+      "intake_review": "Coordinated build chat ran release intake; this docs chat read and hashed the pinned standalone four-gate receipt.",
+      "report_git_blob_sha": "8ac8c21073dc068e4a99fd603677f4ccc528984f",
+      "pages": [
+        {
+          "path": "content/_components/netsuite-rest-api-client-credentials/index.md",
+          "sha256": "4e117d4c65480df77d4e517511e9ee8f192f96139a4eee41697e2ddde8dcba23"
+        },
+        {
+          "path": "content/_components/netsuite-rest-api-client-credentials/technical-notes.md",
+          "sha256": "82a9919112c25cfafbc3420f87cc3c0415b9610f1a082fcb309e8d5e129811f9"
+        }
+      ]
+    },
+    {
+      "slug": "sharepoint",
+      "repository": "https://github.com/thatapp/connector-ai-now-ag-aibox-sharepoint-connector",
+      "tag": "1.0.0",
+      "commit": "914464792ac1910a344455ba8f3d79a234ad01b8",
+      "status": "PUBLISHED scoped; NOT READY: host #57/#72/#75 and contract/parity limits remain",
+      "intake_url": "https://github.com/thatapp/connector-ai-now-ag-aibox-sharepoint-connector/blob/914464792ac1910a344455ba8f3d79a234ad01b8/evidence/intake.json",
+      "intake_git_blob_sha": "91adc3a8d196b44021d89f4d8da911bff079e377",
+      "intake_review": "Coordinated build chat ran release intake; this docs chat read immutable evidence/intake.json and confirmed all four gates, 85 tests, 82 worker rows and zero network.",
+      "report_git_blob_sha": "1710d968c22d8a14315785c337bcc79405746dea",
+      "pages": [
+        {
+          "path": "content/_components/sharepoint/index.md",
+          "sha256": "0006be127991fc070f9154a68264c1ff8cb373ebfe660ed69160d4d527a5fe91"
+        },
+        {
+          "path": "content/_components/sharepoint/technical-notes.md",
+          "sha256": "1742951d095dea1eafeb831253b0596aca740c060e5413cd0c069f6e25d0e8fd"
+        }
+      ]
+    },
+    {
+      "slug": "airtable",
+      "repository": "https://github.com/thatapp/connector-airtable",
+      "tag": "1.0.0",
+      "commit": "54f43d38e62f17d418741241c5b488f1db535468",
+      "status": "READY for scoped source installation; vendor and installation checks UNVERIFIED",
+      "intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/719e89c00ab312ff61e1a9ab5e7e532760db61ce/docs/ipaas/connector-submissions/airtable-evidence/standalone-intake.json",
+      "evidence_commit": "719e89c00ab312ff61e1a9ab5e7e532760db61ce",
+      "intake_sha256": "3dd74552535cb331bce660d8aceff77ccf73abbebc7655bc9484f5698b63c2ac",
+      "report_git_blob_sha": "9c1f495fb0c3694aa566772575e612b13fd275dd",
+      "intake_review": "Coordinated build chat ran intake and detailed sealed suite; this docs chat read immutable REPORT and the pinned accepted four-gate receipt. Legacy smoke and detailed worker assertions remain separately counted.",
+      "pages": [
+        {
+          "path": "content/_components/airtable/index.md",
+          "sha256": "085477e437f36f8094c4a378b1ec8b0dce065a9f675d10f837d9e40d2b32016a"
+        },
+        {
+          "path": "content/_components/airtable/technical-notes.md",
+          "sha256": "b792590fbfa76fd279423d4864b8f7f05b7c4844985e1dfb6a11f09cc85d31e7"
+        }
+      ]
+    },
+    {
+      "slug": "klaviyo-component",
+      "repository": "https://github.com/thatapp/connector-klaviyo-component",
+      "tag": "1.0.0",
+      "commit": "df3d81d3c70644aed52db0034adf0a289f56014e",
+      "status": "PUBLISHED scoped; WAITING HOST #72 encoded credential recording",
+      "intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/e624e8dd9d8b5bba8d56818c85468651f1b24d1c/docs/ipaas/connector-submissions/klaviyo-component-evidence/intake-release.json",
+      "evidence_commit": "e624e8dd9d8b5bba8d56818c85468651f1b24d1c",
+      "intake_sha256": "2e26d81ada0064fa6c96d891c0b0a5dade70ca1b583bed73475ce1f8d32a1b21",
+      "report_git_blob_sha": "a4d82e108fdaaab9ad04e27f5d44570519e042f9",
+      "intake_review": "Coordinated build chat ran intake and detailed sealed suite; this docs chat read immutable REPORT and the pinned accepted four-gate receipt. Legacy smoke and detailed worker assertions remain separately counted.",
+      "pages": [
+        {
+          "path": "content/_components/klaviyo-component/index.md",
+          "sha256": "e2a95f9c4f1e1d93388aa9ff1ee0019d137279f5482443e3a2da73ce4c675b11"
+        },
+        {
+          "path": "content/_components/klaviyo-component/technical-notes.md",
+          "sha256": "f42d203a3c1b3594fc0e36e38ec750df5d64ae24fae6cabcf373b1f5b008cd95"
+        }
+      ]
+    },
+    {
+      "slug": "hubspot",
+      "repository": "https://github.com/thatapp/connector-hubspot",
+      "tag": "1.0.2",
+      "commit": "20b4cce794da5dc9f92657de46d403fccaaa6590",
+      "status": "PUBLISHED 1.0.2 dense numeric checkpoint and version correction; #57/#58/#72/#74/#75/#80 remain conditional",
+      "intake_url": "https://github.com/thatapp/connector-hubspot/blob/20b4cce794da5dc9f92657de46d403fccaaa6590/INTAKE.json",
+      "intake_git_blob_sha": "e6109b43c7a2c5cee60f917197a34b1b017a14b6",
+      "intake_sha256": "2260721ff627bb0dce38e8bc9fbecf4c0ddd6fd7b8d0eeaf08fba07bb069daa8",
+      "intake_review": "This authoring/documentation chat ran committed-head intake and standalone hostcheck on Node20/24. Independent review counts are attributed separately; final post-commit scan receipts remain outside the release.",
+      "pages": [
+        {
+          "path": "content/_components/hubspot/index.md",
+          "sha256": "0ab943aaba88ef4e79de25f271ac62ae3dc5d0e04740fbe454c789dcc48f2308"
+        },
+        {
+          "path": "content/_components/hubspot/technical-notes.md",
+          "sha256": "9f925c9ad0ce35bad86261169248be0ed71f6479ca9001c09cb6c900f6f99bb8"
+        }
+      ]
+    },
+    {
+      "slug": "aws-lambda",
+      "repository": "https://github.com/thatapp/connector-amazon-aws-lambda",
+      "tag": "1.0.0",
+      "commit": "196a02f22b79e8e00e9b1e7497dc478664ecb848",
+      "status": "PUBLISHED scoped; WAITING HOST #72 credential redaction and #75 text/XML transport; long synchronous execution remains a qualified #80 limitation",
+      "intake_url": "https://github.com/thatapp/connector-amazon-aws-lambda/blob/196a02f22b79e8e00e9b1e7497dc478664ecb848/INTAKE.json",
+      "intake_sha256": "97e3b8c98820c4ac22f20a466f91c1ecb642e9af2e9c12aad585204413524d94",
+      "intake_review": "This chat ran all four gates on Node 20 and 24: 47 npm tests, 18 exact cases, 27 workers, six supplemental workers, zero network attempts.",
+      "pages": [
+        {
+          "path": "content/_components/aws-lambda/index.md",
+          "sha256": "0e26072c7788592b9c94bf911e78feac2676761e3eeef032db90a5b08bb5b99f"
+        },
+        {
+          "path": "content/_components/aws-lambda/technical-notes.md",
+          "sha256": "21f8b4fab04db969ca678d9f9a097aa0a57c3b7fab66b9b445073c5b6ff06848"
+        }
+      ]
+    },
+    {
+      "slug": "aws-s3",
+      "repository": "https://github.com/thatapp/connector-amazon-aws-s3",
+      "tag": "1.0.0",
+      "commit": "f6fca04376efac05852bbc93f6608bd6db803e12",
+      "status": "PUBLISHED scoped; WAITING HOST #72/#75 text/binary transport and scoped storage; #58 custom environment and #80 URL/size/CSV/polling qualifications",
+      "intake_url": "https://github.com/thatapp/connector-amazon-aws-s3/blob/f6fca04376efac05852bbc93f6608bd6db803e12/INTAKE.json",
+      "intake_sha256": "991eb3323f1cf64b05b7471b4052cab6b5ea0bb7699b4db8d2f9be88474ffd42",
+      "intake_review": "This chat ran all four gates on Node20/24: 69 npm tests, 42 cases/49 canonical workers and six supplemental workers; zero network attempts.",
+      "pages": [
+        {
+          "path": "content/_components/aws-s3/index.md",
+          "sha256": "707efd7b5fd15cffcccaf9817b7b1ad0a8d924c47277b25c0f4112ecbab6d80a"
+        },
+        {
+          "path": "content/_components/aws-s3/technical-notes.md",
+          "sha256": "7b45d59b61a3f485d3ae531ee60612c7b61b769776ddf47b68c77837297deae3"
+        }
+      ]
+    },
+    {
+      "slug": "google-drive",
+      "repository": "https://github.com/thatapp/connector-google-drive",
+      "tag": "1.0.1",
+      "commit": "e4d33fef5feb955f4120072e1c63b1815b30ec64",
+      "status": "PUBLISHED 1.0.1 initial/numeric polling correction; conditional #57/#72/#75/#80",
+      "intake_url": "https://github.com/thatapp/connector-google-drive/blob/e4d33fef5feb955f4120072e1c63b1815b30ec64/INTAKE.json",
+      "intake_git_blob_sha": "4b9ccb895764105365291692841caf83da2a8808",
+      "intake_sha256": "6b253e2768aef9db891b16ca7ffa7030e4bd064522dc2a599b7a22517de4cf58",
+      "intake_review": "Remote accepted receipt and exact tag readback checked by documentation chat; publisher/reviewer dual-runtime suites attributed, not rerun here. Packaged and final external scan counts are distinguished.",
+      "pages": [
+        {
+          "path": "content/_components/google-drive/index.md",
+          "sha256": "ae7e86780c9fbd115d32227a1905e3e58a5a049c6d0aa00a5e13c0b31fd90eba"
+        },
+        {
+          "path": "content/_components/google-drive/technical-notes.md",
+          "sha256": "ef8199a8cf2641cd6bea2cbf49bcc213de01177c2a84deaf6e1b0fcfb23f1887"
+        }
+      ]
+    },
+    {
+      "slug": "dropbox",
+      "repository": "https://github.com/thatapp/connector-dropbox",
+      "tag": "1.0.0",
+      "commit": "cb21f9ffab268150e4236add52e86afb9efe699e",
+      "status": "PUBLISHED scoped; WAITING HOST #72/#75 transport/scoped storage, #58 custom environment and #80 legacy attachment URL parity",
+      "intake_url": "https://github.com/thatapp/connector-dropbox/blob/cb21f9ffab268150e4236add52e86afb9efe699e/evidence/intake.json",
+      "intake_sha256": "57e12a1b98d1adcd9590e2b5f90f6489e2344bde03dbfdc3ce810105908baa4d",
+      "intake_review": "Independently read immutable published report and accepted evidence/intake.json: 80 tests, 34 canonical workers, zero network; remote tag and unchanged main verified. Additional 82 sealed tests/23 audits are publisher-reported.",
+      "pages": [
+        {
+          "path": "content/_components/dropbox/index.md",
+          "sha256": "1347fd31de20976cc65bd5ebe70a503add63b1d2cc82d76ee5e3b911873867c0"
+        },
+        {
+          "path": "content/_components/dropbox/technical-notes.md",
+          "sha256": "c7dcb2e2fa356024dd3f07ba708be535f6ba47c13994868b17455c13da13a27b"
+        }
+      ]
+    },
+    {
+      "slug": "aws-sns",
+      "repository": "https://github.com/thatapp/connector-amazon-aws-sns",
+      "tag": "1.0.0",
+      "commit": "5cabb841947edb99e14b2ee062cb22f071064036",
+      "status": "PUBLISHED scoped; WAITING HOST #72 credential redaction and #75 text/XML transport",
+      "intake_url": "https://github.com/thatapp/connector-amazon-aws-sns/blob/5cabb841947edb99e14b2ee062cb22f071064036/INTAKE.json",
+      "intake_sha256": "ceeb1b4b60a9232efc27849e41d1809a3d0d0f3b57dde48e618139ac79322421",
+      "intake_review": "This chat ran four gates on Node20/24:42 npm tests,17 cases/24 canonical workers,six supplemental workers,zero network attempts.",
+      "pages": [
+        {
+          "path": "content/_components/aws-sns/index.md",
+          "sha256": "cda71b342945e704583204324616d2b377550cfd878b2d5ac6167165cf9ecfa7"
+        },
+        {
+          "path": "content/_components/aws-sns/technical-notes.md",
+          "sha256": "d07924917a6a9e8659ca3a9a9f37abdbac6f7bd258a993ee1f6f49c3818c8ce4"
+        }
+      ]
+    },
+    {
+      "slug": "gmail",
+      "repository": "https://github.com/thatapp/connector-gmail",
+      "tag": "1.0.1",
+      "commit": "1a688b3d965471b53d2da3a7df270a0780499721",
+      "status": "PUBLISHED 1.0.1 numeric v2 polling checkpoint correction; #57/#58/#72/#75/#80 remain conditional",
+      "intake_url": "https://github.com/thatapp/connector-gmail/blob/1a688b3d965471b53d2da3a7df270a0780499721/INTAKE.json",
+      "intake_git_blob_sha": "5cc68aebddd3d1791464a4d8bd5d2c16afaadc5a",
+      "intake_sha256": "8f0d4fbe7c4a6a4aa490e0cb1589e920fc2abd6e8be9b94203f318c60bf565d2",
+      "intake_review": "Full remote report, accepted receipt and exact tag readback verified by documentation chat; dual-runtime suite counts attributed to publisher/independent reviewer, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/gmail/index.md",
+          "sha256": "68f65afc05573f08aacd17cac901227680a1ab1166374d6bf8a3a355bdc9e90a"
+        },
+        {
+          "path": "content/_components/gmail/technical-notes.md",
+          "sha256": "db2b1346402756c78c085931ad7da6fa2329c3a7f0fede65cf4f298b74e40dc5"
+        }
+      ]
+    },
+    {
+      "slug": "google-bigquery",
+      "repository": "https://github.com/thatapp/connector-google-bigquery",
+      "tag": "1.0.0",
+      "commit": "19d62b19fc0fb53bf5b00bb7d7867a5791d4f0d6",
+      "status": "PUBLISHED scoped; WAITING HOST #72/MR159 credential redaction integration; #80 bounded execution, SDK, Arrow and continuous-query differences",
+      "intake_url": "https://github.com/thatapp/connector-google-bigquery/blob/19d62b19fc0fb53bf5b00bb7d7867a5791d4f0d6/INTAKE.json",
+      "intake_git_blob_sha": "df65b540b11f983041c3f979b2b52669557d852e",
+      "intake_sha256": "d85aadb8ac5dad8e44962a0ddeb3692a3a743f2b4965528d33e01dae19da1bee",
+      "intake_review": "This documentation chat independently read the published full REPORT and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/google-bigquery/index.md",
+          "sha256": "77ebac733809fd26914b505adbbd2ea6c4c622aaecb8c0f15820904917e1ae85"
+        },
+        {
+          "path": "content/_components/google-bigquery/technical-notes.md",
+          "sha256": "8756d66df77e16d939749af4d874aace7e891b57224f7878d8640c8b59878adb"
+        }
+      ]
+    },
+    {
+      "slug": "amazon-selling-partner-api",
+      "repository": "https://github.com/thatapp/connector-amazon-selling-partner-api",
+      "tag": "1.0.0",
+      "commit": "2d2cf6bed99228500ae1a49e97db810dc23b0bc3",
+      "status": "PUBLISHED scoped; WAITING HOST #72/#75 integration; #80 grantless verifier, polling and binary parity; #81 deprecated operations and restricted-data-token orchestration",
+      "intake_url": "https://github.com/thatapp/connector-amazon-selling-partner-api/blob/2d2cf6bed99228500ae1a49e97db810dc23b0bc3/evidence/intake.json",
+      "intake_git_blob_sha": "899e9c6c093c4c99c951edddee6f27be80afbe1e",
+      "intake_sha256": "eff7571081014ce7dd5afd68f6f16f4132b01400ca4379c51199706ed8890e35",
+      "intake_review": "This documentation chat independently read the published full REPORT and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/amazon-selling-partner-api/index.md",
+          "sha256": "7f82b5e08eb3edbf7d41e66d37e71ac197623aa604a5df573c72eb7ef78b9e54"
+        },
+        {
+          "path": "content/_components/amazon-selling-partner-api/technical-notes.md",
+          "sha256": "6c6573c9b5d1be51ac134ad98c9cb805b9f10a929664ab450ea363190167ce33"
+        }
+      ]
+    },
+    {
+      "slug": "shopware-6",
+      "repository": "https://github.com/thatapp/connector-shopware-6",
+      "tag": "1.0.0",
+      "commit": "535a56fdc3a8b0109dd6a1ec6a9de7238a23a9d2",
+      "status": "PUBLISHED scoped; WAITING HOST #57 metadata authentication and #72 integration; #80 parity limits",
+      "intake_url": "https://github.com/thatapp/connector-shopware-6/blob/535a56fdc3a8b0109dd6a1ec6a9de7238a23a9d2/INTAKE.json",
+      "intake_git_blob_sha": "9aef4765ffc6d7bf31ccf68348e53ee261b41eb3",
+      "intake_sha256": "518caa989a6fcab92be57bb4b3eb776431f9d80009de8bacb6cd62679a7e6111",
+      "intake_review": "This documentation chat independently read the published report scope and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/shopware-6/index.md",
+          "sha256": "e7b9f1217cc29df3b5de4e99c611049290af737b52b7521b4c539a264e8d6601"
+        },
+        {
+          "path": "content/_components/shopware-6/technical-notes.md",
+          "sha256": "a85d85fd2f65be52cb6c94955476959186bf4b6d15e23d2442f169b01042284f"
+        }
+      ]
+    },
+    {
+      "slug": "google-analytics-component",
+      "repository": "https://github.com/thatapp/connector-google-analytics-component",
+      "tag": "1.0.1",
+      "commit": "76187ceef1ae0881ebb092594277a3ba7b4b0737",
+      "status": "PUBLISHED 1.0.1 numeric v3 /50-row /5120-byte checkpoint correction; #57/#72/#79/#80 remain conditional",
+      "intake_url": "https://github.com/thatapp/connector-google-analytics-component/blob/76187ceef1ae0881ebb092594277a3ba7b4b0737/INTAKE.json",
+      "intake_git_blob_sha": "60c62a01791ca4bb126bbdf36e64edfcacc5da27",
+      "intake_sha256": "6ef036bffbb6e114e7455f427c60c869420a3b6f7ea94a687e626e28187793b3",
+      "intake_review": "Accepted remote receipt/tag readback verified by documentation chat; published dual-runtime suites attributed to coordinating reviewer, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/google-analytics-component/index.md",
+          "sha256": "ec04305622237c6669320284228fdef91dd423790b6c8cfc817d1593c68249eb"
+        },
+        {
+          "path": "content/_components/google-analytics-component/technical-notes.md",
+          "sha256": "e64b0b210164c63113b6014191181d7aa53226907c80434b82185b4f69a401b7"
+        }
+      ]
+    },
+    {
+      "slug": "pimcore",
+      "repository": "https://github.com/thatapp/connector-pimcore",
+      "tag": "1.0.0",
+      "commit": "72c2388acc93bece3b02eef95519ff38c1c41e09",
+      "status": "PUBLISHED scoped; WAITING HOST #72 secret-recording integration",
+      "intake_url": "https://github.com/thatapp/connector-pimcore/blob/72c2388acc93bece3b02eef95519ff38c1c41e09/evidence/pimcore-precommit-intake-node24.json",
+      "intake_git_blob_sha": "fc2ccb9587260ef098eefca4d90684c46d61e510",
+      "intake_sha256": "05fcc91596b584d80ed1090268af228affdd85239f6caf558c5f460aec996d8d",
+      "intake_review": "This documentation chat independently read the published report scope and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/pimcore/index.md",
+          "sha256": "bbaee78bd607242a55a1f570d76f6632747ac5fbcbcb64e2feb29e0be9c0fffa"
+        },
+        {
+          "path": "content/_components/pimcore/technical-notes.md",
+          "sha256": "dd7347be315b78427ef14c845b6c4325db693b5d4a1d7d69e6f9771cebf8c74d"
+        }
+      ]
+    },
+    {
+      "slug": "gspreadsheet",
+      "repository": "https://github.com/thatapp/connector-gspreadsheets",
+      "tag": "1.0.0",
+      "commit": "d62d1881439c669408752fbef477f03e5bdefbf1",
+      "status": "PUBLISHED conditional #57 OAuth/UI, #58 environment, #72 recording, #80 append-position/bounds/parity",
+      "intake_url": "https://github.com/thatapp/connector-gspreadsheets/blob/d62d1881439c669408752fbef477f03e5bdefbf1/INTAKE.json",
+      "intake_git_blob_sha": "ac5e7a2a153ab7e9568c5877d7df14281fcf9836",
+      "intake_sha256": "29dad614edb1de497b5777abfab5e1b48b09efd82e72dc57c2ae352e3666a1e9",
+      "intake_review": "This authoring/documentation chat ran committed-head intake and standalone hostcheck on Node20/24. Independent review counts are attributed separately; final post-commit scan receipts remain outside the release.",
+      "pages": [
+        {
+          "path": "content/_components/gspreadsheet/index.md",
+          "sha256": "0b670e800cfede09939dd13cd18759dd487eb1fa01beefc03dc9311b988e069f"
+        },
+        {
+          "path": "content/_components/gspreadsheet/actions.md",
+          "sha256": "26177cc28a20782bdaee136d4f993318f4edcd67f041ee16c720aa7b9974f5b0"
+        },
+        {
+          "path": "content/_components/gspreadsheet/triggers.md",
+          "sha256": "1af53058707b3f80a5fc5e668b90246653f72f667966d0df53e0ba517ec3cd1e"
+        },
+        {
+          "path": "content/_components/gspreadsheet/technical-notes.md",
+          "sha256": "cb22f0f247cc8296372a1d7254eec37bbe1842c2b6ddd77a351a4fbc57a9474b"
+        },
+        {
+          "path": "content/_components/gspreadsheet/usage-example.md",
+          "sha256": "8094ad15af2285ebb5965d4001880e383c52332388f1490d61be20ea333b282a"
+        },
+        {
+          "path": "content/_components/gspreadsheet-v2/index.md",
+          "sha256": "de40ac574a168c148977e8b0fddc7c23a98af0ffe01cc99af29e77e5735a1d89"
+        },
+        {
+          "path": "content/_components/gspreadsheet-v2/technical-notes.md",
+          "sha256": "f85ae971cf9c2711e131c0f354764a9c91899989d8634ac22de2f6e8c6e20861"
+        }
+      ]
+    },
+    {
+      "slug": "magento1",
+      "repository": "https://github.com/thatapp/connector-magento1",
+      "tag": "1.0.0",
+      "commit": "a29252e6229acde3129b82388e4a014c9df940d0",
+      "status": "PUBLISHED conditional #57 metadata authentication, #72 dynamic session integration, #80 bounded enumeration/field parity",
+      "intake_url": "https://github.com/thatapp/connector-magento1/blob/a29252e6229acde3129b82388e4a014c9df940d0/INTAKE.json",
+      "intake_git_blob_sha": "d67ed0bef2711d04675b4758a23494dda6c9a2ea",
+      "intake_sha256": "8740d9355246846a4a09df79a41ac6302e1d755b5084ab404650c8f4b2578df8",
+      "intake_review": "Remote accepted receipt and exact tag readback checked by documentation chat; publisher/reviewer dual-runtime suites attributed, not rerun here. Packaged and final external scan counts are distinguished.",
+      "pages": [
+        {
+          "path": "content/_components/magento1/index.md",
+          "sha256": "b2b4299ebadeac8df73e162d2719dd22b784fd02ec681f3de9309bae1b60d476"
+        },
+        {
+          "path": "content/_components/magento1/technical-notes.md",
+          "sha256": "cbda7fa01a27e1e2da697ae293c726dbc6e51afc3aa6e4a7e12ca81b4b335c7a"
+        },
+        {
+          "path": "content/_components/magento1/set-api-login-password.md",
+          "sha256": "8f37b1a0eb7a6ed13e9f2cfeb753429429d9dfe1af5eae600311f884aa41c61c"
+        }
+      ]
+    },
+    {
+      "slug": "magento2",
+      "repository": "https://github.com/thatapp/connector-magento2",
+      "tag": "1.0.0",
+      "commit": "5751114b2de4a3e05359d40d9f6e08ddd70f270b",
+      "status": "PUBLISHED conditional #58 custom environment, #72 host integration, #79 source/UI, #80 polling/workflow parity",
+      "intake_url": "https://github.com/thatapp/connector-magento2/blob/5751114b2de4a3e05359d40d9f6e08ddd70f270b/INTAKE.json",
+      "intake_git_blob_sha": "2242e2084b9d1a7afd31e6412b03be7830805b8f",
+      "intake_sha256": "a1bac744cc119fada90078ab98353e19e23cfd5866e77919cce2e6b5152dc7f6",
+      "intake_review": "Remote accepted receipt and exact tag readback checked by documentation chat; publisher/reviewer dual-runtime suites attributed, not rerun here. Packaged and final external scan counts are distinguished.",
+      "pages": [
+        {
+          "path": "content/_components/magento2/index.md",
+          "sha256": "0ef76442e7da50ecc9932f64b3ee1d71fc7f6d19a99c20776ffd2dec10484196"
+        },
+        {
+          "path": "content/_components/magento2/technical-notes.md",
+          "sha256": "0070ac94f7622b96c9304f3d5e0d71dbda70ef3e2d5d70eecba379d5c21f4f79"
+        },
+        {
+          "path": "content/_components/magento2/actions.md",
+          "sha256": "be9bbe02c1e9f255c4b089a2bc8523eb0abb8114a2d01a0e5bc7d1437e64fecd"
+        },
+        {
+          "path": "content/_components/magento2/triggers.md",
+          "sha256": "9628f2d50fcde61ed55479369d8ec625ee32faaed5d500c652e0019388d1ce83"
+        }
+      ]
+    },
+    {
+      "slug": "bazaarvoice",
+      "repository": "https://github.com/thatapp/connector-bazaarvoice",
+      "tag": "1.0.0",
+      "commit": "8c170b4498387191984752897f077c8ee0386156",
+      "status": "PUBLISHED conditional #72 recording integration and documented source/account/Curations limits",
+      "intake_url": "https://github.com/thatapp/connector-bazaarvoice/blob/8c170b4498387191984752897f077c8ee0386156/INTAKE.json",
+      "intake_git_blob_sha": "ea470c144480d45f06265a970a93f0e6529f4f96",
+      "intake_sha256": "c8ccdc84523fc148608c8dec1d6a76722778095738066de61aee3886c8af6d61",
+      "intake_review": "Remote accepted receipt and exact tag readback checked by documentation chat; publisher/reviewer dual-runtime suites attributed, not rerun here. Packaged and final external scan counts are distinguished.",
+      "pages": [
+        {
+          "path": "content/_components/bazaarvoice/index.md",
+          "sha256": "820206600f57e0baad2a5574ef103c2388e4304fad674b50161e6993899fa7af"
+        },
+        {
+          "path": "content/_components/bazaarvoice/technical-notes.md",
+          "sha256": "7500e0329837a1c35563647be2c9e953f9f82664d411af2fa209034b4bd91aa2"
+        },
+        {
+          "path": "content/_components/bazaarvoice/actions.md",
+          "sha256": "bdfdcf6caffd188c994751ee09407416c65b021514066b18a63252169d6cf28a"
+        }
+      ]
+    },
+    {
+      "slug": "commercetools",
+      "repository": "https://github.com/thatapp/connector-commercetools",
+      "tag": "1.0.1",
+      "commit": "02fe3b4ad8a3c2c80d1ff2dbf6e0b0c2fc909631",
+      "status": "PUBLISHED 1.0.1 numeric polling correction; conditional #72/#75 integration, #79 source contract, #80 size/parity",
+      "intake_url": "https://github.com/thatapp/connector-commercetools/blob/02fe3b4ad8a3c2c80d1ff2dbf6e0b0c2fc909631/evidence/prepared-1.0.1-intake-24.json",
+      "intake_git_blob_sha": "235b7e367f46353add21e0ae26850ed5c145fb63",
+      "intake_sha256": "dc5876083ccde3c10b9e29db88cee29ccbdf5d6b71169dd9eb8274618ceb6034",
+      "intake_review": "Remote accepted receipt and exact tag readback checked by documentation chat; publisher/reviewer dual-runtime suites attributed, not rerun here. Packaged and final external scan counts are distinguished.",
+      "pages": [
+        {
+          "path": "content/_components/commercetools/index.md",
+          "sha256": "ad5bf63cc84be3d18743209eaa97b5b31d7c99a7de591dc360cbbfbc5256a2e3"
+        },
+        {
+          "path": "content/_components/commercetools/technical-notes.md",
+          "sha256": "3f7b33bd9deb13b8e092d4c00f4621f4d0e8e600ea7570444a883d13d64d474f"
+        }
+      ]
+    },
+    {
+      "slug": "ldap",
+      "repository": "https://github.com/thatapp/connector-ldap",
+      "tag": "1.0.0",
+      "commit": "70a2e0fa4a1ea6155e337942dc49bd51a6c31ae4",
+      "status": "PUBLISHED CONDITIONAL #84/#72 host integration and #57/#58 credential UI/save acceptance; not installed",
+      "intake_url": "https://github.com/thatapp/connector-ldap/blob/70a2e0fa4a1ea6155e337942dc49bd51a6c31ae4/INTAKE.json",
+      "intake_git_blob_sha": "704c2f5f35aa2540db7187ecd1637faf983bf738",
+      "intake_sha256": "03f49c2e50effbf00136d965989822dfc526eb4abd98f53a2d31ecd2edfb3cf9",
+      "intake_review": "Own dual-runtime final committed four-gate/standalone/saved checks; independent paired host review60workers/303tests each; exact remote tag/main readback.",
+      "pages": [
+        {
+          "path": "content/_components/ldap/index.md",
+          "sha256": "815406c825d5facb032e515e3e2a01ce8b4ec6c3e4cf934e2d09aff389935385"
+        },
+        {
+          "path": "content/_components/ldap/technical-notes.md",
+          "sha256": "445cf75cafcb95622f0bc14ff1d00bba7fad27de49bb644570595cf0c1aa34be"
+        }
+      ]
+    },
+    {
+      "slug": "email-component-with-credentials",
+      "repository": "https://github.com/thatapp/connector-email-component-with-credentials",
+      "tag": "1.0.0",
+      "commit": "459f77786bf76e995e010609525caa63f5a22def",
+      "status": "PUBLISHED CONDITIONAL #58/#72/#75/#80; not installed or live-delivery verified",
+      "intake_url": "https://github.com/thatapp/connector-email-component-with-credentials/blob/459f77786bf76e995e010609525caa63f5a22def/evidence/precommit-intake-24.json",
+      "intake_git_blob_sha": "32a30ed698c7dbc35b09d5c7958214b5b8f142aa",
+      "intake_sha256": "190aec777ce898475f580b2bd2a025cd9eebcf0b6ee77d23f6479738c1d763f9",
+      "intake_review": "Full remote report/accepted precommit receipt and exact remote tag/main readback; final committed suites attributed to publisher and independent reviewer.",
+      "pages": [
+        {
+          "path": "content/_components/email-component-with-credentials/index.md",
+          "sha256": "de5b928c4c6cd76fe9198fcb42bff0986cbf4a0198f8d159798efcf0d2f7c5b4"
+        },
+        {
+          "path": "content/_components/email-component-with-credentials/technical-notes.md",
+          "sha256": "bec4adcba75c87d97fd5420d09c0c599ee725e974cb741810cdbcb5bb282df62"
+        }
+      ]
+    },
+    {
+      "slug": "configuration",
+      "repository": "https://github.com/thatapp/connector-configuration-component",
+      "tag": "1.0.0",
+      "commit": "496585cba0e0ef032229890a5ed357fdd3c4f6e8",
+      "status": "PUBLISHED CONDITIONAL #57/#72; not installed or live verified",
+      "intake_url": "https://github.com/thatapp/connector-configuration-component/blob/496585cba0e0ef032229890a5ed357fdd3c4f6e8/INTAKE.json",
+      "intake_git_blob_sha": "fe93e5ee79e1d65080f8dcb2a73996049523f6a0",
+      "intake_sha256": "46fc8c5f7dc64eec2090608705220d6e3a8cff9a595169a32b34f0c2402fbaac",
+      "intake_review": "Accepted packaged source receipt; final release commit qualified externally. Configuration rerun in this chat; Azure publisher/root audit explicitly attributed.",
+      "pages": [
+        {
+          "path": "content/_components/configuration/index.md",
+          "sha256": "3250fceb5b51e480ca4a233128eb658dbd5863f454cfcb1e8246138ccf0940ff"
+        },
+        {
+          "path": "content/_components/configuration/technical-notes.md",
+          "sha256": "7caa397edef074598b7a91f8bd9ee896488e9b80e5778ddca9e856c68db7f2bf"
+        },
+        {
+          "path": "content/_components/configuration/usage-example.md",
+          "sha256": "fbe370fe622e5aa299a6678cfa17e2185553c401f5efbd137cad14c614656bd4"
+        }
+      ]
+    },
+    {
+      "slug": "microsoft-azure-ad",
+      "repository": "https://github.com/thatapp/connector-microsoft-azure-ad",
+      "tag": "1.0.0",
+      "commit": "f033cd5452576b019b9ccc5465966438d62dcb2b",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80; not installed or live verified",
+      "intake_url": "https://github.com/thatapp/connector-microsoft-azure-ad/blob/f033cd5452576b019b9ccc5465966438d62dcb2b/evidence/precommit-intake-24.json",
+      "intake_git_blob_sha": "8bafd7b1f9a4285c6f2d3d81551e53015700d387",
+      "intake_sha256": "9009d2fa85e99b62cdd8d750501199eec531bbeb3e4f0254938d523cb539e63a",
+      "intake_review": "Accepted packaged source receipt; final release commit qualified externally. Configuration rerun in this chat; Azure publisher/root audit explicitly attributed.",
+      "pages": [
+        {
+          "path": "content/_components/microsoft-azure-ad/index.md",
+          "sha256": "17b729feb4d386262ebacd892b79a3ab3f7fe05317e633e89cf48cf47de80340"
+        },
+        {
+          "path": "content/_components/microsoft-azure-ad/technical-notes.md",
+          "sha256": "31b5f5256aae9adc53be0cd8f043eb51d2baa79d7710eb7717a7445fd3d85aaa"
+        }
+      ]
+    },
+    {
+      "slug": "facebook",
+      "repository": "https://github.com/thatapp/connector-facebook",
+      "tag": "1.0.0",
+      "commit": "036b3f8216df6504412a67566ae46e4bddd46cbd",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80; not installed or live verified",
+      "intake_url": "https://github.com/thatapp/connector-facebook/blob/036b3f8216df6504412a67566ae46e4bddd46cbd/evidence/precommit-intake-24.json",
+      "intake_git_blob_sha": "b495774dbe227bcc17a7fd1ca7f8ffbfaf20747a",
+      "intake_sha256": "41a20c7c97570305fc3692701ae4df2b8d2de4a601656abc54cf722aacbfe3e1",
+      "intake_review": "Accepted packaged receipt; publisher/root final audits attributed, eight final receipt hashes checked here.",
+      "pages": [
+        {
+          "path": "content/_components/facebook/index.md",
+          "sha256": "9140196a65f60d00a9d6917e9d9ae2858a009a5e36336f99e611a0f22df3ee9d"
+        },
+        {
+          "path": "content/_components/facebook/technical-notes.md",
+          "sha256": "99cf1021b128db6f7fa8c088510997940d074014e695bd2c8da0354882c8202b"
+        }
+      ]
+    },
+    {
+      "slug": "linkedin",
+      "repository": "https://github.com/thatapp/connector-linkedin",
+      "tag": "1.0.0",
+      "commit": "4d7da148f840eaa9050fb0c34660f65f1d3754ea",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#75/#80; not installed or live verified",
+      "intake_url": "https://github.com/thatapp/connector-linkedin/blob/4d7da148f840eaa9050fb0c34660f65f1d3754ea/evidence/prepared/intake-24.json",
+      "intake_git_blob_sha": "8e8102d880cd313d9f0188a564e8456ca060d4a4",
+      "intake_sha256": "ac30947284d2425414cb79b46d5c2b320fe9d071e8cbd1a5bb23e42995717b74",
+      "intake_review": "Accepted packaged receipt; complete report and 12 external final receipt hashes verified, publisher/reviewer tests attributed.",
+      "pages": [
+        {
+          "path": "content/_components/linkedin/index.md",
+          "sha256": "426c7ba6e1f8728d1dcbf23a71e74ce402fe5b3539025c0f633c1d765cdeb024"
+        },
+        {
+          "path": "content/_components/linkedin/technical-notes.md",
+          "sha256": "b8f4d082551593e28cd8575e34b3ed49e38184db4aa63eff657be8db828b9835"
+        }
+      ]
+    },
+    {
+      "slug": "youtube",
+      "repository": "https://github.com/thatapp/connector-youtube",
+      "tag": "1.0.0",
+      "commit": "7dfea8fdc000af28377ced033d66218661b2e264",
+      "status": "PUBLISHED CONDITIONAL #57/#72; not installed or live verified",
+      "intake_url": "https://github.com/thatapp/connector-youtube/blob/7dfea8fdc000af28377ced033d66218661b2e264/evidence/precommit-intake-24.json",
+      "intake_git_blob_sha": "3d3bc9b112040ab6c7db4feabc9005f0c265c4c4",
+      "intake_sha256": "2c16a0b179b14cc3b23632a52f5b7f39857d68ea3888aecb6e48182b3e9b4070",
+      "intake_review": "Full report and accepted packaged intake read; 82 published raw blobs and 10 external final receipt hashes verified. Publisher/reviewer suites attributed, not rerun here.",
+      "publication_receipt_sha256": "f682fa2ce08c48a738bf8747552575d805931b974d8fd31cb92549afc2d1367f",
+      "pages": [
+        {
+          "path": "content/_components/youtube/index.md",
+          "sha256": "5a04fd3d76b4551d8243f5e53dcfccf312bced042d27d3d62efa0f59a08e7664"
+        },
+        {
+          "path": "content/_components/youtube/technical-notes.md",
+          "sha256": "a9055a340513221c2e80541bdf5767490bab410c4d7615e5fa80dacb8624bdc3"
+        }
+      ]
+    },
+    {
+      "slug": "graphql",
+      "repository": "https://github.com/thatapp/connector-blendededge-graphql-component-oih",
+      "tag": "1.0.0",
+      "commit": "a76d6ddc58a5ae043797cc86ea4104166717715b",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80/#88; not installed",
+      "intake_url": "https://github.com/thatapp/connector-blendededge-graphql-component-oih/blob/a76d6ddc58a5ae043797cc86ea4104166717715b/evidence/release-qualification/connector-9e5-intake-node24.json",
+      "intake_git_blob_sha": "e11373d7504b5cdb5414bf8804bf84550d83e595",
+      "intake_sha256": "71a71bc3f74295db320008e3dbe315c175f2b3eb3dfbcfa1fe333eb40a5c3d25",
+      "intake_review": "Packaged prior-runtime accepted intake and complete REPORT read; final release-specific all-four-gate and exact-package host88 receipts immutably archived in engine1e02a2fc. Independent package audit verifies89rawfiles/13packagedreceipt hashes.",
+      "final_intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/1e02a2fc121b3ef7ff4208b401e299f254098a58/docs/ipaas/source-inventory-2026-10-30/graphql-release-intake/qualification.json",
+      "publication_receipt_sha256": "838a79a641198b109585fe3daf4215fadc40849035c401e342ff18d39f0374de",
+      "host_dependency": "cac38ac10c623706b086454a5ccf91f84adab89b",
+      "pages": [
+        {
+          "path": "content/_components/graphql/index.md",
+          "sha256": "2dd0d56bdc662482b4ef32a72777e587beeab21126b8ad3b69164511f90302fb"
+        },
+        {
+          "path": "content/_components/graphql/technical-notes.md",
+          "sha256": "d3eb731e03ba987ef8f6408e6dce934f99f60b5092a693065deb53789ac9add8"
+        }
+      ]
+    },
+    {
+      "slug": "xml",
+      "repository": "https://github.com/thatapp/connector-xml-component",
+      "tag": "1.0.0",
+      "commit": "2730719ed80d6064f0bcca806654318f32287f1f",
+      "status": "PUBLISHED CONDITIONAL #57/#58/#72/#75/#80; not installed",
+      "intake_url": "https://github.com/thatapp/connector-xml-component/blob/2730719ed80d6064f0bcca806654318f32287f1f/evidence/release-qualification/owner/xml-grammar-corrected-final-intake-node24.json",
+      "intake_git_blob_sha": "08fb4453e90133a75f88dd2165a45278b7355ed5",
+      "intake_sha256": "c510222183e4008e7b89cb972a222b41f0b4872de06626c3bed5d7849973dcdd",
+      "intake_review": "Packaged reviewed5b source intake accepted95/100/130; exact final273 package separately passes95/100/198 on both runtimes and is archived in engine309f1fa. Independent149 process workers each, original/corrected findings preserved. Root package audit verifies212rawfiles/65evidence hashes/55source and AVA content pins.",
+      "final_intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/309f1fa35189512cc260b945cb1eb3586b08f615/docs/ipaas/source-inventory-2026-10-30/xml-release-intake/qualification.json",
+      "publication_receipt_sha256": "d5eab273c4f11a7b246ee35868b1ce2664b49c7442fd6b72396eeea752fae05b",
+      "pages": [
+        {
+          "path": "content/_components/xml/index.md",
+          "sha256": "d191156a08b2d91254ac7b7b1f8f199d1c39f485e6b79e46942f7a63e4aad5f7"
+        },
+        {
+          "path": "content/_components/xml/technical-notes.md",
+          "sha256": "6229134ac4c8edecc16b0ea8b3997a2e4eba144dec332c5acc748caaba261383"
+        },
+        {
+          "path": "content/_components/xml/use-case.md",
+          "sha256": "ea9a8ab72b867cf0df4e4fdd2bb1cd4710ae13a921afcde55392ddaba3fe8ff7"
+        }
+      ]
+    },
+    {
+      "slug": "odata",
+      "repository": "https://github.com/thatapp/connector-odata",
+      "tag": "1.0.0",
+      "commit": "466adc8944ba02297fd499bc6120081137c725ae",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#75/#80; not installed",
+      "intake_url": "https://github.com/thatapp/connector-odata/blob/466adc8944ba02297fd499bc6120081137c725ae/evidence/release-qualification/owner/odata-correction-intake-node24.json",
+      "intake_git_blob_sha": "e8b6922b5ee240be4e414ce57a45865f31697eb9",
+      "intake_sha256": "a15d1b632e55ba7e65f2b58a59085a567097a91168d4e2b24f7ff08fd04cbbbe",
+      "intake_review": "Packaged reviewedff6 source intake accepted137/34/185; exact final466 package separately passes137/34/291 on both runtimes, archived in engine3cb7140. B161checks198workers59stores; C137checks113metadata24actions each. Root verifies323rawfiles103newrawarchives131priorpins. Six findings resolved; original failures preserved.",
+      "final_intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/3cb714010647d373f743cdf5127febfff9fb363e/docs/ipaas/source-inventory-2026-10-30/odata-release-intake/qualification.json",
+      "publication_receipt_sha256": "37e23976033f99219cb9fb4451536409498985a47ab32e4ada2527cac22c4e7b",
+      "pages": [
+        {
+          "path": "content/_components/odata/index.md",
+          "sha256": "1bb8c3b2d9e02adfcebba0df917681f4ecf526accc2b9b32797f98436d606d39"
+        },
+        {
+          "path": "content/_components/odata/technical-notes.md",
+          "sha256": "adf8be9ae280c960caeb5f7fdfebbd60265742e9d248d5c6956e69ae84ae3fbc"
+        }
+      ]
+    },
+    {
+      "slug": "open-api",
+      "repository": "https://github.com/thatapp/connector-open-api",
+      "tag": "1.0.0",
+      "commit": "7dd00dbbaad6222c525d24162a0239b3164ccda9",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#75/#80; not installed",
+      "intake_url": "https://github.com/thatapp/connector-open-api/blob/7dd00dbbaad6222c525d24162a0239b3164ccda9/evidence/release-qualification/owner/open-api-correction-review-intake-node24.json",
+      "intake_git_blob_sha": "9e628ab7869988782fe8e08841db8fe0cf42a478",
+      "intake_sha256": "ad9a55fd6595e3567aff81418feb6dce8ddc1cd827a3e3e6b847eb620e21b4ec",
+      "intake_review": "Packaged reviewed032b source intake accepted138/31/166; exact final7dd package separately passes138/31/256 both runtimes, archived at engine8a6b949. B172cases262HTTP; C260invocations184metadata76actions295HTTP each. Root verifies263rawfiles87neworiginalartifacts64baselinepaths. Six findings resolved; original failures preserved.",
+      "final_intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/8a6b949c1d4290a8ff7ce7689f53cf4e67edcc07/docs/ipaas/source-inventory-2026-10-30/open-api-release-intake/qualification.json",
+      "publication_receipt_sha256": "774114b3de99407ac3925a35afeecdcc4f85bef25ddb63a132e10f9c29a54ada",
+      "pages": [
+        {
+          "path": "content/_components/open-api/index.md",
+          "sha256": "cc429ffcc1a44bd294f2632821738573c3a023f684db0d3a162dda53723e02cf"
+        },
+        {
+          "path": "content/_components/open-api/technical-notes.md",
+          "sha256": "9069a11b3e4850428b9e0d9dc74958ce20f62a97837001b85fb5e3783a1741cd"
+        }
+      ]
+    },
+    {
+      "slug": "shopify-admin-component-v2",
+      "repository": "https://github.com/thatapp/connector-shopify-admin-component-v2",
+      "tag": "1.0.0",
+      "commit": "8c546552d2aae048a1b5d120aecc55624f2cca36",
+      "status": "PUBLISHED CONDITIONAL; final combined-host qualification pending; no READY upgrade",
+      "publication_review": "Author verified remote tag/peel, feature branch, full REPORT PR and preserved main; coordinated review pending for latest releases.",
+      "intake_url": "https://github.com/thatapp/connector-shopify-admin-component-v2/blob/8c546552d2aae048a1b5d120aecc55624f2cca36/evidence/inbound-qualified/qualification.json",
+      "pages": [
+        {
+          "path": "content/_components/shopify-admin-v2/index.md",
+          "sha256": "63917ce6abb01c7d624fac1cded0ddcadbda21a14be02823cd66580e216bffaf"
+        },
+        {
+          "path": "content/_components/shopify-admin-v2/technical-notes.md",
+          "sha256": "c418e01eaf455acdc916a9bb5f59c0e66f94ee8a4e561a19add5b968e21cbfff"
+        },
+        {
+          "path": "content/_components/shopify/actions.md",
+          "sha256": "88e25ebbe30060db058d4d0cd26f5edc2a6949e0bf748fe59ca5e7ffd1db6069"
+        },
+        {
+          "path": "content/_components/shopify/deprecated-actions.md",
+          "sha256": "90cf8611175e6440a5b581e04ca8176f3ea808d42eee6e7d49ee987a56662557"
+        },
+        {
+          "path": "content/_components/shopify/index.md",
+          "sha256": "f08fb5bb8d9ae44af008215f01065db434b83299e117f1a02a5f1428550ddcdf"
+        },
+        {
+          "path": "content/_components/shopify/technical-notes.md",
+          "sha256": "8ec6f9f4c6e7621b5587a6e78cb6293fda677eb726a2426897800d064e7e4b9d"
+        },
+        {
+          "path": "content/_components/shopify/triggers.md",
+          "sha256": "e2d537b0638ff2cb61933a8778d8222ee6094226d4d422ca8f75513a8d85d20c"
+        }
+      ]
+    },
+    {
+      "slug": "stripe",
+      "repository": "https://github.com/thatapp/connector-stripe",
+      "tag": "1.0.0",
+      "commit": "9e2363812ea695efa6957b53020c2ebb871782d1",
+      "status": "PUBLISHED CONDITIONAL; final combined-host qualification pending; no READY upgrade",
+      "publication_review": "Author verified remote tag/peel, feature branch, full REPORT PR and preserved main; coordinated review pending for latest releases.",
+      "intake_url": "https://github.com/thatapp/connector-stripe/blob/9e2363812ea695efa6957b53020c2ebb871782d1/evidence/qualified/qualification.json",
+      "pages": [
+        {
+          "path": "content/_components/stripe/index.md",
+          "sha256": "3bd03994c26899595f13bd53c29879cd85c7d458664bbf1a42469cc966f21675"
+        },
+        {
+          "path": "content/_components/stripe/technical-notes.md",
+          "sha256": "1e5be12986b727b9b3a3b3f86078191ac64f05199e83561cd2ac47b146dd8a12"
+        }
+      ]
+    },
+    {
+      "slug": "keenio",
+      "repository": "https://github.com/thatapp/connector-keenio",
+      "tag": "1.0.0",
+      "commit": "c39771157905f7211d72ac89de7af21495c23338",
+      "status": "PUBLISHED CONDITIONAL; final combined-host qualification pending; no READY upgrade",
+      "publication_review": "Author verified remote tag/peel, feature branch, full REPORT PR and preserved main; coordinated review pending for latest releases.",
+      "intake_url": "https://github.com/thatapp/connector-keenio/blob/c39771157905f7211d72ac89de7af21495c23338/evidence/qualified/qualification.json",
+      "pages": [
+        {
+          "path": "content/_components/keenio/index.md",
+          "sha256": "b83bf66ec89b9781e592ab16587dfd99f4465d9ccb5450200248894d155bafe4"
+        },
+        {
+          "path": "content/_components/keenio/technical-notes.md",
+          "sha256": "2e1f3783605d624f9aae138741c1d145bad3e3e7483bd9f9278128fc7c64c361"
+        }
+      ]
+    },
+    {
+      "slug": "google-pubsub",
+      "repository": "https://github.com/thatapp/connector-blendededge-google-pubsub-oih",
+      "tag": "1.0.0",
+      "commit": "2110e96fc88b57be1b979772bad5bfd5c87455de",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80/#83; no READY or final combined-host qualification",
+      "publication_review": "Author and root independently verified remote annotated tag, peeled commit, branch, unchanged main and full Draft PR3 REPORT. Root verified all8 source blobs and26 committed artifacts; two final package rechecks remain separately retained.",
+      "intake_url": "https://github.com/thatapp/connector-blendededge-google-pubsub-oih/blob/2110e96fc88b57be1b979772bad5bfd5c87455de/evidence/event-decoder-v1/qualification.json",
+      "intake_sha256": "49927ceebba32b3ad03d1a1f9847a156f59a63cc28e331a927650675318697d2",
+      "pages": [
+        {
+          "path": "content/_components/google-pubsub/index.md",
+          "sha256": "514c9fb7a0c87a44e1f336832c3792bf9557f902f72fc40db29ea402a59a8c14"
+        },
+        {
+          "path": "content/_components/google-pubsub/technical-notes.md",
+          "sha256": "5a0cb9c9b273c70a726930ce01c0f40b8749c4fce832352f03fb18edabf16c0c"
+        }
+      ]
+    },
+    {
+      "slug": "mailchimp",
+      "repository": "https://github.com/thatapp/connector-mailchimp",
+      "tag": "1.0.0",
+      "commit": "4b1b77c39d6cf00c12311b8b50f6e48d92cf23ca",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80; no READY or final combined-host qualification",
+      "publication_review": "Author and root independently verified annotated tag, peel, release branch, unchanged main, full Draft PR1 report, all11 source blobs/25rawartifacts and both external93-file final package receipts. No readiness or host-condition clearance.",
+      "intake_url": "https://github.com/thatapp/connector-mailchimp/blob/4b1b77c39d6cf00c12311b8b50f6e48d92cf23ca/evidence/qualified/qualification.json",
+      "intake_sha256": "b38663c7226d8b7e5e065e08c3c9bb5c79cb00db753e9bcfbcde9244d1a90904",
+      "pages": [
+        {
+          "path": "content/_components/mailchimp/index.md",
+          "sha256": "4229101897461beabd63aa82b2dc5d3d7de22eccbb649577cd7bda3887f50cc2"
+        },
+        {
+          "path": "content/_components/mailchimp/technical-notes.md",
+          "sha256": "5e40bb9f9cbfa8cdf6b7374f8e82f4237f5193a3e05f935433945ec75133a7ae"
+        }
+      ]
+    },
+    {
+      "slug": "x-twitter-component",
+      "repository": "https://github.com/thatapp/connector-x-twitter-component",
+      "tag": "1.0.0",
+      "commit": "e3ece748e6bc1159f622eb8606d02b4166a2e53a",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80; no READY or final combined-host qualification",
+      "publication_review": "Coordinating root independently verified release/tag/main, ten source blobs,24 raw artifacts and both76-file final gates; #62 row confirmed. No readiness upgrade.",
+      "intake_url": "https://github.com/thatapp/connector-x-twitter-component/blob/e3ece748e6bc1159f622eb8606d02b4166a2e53a/evidence/qualified/qualification.json",
+      "intake_sha256": "cd6088d124d817ebbf5680c58b3a66b597d9f5a75028b31f99b595a4a9800e50",
+      "pages": [
+        {
+          "path": "content/_components/x-twitter-component/index.md",
+          "sha256": "1421f7302e84695564eae7459a7a6053c79b844e77794a404eadf2b2118bb2f7"
+        },
+        {
+          "path": "content/_components/x-twitter-component/technical-notes.md",
+          "sha256": "3cc5c72b9f4bb98bfaabdea1d53d7745f5f8f8110130aaf71a6860dae9d11530"
+        }
+      ]
+    },
+    {
+      "slug": "mandrillapp",
+      "repository": "https://github.com/thatapp/connector-mandrillapp",
+      "tag": "1.0.0",
+      "commit": "c08916c81599154fe7feae666c1b79e9a0daf780",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#74/#80; no final combined-host qualification",
+      "qualification_sha256": "bdfd9aa6db3c05cd3e2a75903177015b72838d3b1d1ac90245f9d0f505fbf5f5",
+      "publication_review": "Coordinating root independently verified release/tag/main, ten source blobs,38 raw artifacts and both89-file final gates; #62 row confirmed. No readiness upgrade.",
+      "pages": [
+        {
+          "path": "content/_components/mandrillapp/index.md",
+          "sha256": "3fd716ccbda8eb3620ed4225c5a186ba9562f16a631f13ae9081970d6b1bc986"
+        },
+        {
+          "path": "content/_components/mandrillapp/technical-notes.md",
+          "sha256": "ffe4ed1462df943f19a60f661452ba6f1b498c5b9f062a1f8b548d7696b3e9d5"
+        }
+      ]
+    },
+    {
+      "slug": "kafka",
+      "repository": "https://github.com/thatapp/connector-blendededge-kafka-component-oih",
+      "tag": "1.0.0",
+      "commit": "fc7788a42313d5776e5fc71d689cced7c95ab2bc",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80/#83/#86; no final combined-host qualification",
+      "qualification_sha256": "2abe321aab2ff1b9819bd100d7cee5dda1518b4e3e6070b9eedfb7682f301619",
+      "publication_review": "Coordinating root independently verified release/tag/main/full report, ten source blobs,29 raw artifacts and both75-file final gates; sole #62 row confirmed. No readiness upgrade.",
+      "pages": [
+        {
+          "path": "content/_components/kafka/index.md",
+          "sha256": "9d929e72764dfd13b5eee43b5a30acd42d8e3d8f6149487d74ca61dca2ae71da"
+        },
+        {
+          "path": "content/_components/kafka/technical-notes.md",
+          "sha256": "695e0d6fb47e2b9225685176736b5b0a475e7acd008a5fd8de633875a01f6f3c"
+        }
+      ]
+    },
+    {
+      "slug": "amqp",
+      "repository": "https://github.com/thatapp/connector-amqp",
+      "tag": "1.0.0",
+      "commit": "a0ca09dc7ecb615d90205171e7108709da8909f1",
+      "status": "PUBLISHED CONDITIONAL #57/#58/#72/#80/#83/#86; no final combined-host qualification",
+      "qualification_sha256": "61023da2d3ce748eeabf3f1d71f257b36c67a5372844a0d32077642f11de3802",
+      "publication_review": "Coordinating root independently verified release/tag/main/full REPORT, ten source blobs,49 artifacts and104-file release-final gates; sole #62 row confirmed. No readiness upgrade.",
+      "pages": [
+        {
+          "path": "content/_components/amqp/index.md",
+          "sha256": "f01ef6eb65a892b7d4e7dacc58bc74518d54bb219f2ff08b42b068afde46ee5a"
+        },
+        {
+          "path": "content/_components/amqp/technical-notes.md",
+          "sha256": "e8664b7dca940f44310ed349e85127534a207bd123bad560dcf66d002e194b1c"
+        }
+      ]
+    },
+    {
+      "slug": "sftp",
+      "repository": "https://github.com/thatapp/connector-blendededge-sftp-component-oih",
+      "tag": "1.0.0",
+      "commit": "5058b1a15e8cedf9e03eb264b579262dca8174b9",
+      "status": "PUBLISHED CONDITIONAL #57/#58/#72/#75/#80/#85 and trusted host-key/server-confined policy; no final combined-host qualification",
+      "qualification_sha256": "e4fcba15f0c81b280f2196fac4124697f031b69e305f4d40aeec7734f8cd55c4",
+      "publication_review": "Coordinating root independently audited tag/main/full report,16sourceblobs/19currentartifacts and both179-file final gates; combined runtime f76122a55e9c3fbbab5d1d6f075e13c001bd61d3 replays268focused+250shared regressions each runtime, including actual published SFTP/native/mapper/persisted-resume/short-password cases. Conditions and final-host/install/live limits remain.",
+      "pages": [
+        {
+          "path": "content/_components/sftp/index.md",
+          "sha256": "cbf607aead6ae41d644bad6ed3ba805bc09e721e5199e5bb149b491617d68baf"
+        },
+        {
+          "path": "content/_components/sftp/actions.md",
+          "sha256": "ef01288dbe38c951e47bec5cb81df18c52ecad084946854c1a82bba59b77b23c"
+        },
+        {
+          "path": "content/_components/sftp/triggers.md",
+          "sha256": "c80e09db74e3f77e2f98c42331eefd4979d8d9d6342006502fe7272a5a830afc"
+        },
+        {
+          "path": "content/_components/sftp/technical-notes.md",
+          "sha256": "0a925096bd2f294f8448d7f3a615315c66de40e72a7886c9208d591cab2da674"
+        },
+        {
+          "path": "content/_components/sftp/usage-example.md",
+          "sha256": "0521b8f55bbfe139a41205558af8ed0345311cb2c3955a410b073fc8c7a7f275"
+        }
+      ]
+    },
+    {
+      "slug": "csv",
+      "repository": "https://github.com/thatapp/connector-csv",
+      "tag": "1.0.1",
+      "commit": "6f272f25722604283340fa1ac477baee59ded31c",
+      "status": "PUBLISHED CONDITIONAL #57/#58/#72/#75/#80/#87 and trusted production storage/clock; no final combined-host qualification",
+      "qualification_sha256": "4f671db2a8b9b556d45ab8718e282ad01248e893c4e5e6233bc8f3904a765d2c",
+      "final_intake_sha256": "8da1a637be2368d8f3c7d0c9ef71da9cd566fb4912daca0ec5c3781f5762d3ef",
+      "publication_review": "Coordinating root independently verified latest remote annotated tag/peeled/head/unchanged main/full UTF-8 PR report;12current raw/tested/release sources/20raw+gzip artifacts, prior12/19 and rejected12/25, both211-file final receipts. Eight library/verifier bytes match private pinned replay. Combined0f07bb4f/report72e373c3 passes353focused+314shared regressions each/0skip, focused0attempts, four deliberate regression refusals. Sole#62row53/4historicalREADY/49conditional/0newfinalhost exact readback. No final every-connector/operational/install qualification.",
+      "pages": [
+        {
+          "path": "content/_components/csv/actions.md",
+          "sha256": "28352d34ee62dc5be09be4febe3e3a3cba4a9fcaa3d68955c89af9f05e8b1047"
+        },
+        {
+          "path": "content/_components/csv/deprecated-functions.md",
+          "sha256": "2da30c37605792d968c5ddc180bc09b873653d95f6ea277dd5edfebbc5fc827c"
+        },
+        {
+          "path": "content/_components/csv/index.md",
+          "sha256": "b67739c246f7488086bf4e79507723465c294c098b90a5c1e2ee0802a006d612"
+        },
+        {
+          "path": "content/_components/csv/technical-notes.md",
+          "sha256": "6325baa582c71c1cbca0bd45d71d93e60e544b69bd6aceb96b0aed9f33069152"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "53 current published connector references:52 prior plus CSV1.0.1, with its immutable1.0.0 retained as superseded history. Four historical READY unchanged;49 conditional and0 new final combined-host-qualified.",
+    "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
+    "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
+    "Every release block links immutable source, scope and intake evidence.",
+    "Tested mocked behavior, published status, installation prerequisites and unverified live behavior remain distinct."
+  ],
+  "limitations": [
+    "Jekyll build UNVERIFIED; no Ruby/Bundler runtime",
+    "No deployment, vendor authentication, install or live customer-data checks",
+    "Earlier area-publication.json remains the historical receipt for the first docs pass; this is an additive publication receipt"
+  ],
+  "reviewed_docs_before_changes": "6ca7d555d1b048c9a8be32d62523ef96fa778462",
+  "post_tag_qualifications": {
+    "ci": {
+      "connectors": [
+        "salesforce",
+        "onedrive",
+        "outlook"
+      ],
+      "branch_commits": [
+        "d1f93a05d0d7bdabdd2a02d4b25a47051d5656ff",
+        "db05d54a6239ea3ad86fe419f52e42676b87af7f",
+        "7deebdb5ada8924ce051182786e358e99c6bba70"
+      ],
+      "scope": "Branches replace inherited CircleCI Docker publication/Slack notifications with tests-only CI ignoring tags. Immutable 1.0.0 tags predate this CI-only follow-up; runtime unchanged. GitHub combined statuses were empty; external CircleCI activity is not thereby disproved. No deployment was intentionally initiated."
+    },
+    "salesforce_docs_map": {
+      "correction_commit": "b6af8de1e6470aca83d7ada3b37d313921081dc1",
+      "upstream_source_commit": "2b7b2051c922dd4083281f67bc28754ff51844ee",
+      "reviewed_docs_commit": "6ca7d555d1b048c9a8be32d62523ef96fa778462",
+      "path": "content/_components/salesforce/technical-notes.md",
+      "upstream_sha256_lf": "1e3c08f4a86fde1e2319d4680a2249a915c1a2b3880a7369f7bc78c27d70c7a5",
+      "reviewed_sha256_lf": "e8899f456bb7a7bfa71b70232ef7bc6d0408ea0dad7075fb09f9a382f9efaa08",
+      "scope": "The immutable tag docs-map source_commit mislabeled the reviewed technical-notes hash as upstream; the branch correction distinguishes both source pins. Runtime and release tag unchanged."
+    },
+    "coordinated_main_publication": {
+      "connectors": [
+        "airtable",
+        "bigcommerce",
+        "google-calendar",
+        "klaviyo-component"
+      ],
+      "branch": "main",
+      "direct_user_instruction": "Never push to main. No deploys, no secrets, no customer data.",
+      "instruction_source": "Direct human request in this task, turn01a18a0b-87c4-70d0-8029-253623b65f71; attached-document instructions were explicitly distinguished from the request.",
+      "observation": "Independent git ls-remote confirms these four connector main refs equal their tagged release commits. The coordinated build chat acknowledged using the narrower attached brief instead of the direct instruction and agreed to no further main pushes. Existing tags/history are preserved; no rollback or force push is performed. This docs branch and the eight releases built in this chat use feature branches. No backend-main write is reported."
+    }
+  },
+  "reviewed_docs_before_additional_releases": "db4e7c637cee9467a0f7a5195c11dfa14547ccae",
+  "page_hash_scope": "UTF-8 page text normalized to LF; intake_sha256 hashes exact Git blob bytes, while *_git_blob_sha records the separate Git object identity.",
+  "coordinated_release_remote_verification": [
+    {
+      "slug": "bigcommerce",
+      "commit": "8c4738ec0588480a6c35bf23eaf182e4e3dded29",
+      "tag_object": "f471180eca5c63a65f2aecb8c0d4a551741f8ce0",
+      "main": "8c4738ec0588480a6c35bf23eaf182e4e3dded29",
+      "status": "PASS"
+    },
+    {
+      "slug": "google-calendar",
+      "commit": "35be581702443f31927072be2a01b769022b8040",
+      "tag_object": "622d8ba0dac816ac51b027a782ac6bba25abe031",
+      "main": "35be581702443f31927072be2a01b769022b8040",
+      "status": "PASS"
+    },
+    {
+      "slug": "netsuite-rest-api-client-credentials",
+      "commit": "dc836c968c505d2dfca4a0a03e4be9da405ed293",
+      "tag_object": "f5336d4c4f56aa8acb1b881b629a2e5ee954b702",
+      "main": "eb7395873bfe72c7659d7b5de6cb32905ac4ef86",
+      "status": "PASS"
+    },
+    {
+      "slug": "sharepoint",
+      "commit": "914464792ac1910a344455ba8f3d79a234ad01b8",
+      "tag_object": "71c737f2691d34446ea30e3dd571f17bbfd6294b",
+      "main": "d976832ff35388dc954fdd669c2faeb05b59377d",
+      "status": "PASS"
+    },
+    {
+      "slug": "airtable",
+      "commit": "54f43d38e62f17d418741241c5b488f1db535468",
+      "tag_object": "734e37d81bd30b79b9760e9c9e86e79a2cf73353",
+      "main": "54f43d38e62f17d418741241c5b488f1db535468",
+      "status": "PASS"
+    },
+    {
+      "slug": "klaviyo-component",
+      "commit": "df3d81d3c70644aed52db0034adf0a289f56014e",
+      "tag_object": "4f1a1dfa45f9c9fb44d55029fcf62ece90404828",
+      "main": "df3d81d3c70644aed52db0034adf0a289f56014e",
+      "status": "PASS"
+    }
+  ],
+  "priority_release_tag_checks": [
+    {
+      "slug": "aws-s3",
+      "commit": "f6fca04376efac05852bbc93f6608bd6db803e12",
+      "tag_object": "439048aacc0b153dbc676027273c480f10367c99",
+      "main": "a8e298db7dfa90235d2a67134155f6aa69de14f7",
+      "status": "PASS"
+    },
+    {
+      "slug": "google-drive",
+      "commit": "b78d256edfa39d5123f17e52b33111481a26dfd5",
+      "tag_object": "c20371f3b34080b744f44cc33c9cc31e3e9a6456",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "dropbox",
+      "commit": "cb21f9ffab268150e4236add52e86afb9efe699e",
+      "tag_object": "e2d068220963366ddbbfec03c54ec8822c39fd01",
+      "main": "f8e487d35cf8a78f76de621a43af86c2b95d6dc9",
+      "status": "PASS"
+    },
+    {
+      "slug": "aws-sns",
+      "commit": "5cabb841947edb99e14b2ee062cb22f071064036",
+      "tag_object": "ae8cdadbdfaa1d5f25bb640ac46a5d73560fabc8",
+      "main": "c69ad16819b358c2ad6f506ed273b8a28f1ad8e4",
+      "status": "PASS"
+    },
+    {
+      "slug": "gmail",
+      "commit": "3955a08310b705dfe97448f6e610b10bbf7d3055",
+      "tag_object": "b032b3c7d4beee7c4ad3dc8447b9b8692eab66d6",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "google-bigquery",
+      "commit": "19d62b19fc0fb53bf5b00bb7d7867a5791d4f0d6",
+      "tag_object": "e87c883bf194f9fa92895e2ed1543c3281a0be2e",
+      "main": "3ed1b1a641bc2bc3f5a3dced63848b6c78f9e498",
+      "status": "PASS"
+    },
+    {
+      "slug": "amazon-selling-partner-api",
+      "commit": "2d2cf6bed99228500ae1a49e97db810dc23b0bc3",
+      "tag_object": "21beb656ee0e87df17276a2ef7eaafe6df65f53e",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "shopware-6",
+      "commit": "535a56fdc3a8b0109dd6a1ec6a9de7238a23a9d2",
+      "tag_object": "32ccd399037f34452186f78b267f72e9d4fe9ae6",
+      "main": "2a5c03bfd2dac49ffc65465fe1a882b080de5a82",
+      "status": "PASS"
+    },
+    {
+      "slug": "google-analytics-component",
+      "commit": "4cab7ab42d25d787a597fba22f4c67397f893076",
+      "tag_object": "e052fb8981c44b623ff792f20cb1475f0c5620ed",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "pimcore",
+      "commit": "72c2388acc93bece3b02eef95519ff38c1c41e09",
+      "tag_object": "9b853084a45d5856bc4aff85807becf3805d5c7e",
+      "main": "54943455d655c3d6cfd44c81f3d3adfbf0b92ce7",
+      "status": "PASS"
+    },
+    {
+      "slug": "hubspot",
+      "tag": "1.0.1",
+      "commit": "491571cc0590cbe60e216656997b37ba9779ca83",
+      "tag_object": "31b8c72c74ccc3444ac6b79342430c85de94cbec",
+      "main": "49b6428568ece50b046241b0f230266e1d2e491c",
+      "status": "PASS"
+    },
+    {
+      "slug": "gspreadsheet",
+      "tag": "1.0.0",
+      "commit": "d62d1881439c669408752fbef477f03e5bdefbf1",
+      "tag_object": "9da34b04b9223d8b009011df22c04958c37c704f",
+      "main": "94e4b22c28ed862d6d0a61295487dca7c0e7c9d6",
+      "status": "PASS"
+    },
+    {
+      "slug": "hubspot",
+      "tag": "1.0.2",
+      "commit": "20b4cce794da5dc9f92657de46d403fccaaa6590",
+      "tag_object": "f23ebf100f2f422906dcd4c9d2f58c2322a3a03e",
+      "main": "49b6428568ece50b046241b0f230266e1d2e491c",
+      "status": "PASS"
+    },
+    {
+      "slug": "magento1",
+      "tag": "1.0.0",
+      "commit": "a29252e6229acde3129b82388e4a014c9df940d0",
+      "tag_object": "e22c688c4e12fc962c43c2faf13b7da1b05796b8",
+      "main": "ea59cd59790989009cd2e41cf7fc3cf16ae36af8",
+      "status": "PASS"
+    },
+    {
+      "slug": "magento2",
+      "tag": "1.0.0",
+      "commit": "5751114b2de4a3e05359d40d9f6e08ddd70f270b",
+      "tag_object": "a6d96ffc0bfd3fcdd7f2827f717797e2ba3fe9ef",
+      "main": "785654de0b361340d34709534a300a72b33c01be",
+      "status": "PASS"
+    },
+    {
+      "slug": "bazaarvoice",
+      "tag": "1.0.0",
+      "commit": "8c170b4498387191984752897f077c8ee0386156",
+      "tag_object": "c3270f41172c28c8fb2e79f2ec4867168717bac3",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "commercetools",
+      "tag": "1.0.1",
+      "commit": "02fe3b4ad8a3c2c80d1ff2dbf6e0b0c2fc909631",
+      "tag_object": "1ae37a2ee4905c535ea7640f8f724f75724eaea8",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "google-calendar",
+      "tag": "1.0.1",
+      "commit": "987fe5b867e1a1a7e1741a6de8a4e0548b76cf62",
+      "tag_object": "487e55800c9262db95a2c13dc8a4e416a5677b01",
+      "main": "35be581702443f31927072be2a01b769022b8040",
+      "status": "PASS"
+    },
+    {
+      "slug": "google-drive",
+      "tag": "1.0.1",
+      "commit": "e4d33fef5feb955f4120072e1c63b1815b30ec64",
+      "tag_object": "e1a66223f8a64c963f0fedcc9a62cd98fce87a02",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "google-analytics-component",
+      "tag": "1.0.1",
+      "commit": "76187ceef1ae0881ebb092594277a3ba7b4b0737",
+      "tag_object": "d18e0b685e2a6ee6e63d3a9507e3e4b1c6b95f02",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "gmail",
+      "tag": "1.0.1",
+      "commit": "1a688b3d965471b53d2da3a7df270a0780499721",
+      "tag_object": "ce94a9114be9cd4885440a2421ed99fc710604f9",
+      "main": null,
+      "status": "PASS"
+    },
+    {
+      "slug": "ldap",
+      "tag": "1.0.0",
+      "commit": "70a2e0fa4a1ea6155e337942dc49bd51a6c31ae4",
+      "tag_object": "6862a13cde0a446fecb075e11f58c850b974a9b4",
+      "main": "4380845474849e82ac44f7a09c96134df6acc20e",
+      "status": "PASS"
+    },
+    {
+      "slug": "email-component-with-credentials",
+      "tag": "1.0.0",
+      "commit": "459f77786bf76e995e010609525caa63f5a22def",
+      "tag_object": "20b1e2d45211586afc77ebaf0605492940911758",
+      "main": "c7cf081cf936cc5053f885035abc01e600820801",
+      "status": "PASS"
+    },
+    {
+      "slug": "configuration",
+      "commit": "496585cba0e0ef032229890a5ed357fdd3c4f6e8",
+      "tag_object": "7585442619ddbcf2b2b7435c2bbecbb199cbafb2",
+      "main": "c3db1f8eaf6c29e9476d3a7551d85990bc6016d2",
+      "tag": "1.0.0",
+      "status": "PASS"
+    },
+    {
+      "slug": "microsoft-azure-ad",
+      "commit": "f033cd5452576b019b9ccc5465966438d62dcb2b",
+      "tag_object": "cd0007bdd5a7d3a2d7a2b9f0e21bb9df1523d337",
+      "main": "d7a51040c2dfd01b2aee62afaefbca13fd910f66",
+      "tag": "1.0.0",
+      "status": "PASS"
+    },
+    {
+      "slug": "facebook",
+      "commit": "036b3f8216df6504412a67566ae46e4bddd46cbd",
+      "tag_object": "7bc37167bd032dae97d5ad32cd4e7168a074a6ca",
+      "main": null,
+      "tag": "1.0.0",
+      "status": "PASS; main absent"
+    },
+    {
+      "slug": "linkedin",
+      "commit": "4d7da148f840eaa9050fb0c34660f65f1d3754ea",
+      "tag_object": "a92964c08c1608373946ae921791f78acbd31f87",
+      "main": "7562706d9814b9fea8cfed9ebbfc4d9a1ea1aa53",
+      "tag": "1.0.0",
+      "status": "PASS"
+    },
+    {
+      "slug": "youtube",
+      "commit": "7dfea8fdc000af28377ced033d66218661b2e264",
+      "tag_object": "a908a80b8ee9df9637ef932467d7440240d3b8b8",
+      "main": null,
+      "tag": "1.0.0",
+      "status": "PASS"
+    },
+    {
+      "slug": "graphql",
+      "commit": "a76d6ddc58a5ae043797cc86ea4104166717715b",
+      "tag_object": "d2adce7e0974f698386c34e8c4aaef1b4e29e5ee",
+      "main": "d929bb232b174aed06ad4d5286989ebfa5946feb",
+      "tag": "1.0.0",
+      "status": "PASS"
+    },
+    {
+      "slug": "xml",
+      "commit": "2730719ed80d6064f0bcca806654318f32287f1f",
+      "tag_object": "082036ce14194fdecc8986a5322e25e90f0ca592",
+      "main": "271d4cf35639c37b3d268db5cb2fe2622f77cb19",
+      "tag": "1.0.0",
+      "status": "PASS"
+    },
+    {
+      "slug": "odata",
+      "commit": "466adc8944ba02297fd499bc6120081137c725ae",
+      "tag_object": "5960a37c6c7af66538c053e6013894af7e1c0f48",
+      "main": "6af05a6c9509800a2f12c6a5ee291afbdcb181c5",
+      "tag": "1.0.0",
+      "status": "PASS"
+    },
+    {
+      "slug": "open-api",
+      "commit": "7dd00dbbaad6222c525d24162a0239b3164ccda9",
+      "tag_object": "f98f1c9634a2d32dbf217ab81edab73f56b8324d",
+      "main": "2bdcbd961d90eeb8629c3493b4520c47027b65bf",
+      "tag": "1.0.0",
+      "status": "PASS"
+    },
+    {
+      "slug": "mandrillapp",
+      "tag": "1.0.0",
+      "commit": "c08916c81599154fe7feae666c1b79e9a0daf780",
+      "tag_object": "e803d158d43f574391d2ab1f671ba03b7e8aa0c6",
+      "main": "db38b593e49132d4446651530d1db6b1d57fd80d",
+      "status": "PASS"
+    },
+    {
+      "slug": "kafka",
+      "tag": "1.0.0",
+      "commit": "fc7788a42313d5776e5fc71d689cced7c95ab2bc",
+      "tag_object": "7b7479850c1e7800b6f7ba7237a0a2cf5b80fa88",
+      "main": "c84db18e216325fb3701d3ff719ceb6c57e0772d",
+      "status": "PASS"
+    },
+    {
+      "slug": "amqp",
+      "tag": "1.0.0",
+      "commit": "a0ca09dc7ecb615d90205171e7108709da8909f1",
+      "tag_object": "54fe191bde418bc28d1150a8268340c411095cab",
+      "main": "8b885def55bfe2e70e84cb589bb248e699fb78f3",
+      "status": "PASS"
+    },
+    {
+      "slug": "sftp",
+      "tag": "1.0.0",
+      "commit": "5058b1a15e8cedf9e03eb264b579262dca8174b9",
+      "tag_object": "6e871ae5180856d53845683499de56f8edc12d1f",
+      "main": "92b3aba1b60848f126a1e123ca4c82a433f485c2",
+      "status": "PASS"
+    },
+    {
+      "slug": "csv",
+      "tag": "1.0.0",
+      "commit": "a5083afbb0670bc6d299102749dab2245e92d04d",
+      "tag_object": "eaa8026fd280c21f6fcb1670e5e29c8d05e1a910",
+      "main": "a4ea2b6bb0a65a38219d8c71abefca6148a05125",
+      "status": "PASS immutable reference; report encoding corrected forward1.0.1"
+    },
+    {
+      "slug": "csv",
+      "tag": "1.0.1",
+      "commit": "6f272f25722604283340fa1ac477baee59ded31c",
+      "tag_object": "fe885d57867d7fd14bb3b732ea57be8cf4729e1a",
+      "main": "a4ea2b6bb0a65a38219d8c71abefca6148a05125",
+      "status": "PASS"
+    }
+  ],
+  "superseded_releases": [
+    {
+      "slug": "hubspot",
+      "repository": "https://github.com/thatapp/connector-hubspot",
+      "tag": "1.0.0",
+      "commit": "6479855a0bcb20ace70af2ed0b4d3763412531e1",
+      "status": "PUBLISHED scoped; WAITING HOST #57 credentials/OAuth and #75 binary transport/scoped storage; custom environment #58, deprecated webhook #74 and polling limitations #80 remain qualified",
+      "intake_url": "https://github.com/thatapp/connector-hubspot/blob/6479855a0bcb20ace70af2ed0b4d3763412531e1/INTAKE.json",
+      "intake_sha256": "09c3f6675eeced3e1b2f4ebf1d3912508dcc8de9bb213f5f96e4dc4bf9613eb0",
+      "intake_review": "This chat ran four gates on Node20 and24; 71 npm tests, 35 exact cases, 53 workers, five supplemental checks (four workers, one parent scope probe), zero network.",
+      "pages": [
+        {
+          "path": "content/_components/hubspot/index.md",
+          "sha256": "13d4fa46d51a0797941b8d71e63d09b2a8e126d803ddbe5a05bcdc4051d7f0c0"
+        },
+        {
+          "path": "content/_components/hubspot/technical-notes.md",
+          "sha256": "af2c8747bb54c6427312c25c0509e87b9d5fb8cd8b23e550b1f8aab1e7f06ab0"
+        }
+      ],
+      "superseded_by": "1.0.1",
+      "pages_are_historical": true
+    },
+    {
+      "slug": "hubspot",
+      "repository": "https://github.com/thatapp/connector-hubspot",
+      "tag": "1.0.1",
+      "commit": "491571cc0590cbe60e216656997b37ba9779ca83",
+      "status": "PUBLISHED 1.0.1; initial-snapshot defect corrected; existing #57/#58/#72/#74/#75 and polling qualifications remain conditional",
+      "intake_url": "https://github.com/thatapp/connector-hubspot/blob/491571cc0590cbe60e216656997b37ba9779ca83/INTAKE.json",
+      "intake_sha256": "a3aefaf9d489da60ed348ffb0d9695a0e6d44a6c2a599d864d2c7adb72718bef",
+      "intake_review": "This chat ran final committed-head four gates and direct snapshot regressions on Node20/24, preserving the 1.0.0 defect receipt.",
+      "pages": [
+        {
+          "path": "content/_components/hubspot/index.md",
+          "sha256": "02371f7444c724a62d1059523b813ba7af0f47a58466c07048d0cca61e5f90bf"
+        },
+        {
+          "path": "content/_components/hubspot/technical-notes.md",
+          "sha256": "9abb2ea0ff92ad82b3104e77e05aec817f634c4cf722e0b545b550dc73621758"
+        }
+      ],
+      "intake_git_blob_sha": "edc653ee18920d05f70e4989811620bee49b4057",
+      "superseded_by": "1.0.2",
+      "pages_are_historical": true
+    },
+    {
+      "slug": "google-calendar",
+      "repository": "https://github.com/thatapp/connector-google-calendar",
+      "tag": "1.0.0",
+      "commit": "35be581702443f31927072be2a01b769022b8040",
+      "status": "PUBLISHED 1.0.0; first-run polling BLOCKED #80; vendor and installation checks UNVERIFIED",
+      "intake_url": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/blob/0fbb6b5b4d40c9c60491ffc8b5f73f590203dd3f/docs/ipaas/connector-submissions/google-calendar-evidence/intake-standalone.json",
+      "intake_sha256": "ea19189c1e4d562b6db4758862a4438ed4cff977e03b4ee9f65089db25052869",
+      "evidence_commit": "0fbb6b5b4d40c9c60491ffc8b5f73f590203dd3f",
+      "intake_review": "Coordinated build chat ran release intake; this docs chat read and hashed the pinned standalone four-gate receipt.",
+      "report_git_blob_sha": "4764b3494a2a7a0f0c7a94b93ebb1ef5dc5d1741",
+      "pages": [
+        {
+          "path": "content/_components/google-calendar/index.md",
+          "sha256": "18f461695c4ef670601cca47c3cc687fcbe3eea5ef41d8d0f36d3cdeb09358ee"
+        },
+        {
+          "path": "content/_components/google-calendar/technical-notes.md",
+          "sha256": "0552417f79757d25ab60178ac21225be5d0232a0f392eef13ce4925960afc82f"
+        }
+      ],
+      "superseded_by": "1.0.1",
+      "pages_are_historical": true
+    },
+    {
+      "slug": "google-drive",
+      "repository": "https://github.com/thatapp/connector-google-drive",
+      "tag": "1.0.0",
+      "commit": "b78d256edfa39d5123f17e52b33111481a26dfd5",
+      "status": "PUBLISHED 1.0.0; first-run polling BLOCKED #80; PUBLISHED scoped; WAITING HOST #57 OAuth integration, #72 redaction and #75 binary transport/scoped storage; #80 URL/size/polling qualifications",
+      "intake_url": "https://github.com/thatapp/connector-google-drive/blob/b78d256edfa39d5123f17e52b33111481a26dfd5/INTAKE.json",
+      "intake_sha256": "85ee02572314b48a90475d421feba2cebd8db235cb9959ef67b68b1dc36328e3",
+      "intake_review": "Independently read the immutable published report and accepted INTAKE.json: 71 tests, 40 canonical workers, zero network; remote annotated tag and absent main verified. Additional sealed/supplemental results are publisher-reported.",
+      "pages": [
+        {
+          "path": "content/_components/google-drive/index.md",
+          "sha256": "fa798f23b87a42d25559c613ce8bed15789e94af3748449f78286c746f2ac3d9"
+        },
+        {
+          "path": "content/_components/google-drive/technical-notes.md",
+          "sha256": "b11f283757107ebae681e00a96b7d80ce6af2a5b907c3f49971b8cad4fd737b1"
+        }
+      ],
+      "superseded_by": "1.0.1",
+      "pages_are_historical": true
+    },
+    {
+      "slug": "google-analytics-component",
+      "repository": "https://github.com/thatapp/connector-google-analytics-component",
+      "tag": "1.0.0",
+      "commit": "4cab7ab42d25d787a597fba22f4c67397f893076",
+      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth and #72 integration; #80 polling limits and #79 source-contract gaps; KNOWN short-credential polling checkpoint defect, correction not yet verified published",
+      "intake_url": "https://github.com/thatapp/connector-google-analytics-component/blob/4cab7ab42d25d787a597fba22f4c67397f893076/INTAKE.json",
+      "intake_git_blob_sha": "3fddb9c631b5523ceee6e86f7ab69e839b5faa0e",
+      "intake_sha256": "7c4c551c850cc836285684b987d01ad38a787b68c0fdafff56916f8dd69e38ba",
+      "intake_review": "This documentation chat independently read the published report scope and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/google-analytics-component/index.md",
+          "sha256": "f1d74d555c75d0c0bccc041e0fdc6ba45ad891cbd6cb9b1f0ac95f98fca1e290"
+        },
+        {
+          "path": "content/_components/google-analytics-component/technical-notes.md",
+          "sha256": "4964c19cb7549923e3cccd8fa5c8a719f1c92936a873e1e29264d38f94e54839"
+        }
+      ],
+      "superseded_by": "1.0.1",
+      "pages_are_historical": true
+    },
+    {
+      "slug": "gmail",
+      "repository": "https://github.com/thatapp/connector-gmail",
+      "tag": "1.0.0",
+      "commit": "3955a08310b705dfe97448f6e610b10bbf7d3055",
+      "status": "PUBLISHED scoped; WAITING HOST #57 OAuth, #72/#75 transport/scoped storage, #58 custom environment and #80 URL/size/polling parity; KNOWN short-credential polling checkpoint defect, correction not yet verified published",
+      "intake_url": "https://github.com/thatapp/connector-gmail/blob/3955a08310b705dfe97448f6e610b10bbf7d3055/evidence/intake.json",
+      "intake_git_blob_sha": "75d0995eec325030451f0d7e0431ab0d66d961b8",
+      "intake_sha256": "ec6de269c9db329dab58eb6a6f8251f4494d7aa084585aeebaa3f72b25bfbfc9",
+      "intake_review": "This documentation chat independently read the published full REPORT and accepted immutable intake; supplemental suites are publisher-reported, not rerun here.",
+      "pages": [
+        {
+          "path": "content/_components/gmail/index.md",
+          "sha256": "387edf3647dfd53f6bbec59952569ab607a1fc064bb8b157de6003d86fa826fb"
+        },
+        {
+          "path": "content/_components/gmail/technical-notes.md",
+          "sha256": "cb59a30730128177b54313e04a88f450fc9f69a73f308151efb42fc1f873645c"
+        }
+      ],
+      "superseded_by": "1.0.1",
+      "pages_are_historical": true
+    },
+    {
+      "slug": "csv",
+      "repository": "https://github.com/thatapp/connector-csv",
+      "tag": "1.0.0",
+      "commit": "a5083afbb0670bc6d299102749dab2245e92d04d",
+      "status": "Functional four gates passed; report Windows em-dash byte prevented UTF-8 PR-body publication after atomic tag push; unchanged action code retained, corrected forward1.0.1.",
+      "superseded_by": "1.0.1",
+      "pages_are_historical": true,
+      "pages": []
+    }
+  ],
+  "qualification_notices": [
+    {
+      "slug": "gmail",
+      "tag": "1.0.0",
+      "notice": "A coordinating actual-worker audit reproduced a short-credential defect in published1.0.0: string ISO lastUpdated can be masked, then the next poll fails400 before HTTP. A long-token control passes. The old tag is preserved; a corrective source patch is under review and is not yet a verified published replacement.",
+      "source": "Coordinating chat actual-worker audit; reported on issue62. No new release asserted.",
+      "superseded_by": "1.0.1"
+    },
+    {
+      "slug": "google-analytics-component",
+      "tag": "1.0.0",
+      "notice": "A coordinating actual-worker audit reproduced a short-credential defect in published1.0.0: masking its string configuration hash makes a resumed poll fail409. A checkpoint/size redesign is under review; it is not yet a verified published replacement.",
+      "source": "Coordinating chat actual-worker audit; reported on issue62. No new release asserted.",
+      "superseded_by": "1.0.1"
+    }
+  ],
+  "blocked_candidates": [
+    {
+      "slug": "csv",
+      "repository": "https://github.com/thatapp/connector-csv",
+      "commit": "b3c2864b91f6c9f3518e30b2c85c5654d27bcbac",
+      "pr": "https://github.com/thatapp/connector-csv/pull/1",
+      "tag": null,
+      "status": "BLOCKED #87; full canonical/standalone intake rejected, no whole-connector acceptance",
+      "unit_tests_per_node": 78,
+      "supplemental_execution_workers_per_node": 49,
+      "metadata_workers_per_node": 3,
+      "secret_files_per_node": 126,
+      "blocker": 87,
+      "pages": [
+        {
+          "path": "content/_components/csv/index.md",
+          "sha256": "42b87c3a2562524bb9310f17bdef8c943281bc1e8894f5a35d65ad45ab15c89e"
+        },
+        {
+          "path": "content/_components/csv/actions.md",
+          "sha256": "6a6f9b32e7d73e3b0061c8d2d5a487af5e46993495ef188598a5b2f0a110dfd7"
+        },
+        {
+          "path": "content/_components/csv/technical-notes.md",
+          "sha256": "c45f2e0a5c34e92e6f835b71548f19cb10a65c17973a0cbf5638a9bcdf4e4ad8"
+        },
+        {
+          "path": "content/_components/csv/deprecated-functions.md",
+          "sha256": "b98abb84bd7b289edccf8f7d9ad1f4e0bb77b9bd854d1e4cd91291fa564c0fe7"
+        }
+      ],
+      "committed_receipts": {
+        "csv-empty-row-final-intake-node20.json": "a4baddd407051ba51dd45fcee89ef0f62f03199389121d07457e951399a6fcc2",
+        "csv-empty-row-final-hostcheck-node20.json": "cd00c19afaaf47cdd9b269f98bb3006c8cf3b4fd4b86ba5e98637627b2442519",
+        "csv-empty-row-final-proof-node20.json": "37373014474bd810341edab385cb464722fc200c5421303ff48de5764ac08092",
+        "csv-empty-row-final-empty-row-proof-node20.json": "7d2e79b574a31ab8b4e5e576532f1132ff5545f907abfa83d83f8120f8d01345",
+        "csv-empty-row-final-intake-node24.json": "8a6c5dfe3b33dc2559b9246237daa08c2ea76ad8d3866156be0bc5c4774b5fc6",
+        "csv-empty-row-final-hostcheck-node24.json": "cd00c19afaaf47cdd9b269f98bb3006c8cf3b4fd4b86ba5e98637627b2442519",
+        "csv-empty-row-final-proof-node24.json": "ee55a9565fdca67acc1a668f59e6eed023a19357a8d1bf89fd08936cadeaf52a",
+        "csv-empty-row-final-empty-row-proof-node24.json": "02ec5de58c53b82bea4d5436c5c58c1f3f4608039a9bb50c744b92cf26b359e8"
+      },
+      "evidence_followup_commit": "2b19ba3bc1feaedc656dbcdf0a940acbb59ec199",
+      "receipt_url": "https://github.com/thatapp/connector-csv/blob/2b19ba3bc1feaedc656dbcdf0a940acbb59ec199/evidence/empty-row-qualified/csv-empty-row-final-intake-node24.json",
+      "extra_roundtrip_workers_per_node": 24,
+      "independent_checks_per_node": 95,
+      "independent_workers_per_node": 106
+    }
+  ],
+  "superseded_blocked_candidates": [
+    {
+      "slug": "csv",
+      "repository": "https://github.com/thatapp/connector-csv",
+      "commit": "62f1e8d70e6b56080bde355194232df89893b9f0",
+      "pr": "https://github.com/thatapp/connector-csv/pull/1",
+      "tag": null,
+      "status": "BLOCKED #87; full canonical/standalone intake rejected, no whole-connector acceptance",
+      "unit_tests_per_node": 64,
+      "supplemental_execution_workers_per_node": 49,
+      "metadata_workers_per_node": 3,
+      "secret_files_per_node": 106,
+      "blocker": 87,
+      "pages": [
+        {
+          "path": "content/_components/csv/index.md",
+          "sha256": "4cb6b10390f602e705ce5a57d6009c3fc6f71709d8fbab162d7ca53bb12eeee8"
+        },
+        {
+          "path": "content/_components/csv/actions.md",
+          "sha256": "7fba2414c7971d566c442b14778fc0d753e587a839845f4f10240b09b5456467"
+        },
+        {
+          "path": "content/_components/csv/technical-notes.md",
+          "sha256": "42eba9c40f4e907fa61b7ce3fea7ea74f5af11ecef2e6fd1b4ecc1e43a5e80e9"
+        },
+        {
+          "path": "content/_components/csv/deprecated-functions.md",
+          "sha256": "5123fe4982de9e831aa3d8347f4418fef35da538d4cd31730e64b4d6cd059885"
+        }
+      ],
+      "committed_receipts": {
+        "csv-62f1e8d-committed-intake-node20.json": "eea197ee7b09d15c1aff9e3088a9f98165b8a91d2da1723b04e7b96912a7edb3",
+        "csv-62f1e8d-committed-hostcheck-node20.json": "cd00c19afaaf47cdd9b269f98bb3006c8cf3b4fd4b86ba5e98637627b2442519",
+        "csv-62f1e8d-committed-proof-node20.json": "37373014474bd810341edab385cb464722fc200c5421303ff48de5764ac08092",
+        "csv-62f1e8d-committed-intake-node24.json": "286688edf21111e27992b3c5ef5b9dd67d071a7e29e5f486358313d297827e79",
+        "csv-62f1e8d-committed-hostcheck-node24.json": "cd00c19afaaf47cdd9b269f98bb3006c8cf3b4fd4b86ba5e98637627b2442519",
+        "csv-62f1e8d-committed-proof-node24.json": "ee55a9565fdca67acc1a668f59e6eed023a19357a8d1bf89fd08936cadeaf52a"
+      },
+      "evidence_followup_commit": "eb611a398d4aa2fa8f2e4a79c93568ec66de4e89",
+      "receipt_url": "https://github.com/thatapp/connector-csv/blob/eb611a398d4aa2fa8f2e4a79c93568ec66de4e89/evidence/csv-62f1e8d-committed-intake-node24.json",
+      "followup_secret_files_per_node": 113,
+      "pages_are_historical": true
+    },
+    {
+      "slug": "graphql",
+      "repository": "https://github.com/thatapp/connector-blendededge-graphql-component-oih",
+      "commit": "3aa2f2be0d2a165b5820f48b705a1e99ce524462",
+      "pr": "https://github.com/thatapp/connector-blendededge-graphql-component-oih/pull/4",
+      "tag": null,
+      "status": "BLOCKED #88; action intake passes, config-time metadata unavailable",
+      "blocker": 88,
+      "unit_tests_per_node": 60,
+      "canonical_workers_per_node": 18,
+      "supplemental_workers_per_node": 23,
+      "secret_files_per_node": 61,
+      "pages": [
+        {
+          "path": "content/_components/graphql/index.md",
+          "sha256": "44f28c5ca59d2643a5265cbfa18d667b210de81ea31e82ea955e8ff538838214"
+        },
+        {
+          "path": "content/_components/graphql/technical-notes.md",
+          "sha256": "4a944b8dd4b40480c9d09e3564314fc7997f41dd3f65b0f887c48e67341e02e7"
+        }
+      ],
+      "committed_receipts": {
+        "graphql-committed-intake-node20.json": "3945249d2c9a726665a086b2adb68c95341ae9e7e9a600dd4623d86a5bda70b8",
+        "graphql-committed-hostcheck-node20.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
+        "graphql-committed-proof-node20.json": "1de7940f45fda866028acfb805be5cd8e9f964a3a5f406829e6815fc03afea96",
+        "graphql-committed-intake-node24.json": "4ba5a4a80a2989bacffb8028463b2364a0b3a5ffe49363f15afa79d7ba860790",
+        "graphql-committed-hostcheck-node24.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
+        "graphql-committed-proof-node24.json": "a095707fc507a4f91e5838c2f0e4a2dc1fe6621e794ce3d6c1a0513744d4f432"
+      },
+      "pages_are_historical": true
+    },
+    {
+      "slug": "graphql",
+      "repository": "https://github.com/thatapp/connector-blendededge-graphql-component-oih",
+      "commit": "9e5e8073962c9a7ade70e6cafb17f3e78a2641fc",
+      "pr": "https://github.com/thatapp/connector-blendededge-graphql-component-oih/pull/4",
+      "tag": null,
+      "status": "BLOCKED #88; connector review clear, host MR164 review and integration pending",
+      "blocker": 88,
+      "unit_tests_per_node": 72,
+      "canonical_workers_per_node": 18,
+      "supplemental_workers_per_node": 31,
+      "secret_files_per_node": 71,
+      "pages": [
+        {
+          "path": "content/_components/graphql/index.md",
+          "sha256": "965d66dee006d1ba7eb3bc520ac7f1155202abbd861c3427a7a0ed17249ecbf1"
+        },
+        {
+          "path": "content/_components/graphql/technical-notes.md",
+          "sha256": "ead1fcb24ae58d5136663badb2ab41ef737633f05543b00ff11f05d37f3422b5"
+        }
+      ],
+      "committed_receipts": {
+        "graphql-correction3-final-hostcheck-node20.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
+        "graphql-correction3-final-hostcheck-node24.json": "fc170d7e0cd651ee0c06be13091cb7e7e98262312954eec3d668838191b3230c",
+        "graphql-correction3-final-intake-node20.json": "124f54dcf6462ddf6c2d47d493e254b934e2d3a39ccfe2a714df5855a306df67",
+        "graphql-correction3-final-intake-node24.json": "71a71bc3f74295db320008e3dbe315c175f2b3eb3dfbcfa1fe333eb40a5c3d25",
+        "graphql-correction3-final-proof-node20.json": "32c898eaf1fb765481394755cdedaf749d9754fa5ca4e3b13c6b496f12c75019",
+        "graphql-correction3-final-proof-node24.json": "946f30b4c74d8a0dbdcd430c21761ea9bb980172b8685cb1d8f3ca64147ee496"
+      },
+      "runtime_commit": "ddda174c4b72524e2aba755ba14c0cad89f43246",
+      "independent_workers_per_node": 125,
+      "host_candidate_commit": "8ef36036afd4e7c3bc3a9dad117a9558c380ae54",
+      "host_mr": "https://gitlab.com/TECHeGO/thatapp-ai-powered/-/merge_requests/164",
+      "pages_are_historical": true
+    }
+  ],
+  "latest_three_release_scope": {
+    "before_docs": "f51428d72818c3cc6000f2246263a2d220842d87",
+    "prior_hashes": {
+      "content/_components/shopify-admin-v2/index.md": "3cafefe931ebc91dc188ce65b063785c1eef18cff0fe92007da5137b5b5586ff",
+      "content/_components/shopify-admin-v2/technical-notes.md": "a7cb0757c1bcd90de06b5df868ab017fc82f6beb3cb25d27863caa94459f3af4",
+      "content/_components/shopify/actions.md": "5032a7b5ee2f1e940c6a1349072e6ca26378f3c8c2bc4183b5b16da2e4fcc195",
+      "content/_components/shopify/deprecated-actions.md": "85b2b0a21b2ed22bd9db1caf63b638c7144425c51a440ee1ed37fdc7d2fbb754",
+      "content/_components/shopify/index.md": "c9e9b146febb4c8ad91bd3e0b9684557797212c119237d891bf090a7e925d6a9",
+      "content/_components/shopify/technical-notes.md": "30b56556e58338b48c73cefccfd7d2b561d89a26756f7550923471493ee4eb57",
+      "content/_components/shopify/triggers.md": "b1e95e3e649cf8417dab83a949fa23033afafc6d15ad8d6e15cebd5cf1af35b6",
+      "content/_components/stripe/index.md": "f2dc94ae08bd9a003e0111e9c3879850bf728d499432233df2d6789e789bfeda",
+      "content/_components/stripe/technical-notes.md": "a255957533bf4912fc933ba1c843e6cb40e3ddcc2c37dd2f8f70591b13718a5a",
+      "content/_components/keenio/index.md": "53017774ee8c388cf8bcce0ec943a6853f218a5bf932c76050bbd16a7447a4fc",
+      "content/_components/keenio/technical-notes.md": "dcc847984ea904188b569af498629b63d2a662bd901dbba280c6931fd23aed87"
+    },
+    "ready_count_unchanged": 4,
+    "final_combined_qualification": "PENDING"
+  },
+  "pubsub_release_scope": {
+    "before_docs": "3aa604cc65de9f8b9cd5da84d0b4b7ae09ab2925",
+    "prior_hashes": {
+      "content/_components/google-pubsub/index.md": "76aee1fb9e42704c60afeee0e73c5eaaff533b15a63f0048d437791131c6819e",
+      "content/_components/google-pubsub/technical-notes.md": "c0cb02a4ffcfa3fb2bcd7bee245af9b705663c8f05f9b6d13663a84fa7e633c5"
+    },
+    "ready_count_unchanged": 4,
+    "final_combined_qualification": "PENDING"
+  },
+  "mailchimp_release_scope": {
+    "before_docs": "80b70a2df7126685bf59514a33756a0004a8b39c",
+    "prior_hashes": {
+      "content/_components/mailchimp/index.md": "c84abdfc026ea8f8cc43b8cda3fe6d43e49c2d286a244b812b155a2877194a3b",
+      "content/_components/mailchimp/technical-notes.md": "c8f093db79950e7daa399f753ca57046dedb701c5ed71078c03b6fa8becfe8f2"
+    },
+    "ready_count_unchanged": 4,
+    "final_combined_qualification": "PENDING",
+    "contract_correction": "DELETE member archives; prior permanent-deletion prose was incorrect. Documented endpoint preserved."
+  },
+  "x_twitter_release_scope": {
+    "before_docs": "4f638ae825baeb6ad6f084315dd6975ddea56691",
+    "prior_hashes": {
+      "content/_components/x-twitter-component/index.md": "739a4dec0c23d1e608fa5079a3d81a8a0103d74e5113216e20c625988773e8a1",
+      "content/_components/x-twitter-component/technical-notes.md": "f2b70ba8de4a9e32b7feffc524774557165588397b389a43e0d71af875cc708f"
+    },
+    "ready_count_unchanged": 4,
+    "final_combined_qualification": "PENDING"
+  },
+  "csv_release_scope": {
+    "before_docs": "cec11bc4065ff935d229ae9f6ebfed9e79b2a2a9",
+    "ready_count_unchanged": 4,
+    "final_combined_qualification": "PENDING",
+    "release_report_encoding": "Forward1.0.1;1.0.0tagretained",
+    "combined_offline_checkpoint": {
+      "runtime": "0f07bb4ff2e038cb460e03a1b0c588551271798b",
+      "report": "72e373c314df2f61f3da9b999210b1ee8c141975",
+      "focusedPerRuntime": 353,
+      "regressionPerRuntime": 314,
+      "qualification": "Bounded offline combined replay with pinned source input; final every-connector one-SHA qualification remains open"
+    }
+  }
+}
