@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-01T05:38:58.634712+00:00",
+  "checked_at_utc": "2026-11-01T05:43:11.244542+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -1177,23 +1177,23 @@
       "status": "PUBLISHED CONDITIONAL #57/#58/#72/#75/#80/#87 and trusted production storage/clock; no final combined-host qualification",
       "qualification_sha256": "4f671db2a8b9b556d45ab8718e282ad01248e893c4e5e6233bc8f3904a765d2c",
       "final_intake_sha256": "8da1a637be2368d8f3c7d0c9ef71da9cd566fb4912daca0ec5c3781f5762d3ef",
-      "publication_review": "Author verified remote annotated tags/feature branch/unchanged main and exact UTF-8 PR report; both final four-gate receipts pass211textfiles. Coordinating root final release audit pending.",
+      "publication_review": "Coordinating root independently verified latest remote annotated tag/peeled/head/unchanged main/full UTF-8 PR report;12current raw/tested/release sources/20raw+gzip artifacts, prior12/19 and rejected12/25, both211-file final receipts. Eight library/verifier bytes match private pinned replay. Combined0f07bb4f/report72e373c3 passes353focused+314shared regressions each/0skip, focused0attempts, four deliberate regression refusals. Sole#62row53/4historicalREADY/49conditional/0newfinalhost exact readback. No final every-connector/operational/install qualification.",
       "pages": [
         {
           "path": "content/_components/csv/actions.md",
-          "sha256": "62857a71c69e45e23f528dab4193ad93722ec93e085853f10b69c7d9919c9f50"
+          "sha256": "28352d34ee62dc5be09be4febe3e3a3cba4a9fcaa3d68955c89af9f05e8b1047"
         },
         {
           "path": "content/_components/csv/deprecated-functions.md",
-          "sha256": "81ea8676d007d0a8bee1578bd159f7506a264dff2fce14452ad83947d03f2456"
+          "sha256": "2da30c37605792d968c5ddc180bc09b873653d95f6ea277dd5edfebbc5fc827c"
         },
         {
           "path": "content/_components/csv/index.md",
-          "sha256": "ac359d13bddd9182999a3ce3e6bdfc0c0d03f5c185a519c544cbdb8c4680ae0a"
+          "sha256": "b67739c246f7488086bf4e79507723465c294c098b90a5c1e2ee0802a006d612"
         },
         {
           "path": "content/_components/csv/technical-notes.md",
-          "sha256": "4053eeb4685fd77a295bd784577992351ddbc6c724019d86831f1f3642838b7b"
+          "sha256": "6325baa582c71c1cbca0bd45d71d93e60e544b69bd6aceb96b0aed9f33069152"
         }
       ]
     }
@@ -1965,6 +1965,13 @@
     "before_docs": "cec11bc4065ff935d229ae9f6ebfed9e79b2a2a9",
     "ready_count_unchanged": 4,
     "final_combined_qualification": "PENDING",
-    "release_report_encoding": "Forward1.0.1;1.0.0tagretained"
+    "release_report_encoding": "Forward1.0.1;1.0.0tagretained",
+    "combined_offline_checkpoint": {
+      "runtime": "0f07bb4ff2e038cb460e03a1b0c588551271798b",
+      "report": "72e373c314df2f61f3da9b999210b1ee8c141975",
+      "focusedPerRuntime": 353,
+      "regressionPerRuntime": 314,
+      "qualification": "Bounded offline combined replay with pinned source input; final every-connector one-SHA qualification remains open"
+    }
   }
 }
