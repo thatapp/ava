@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-01T02:57:15.163713+00:00",
+  "checked_at_utc": "2026-11-01T03:57:31.255132+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -1107,7 +1107,7 @@
       "commit": "fc7788a42313d5776e5fc71d689cced7c95ab2bc",
       "status": "PUBLISHED CONDITIONAL #57/#72/#80/#83/#86; no final combined-host qualification",
       "qualification_sha256": "2abe321aab2ff1b9819bd100d7cee5dda1518b4e3e6070b9eedfb7682f301619",
-      "publication_review": "Exact branch/tag/main and full PR report readback verified; coordinating root independent release audit pending.",
+      "publication_review": "Coordinating root independently verified release/tag/main/full report, ten source blobs,29 raw artifacts and both75-file final gates; sole #62 row confirmed. No readiness upgrade.",
       "pages": [
         {
           "path": "content/_components/kafka/index.md",
@@ -1116,6 +1116,25 @@
         {
           "path": "content/_components/kafka/technical-notes.md",
           "sha256": "695e0d6fb47e2b9225685176736b5b0a475e7acd008a5fd8de633875a01f6f3c"
+        }
+      ]
+    },
+    {
+      "slug": "amqp",
+      "repository": "https://github.com/thatapp/connector-amqp",
+      "tag": "1.0.0",
+      "commit": "a0ca09dc7ecb615d90205171e7108709da8909f1",
+      "status": "PUBLISHED CONDITIONAL #57/#58/#72/#80/#83/#86; no final combined-host qualification",
+      "qualification_sha256": "61023da2d3ce748eeabf3f1d71f257b36c67a5372844a0d32077642f11de3802",
+      "publication_review": "Exact branch/tag/main and full PR report readback verified; coordinating root independent release audit pending.",
+      "pages": [
+        {
+          "path": "content/_components/amqp/index.md",
+          "sha256": "f01ef6eb65a892b7d4e7dacc58bc74518d54bb219f2ff08b42b068afde46ee5a"
+        },
+        {
+          "path": "content/_components/amqp/technical-notes.md",
+          "sha256": "e8664b7dca940f44310ed349e85127534a207bd123bad560dcf66d002e194b1c"
         }
       ]
     }
@@ -1476,6 +1495,14 @@
       "commit": "fc7788a42313d5776e5fc71d689cced7c95ab2bc",
       "tag_object": "7b7479850c1e7800b6f7ba7237a0a2cf5b80fa88",
       "main": "c84db18e216325fb3701d3ff719ceb6c57e0772d",
+      "status": "PASS"
+    },
+    {
+      "slug": "amqp",
+      "tag": "1.0.0",
+      "commit": "a0ca09dc7ecb615d90205171e7108709da8909f1",
+      "tag_object": "54fe191bde418bc28d1150a8268340c411095cab",
+      "main": "8b885def55bfe2e70e84cb589bb248e699fb78f3",
       "status": "PASS"
     }
   ],
