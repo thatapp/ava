@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-01T01:27:33.858510+00:00",
+  "checked_at_utc": "2026-11-01T01:42:07.355981+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -1047,7 +1047,7 @@
       "tag": "1.0.0",
       "commit": "4b1b77c39d6cf00c12311b8b50f6e48d92cf23ca",
       "status": "PUBLISHED CONDITIONAL #57/#72/#80; no READY or final combined-host qualification",
-      "publication_review": "Author verified annotated tag, peel, release branch, unchanged main and full Draft PR1 report. Root independent readback pending.",
+      "publication_review": "Author and root independently verified annotated tag, peel, release branch, unchanged main, full Draft PR1 report, all11 source blobs/25rawartifacts and both external93-file final package receipts. No readiness or host-condition clearance.",
       "intake_url": "https://github.com/thatapp/connector-mailchimp/blob/4b1b77c39d6cf00c12311b8b50f6e48d92cf23ca/evidence/qualified/qualification.json",
       "intake_sha256": "b38663c7226d8b7e5e065e08c3c9bb5c79cb00db753e9bcfbcde9244d1a90904",
       "pages": [
@@ -1060,10 +1060,30 @@
           "sha256": "5e40bb9f9cbfa8cdf6b7374f8e82f4237f5193a3e05f935433945ec75133a7ae"
         }
       ]
+    },
+    {
+      "slug": "x-twitter-component",
+      "repository": "https://github.com/thatapp/connector-x-twitter-component",
+      "tag": "1.0.0",
+      "commit": "e3ece748e6bc1159f622eb8606d02b4166a2e53a",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80; no READY or final combined-host qualification",
+      "publication_review": "Author verified annotated tag, peel, release branch, unchanged main and full Draft PR1 report. Root independent readback pending. Successful push followed by readback transport failure was reconciled without repeating push or overwriting tag.",
+      "intake_url": "https://github.com/thatapp/connector-x-twitter-component/blob/e3ece748e6bc1159f622eb8606d02b4166a2e53a/evidence/qualified/qualification.json",
+      "intake_sha256": "cd6088d124d817ebbf5680c58b3a66b597d9f5a75028b31f99b595a4a9800e50",
+      "pages": [
+        {
+          "path": "content/_components/x-twitter-component/index.md",
+          "sha256": "1421f7302e84695564eae7459a7a6053c79b844e77794a404eadf2b2118bb2f7"
+        },
+        {
+          "path": "content/_components/x-twitter-component/technical-notes.md",
+          "sha256": "3cc5c72b9f4bb98bfaabdea1d53d7745f5f8f8110130aaf71a6860dae9d11530"
+        }
+      ]
     }
   ],
   "checks": [
-    "47 current published release references:46 prior plus author-verified Mailchimp1.0.0. Four historical READY unchanged;43 conditional and0 new final combined-host-qualified.",
+    "48 current published release references:47 prior plus author-verified X/Twitter1.0.0. Four historical READY unchanged;44 conditional and0 new final combined-host-qualified.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
@@ -1757,5 +1777,14 @@
     "ready_count_unchanged": 4,
     "final_combined_qualification": "PENDING",
     "contract_correction": "DELETE member archives; prior permanent-deletion prose was incorrect. Documented endpoint preserved."
+  },
+  "x_twitter_release_scope": {
+    "before_docs": "4f638ae825baeb6ad6f084315dd6975ddea56691",
+    "prior_hashes": {
+      "content/_components/x-twitter-component/index.md": "739a4dec0c23d1e608fa5079a3d81a8a0103d74e5113216e20c625988773e8a1",
+      "content/_components/x-twitter-component/technical-notes.md": "f2b70ba8de4a9e32b7feffc524774557165588397b389a43e0d71af875cc708f"
+    },
+    "ready_count_unchanged": 4,
+    "final_combined_qualification": "PENDING"
   }
 }
