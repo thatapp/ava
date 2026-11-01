@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-01T01:06:58.731235+00:00",
+  "checked_at_utc": "2026-11-01T01:27:33.858510+00:00",
   "purpose": "Post-publication connector contract corrections for issue63",
   "releases": [
     {
@@ -1040,10 +1040,30 @@
           "sha256": "5a0cb9c9b273c70a726930ce01c0f40b8749c4fce832352f03fb18edabf16c0c"
         }
       ]
+    },
+    {
+      "slug": "mailchimp",
+      "repository": "https://github.com/thatapp/connector-mailchimp",
+      "tag": "1.0.0",
+      "commit": "4b1b77c39d6cf00c12311b8b50f6e48d92cf23ca",
+      "status": "PUBLISHED CONDITIONAL #57/#72/#80; no READY or final combined-host qualification",
+      "publication_review": "Author verified annotated tag, peel, release branch, unchanged main and full Draft PR1 report. Root independent readback pending.",
+      "intake_url": "https://github.com/thatapp/connector-mailchimp/blob/4b1b77c39d6cf00c12311b8b50f6e48d92cf23ca/evidence/qualified/qualification.json",
+      "intake_sha256": "b38663c7226d8b7e5e065e08c3c9bb5c79cb00db753e9bcfbcde9244d1a90904",
+      "pages": [
+        {
+          "path": "content/_components/mailchimp/index.md",
+          "sha256": "4229101897461beabd63aa82b2dc5d3d7de22eccbb649577cd7bda3887f50cc2"
+        },
+        {
+          "path": "content/_components/mailchimp/technical-notes.md",
+          "sha256": "5e40bb9f9cbfa8cdf6b7374f8e82f4237f5193a3e05f935433945ec75133a7ae"
+        }
+      ]
     }
   ],
   "checks": [
-    "46 current published release references:45 prior plus independently author/root-verified Pub/Sub1.0.0. Four historical READY unchanged;42 conditional and0 new final combined-host-qualified.",
+    "47 current published release references:46 prior plus author-verified Mailchimp1.0.0. Four historical READY unchanged;43 conditional and0 new final combined-host-qualified.",
     "Each linked source-pinned intake receipt parses and passes four gates; sibling GitLab evidence paths are used where packages have no root INTAKE.json.",
     "All release page hashes are verified; layout, redirects and historical bodies are checked by components-checks.json.",
     "Every release block links immutable source, scope and intake evidence.",
@@ -1727,5 +1747,15 @@
     },
     "ready_count_unchanged": 4,
     "final_combined_qualification": "PENDING"
+  },
+  "mailchimp_release_scope": {
+    "before_docs": "80b70a2df7126685bf59514a33756a0004a8b39c",
+    "prior_hashes": {
+      "content/_components/mailchimp/index.md": "c84abdfc026ea8f8cc43b8cda3fe6d43e49c2d286a244b812b155a2877194a3b",
+      "content/_components/mailchimp/technical-notes.md": "c8f093db79950e7daa399f753ca57046dedb701c5ed71078c03b6fa8becfe8f2"
+    },
+    "ready_count_unchanged": 4,
+    "final_combined_qualification": "PENDING",
+    "contract_correction": "DELETE member archives; prior permanent-deletion prose was incorrect. Documented endpoint preserved."
   }
 }
