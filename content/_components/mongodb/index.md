@@ -13,9 +13,9 @@ ComponentVersion: 2.0.0
 ## Table of Contents
 * [General Information](#general-information)
   * [Description](#description)
-  * [Credentials](#credentials)
-  * [Environment Variables](#environment-variables)
-  * [ObjectId Handling Across Actions](#objectid-handling-across-actions)
+* [Credentials](#credentials)
+* [Environment Variables](#environment-variables)
+* [ObjectId Handling Across Actions](#objectid-handling-across-actions)
 * [Actions](#actions)
   * [Aggregate](actions#aggregate)
   * [Bulk Write](actions#bulk-write)
@@ -35,7 +35,7 @@ Integrate workflows with MongoDB to store, retrieve, update, and manage data at 
 ### Description
 The MongoDB component connects your integration flows directly to MongoDB databases. It supports a comprehensive range of database operations including advanced aggregations, bulk operations, and standard CRUD tasks using the official Node.js MongoDB driver.
 
-### Credentials
+## Credentials
 To establish a connection, configure the following fields:
 
 1. **URL** (required): The standard MongoDB connection string.
@@ -46,14 +46,14 @@ To establish a connection, configure the following fields:
 
 > **Please Note:** Component v2.0+ uses an automatic unified driver. Manual `mongoVersion` selection is no longer required.
 
-### Environment Variables
+## Environment Variables
 
 The component has no required variables, however in some cases it would be beneficiary
 to use them. Here are the available variables:
 1. **`MONGO_CONNECTION_TIMEOUT`** (optional): Maximum time in milliseconds to wait for database connection establishment. Default: `10000`.
 2. **`AVA_REQUIRED_RAM_MB`** (optional): Container memory limit allocated for component execution. Recommended to increase when executing large aggregations or batch lookups.
 
-### ObjectId Handling Across Actions
+## ObjectId Handling Across Actions
 MongoDB uses 12-byte / 24-character hexadecimal identifiers for document `_id` fields. The component provides unified, consistent support for ObjectIds across all actions:
 
 1. **Direct ID Actions** (*Lookup By ID*, *Delete By ID*, *Upsert By ID*):

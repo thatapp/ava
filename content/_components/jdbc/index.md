@@ -18,7 +18,7 @@ ComponentVersion: 2.5.12
 * [Credentials](#credentials)
 * [Triggers](#triggers)
 * [Actions](#actions)
-* [Known Limitations](#known-limitations)
+* [Current limitations](#current-limitations)
 
 ## General Information
 ### Description

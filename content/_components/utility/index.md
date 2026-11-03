@@ -1,10 +1,10 @@
 ---
 layout: component
-title: Utility сomponent
+title: Utility component
 section: Utility components
 description: A component that is designed for utility operations.
 icon: utility.png
-icontext: Utility сomponent
+icontext: Utility component
 category: utility
 updatedDate: 2025-12-03
 ComponentVersion: 1.8.1

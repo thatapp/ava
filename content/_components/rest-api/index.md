@@ -152,7 +152,7 @@ If `Download as Attachment` is unchecked:
 ## Triggers
 
 ### HTTP Request (Axios Library)
-Refer to the actions section [HTTP Request (Axios Library)](#http-request-axios-lib).
+Refer to the actions section [HTTP Request (Axios Library)](#http-request-axios-library).
 
 ## Examples of Usage
 
