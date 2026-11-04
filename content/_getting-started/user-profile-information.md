@@ -2,7 +2,7 @@
 title: User Profile Information
 layout: article
 section: Introduction
-description: This document provides a quick tour of User Profile part of the UI showing how to edit your profile, change your password, enable the 2FA, copy or regenerate the API Key.
+description: This document provides a quick tour of User Profile part of the UI showing how to edit your profile, change your password, copy or regenerate the API Key.
 order: 2
 category: intro
 ---
@@ -14,7 +14,7 @@ the profile name **(2)**. Here you can do the following actions:
 
 *   [Edit your profile](#edit-your-profile) **(3)**
 *   [Change your password](#change-your-password) **(4)**
-*   [Enable or disable Two-factor (2FA) authentication](#two-factor-authentication) **(5)**
+*   [Two-factor authentication status](#two-factor-authentication) **(5)**
 *   [Copy or regenerate your personal API Key](#manage-your-api-key) **(6)**
 *   [Manage your sessions](#manage-your-sessions) **(7)**
 *   [Delete your account](#delete-your-account) **(8)**
@@ -45,34 +45,7 @@ Please follow the instructions to generate secure password.
 
 ## Two-factor authentication
 
-We use Google 2FA to provide additional layer of security. Here you can enable the
-two-factor authentication. You would need Google Authenticator to read the generated
-QR-code:
-
-{% include img.html max-width="80%" url="/assets/img/getting-started/tour/2fa-1-qr-code.png" title="Generated QR code" %}
-
-Open your Google Authenticator and scan this QR-code to get the code:
-
-{% include img.html max-width="80%" url="/assets/img/getting-started/tour/2fa-2-code-entered.png" title="Code entered" %}
-
-After this the 2FA will be enabled, but before navigating away you better copy,
-download or print the recovery codes:
-
-{% include img.html max-width="80%" url="/assets/img/getting-started/tour/2fa-3-recovery-codes.png" title="Recovery Codes" %}
-
-When everything is successfully enabled you will get the following screen:
-
-{% include img.html max-width="80%" url="/assets/img/getting-started/tour/2fa-4-generated.png" title="2FA enabled" %}
-
-Here you can either close this window and you will get a prompt to use your
-Google Authenticator along with your username/password pair to enter the platform UI.
-
-You can also disable the 2FA from here by pressing Disable button and when system
-will confirm with the following message:
-
-{% include img.html max-width="80%" url="/assets/img/getting-started/tour/2fa-5-disabled.png" title="2FA siabled" %}
-
-To enable the 2FA again you must repeat all previous steps.
+Two-factor authentication is currently unavailable for ThatApp sign-in.
 
 ## Manage your API Key
 
