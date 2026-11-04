@@ -1,0 +1,2061 @@
+{
+  "result": "PASS",
+  "docs_base": "2b7b2051c922dd4083281f67bc28754ff51844ee",
+  "backend_evidence_revision": "8c5cc17c1dd73e62fe2544e0b247d4a2ff45b80d",
+  "research_coverage_records": 684,
+  "scoped_records": 269,
+  "scoped_records_accounted_for": 269,
+  "source_screen_no_scoped_match_records": 415,
+  "unchanged_no_scoped_match_records": 411,
+  "additional_related_java_pages": 4,
+  "implementation_coverage_records": 273,
+  "reviewed_contextual_false_positives": 2,
+  "edited_docs_and_reference_files": 272,
+  "initial_commit_changed_files_including_area_receipts": 278,
+  "supported_better_sentences": 38,
+  "withheld_better_ordinal": 28,
+  "withheld_reason": "Historical audit names podio-new-component@a966bc3; a read-only connector fetch of that component.json failed. Do not publish availability or idempotency claims from this evidence.",
+  "areas": [
+    {
+      "area": "platform",
+      "number": 12,
+      "url": "https://github.com/thatapp/ava/pull/12",
+      "branch": "chatgpt/docs-platform-truth",
+      "commit": "60d383bc39ae9270f1e124602c7da02451bc3b12",
+      "coverage_records": 51,
+      "changed_files": 54,
+      "supported_better_ordinals": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "commit_identity_verified": true,
+      "checks": [
+        "Coverage record and physical CSV-line references resolve exactly",
+        "All supported Better sentences for this area occur in their pages",
+        "Front matter parses; layout and redirects preserved",
+        "No newly unclosed Markdown fences or control characters",
+        "Changed JSON parses",
+        "Whitespace diff check",
+        "118 legacy OpenAPI paths retained and all operations marked deprecated/UNVERIFIED",
+        "Four new standalone JavaScript samples pass node --check"
+      ],
+      "limits": [
+        "Jekyll build UNVERIFIED: Ruby/Bundler and Docker are unavailable; WSL has no installed distribution",
+        "No deployment or live runtime/install/vendor checks; #64 must rerun relevant ledger lines"
+      ]
+    },
+    {
+      "area": "components",
+      "number": 13,
+      "url": "https://github.com/thatapp/ava/pull/13",
+      "branch": "chatgpt/docs-component-truth",
+      "commit": "46eee012ea5bd7fe81a6ae88705ffd8d3aab0c6d",
+      "coverage_records": 142,
+      "changed_files": 142,
+      "supported_better_ordinals": [
+        26,
+        27,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "commit_identity_verified": true,
+      "checks": [
+        "Coverage record and physical CSV-line references resolve exactly",
+        "All supported Better sentences for this area occur in their pages",
+        "Front matter parses; layout and redirects preserved",
+        "No newly unclosed Markdown fences or control characters",
+        "Changed JSON parses",
+        "Whitespace diff check",
+        "Historical component release bodies retained verbatim",
+        "Withheld Better row28 and its reason retained as UNVERIFIED"
+      ],
+      "limits": [
+        "Jekyll build UNVERIFIED: Ruby/Bundler and Docker are unavailable; WSL has no installed distribution",
+        "No deployment or live runtime/install/vendor checks; #64 must rerun relevant ledger lines"
+      ]
+    },
+    {
+      "area": "history",
+      "number": 14,
+      "url": "https://github.com/thatapp/ava/pull/14",
+      "branch": "chatgpt/docs-history-truth",
+      "commit": "4d7d6d96c50acd8045c0879785ff8a62431f5add",
+      "coverage_records": 80,
+      "changed_files": 82,
+      "supported_better_ordinals": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "commit_identity_verified": true,
+      "checks": [
+        "Coverage record and physical CSV-line references resolve exactly",
+        "All supported Better sentences for this area occur in their pages",
+        "Front matter parses; layout and redirects preserved",
+        "No newly unclosed Markdown fences or control characters",
+        "Changed JSON parses",
+        "Whitespace diff check",
+        "Every historical release body retained verbatim"
+      ],
+      "limits": [
+        "Jekyll build UNVERIFIED: Ruby/Bundler and Docker are unavailable; WSL has no installed distribution",
+        "No deployment or live runtime/install/vendor checks; #64 must rerun relevant ledger lines"
+      ]
+    }
+  ],
+  "page_to_area": {
+    "README.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 1,
+      "coverage_csv_line": 2,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "api-reference/swagger.json": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 87,
+      "coverage_csv_line": 88,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/acces_token-execution.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 534,
+      "coverage_csv_line": 535,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/actions-triggers-comp-json.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 535,
+      "coverage_csv_line": 536,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/approach-to-send-requests-to-oauth2-apis.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 537,
+      "coverage_csv_line": 538,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/building-java-component.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 539,
+      "coverage_csv_line": 540,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/building-nodejs-component.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 540,
+      "coverage_csv_line": 541,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/component-build-configuration.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 541,
+      "coverage_csv_line": 542,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/component-descriptor-ordering-fields.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 542,
+      "coverage_csv_line": 543,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/component-json-credentials.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 543,
+      "coverage_csv_line": 544,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/component-json-technical-reference.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 547,
+      "coverage_csv_line": 548,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/defining-env-vars.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 548,
+      "coverage_csv_line": 549,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/deploying-component.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 549,
+      "coverage_csv_line": 550,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/how-the-oauth2-process-works.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 552,
+      "coverage_csv_line": 553,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/package-json-and-dependencies.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 557,
+      "coverage_csv_line": 558,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/realtime-flows-and-component-re-deployment.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 558,
+      "coverage_csv_line": 559,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/sdk.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 560,
+      "coverage_csv_line": 561,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/snapshot-overview.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 561,
+      "coverage_csv_line": 562,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/ssh-keys.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 562,
+      "coverage_csv_line": 563,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/ssh-session-pushing-components.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 563,
+      "coverage_csv_line": 564,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/teams-and-repos.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 564,
+      "coverage_csv_line": 565,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_developers/view-classes.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 569,
+      "coverage_csv_line": 570,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_getting-started/choosing-a-trigger.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 571,
+      "coverage_csv_line": 572,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_getting-started/integration-component.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 581,
+      "coverage_csv_line": 582,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_getting-started/platform-tour.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 586,
+      "coverage_csv_line": 587,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/content-based-router.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 600,
+      "coverage_csv_line": 601,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/credential.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 603,
+      "coverage_csv_line": 604,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/custom-error-handler.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 604,
+      "coverage_csv_line": 605,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/data-sample-overview.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 605,
+      "coverage_csv_line": 606,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/executions.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 608,
+      "coverage_csv_line": 609,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/flow-control.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 610,
+      "coverage_csv_line": 611,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/how-to-cause-or-emit-a-rebound.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 616,
+      "coverage_csv_line": 617,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/managing-flows.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 620,
+      "coverage_csv_line": 621,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/managing-workspaces.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 623,
+      "coverage_csv_line": 624,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/passthrough-feature.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 626,
+      "coverage_csv_line": 627,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/platform-behavior.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 627,
+      "coverage_csv_line": 628,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/secrets.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 634,
+      "coverage_csv_line": 635,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/understanding-sample-errors.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 636,
+      "coverage_csv_line": 637,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/using-snapshots.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 638,
+      "coverage_csv_line": 639,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_guides/vpn-agent.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 639,
+      "coverage_csv_line": 640,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_references/emitdata.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 640,
+      "coverage_csv_line": 641,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_references/emitend.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 641,
+      "coverage_csv_line": 642,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_references/emiterror.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 642,
+      "coverage_csv_line": 643,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_references/java-build-process.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 644,
+      "coverage_csv_line": 645,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_references/java-components-behind-a-proxy.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 645,
+      "coverage_csv_line": 646,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_references/java-version.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 646,
+      "coverage_csv_line": 647,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_references/list-of-events-emited.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 647,
+      "coverage_csv_line": 648,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_references/sailor-compatibility-matrix.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 648,
+      "coverage_csv_line": 649,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_references/sailor-hooks.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 649,
+      "coverage_csv_line": 650,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_references/sailor-logger.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 650,
+      "coverage_csv_line": 651,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "debrand-inventory.md": {
+      "area": "platform",
+      "action": "EDITED",
+      "coverage_record": 684,
+      "coverage_csv_line": 685,
+      "pr": "https://github.com/thatapp/ava/pull/12"
+    },
+    "content/_components/afas/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 92,
+      "coverage_csv_line": 93,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/akeneo/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 98,
+      "coverage_csv_line": 99,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/allmysms/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 100,
+      "coverage_csv_line": 101,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/amazon-mws/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 102,
+      "coverage_csv_line": 103,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/amqp/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 106,
+      "coverage_csv_line": 107,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/appdirect/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 109,
+      "coverage_csv_line": 110,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/aws-lambda/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 116,
+      "coverage_csv_line": 117,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/aws-s3/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 117,
+      "coverage_csv_line": 118,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/aws-s3/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 118,
+      "coverage_csv_line": 119,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/aws-sns/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 120,
+      "coverage_csv_line": 121,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/aws-sqs/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 122,
+      "coverage_csv_line": 123,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/batch/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 126,
+      "coverage_csv_line": 127,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/bazaarvoice/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 130,
+      "coverage_csv_line": 131,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/channeladvisor/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 136,
+      "coverage_csv_line": 137,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/chatgpt/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 140,
+      "coverage_csv_line": 141,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/code-with-credentials/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 148,
+      "coverage_csv_line": 149,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/code/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 149,
+      "coverage_csv_line": 150,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/code/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 150,
+      "coverage_csv_line": 151,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/commercetools/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 152,
+      "coverage_csv_line": 153,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/configuration/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 154,
+      "coverage_csv_line": 155,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/creatio/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 157,
+      "coverage_csv_line": 158,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/csv/actions.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 158,
+      "coverage_csv_line": 159,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/csv/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 160,
+      "coverage_csv_line": 161,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/csv/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 161,
+      "coverage_csv_line": 162,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/delta-detection/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 165,
+      "coverage_csv_line": 166,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/docusign/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 168,
+      "coverage_csv_line": 169,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/docuware/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 170,
+      "coverage_csv_line": 171,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/dropbox/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 171,
+      "coverage_csv_line": 172,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/dropbox/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 172,
+      "coverage_csv_line": 173,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/dun-and-bradstreet/actions.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 173,
+      "coverage_csv_line": 174,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/dun-and-bradstreet/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 174,
+      "coverage_csv_line": 175,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/dun-and-bradstreet/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 175,
+      "coverage_csv_line": 176,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/edifact-parser/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 180,
+      "coverage_csv_line": 181,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/email-component-with-credentials/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 182,
+      "coverage_csv_line": 183,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/email/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 184,
+      "coverage_csv_line": 185,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/exact-online/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 186,
+      "coverage_csv_line": 187,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/filter/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 189,
+      "coverage_csv_line": 190,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/filter/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 190,
+      "coverage_csv_line": 191,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/flow-linking/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 193,
+      "coverage_csv_line": 194,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/gemini-component/index.md": {
+      "area": "components",
+      "action": "REVIEWED_NO_CHANGE",
+      "coverage_record": 199,
+      "coverage_csv_line": 200,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/gemini-component/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 200,
+      "coverage_csv_line": 201,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/git-protocol/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 201,
+      "coverage_csv_line": 202,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/git-protocol/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 202,
+      "coverage_csv_line": 203,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/google-bigquery/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 208,
+      "coverage_csv_line": 209,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/google-pubsub/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 216,
+      "coverage_csv_line": 217,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/google-translate/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 220,
+      "coverage_csv_line": 221,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/graphql/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 223,
+      "coverage_csv_line": 224,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/gspreadsheet-v2/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 227,
+      "coverage_csv_line": 228,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/gspreadsheet/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 230,
+      "coverage_csv_line": 231,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/hjson/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 234,
+      "coverage_csv_line": 235,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/hubspot/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 239,
+      "coverage_csv_line": 240,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/i-love-pdf/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 241,
+      "coverage_csv_line": 242,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/id-linking/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 243,
+      "coverage_csv_line": 244,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/ipaas-core/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 247,
+      "coverage_csv_line": 248,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/jdbc/actions.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 251,
+      "coverage_csv_line": 252,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/jdbc/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 252,
+      "coverage_csv_line": 253,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/jdbc/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 253,
+      "coverage_csv_line": 254,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/jdbc/triggers.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 254,
+      "coverage_csv_line": 255,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/jira-cloud/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 258,
+      "coverage_csv_line": 259,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/jsonata/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 260,
+      "coverage_csv_line": 261,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/keenio/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 264,
+      "coverage_csv_line": 265,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/ldap/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 272,
+      "coverage_csv_line": 273,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/lightspeed-ecom/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 275,
+      "coverage_csv_line": 276,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/lightspeed-retail/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 279,
+      "coverage_csv_line": 280,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/lionbridge-translation/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 285,
+      "coverage_csv_line": 286,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/lookup-table/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 289,
+      "coverage_csv_line": 290,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/maester/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 292,
+      "coverage_csv_line": 293,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/magento1/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 296,
+      "coverage_csv_line": 297,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/magento2/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 299,
+      "coverage_csv_line": 300,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/mailchimp/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 302,
+      "coverage_csv_line": 303,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/mandrillapp/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 304,
+      "coverage_csv_line": 305,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/mapper/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 308,
+      "coverage_csv_line": 309,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/marketo/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 311,
+      "coverage_csv_line": 312,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/mercado/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 316,
+      "coverage_csv_line": 317,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/microsoft-dynamics-business-central/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 320,
+      "coverage_csv_line": 321,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/microsoft-dynamics-nav-odata/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 322,
+      "coverage_csv_line": 323,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/mongodb/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 332,
+      "coverage_csv_line": 333,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/ms-dynamics-for-finance-operations/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 336,
+      "coverage_csv_line": 337,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/msdynamics-crm-v2/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 339,
+      "coverage_csv_line": 340,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/msdynamics-crm/legacy-behavior.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 344,
+      "coverage_csv_line": 345,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/msdynamics-crm/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 345,
+      "coverage_csv_line": 346,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/mssql/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 348,
+      "coverage_csv_line": 349,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/netsuite-rest-api-client-credentials/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 350,
+      "coverage_csv_line": 351,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/netsuite/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 354,
+      "coverage_csv_line": 355,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/odata/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 359,
+      "coverage_csv_line": 360,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/onedrive/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 363,
+      "coverage_csv_line": 364,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/open-api/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 365,
+      "coverage_csv_line": 366,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/oracle-ebs/index.md": {
+      "area": "components",
+      "action": "REVIEWED_NO_CHANGE",
+      "coverage_record": 366,
+      "coverage_csv_line": 367,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/outlook/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 372,
+      "coverage_csv_line": 373,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/paypal/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 376,
+      "coverage_csv_line": 377,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/petstore-java/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 377,
+      "coverage_csv_line": 378,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/petstore-java/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 378,
+      "coverage_csv_line": 379,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/petstore-nodejs/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 380,
+      "coverage_csv_line": 381,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/podio/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 391,
+      "coverage_csv_line": 392,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/podio/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 392,
+      "coverage_csv_line": 393,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/postgresql/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 395,
+      "coverage_csv_line": 396,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/pub-sub/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 399,
+      "coverage_csv_line": 400,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/request-reply/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 405,
+      "coverage_csv_line": 406,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/request-reply/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 406,
+      "coverage_csv_line": 407,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/rest-api-client-credentials-auth-component/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 408,
+      "coverage_csv_line": 409,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/rest-api-token/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 412,
+      "coverage_csv_line": 413,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/rest-api/deprecated-functions.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 416,
+      "coverage_csv_line": 417,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/rest-api/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 420,
+      "coverage_csv_line": 421,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/router/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 422,
+      "coverage_csv_line": 423,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/router/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 425,
+      "coverage_csv_line": 426,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/s2-component/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 427,
+      "coverage_csv_line": 428,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/salesforce/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 434,
+      "coverage_csv_line": 435,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/sap-r3/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 442,
+      "coverage_csv_line": 443,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/sdl-translate/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 446,
+      "coverage_csv_line": 447,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/sftp/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 450,
+      "coverage_csv_line": 451,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/sftp/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 451,
+      "coverage_csv_line": 452,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/shopify-admin-v2/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 457,
+      "coverage_csv_line": 458,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/shopify/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 461,
+      "coverage_csv_line": 462,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/shopware-6/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 464,
+      "coverage_csv_line": 465,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/shopware/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 466,
+      "coverage_csv_line": 467,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/simple-trigger/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 468,
+      "coverage_csv_line": 469,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/simple-trigger/usage-example.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 469,
+      "coverage_csv_line": 470,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/slack/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 471,
+      "coverage_csv_line": 472,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/smarty-streets/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 473,
+      "coverage_csv_line": 474,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/snowflake/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 476,
+      "coverage_csv_line": 477,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/soap/actions.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 478,
+      "coverage_csv_line": 479,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/soap/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 479,
+      "coverage_csv_line": 480,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/soap/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 480,
+      "coverage_csv_line": 481,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/soap/triggers.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 481,
+      "coverage_csv_line": 482,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/splitter/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 484,
+      "coverage_csv_line": 485,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/square/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 487,
+      "coverage_csv_line": 488,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/stripe/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 489,
+      "coverage_csv_line": 490,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/sugarcrm/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 494,
+      "coverage_csv_line": 495,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/utility/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 502,
+      "coverage_csv_line": 503,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/utility/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 503,
+      "coverage_csv_line": 504,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/vtex/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 506,
+      "coverage_csv_line": 507,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/webhook/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 507,
+      "coverage_csv_line": 508,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/webhook/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 508,
+      "coverage_csv_line": 509,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/whatsapp/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 510,
+      "coverage_csv_line": 511,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/woocommerce/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 512,
+      "coverage_csv_line": 513,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/xero/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 518,
+      "coverage_csv_line": 519,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/xml/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 520,
+      "coverage_csv_line": 521,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/zendesk/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 525,
+      "coverage_csv_line": 526,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/zip/index.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 526,
+      "coverage_csv_line": 527,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/zip/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 527,
+      "coverage_csv_line": 528,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/zoho-crm/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 529,
+      "coverage_csv_line": 530,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "content/_components/zoho/technical-notes.md": {
+      "area": "components",
+      "action": "EDITED",
+      "coverage_record": 531,
+      "coverage_csv_line": 532,
+      "pr": "https://github.com/thatapp/ava/pull/13"
+    },
+    "_archive/releases/20/03.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 3,
+      "coverage_csv_line": 4,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/20/07.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 4,
+      "coverage_csv_line": 5,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/20/11.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 5,
+      "coverage_csv_line": 6,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/20/19.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 7,
+      "coverage_csv_line": 8,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/20/23.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 8,
+      "coverage_csv_line": 9,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/20/27.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 9,
+      "coverage_csv_line": 10,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/20/31.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 10,
+      "coverage_csv_line": 11,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/20/35.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 11,
+      "coverage_csv_line": 12,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/20/43.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 13,
+      "coverage_csv_line": 14,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/20/47.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 14,
+      "coverage_csv_line": 15,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/20/51.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 15,
+      "coverage_csv_line": 16,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/2019Q1.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 18,
+      "coverage_csv_line": 19,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/2019Q3.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 20,
+      "coverage_csv_line": 21,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/2019Q4.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 21,
+      "coverage_csv_line": 22,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/21/02.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 22,
+      "coverage_csv_line": 23,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/21/06.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 23,
+      "coverage_csv_line": 24,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/21/10.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 24,
+      "coverage_csv_line": 25,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/21/14.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 25,
+      "coverage_csv_line": 26,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/21/19.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 26,
+      "coverage_csv_line": 27,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/21/23.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 27,
+      "coverage_csv_line": 28,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/21/27.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 28,
+      "coverage_csv_line": 29,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/21/31.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 29,
+      "coverage_csv_line": 30,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/21/33.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 30,
+      "coverage_csv_line": 31,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/21/39.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 33,
+      "coverage_csv_line": 34,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/21/41.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 34,
+      "coverage_csv_line": 35,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/21/43.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 35,
+      "coverage_csv_line": 36,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/21/49.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 38,
+      "coverage_csv_line": 39,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/02.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 41,
+      "coverage_csv_line": 42,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/04.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 42,
+      "coverage_csv_line": 43,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/12.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 46,
+      "coverage_csv_line": 47,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/14.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 47,
+      "coverage_csv_line": 48,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/16.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 48,
+      "coverage_csv_line": 49,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/18.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 49,
+      "coverage_csv_line": 50,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/20.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 50,
+      "coverage_csv_line": 51,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/24.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 52,
+      "coverage_csv_line": 53,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/26.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 53,
+      "coverage_csv_line": 54,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/30.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 55,
+      "coverage_csv_line": 56,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/34.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 57,
+      "coverage_csv_line": 58,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/36.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 58,
+      "coverage_csv_line": 59,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/38.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 59,
+      "coverage_csv_line": 60,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/40.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 60,
+      "coverage_csv_line": 61,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/42.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 61,
+      "coverage_csv_line": 62,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/44.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 62,
+      "coverage_csv_line": 63,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/46.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 63,
+      "coverage_csv_line": 64,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/48.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 64,
+      "coverage_csv_line": 65,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/50.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 65,
+      "coverage_csv_line": 66,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/22/52.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 66,
+      "coverage_csv_line": 67,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/23/02.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 68,
+      "coverage_csv_line": 69,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/23/06.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 70,
+      "coverage_csv_line": 71,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/23/08.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 71,
+      "coverage_csv_line": 72,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/23/12.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 73,
+      "coverage_csv_line": 74,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/23/14.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 75,
+      "coverage_csv_line": 76,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/23/19.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 77,
+      "coverage_csv_line": 78,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/23/24.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 78,
+      "coverage_csv_line": 79,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/23/31.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 81,
+      "coverage_csv_line": 82,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "_archive/releases/23/44.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 83,
+      "coverage_csv_line": 84,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/24/13.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 654,
+      "coverage_csv_line": 655,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/24/17.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 655,
+      "coverage_csv_line": 656,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/24/23.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 656,
+      "coverage_csv_line": 657,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/24/27.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 657,
+      "coverage_csv_line": 658,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/24/36.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 658,
+      "coverage_csv_line": 659,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/24/40.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 659,
+      "coverage_csv_line": 660,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/24/45.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 660,
+      "coverage_csv_line": 661,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/24/50.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 661,
+      "coverage_csv_line": 662,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/25/06.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 663,
+      "coverage_csv_line": 664,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/25/10.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 664,
+      "coverage_csv_line": 665,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/25/14.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 665,
+      "coverage_csv_line": 666,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/25/20.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 666,
+      "coverage_csv_line": 667,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/25/23.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 667,
+      "coverage_csv_line": 668,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/25/36.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 668,
+      "coverage_csv_line": 669,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/25/42.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 669,
+      "coverage_csv_line": 670,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/25/45.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 671,
+      "coverage_csv_line": 672,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/25/49.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 672,
+      "coverage_csv_line": 673,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/26/03.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 674,
+      "coverage_csv_line": 675,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/26/10.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 675,
+      "coverage_csv_line": 676,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/26/15.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 676,
+      "coverage_csv_line": 677,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/26/19.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 677,
+      "coverage_csv_line": 678,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/26/23.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 678,
+      "coverage_csv_line": 679,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/26/27.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 679,
+      "coverage_csv_line": 680,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    },
+    "content/_releases/26/36.md": {
+      "area": "history",
+      "action": "EDITED",
+      "coverage_record": 681,
+      "coverage_csv_line": 682,
+      "pr": "https://github.com/thatapp/ava/pull/14"
+    }
+  },
+  "checks": [
+    "All 269 scoped research records accounted for",
+    "All 38 supported sentences found in published commit content",
+    "Withheld row28 sentence and reason preserved",
+    "Area commits change disjoint files",
+    "Both author and committer verified for every area commit",
+    "Bounded high-confidence credential-shape scan with positive detection control passed"
+  ],
+  "limits": [
+    "Source review is not live certification; backend evidence remains pinned",
+    "Jekyll build and deployed behavior UNVERIFIED; #64 reruns runtime ledger lines",
+    "No master/main changes, merges, deployment, server or vendor access"
+  ]
+}

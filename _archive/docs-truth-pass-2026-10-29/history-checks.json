@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "area": "history",
+  "coverage_records": 80,
+  "supported_better_ordinals": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "frontmatter_checked": 80,
+  "files_checked": 81,
+  "checks": [
+    "Coverage record and physical CSV-line references resolve exactly",
+    "All supported Better sentences for this area occur in their pages",
+    "Front matter parses; layout and redirects preserved",
+    "No newly unclosed Markdown fences or control characters",
+    "Changed JSON parses",
+    "Whitespace diff check",
+    "Every historical release body retained verbatim"
+  ],
+  "limits": [
+    "Jekyll build UNVERIFIED: Ruby/Bundler and Docker are unavailable; WSL has no installed distribution",
+    "No deployment or live runtime/install/vendor checks; #64 must rerun relevant ledger lines"
+  ]
+}
