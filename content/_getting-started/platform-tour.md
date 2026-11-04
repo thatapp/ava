@@ -7,6 +7,8 @@ order: 1
 category: intro
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 <img src="/assets/img/getting-started/tour/menu-all.png" style="width:200px; float:right; margin:10px 0px 20px 20px" alt="Menu" title="Menu">
 
 {{page.description}}
@@ -192,19 +194,7 @@ you can create, edit and delete the credentials for each integration component.
 
 ### Agents
 
-The Agents menu item links the [VPN Agent](/guides/vpn-agent) management page where
-you can create, edit and delete the VPN Agents. You can use this feature to establish
-a secure VPN tunnel between your local resource and the platform. This enables a secure
-data exchange between your local system and the active integration flow.
-
-<details close markdown="block"><summary><strong>Click to expand for more details:</strong></summary>
-
-1.  Use to [create the VPN Agents](/guides/vpn-agent.html#how-to-setup).
-2.  The list of VPN Agents configured for your workspace.
-
-![Agents](/assets/img/getting-started/tour/agents.png "Agents")
-
-</details>
+The platform VPN Agent service is **not offered**. The former create/edit/configuration controls are not a current setup path. See [VPN Agent status](/guides/vpn-agent.html).
 
 ### Topics
 

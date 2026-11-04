@@ -9,6 +9,8 @@ redirect_from:
   - /getting-started/passthrough-feature.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 This document introduces the [passthrough feature](#what-is-passthrough),
 explains [why would you use it](#passthrough-usage), and gives a
 [real-life example](#real-life-example) on how to use it.
@@ -144,8 +146,7 @@ data from previous steps.
 > **Please note**: The passthrough messages will start accumulating again after the particular
 > step where passthrough was disabled.
 
-For this to work the Node.js components must have sailor version `2.6.0+`, and Java
-component to have sailor version `3.0.0+`.
+The former Sailor version gates do not define the current host contract. Java hosting is **not offered**; current passthrough controls and deployment remain **UNVERIFIED**.
 
 You can disable passthrough during the flow creation/editing via the UI:
 

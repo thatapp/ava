@@ -7,6 +7,8 @@ order: 0
 category: integration-patterns
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 The **Content-Based Router** (CBR) is *a message processing pattern* described in
 the [Enterprise Integration Patterns](http://www.enterpriseintegrationpatterns.com/patterns/messaging/ContentBasedRouter.html)
 book (G. Hohpe and B. Woolf, 2003). We can use this pattern to send each message to
@@ -23,6 +25,10 @@ This following diagram illustrates this example.
 In this article we will show how to build this pattern on the {{site.data.tenant.name}} platform.
 
 ## Implementing the Content-Based Router pattern
+
+Each branch with a truthy condition receives the message; when no condition matches, configured default branches receive it, and condition errors are recorded.
+
+The example below illustrates routing; designer validation and current UI behavior remain unverified.
 
 To implement a Content-Based Router integration pattern let us build the above
 presented scenario. Imagine you are selling sport shoes on Amazon and the lady's

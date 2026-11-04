@@ -7,6 +7,8 @@ order: 0
 category: platform-features
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 An integration component is a small application specialized on
 retrieving/storing objects from/to a service such as Salesforce, Quickbooks,
 SAP, etc. In most cases a component connects to the service's API
@@ -94,11 +96,7 @@ being passed to `Petstore` component. Mode details on Mapper can be found
 
 ## Implementing own integration components
 
-The {{site.data.tenant.name}} platform provides a set of built-in components
-to be used right away. Furthermore the platform is open for contributions
-of custom components. Please read how to build integration components using
-[Node.js](/guides/building-nodejs-component) or
-[Java programming](/guides/building-java-component) languages.
+Custom JavaScript components require reviewed source and an approved, configured build. See [Node.js authoring](/developers/building-nodejs-component.html) and [component intake](/developers/deploying-component.html). Java hosting is **not offered**.
 
 ## Managing components with API calls
 
@@ -111,4 +109,4 @@ You can create component repositories, update and delete components, get all inf
 - [Petstore]({{site.data.tenant.petStoreDocs}})
 - [Mapping data](/guides/mapping-data)
 - [Building a component in Node.js](/guides/building-nodejs-component)
-- [Building a component in Java](/guides/building-java-component)
+- [Java hosting status](/developers/building-java-component.html)

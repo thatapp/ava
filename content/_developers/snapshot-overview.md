@@ -8,6 +8,8 @@ redirect_from:
   - /getting-started/snapshot-overview.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 {{page.description}}
 
 ## Component Snapshots
@@ -16,6 +18,10 @@ You may have heard of snapshots before, in terms of backup or other data-related
 topics. Basically, a snapshot is a saved state that you can revert to if needed.
 It can be an OS snapshot, an application snapshot, and in our case - a
 [Flow](/getting-started/integration-flow) step snapshot.
+
+The API can read, replace and reset a step snapshot using GET, PUT and DELETE on /flows/{flowId}/snapshots/{stepId}; replacement snapshots are validated.
+
+These paths are relative to the AVA iPaaS v2 API. Current persistence, UI controls and deployment have not been verified.
 
 Containers that house the steps often get started and stopped, for example, to
 conserve resources. When a container is stopped, the

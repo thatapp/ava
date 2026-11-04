@@ -9,6 +9,8 @@ redirect_from:
   - /getting-started/executions.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 This document provides basic information on [executions](#executions) and
 [executions page](#executions-page) and how to filter executions based on
 [flow names](#filtering-by-flow-name), [flow statuses](#filtering-by-status)
@@ -57,9 +59,7 @@ When you dismiss the notification above the new executions are not lost, you wil
 get the same notification with an updated number of new executions again when new
 executions happen.
 
-> **A Technical Note** - to benefit from this page, all your custom components
-> must use the latest Nodejs Sailor (above 2.5.4). Restart all the
-> real-time flows after updating your components.
+> Sailor version numbers do not determine current host logging support. See [host logging](/references/sailor-logger.html). Current execution-page behavior remains **UNVERIFIED**.
 
 ## Filtering by flow name
 

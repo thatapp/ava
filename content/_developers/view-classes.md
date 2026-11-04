@@ -8,6 +8,10 @@ redirect_from:
   - /references/view-classes.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
+> **Java hosting is not offered.** Any Java class names, verifier fields or JDBC examples retained below describe the former platform format and do not establish a supported Java build. Use the JavaScript descriptor for an approved current-host component.
+
 A view class specifies how to render an input field of any integration component
 on the {{site.data.tenant.name}} UI. The view class (`viewClass`) is a required
 parameter in the [Fields Object](/references/component-json-fields#fields-object)

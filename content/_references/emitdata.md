@@ -8,40 +8,14 @@ order: 3
 category: events
 ---
 
-> emit `data` event is used to return the results of the component execution.
-
-## Example 1
-
-Here an example how it can be used:
+## Emit a body envelope
 
 ```js
-function emitData() {
-    this.logger.info('About to say hello to ' + name + ' again');
-
-    var body = {
-      greeting: name + ' How are you today?',
-      originalGreeting: msg.body.greeting
-    };
-
-    var data = messages.newMessageWithBody(body);
-
-    self.emit('data', data);
-  }
+exports.process = async function process(msg) {
+  this.emit('data', { body: msg.body });
+};
 ```
 
-## Example 2
+This example does not require a renamed SDK package. Return or await asynchronous work; `emit('end')` does not control completion.
 
-Here is anouther example of usage:
-
-```js
-function emitData(result) {
-        this.logger.info("Emitting data");
-        var body = result.body;
-
-        this.logger.info(_.pick(body, ['sku', 'quantityOnStock']));
-
-        var msg = messages.newMessageWithBody(body);
-
-        self.emit('data', msg);
- }
- ```
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).

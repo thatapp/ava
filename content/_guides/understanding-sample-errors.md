@@ -7,6 +7,8 @@ order: 6
 category: troubleshooting
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Introduction
 
 In this document you can find the most common errors in samples and how to solve them. Understanding how you can fix these errors is extremely important for building an integration flow, since without the correct samples you can't save a step to move on to the next step.
@@ -19,7 +21,9 @@ Here you can see how verification helps you to detect errors related to credenti
 
 ![Verification failed](/assets/img/integrator-guide/sample-errors/verification-failed.png)
 
-As you can see verification has failed. This happened due to the wrong **"Seller ID"**, however, you can only see information about the specific reason why the platform cannot verify credentials in the [logs](/getting-started/logs-page):
+The verification API returns a failure reason with its result, including timeout, blocked-address and redirect failures.
+
+The screenshots are historical examples. The location and presentation of the reason in the current UI have not been verified.
 
 ![Invalid Seller ID](/assets/img/integrator-guide/sample-errors/invalid-seller-id.png)
 
@@ -35,7 +39,7 @@ In our case, the method of posting to a given URL requires authorization headers
 
 ![Wrong header](/assets/img/integrator-guide/sample-errors/wrong-header.png)
 
-> Please note that not all errors can be fixed directly, for example, your credentials may be outdated. It also happens that third-party server can only accept connection from white-listed IP addresses. These errors cannot be seen in the [logs](/getting-started/logs-page). For more information see [White listing](#white-listing).
+> Provider restrictions, expired credentials and address rules may require changes outside the flow. Inspect the verification result; do not infer that every failure is displayed in the logs.
 
 ## Getaway Timeout error
 
