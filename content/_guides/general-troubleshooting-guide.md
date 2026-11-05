@@ -111,8 +111,6 @@ Flow-failure email is unavailable in the beta.
 
 5. As a consequence, your user email can be placed on the platform's email API service rejection denylist due to a soft-bounce or hard-bounce. If none of the previous solutions helped you, contact [support](mailto:{{site.data.tenant.supportEmail}}).
 
-> **Please Note:** Active platform users should automatically receive newsletters about the status of platform services and incident reports. However, if you are not receiving it or if you have other colleagues whom you would like to add, please [contact us](/admin/reporting-issue.html#how-to-contact-us).
-
 ## Related links
 
 - [Mapping data](mapping-data)
