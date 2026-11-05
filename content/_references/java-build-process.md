@@ -1,5 +1,5 @@
 ---
-title: Java Build proces
+title: Java Build process
 description: This article describes what build tools are supported and/or expected, maven, ant or gradle.
 layout: article
 section: Working with Java
