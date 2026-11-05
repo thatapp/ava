@@ -74,7 +74,7 @@ To start the flow, you can click the *Resume* button or contact [support](mailto
 
 ## Stuck messages and slow processing
 
-Sometimes you may find messages in the queues that seem to have stopped processing. In order to refresh the [dashboard](/assets/img/integrator-guide/troubleshoot/dashboard-errors.png) values, reload the page. 
+Sometimes you may find messages in the queues that seem to have stopped processing. In order to refresh the *Dashboard* values, reload the page. 
 
 First, you need to check if these messages are stuck or if they are being processed very slowly. If this turns out to be the slow processing, you can consider:
 
