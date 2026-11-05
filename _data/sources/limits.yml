@@ -25,10 +25,10 @@ outgoingsize:
 
 
 errorret:
-  field: 'Error Retention'
+  field: 'Error retention'
   description: >
-   <p>The limit on <b>Number of Errors</b> the platform will display in case your integration flow starts spamming the system. After this limit is reached errors will not be shown. More information in <a href="/guides/error-retry#error-retention-policy">Error Retention policy</a>.</p>
-  value: '<b>1000</b>'
+    <p>Errors do not have a fixed per-flow count limit.</p>
+  value: '<b>No count limit</b>'
 
 sampleret:
   field: 'Sample retrieval timeout'
@@ -43,28 +43,28 @@ limitworkspace:
   value: '<b>8h</b>'
 
 containerlogsttl:
-  field: 'Container logs TTL'
+  field: 'Container log retention'
   description: >
-    <p>The number of <b>days</b> for which container information is stored on the platform.</p>
-  value: '<b>14d</b>'
+    <p>A retention window for container logs has not been verified.</p>
+  value: '<b>Unspecified</b>'
 
 executionsttl:
-  field: 'Executions TTL'
+  field: 'Execution retention'
   description: >
-    <p>The number of <b>days</b> during which <a href="/guides/executions#executions-page">execution</a> details are stored on the platform.</p>
-  value: '<b>30d</b>'
+    <p>The planned policy removes completed runs 30 days after completion, once enabled.</p>
+  value: '<b>Planned: 30d</b>'
 
 logsttl:
-  field: 'Logs TTL'
+  field: 'Log retention'
   description: >
-    <p>The time in <b>days</b> that <a href="/getting-started/logs-page">logs</a> information is stored on the platform.</p>
-  value: '<b>14d</b>'
+    <p>A separate retention window for execution logs has not been verified.</p>
+  value: '<b>Unspecified</b>'
 
 inputmessagesttl:
-  field: 'Input messages TTL'
+  field: 'Step input retention'
   description: >
-    <p>The time in <b>days</b> that the <a href="/developers/error-retry#retry-from-step">messages</a> that led to the error are stored on the platform.</p>
-  value: '<b>5d</b>'
+    <p>Retry requires the original step input to remain available.</p>
+  value: '<b>Unspecified</b>'
 
 messagerate:
   field: 'Rate limit for emitting messages per second'
