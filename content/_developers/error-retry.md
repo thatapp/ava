@@ -108,19 +108,9 @@ has a limitation: **you can't edit messages before retrying while using retry al
 
 ## Error Retention policy
 
-There is a limit that defines the maximum number of errors we list for a Flow.
-If the limit is reached, no new errors are listed for the given Flow anymore.
-This limit will protect you from the "chatterbox" Flows that tend to spam too much.
+The platform has no fixed 1,000-error limit per flow. Retry depends on the original execution and step input still being available.
 
-{% include img.html max-width="100%" url="/assets/img/integrator-guide/instant-error-management/error-retention-limit.png" title="Error retention limit." %}
-
-The default limit is `1000` records per Flow. If the amount of errors per
-Flow gets higher than `1000` value, the Platform removes old error records and
-shows a corresponding notification in the UI.
-
-> **Please Note**: ALL lightweight messages can be retried only for the TTL of the storage (24 hours by default). For NON lightweight messages please check the [Input messages TTL](/guides/platform-behavior.html#default-limits). When TTL is expired and message is removed from the storage, UI will show warning to user that the message was deleted and retry is impossible.
-
-{% include img.html max-width="100%" url="/assets/img/integrator-guide/instant-error-management/error-retry-ttl.png" title="Error retry TTL" %}
+The planned execution retention policy removes completed runs 30 days after completion. The policy takes effect after rollout. Active runs and runs without a completion date are outside this policy.
 
 ## Retry from step
 
