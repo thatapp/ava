@@ -20,9 +20,7 @@ For your convenience, we divided the issues into three levels:
 
 ## Integration Logic
 
-The first thing you might want to do when encountering *[Errors](/developers/error-retry)* is checking the *Dashboard* page. First, click the *Records* on the *Execution Statistics* menu to filter errors **(1)**, then select the day on the *Error graph* to view erroneous executions **(2)**, also you can filter errors directly on the [Executions](executions) page **(3)**.
-
-{% include img.html max-width="100%" url="/assets/img/integrator-guide/troubleshoot/dashboard-errors.png" title="Dashboard errors" %}
+The first thing you might want to do when encountering *[Errors](/developers/error-retry)* is to open the [Executions](executions) page and filter it by *Status: Erroneous*. Each row is a failed execution. The *Dashboard* page shows this month's error total, but its totals and chart days do not open anything.
 
 One of the most common troubles here is system downtime. Some of the integrated systems may just be down, obviously causing an error. Also, you should double check the credentials, because they will cause integration logic failure too. Having checked that, try systems answer structure and [mapping](mapping-data).
 

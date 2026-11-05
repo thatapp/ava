@@ -115,5 +115,3 @@ admin:
       description: Everything about support activities
     - title: Platform Specific Settings
       description: Information that is specific to accounts on the platform
-    - title: Security and Compliance
-      description: Learn how we comply to the highest security standards to protect customers' and users' data in transit and at rest.
