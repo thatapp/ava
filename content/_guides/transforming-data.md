@@ -15,7 +15,7 @@ In this document we will discuss some [JSONata](http://jsonata.org/) basics so t
 Using JSONata expressions we can perform different types of transformations with
 `strings` using standard string operators. We can also use more complex string
 functions like `$uppercase(str)`, `$lowercase(str)`, `$split(str, separator [, limit])`,
-`$joinarray[, separator]` and more.
+`$join(array[, separator])` and more.
 
 For the following examples we will assume the following incoming data:
 
@@ -384,7 +384,7 @@ $moment("01.04.1980")
 Then the output would be:
 
 ```
-"1980-01-03T23:00:000Z"
+"1980-01-03T23:00:00.000Z"
 ```
 
 It is obvious that the input date and time were incorrectly interpreted. Here is
@@ -397,7 +397,7 @@ $moment("01.04.1980" & "-0400","MM.DD.YYYYZZ")
 This expression would return the following record:
 
 ```
-"1980-01-04T04:00:000Z"
+"1980-01-04T04:00:00.000Z"
 ```
 
 Strictly speaking, the time offset

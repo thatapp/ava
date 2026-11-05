@@ -20,7 +20,9 @@ For your convenience, we divided the issues into three levels:
 
 ## Integration Logic
 
-The first thing you might want to do when encountering *[Errors](/developers/error-retry)* is to open the [Executions](executions) page and filter it by *Status: Erroneous*. Each row is a failed execution. The *Dashboard* page shows this month's error total, but its totals and chart days do not open anything.
+The first thing you might want to do when encountering *[Errors](/developers/error-retry)* is checking the *Dashboard* page. First, click the *Records* on the *Execution Statistics* menu to filter errors **(1)**, then select the day on the *Error graph* to view erroneous executions **(2)**, also you can filter errors directly on the [Executions](executions) page **(3)**.
+
+{% include img.html max-width="100%" url="/assets/img/integrator-guide/troubleshoot/dashboard-errors.png" title="Dashboard errors" %}
 
 One of the most common troubles here is system downtime. Some of the integrated systems may just be down, obviously causing an error. Also, you should double check the credentials, because they will cause integration logic failure too. Having checked that, try systems answer structure and [mapping](mapping-data).
 
@@ -65,7 +67,7 @@ Here is the info the team requires to provide support:
 
 If you find that your flow is in the [suspended](/getting-started/integration-flow.html#flow-states) state, it's important to understand what exactly caused this behavior:
 - A user may have accidentally clicked the *Suspend* instead of *Stop* button, or forgotten and left the flow suspended, causing messages to accumulate in the flow's queue.
-- The flow may also be suspended due to the scheduled maintenance or in the event of an incident. 
+- The flow may also be suspended due to the scheduled maintenance or in the event of an incident.
 - In rare situations, the platform safeguard can suspend your flow. Please check the [Platform's behavior](/guides/platform-behavior.html#flow-suspension) for more information.
 
 To start the flow, you can click the *Resume* button or contact [support](mailto:{{site.data.tenant.supportEmail}}), ensuring messages are processed. If messages in your flow's queue are not important, you can click the *Stop* button, in this case, accumulated messages will be lost.
@@ -74,22 +76,22 @@ To start the flow, you can click the *Resume* button or contact [support](mailto
 
 ## Stuck messages and slow processing
 
-Sometimes you may find messages in the queues that seem to have stopped processing. In order to refresh the *Dashboard* values, reload the page. 
+Sometimes you may find messages in the queues that seem to have stopped processing. In order to refresh the [dashboard](/assets/img/integrator-guide/troubleshoot/dashboard-errors.png) values, reload the page.
 
 First, you need to check if these messages are stuck or if they are being processed very slowly. If this turns out to be the slow processing, you can consider:
 
-- Checking the platfrom [Default Limits](/guides/platform-behavior.html#default-limits). 
+- Checking the platfrom [Default Limits](/guides/platform-behavior.html#default-limits).
 - Optimising your custom component's or flow's logic.
-- Adding [Parallel Processing](/guides/managing-flows.html#parallel-processing) to the slow processing steps. 
+- Adding [Parallel Processing](/guides/managing-flows.html#parallel-processing) to the slow processing steps.
 
 If you are unsure of the reasons for such behavior, contact [support](mailto:{{site.data.tenant.supportEmail}}).
 
-> **Please Note:** 
+> **Please Note:**
 > * If a single message processing takes longer than 30 minutes to complete, the container-pod will continue running, but a new parallel process will be initiated. In this timeout scenario, the old process will continue working, potentially causing a duplication. A timeout could occur if the flow logic is not optimised and exceeds platform limits. Please contact [support](mailto:{{site.data.tenant.supportEmail}}) for assistance.
 > * During a one-time ordinary flow execution, if no messages are present on the steps and a single component demands a longer data retrieval period to emit the next message before proceeding, the flow container-pod will terminate in accordance with the [scheduled execution timeout](/releases/24/45.html#extending-scheduled_execution_timeout-to-720-seconds). For this case, consider setting up the [Editable delay for container shutdown in Ordinary Flows](/guides/managing-flows.html#editable-delay-for-container-shutdown-in-ordinary-flows).
 
 If messages on a certain step queue are not proceeding, you can:
-- Confirm if the flow is not in the [suspended](#suspended-flows) state. 
+- Confirm if the flow is not in the [suspended](#suspended-flows) state.
 - Examine last timestamps on the [Logs](/getting-started/logs-page) page to verify that the flow is not producing any new logs on the stuck step.
 - Check if there are any containers present on the [Containers](/guides/containers) page for this step, making sure that the container-pod was successfully started and is running.
 
@@ -97,9 +99,7 @@ Gathering this information and providing it to support will assist us in promptl
 
 ## Platform emails are not received
 
-If you are not receiving platform emails (for example, contract or workspace invitations) in your mailbox, there could be many reasons causing this issue.
-
-Flow-failure email is unavailable in the beta.
+If you are not receiving platform emails (e.g. contract or workspace invitations, or error notifications) in your mailbox, there could be many reasons causing this issue.
 
 1. Sometimes emails can be mistakenly marked as spam and filtered into the spam/junk folder. Make sure to check this folder so that platform emails are not being missed.
 
@@ -110,6 +110,8 @@ Flow-failure email is unavailable in the beta.
 4. If you have a backup mail address, try editing your email on the [User profile](/getting-started/user-profile-information) page and check if emails arrive in your backup inbox. This will help you determine if the issue is only with your primary email address before contacting support.
 
 5. As a consequence, your user email can be placed on the platform's email API service rejection denylist due to a soft-bounce or hard-bounce. If none of the previous solutions helped you, contact [support](mailto:{{site.data.tenant.supportEmail}}).
+
+> **Please Note:** Active platform users should automatically receive newsletters about the status of platform services and incident reports. However, if you are not receiving it or if you have other colleagues whom you would like to add, please [contact us](/admin/reporting-issue.html#how-to-contact-us).
 
 ## Related links
 

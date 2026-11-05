@@ -11,7 +11,7 @@ Most flows you build early on are linear: a trigger fires, and a fixed sequence 
 
 ## The idea
 
-A Content-Based Router sits in your flow like any other action, but instead of doing one thing to every message, it evaluates each message against a set of conditions you define — one per branch — and forwards the message down the first branch whose condition matches. Everything downstream of that branch only ever sees messages that satisfy it.
+A Content-Based Router sits in your flow like any other action, but instead of doing one thing to every message, it evaluates each message against a set of conditions you define — one per branch — and forwards a copy of the message down every branch whose condition matches. Everything downstream of each branch only ever sees messages that satisfy its condition.
 
 ![Content-Based Router principle](/assets/img/integrator-guide/cbr/cbr-principle.png "Content-Based Router principle")
 
@@ -19,7 +19,7 @@ In the diagram above, a single incoming stream of orders is split by product typ
 
 ## How the conditions work
 
-Each branch's condition is a [JSONata](http://jsonata.org/) expression evaluated against the message — the same expression language used elsewhere on the platform for [transforming data](/guides/transforming-data). The expression must resolve to `true` or `false`; the first branch that evaluates to `true` receives the message. A router configured with a single branch behaves as a simple filter — pass or drop — rather than a full multi-way split.
+Each branch's condition is a [JSONata](http://jsonata.org/) expression evaluated against the message — the same expression language used elsewhere on the platform for [transforming data](/guides/transforming-data). The expression must resolve to `true` or `false`; every branch that evaluates to `true` receives a copy of the message. A router configured with a single branch behaves as a simple filter — pass or drop — rather than a full multi-way split.
 
 Because the condition is just an expression over the message's own fields, you're not limited to equality checks on one field — you can combine multiple conditions, compare numbers, or check whether a field exists at all.
 

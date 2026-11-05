@@ -62,16 +62,19 @@ This menu section links pages to help you monitor and debug your integration flo
 
 ### Dashboard
 
-The Dashboard page shows the count of flows in the workspace and this month's execution statistics. Two numbers show a dash (—): the platform does not report them for a workspace during the beta.
+The first page you land when navigate to your contract is the Dashboard page. It shows execution statistics, count of flows, count of messages in flows, container errors and memory usage.
 
 <details close markdown="block"><summary><strong>Click to expand for more details.</strong></summary>
 
-1. The **Ordinary Flows** counter shows the total count of Ordinary Flows in this workspace.
-2. The **Real-time Flows** counter shows the total count of Real-time Flows in this workspace.
-3. The **Messages In Queues** counter shows a dash (—).
-4. The **Execution Statistics** section shows this month's total records and errors and a chart by day (UTC). If nothing ran this month it says "No executions this month." The **Executions** link below it opens the [Executions page](executions).
-5. The **Container errors** section says "No containers running in this workspace." The **Containers** link below it opens the Containers page.
-6. The **Workspace Memory Usage** section shows a dash (—).
+![Dashboard](/assets/img/getting-started/tour/dashboard.png "Dashboard")
+
+1. The **Ordinary Flows** counter showing the total count of Ordinary Flows in this workspace.
+2. The **Real-time Flows** counter showing the total count of Real-time Flows in this workspace.
+3. The **Message in Queues** counter showing the total count of messages in the queues in this workspace.
+4. The **Execution Statistics** graph showing the overview of the messages emitted by flows in this workspace. You can click on the legend to go the filtered execution information page.
+5. The **Container Errors** graph showing the container errors in this workspace. You can click on the legend to go the filtered containers information page.
+6. The **Workspace Memory Usage** graph showing the overview of resources quota available to this workspace and the actual use of it. You can hover to the graph point for getting the memory usage for certain date.
+7. The **View Report** button that allows you to see the detailed report for memory usage of flows in workspace.
 
 
 </details>
@@ -97,7 +100,7 @@ The Containers menu item opens our [Containers page](/guides/containers). This p
 
 <details close markdown="block"><summary><strong>Click to expand for more details.</strong></summary>
 
-On the Containers page, you'll encounter the following states:
+Container logs are retained for up to 30 days. On the Containers page, you'll encounter the following states:
 
 * **Running** (Green Flag): Indicates that the container is currently operational.
 * **Finished** (Green Flag): Indicates that the container has been successfully shut down.
