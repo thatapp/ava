@@ -11,6 +11,8 @@ redirect_from:
 
 ## Description
 
+> **Beta behavior:** Repository environment values are stored sealed. Running steps do not receive values entered on a repository record. The examples below describe component authoring.
+
 Environment variables are an essential part of the {{site.data.tenant.name}} platform environment. Apart from the ever growing [list of system-wide variables](env-vars-execution), it is possible and rather encouraged, to define custom environment variables.
 
 ## Why use environment variables?

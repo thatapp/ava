@@ -99,7 +99,9 @@ Gathering this information and providing it to support will assist us in promptl
 
 ## Platform emails are not received
 
-If you are not receiving platform emails (e.g. contract or workspace invitations, or error notifications) in your mailbox, there could be many reasons causing this issue.
+If you are not receiving platform emails (for example, contract or workspace invitations) in your mailbox, there could be many reasons causing this issue.
+
+Flow-failure email is unavailable in the beta.
 
 1. Sometimes emails can be mistakenly marked as spam and filtered into the spam/junk folder. Make sure to check this folder so that platform emails are not being missed.
 
