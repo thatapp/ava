@@ -51,20 +51,20 @@ containerlogsttl:
 executionsttl:
   field: 'Execution retention'
   description: >
-    <p>The planned policy removes completed runs 30 days after completion, once enabled.</p>
-  value: '<b>Planned: 30d</b>'
+    <p>During the beta, execution records are kept indefinitely. Nothing removes them automatically.</p>
+  value: '<b>Indefinite during the beta</b>'
 
 logsttl:
   field: 'Log retention'
   description: >
-    <p>A separate retention window for execution logs has not been verified.</p>
-  value: '<b>Unspecified</b>'
+    <p>Execution logs are part of the execution record, so they are kept for as long as it is.</p>
+  value: '<b>Indefinite during the beta</b>'
 
 inputmessagesttl:
   field: 'Step input retention'
   description: >
-    <p>Retry requires the original step input to remain available.</p>
-  value: '<b>Unspecified</b>'
+    <p>Each step's input is part of the execution record, so it is kept for as long as it is. Retry uses it.</p>
+  value: '<b>Indefinite during the beta</b>'
 
 messagerate:
   field: 'Rate limit for emitting messages per second'

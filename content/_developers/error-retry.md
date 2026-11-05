@@ -110,7 +110,7 @@ has a limitation: **you can't edit messages before retrying while using retry al
 
 The platform has no fixed 1,000-error limit per flow. Retry depends on the original execution and step input still being available.
 
-The planned execution retention policy removes completed runs 30 days after completion. The policy takes effect after rollout. Active runs and runs without a completion date are outside this policy.
+During the beta, execution records, with their logs and step input, are kept indefinitely. Nothing removes them automatically.
 
 ## Retry from step
 
