@@ -135,7 +135,6 @@ END
 *   Sometimes there are false positive when verifying credentials
 *   List of selectable object types for an action/trigger don't reflect that some object types are read-only or not modifiable/deletable
 *   Metadata does not expose the ids of linked objects as fields
-*   Not successfully tested on local agent
 
 ## Configuration Info
 

@@ -110,7 +110,6 @@ This menu section links the pages you need to build integration flows.
 
 *   [Flows](#flows)
 *   [Credentials](#credentials)
-*   [Agents](#agents)
 *   [Topics](#topics)
 *   [Recipes](#recipes)
 
@@ -150,22 +149,6 @@ you can create, edit and delete the credentials for each integration component.
 
 > **Please Note** you can also create credentials during the flow step configuration.
 > These credentials will appear on the credentials page as well.
-
-</details>
-
-### Agents
-
-The Agents menu item links the [VPN Agent](/guides/vpn-agent) management page where
-you can create, edit and delete the VPN Agents. You can use this feature to establish
-a secure VPN tunnel between your local resource and the platform. This enables a secure
-data exchange between your local system and the active integration flow.
-
-<details close markdown="block"><summary><strong>Click to expand for more details:</strong></summary>
-
-1.  Use to [create the VPN Agents](/guides/vpn-agent.html#how-to-setup).
-2.  The list of VPN Agents configured for your workspace.
-
-![Agents](/assets/img/getting-started/tour/agents.png "Agents")
 
 </details>
 

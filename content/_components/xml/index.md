@@ -235,6 +235,5 @@ Attachment *.xml is to large to be processed my XML component.
 File limit is: 5242880 byte, file given was: * byte
 ```
 
-- All actions involving attachments are not supported on local agents due to current platform limitations.
 - When creating XML files with invalid XML tags, the name of the potentially invalid tag will not be reported.
 - When you try to retrieve a sample in `XML Attachment to JSON` action and it's size is more than 500Kb, there will be generated new smaller sample with the same structure as original

@@ -205,8 +205,6 @@ They are:
 
   1. Maximal possible size for an attachment is 10 MB.
 
-  2. Attachments mechanism does not work with [Local Agent Installation](/references/local-agents-requesting#compatible-operating-systems)
-
 **3.** We suggest not to set *Delay* value more then time period between two executions of the flow.
 Please keep in mind that delay can influence on time of next execution.
 For example, the flow has type `Ordinary` and scheduled to execution for every 1 minute, but the delay is set to 120 sec, so the next execution will be started only after 120 sec, instead of 1 minute.

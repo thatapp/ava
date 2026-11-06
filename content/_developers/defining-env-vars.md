@@ -67,33 +67,8 @@ These are just small parts of the whole component.json which can be viewed fully
 
 >**Please note:** the actual `clent_id` and `clent_secret` [are defined inside](https://github.com/thatapp/salesforce-component/blob/master/lib/helpers/oauth-utils.js) the`oauth-utils.js` and not only in `component.json`
 
-## Example2: Advance case of HTTP(S) PROXY setup
-
-Here is more advanced use case connected with deployment and connection of component behind an HTTP(S) PROXY. This is particularly useful in case of the on-premise installation of {{site.data.tenant.name}} platform when all the communication needs to go through the PROXY server.
-
-Depending on the used programming language and libraries some of the implementations can vary significantly. For example in the simple case of defining HTTP PROXY. If we follow the simple case of `envVars` described above then for Node.js code we would need to define it like in `component.json`:
-
-```js
-"envVars": {
-  "HTTP_PROXY": {
-    "required": true,
-    "description": "Your HTTP PROXY and port http://proxy:1234"
-   },
-  "HTTPS_PROXY": {
-    "required": true,
-    "description": "Your HTTPS PROXY and port https://proxy:1234"
-  }
-}
-```
-
-In some cases, this type of definition might not be sufficient. For example `curl` and `wget` respect the `HTTP_PROXY` and `HTTPS_PROXY` environment variables. Most Node.js libraries do it the same way while Java rather expects `http.proxyHost` and `http.proxyPort` system properties defined in the **gradle.properties** file as it already explained in the Java components behind a proxy guide.
-
-Some Node.js libraries have their own different way to use proxy setups. For example, when [Microsoft SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript) is used then the necessary setup needs to follow a specific approach used in superagent to send HTTP requests. The problem is that **superagent** does not respect `HTTP_PROXY` and `HTTPS_PROXY` variables as most Node.js libraries do, but wants these configurations to be passed [directly to the constructor](https://github.com/visionmedia/superagent).
-
 ## Related links
 
 - [Environment variables available during component execution](env-vars-execution)
 - [Creating OAuth App for Salesforce](/components/salesforce/creating-oauth-app-for-salesforce)
 - [Salesforce-component GitHub repository](https://github.com/thatapp/salesforce-component)
-- [Microsoft SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript)
-- [Superagent](https://github.com/visionmedia/superagent)

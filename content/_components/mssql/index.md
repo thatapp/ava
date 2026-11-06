@@ -2,7 +2,7 @@
 layout: component
 title: MsSQL component
 section: Database components
-description: MsSQL designed for use in corporate applications, both on-premises and in the cloud.
+description: MsSQL designed for use in corporate applications.
 icon: mssql.png
 icontext: MsSQL component
 category: mssql

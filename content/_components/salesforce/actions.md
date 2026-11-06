@@ -61,9 +61,6 @@ Creates a single new object in Salesforce.
 #### Input/Output Metadata
 This action dynamically retrieves all available fields for the chosen object type. The output metadata will mirror the input metadata.
 
-#### Limitations
-*   When **Utilize data attachment...** is checked, this action may fail if used with a Local Agent due to networking constraints.
-
 ## Delete Object (at most 1)
 
 Deletes a single object found by a specified field and value.
@@ -102,7 +99,6 @@ Looks up a single object by a specified field and value.
 #### Limitations
 1.  Selecting a binary field (e.g., in Documents or Attachments) under **Include referenced objects** will cause a `MALFORMED_QUERY` error.
 2.  The action does not support looking up objects where the lookup field value is `null`.
-3.  Passing binary data as an attachment may fail if used with a Local Agent.
 
 ## Lookup Objects
 

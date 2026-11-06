@@ -41,7 +41,7 @@ The SAP Message Server manages communication between the application servers, pa
 3. `SAP System Number` - Mandatory. System Number of SAP ECC (R/3, ERP) DB.
 
 4. `SAP Client Number` - Client Number of SAP ECC (R/3, ERP). Client number may be different for different installations. But here is an example of clients available in one of the standard installation types (an extraction from SAP's official documentation):
-  -    `000` - serves as standard delivery client (as usual in on-premise deployments)
+  -    `000` - serves as standard delivery client
   -    `100` - is the primary demo client that contains the pre-configured scenarios and sample data.
   -    `200` - can be used to experience the activation of SAP Best Practices on your own (see the SAP Best Practices implementation guide for details)
   -    `300` - contains the activated Best Practices based on the White-list approach
@@ -73,44 +73,8 @@ SAP ECC (R/3, ERP) component includes the following actions:
 
 1. Chain function call in one transaction context not supported.
 2. IDOC mechanism of RFC function call not supported.
-3. Component does not support Local Agents.
-4. Asynchronous operations are not supported.
-5. `RFC Server` trigger currently supports callback requests only. RFC server can not define the RFC call response.
+3. Asynchronous operations are not supported.
+4. `RFC Server` trigger currently supports callback requests only. RFC server can not define the RFC call response.
 After receiving the request the server responses with an input BAPI structure.
-6. `RFC Server` trigger works for realtime flows only.
+5. `RFC Server` trigger works for realtime flows only.
 
-## Deployment limitations
-
-### Technical details
-
-A component can be deployed to the platform starting from the version
-`3.19.0-rc.1`. Sap Jco client library is not supported in the default version of the task docker image.
-
-Steps to deploy the component:
-
-1.  Push the HEAD master version of the component to the component repository.
-2.  Run gradle clean build.
-3.  Build a local docker image using a docker file from the component repository.
-
-```sh
-docker build . --no-cache -t 10.25.0.54:31001/docker_dir/5d5a7ffa8cd40800110e37e3:test19
-```
-
-where
-s
-*   `10.25.0.54` - IP address one of platform nodes
-*   `docker_dir` - the name of the docker directory
-*   `31001` - port of docker registry
-*   `test19` - tag of the docker image which you will use for new component version
-
-4.  Push docker image to the docker registry (you need VPN access to the platform subnet):
-
-```sh
-docker push 10.25.0.54:31001/docker_dir/5d5a7ffa8cd40800110e37e3:test19
-```
-
-5.  Find document in the collection `repobuilds` which connected with your last `git push` and update version of docker image to `test19`
-
-```
-"dockerImage" : "docker_dir/5d5a7ffa8cd40800110e37e3:test20",
-```

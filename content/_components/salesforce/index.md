@@ -157,6 +157,3 @@ Once you are on the profile editing page, ensure that all the required standard 
 Carefully review the permissions and make any necessary adjustments to enable the required access.
 
 
-## Known Limitations
-
-* Attachments mechanism doesn't work with [Local Agent Installation](/getting-started/local-agent.html).

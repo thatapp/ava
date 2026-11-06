@@ -30,7 +30,7 @@ This component has been tested with API version `17`.
 ## Credentials
 
 The configuration fields for component credentials are as follows:
-* **Odoo Base URI** (string, required) - The URL of your Odoo installation (cloud or on-premise).
+* **Odoo Base URI** (string, required) - The URL of your Odoo installation.
 * **Database name** (string, required) - You can find the database name by activating [Developer mode](https://www.odoo.com/documentation/17.0/applications/general/developer_mode.html), where it will appear in the top right corner next to your name.
 * **Username** (string, required) - Your username (usually your email address).
 * **Password or API Key** (string, required) - You can enter your password here or generate an [API Key](https://www.odoo.com/documentation/17.0/developer/reference/external_api.html#api-keys) to use instead.
