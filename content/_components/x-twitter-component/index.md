@@ -10,6 +10,9 @@ ComponentVersion: 2.0.0
 updatedDate: 2023-11-30
 ---
 
+> **AVA `1.0.0` published; installation conditional.** [Connector PR1](https://github.com/thatapp/connector-x-twitter-component/pull/1) publishes `e3ece748e6bc1159f622eb8606d02b4166a2e53a`. Both documented actions and all four credential fields are built. Node 20/24 each pass 55 unit tests, 18 canonical and 18 standalone rows, allowlist/secret checks, and 32 supplemental isolated workers with 32 independently verified OAuth 1.0a signatures. [The pinned report](https://github.com/thatapp/connector-x-twitter-component/blob/e3ece748e6bc1159f622eb8606d02b4166a2e53a/REPORT.md) records exact scope, limits and historical failures. Host conditions [#57](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/57), [#72](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/72) and [#80](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/80) remain. **No READY/install or final combined-host qualification.** Live X permissions, plan limits and deployment remain UNVERIFIED.
+
+
 ### Credentials
 
 To authenticate the component you will need to create an App in [developer portal’s App page](https://developer.twitter.com/en/portal/projects-and-apps), the component uses OAuth 1.0a. [more info](https://developer.twitter.com/en/docs/apps/overview).
@@ -97,3 +100,5 @@ Has no any configuration fields.
 ## Known limitations
 
 Please visite [Twitter API v2 API limits](https://developer.twitter.com/en/docs/twitter-api/rate-limits)
+
+> **AVA transport and output:** All four credentials are sealed. The port signs invocation-local requests to the current fixed `api.x.com` v2 origin with a fresh nonce and registers transient signatures/Authorization values before HTTP. `Post tweet` emits the documented data object. Raw Request returns the **complete HTTP JSON response** under `responseBody`, retaining `data`, `includes` and `meta`; this corrects the recovered source’s `data.data` truncation. A 204 omits optional `responseBody`. Authentication/cookie response headers are masked. GET/DELETE `data` becomes query parameters; POST/PUT/PATCH use JSON. Limits: 1 MiB request, 2 MiB response, depth 32, 8 KiB input path/16 KiB assembled URL. No connector-owned authorization flow, refresh, implicit retry or fixed 280-character assumption.

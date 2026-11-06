@@ -9,6 +9,20 @@ updatedDate: 2026-02-26
 ComponentVersion: 2.9.2
 ---
 
+## AVA 1.0.0 release status — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST #57 OAuth, #72 credential recording, #75 attachment storage; streaming #83 unbuilt**. [Published source](https://github.com/thatapp/connector-salesforce/tree/7ab53e19b9e442b80fa4f067c418f346f47b3f28) · [Release scope](https://github.com/thatapp/connector-salesforce/blob/7ab53e19b9e442b80fa4f067c418f346f47b3f28/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-salesforce/blob/7ab53e19b9e442b80fa4f067c418f346f47b3f28/INTAKE.json).
+
+AVA declares a workspace OAuth app under credentials.oauth2 and tests stored access_token plus instance_url. Consent, refresh, callback behavior and supplemental instance metadata require host #57. The environment-variable deployment steps below are historical source guidance, not verified AVA setup instructions.
+
+See the [AVA release contract](index#ava-100-release-status--2026-10-30) for exact limits, evidence and host prerequisites.
+
+Installation is tracked in the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). Publication does not establish installation or live vendor behavior. Tests used synthetic data and refused networking. Runtime integration and live checks remain **UNVERIFIED**.
+
+The older reference below describes its source version, including the version in this page's metadata. The AVA scope and limits above supersede conflicting runtime, environment, attachment, and availability claims; historical release facts remain preserved.
+
+---
+
 ## Purpose
 
 > When you deploy the Salesforce component separately into a dedicated tenant or

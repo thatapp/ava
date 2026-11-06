@@ -10,6 +10,8 @@ ComponentVersion: 1.3.0
 updatedDate: 2026-02-05
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Table of Contents
 * [General Information](#general-information)
     * [Description](#description)
@@ -138,6 +140,6 @@ This component utilizes `fast-glob` for matching file patterns. The following ex
 - `'lib/**'`: Matches all files within the `lib` directory.
 
 ## Known limitations
-1. Objects stored in Maester via the Sailor's "Lightweight" message feature cannot be read by this component due to encryption limitations.
+1. The former Sailor/Maester Lightweight-message limitation describes the legacy build. It does not establish current host compatibility; verify the installed build before relying on that message format.
 2. The `Create Commit` action can only be used on repositories that have been initialized and contain at least one existing commit.
 3. **Concurrency:** When running multiple 'Create Commit' actions in parallel targeting the same branch, race conditions may occur during the `push` operation. If a parallel execution pushes a new commit to the remote branch while another execution is in progress, the latter may fail with a 'non-fast-forward' error because its local history is now outdated. This component currently does not support automatic rebasing or retries in such scenarios.

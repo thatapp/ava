@@ -11,6 +11,12 @@ redirect_from:
   - /components/google-pubsub/changelog.html
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
+> **Historical component releases.** The entries below record upstream/component release facts. They do not establish the build installed on the current host. Sailor versions and renamed package coordinates in these entries are historical references, not installation instructions or a current runtime support matrix.
+
+> **AVA `1.0.0` published; installation conditional.** [Connector PR3](https://github.com/thatapp/connector-blendededge-google-pubsub-oih/pull/3) publishes `2110e96fc88b57be1b979772bad5bfd5c87455de`. Both Subscribe entries now pass exact private-decoder fixtures and synthetic managed lifecycle/accept-before-ACK/continuation checks. Node 20/24 each pass 69 unit tests, 49 canonical and 49 standalone rows, allowlist and secret scan; 24 supplemental workers verify 16 JWT signatures each. [The pinned report](https://github.com/thatapp/connector-blendededge-google-pubsub-oih/blob/2110e96fc88b57be1b979772bad5bfd5c87455de/REPORT.md) records bounds and historical failures. Required host integration: [#57](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/57), [#72](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/72), [#80](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/80), and [#83 / MR168](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/merge_requests/168), plus [MR169 canonical decoder intake](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/merge_requests/169). This is **not an install recommendation or final combined-host qualification**. Live Google behavior and deployment remain UNVERIFIED.
+
 ## Changelog
 
 ### 1.8.0 (February 01, 2024)

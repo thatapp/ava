@@ -10,18 +10,15 @@ updatedDate: 2026-01-05
 ComponentVersion: 1.0.2
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Description
 
 The Content-Based Router implements the [Content-Based Router](http://www.enterpriseintegrationpatterns.com/patterns/messaging/ContentBasedRouter.html) pattern from Enterprise Integration Patterns (EIP).
 
-It evaluates incoming messages and directs them to one or more flow branches based on configurable conditions.
-* The Router evaluates each branch’s expression against the message.
-* If one or more branch expressions evaluate to `true`, the message is passed to each of those matching branches.
-* If all branch expressions evaluate to `false`:
-  - The message is passed to the Default Branch, if configured.
-  - If no default branch is configured, the message is not forwarded to any branch.
+At runtime, any truthy condition selects its branch; use explicit boolean expressions to make routing intent clear.
 
-> **Please Note:** Expressions must evaluate to a boolean (true/false).
+Each matching branch receives the message. If no condition matches, configured default branches receive it; without a matching or default branch, no branch receives it. Designer validation remains separate and unverified.
 
 ## Triggers
 

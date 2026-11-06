@@ -10,6 +10,10 @@ updatedDate: 2026-03-18
 ComponentVersion: 2.5.12
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
+> **Not offered: this Java connector build.** Java component hosting is not offered on the current host. The action/schema and release details below are retained as reference for that Java build; they do not describe an installed Node.js replacement. Current installation and runtime remain **UNVERIFIED**.
+
 ## Table of Contents
 
 * [General Information](#general-information)

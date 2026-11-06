@@ -10,6 +10,28 @@ updatedDate: 2026-02-26
 ComponentVersion: 2.9.2
 ---
 
+## AVA 1.0.0 release status — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST #57 OAuth, #72 credential recording, #75 attachment storage; streaming #83 unbuilt**. [Published source](https://github.com/thatapp/connector-salesforce/tree/7ab53e19b9e442b80fa4f067c418f346f47b3f28) · [Release scope](https://github.com/thatapp/connector-salesforce/blob/7ab53e19b9e442b80fa4f067c418f346f47b3f28/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-salesforce/blob/7ab53e19b9e442b80fa4f067c418f346f47b3f28/INTAKE.json).
+
+41 npm tests, 29 exact cases across all 24 declared entries, and five additional attachment/Bulk Query worker cases pass. Require allowlist and secret scan pass with zero network attempts. Intake pins host `2483881b48440a06b21288085ecf7d7e29c7634a` and harness `5750876bcdd50dc4b652317d9b4ad417b433cc11`.
+
+The release supplies 17 actions and seven triggers: REST create/delete/lookup/upsert, plural lookup, query/raw requests, CSV Bulk API 2.0, query and updated-object polling, plus fixed-object deprecated aliases. The recovered 1.3.10 SDK runtime is preserved as source evidence. Documentation version 2.9.2 does not establish full AVA parity.
+
+Each invocation uses stored OAuth plus its Salesforce instance URL. Requests stay on that instance's HTTPS services origin; external attachment downloads receive no Salesforce authorization. `cfg.apiVersion` defaults to 46.0; Bulk Query requires an explicit 47.0 or later. API-version availability on a real account remains unverified. Host OAuth consent, renewal and supplemental instance metadata are tracked in [#57](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/57).
+
+Queries and updated-object polling are bounded to 25 pages and 10,000 records. Polling uses LastModifiedDate/Id keyset order, an inclusive lower and exclusive upper bound, and advances the snapshot only after successful delivery. A single page can be resumed. An emission failure can replay records; delivery is at least once. Typed criteria preserve zero/false. Metadata supports at most three linked objects, with no polymorphic or binary joins.
+
+Bulk CSV ingest is limited to 5 MiB and 10,000 records. It checks status at most ten times, then returns a pending job ID for resumption; it does not block for the historical ten-minute wait. Partial results remain classified. Completed Bulk Query CSV becomes a scoped attachment reference; an additional result locator is refused with 413. JSON binary fields are limited to 3 MiB decoded; the transport limit is 5 MiB. Scoped references replace legacy public attachment URLs. Larger uploads and upload sessions are unbuilt.
+
+Streaming/PubSub entries are not declared executable: persistent sessions, replay lifecycle and gRPC/HTTP2/Avro transport require [#83](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/83). Shared result caching and Retrieve Sample-specific UI behavior are unbuilt. Deprecated creates, multi-result lookup and polls remain, but fixed polls use the current bounded cursor rather than the historical 1,000-record cap. Recorded writes return unsent intent without invented IDs or record counts.
+
+Installation is tracked in the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). Publication does not establish installation or live vendor behavior. Tests used synthetic data and refused networking. Runtime integration and live checks remain **UNVERIFIED**.
+
+The older reference below describes its source version, including the version in this page's metadata. The AVA scope and limits above supersede conflicting runtime, environment, attachment, and availability claims; historical release facts remain preserved.
+
+---
+
 ## Table of Contents
 
 * [General Information](#general-information)

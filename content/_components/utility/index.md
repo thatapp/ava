@@ -10,6 +10,8 @@ updatedDate: 2025-12-03
 ComponentVersion: 1.8.1
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 # Utility Component 
 ## Table of Contents
 * [Description](#description)
@@ -164,7 +166,9 @@ Epoch time conversion is not supported.
 
 ### Delay
 
-Introduce a delay before passing the message to the next step.
+The Delay step passes the incoming message through unchanged; proof mode records the delay without sleeping.
+
+Delay-unit behavior and the other Utility actions remain outside this claim; their runtime validation is pending.
 
 {% include img.html max-width="100%" url="img/delay.png" title="Delay" %}
 
@@ -179,7 +183,7 @@ There are two options for delay behavior:
 #### Input Metadata
 
 * `Delay Time (in seconds)` - Amount of time this component should wait/delay (in seconds) before emiting the message. Negative number will be converted to positive, strings converted to number, if converted failed will set to zero.
-* `Data to transfer` - Use this field to transfer data in to another steps
+* `Data to transfer` — a field in the historical UI example; the source-supported Delay behavior passes the incoming message through unchanged.
 
 ### Log Message
 
@@ -298,7 +302,7 @@ There is no Config Fields
 ## Limitations
 
 1. Maximal possible size for an attachment is 10 MB.
-2. Attachments mechanism does not work with [Local Agent](/guides/vpn-agent) Installation.
+2. The platform VPN Agent / Local Agent service is **not offered**; the former Agent attachment limitation is not a current setup option.
 3. `Delay All` option from `Delay` don't correctly support `Parallel Processing` option in component more then 1
 4. `Delay Each` option from `Delay` in ordinary flow type can handle delay up to 30 sec, if you need more, use real-time type
-5. Needs to use `Data to transfer` field for correct transfer data after `Delay` component.
+5. The historical `Data to transfer` requirement does not describe the source-supported pass-through behavior above. Current UI options remain UNVERIFIED.

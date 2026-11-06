@@ -10,6 +10,8 @@ updatedDate: 2026-08-27
 ComponentVersion: 1.2.17
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Description
 
 A code component for the platform, runs a piece of a JavaScript code inside your
@@ -210,3 +212,9 @@ async function run(msg, cfg, snapshot) {
 ## Known issues and limitations
 
 -   Credentials are not supported, please see [Code component with Credentials](/components/code-with-credentials/).
+
+## Source-supported execution limits
+
+Code steps run in a separate child process with configurable wall-time, CPU, memory and output limits; defaults are 10 seconds wall time, 5 seconds CPU, 128 MiB heap, 512 MiB RSS and 8 MiB output.
+
+These are source defaults. Kernel sandbox facilities depend on host configuration and platform and remain **UNVERIFIED**. This isolation description applies to Code steps, not all hosted components.

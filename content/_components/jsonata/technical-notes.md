@@ -11,6 +11,16 @@ redirect_from:
   - /components/jsonata/changelog.html
 ---
 
+## Current host applicability — 2026-10-29
+
+Expression evaluation follows the flow's selected engine build, with JSONata 1.8.7 for imported AVA flows.
+
+The historical 1.8.6 release entry remains unchanged. Other flows use their selected installed engine build; no global current version is implied.
+
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
+> **Historical component releases.** The entries below record upstream/component release facts. They do not establish the build installed on the current host. Sailor versions and renamed package coordinates in these entries are historical references, not installation instructions or a current runtime support matrix.
+
 ## Changelog
 
 ### 1.1.2 (August 05, 2026)

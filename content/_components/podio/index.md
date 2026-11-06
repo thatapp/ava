@@ -10,6 +10,8 @@ ComponentVersion: 2.0.0
 updatedDate: 2026-03-03
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Table of Contents
 
 * [Description](#description)
@@ -233,25 +235,17 @@ Returns the webhook payload when a notification is received.
 
 #### Credential: Get Tokens
 
-Retrieves the current OAuth tokens for debugging or external use.
-
-##### Configuration Fields
-
-- **Trigger Value** - (string, required): Enter any value to trigger token retrieval.
-
-##### Output Metadata
-
-Returns the current OAuth configuration including access and refresh tokens.
+Credential: Get Tokens is not offered for new flows; converted legacy steps are contained, and refresh tokens are withheld.
 
 #### Credential: Show
 
-Displays current credential information for debugging purposes.
-
-##### Output Metadata
-
-Returns the credential configuration object.
+Credential: Show is not offered for new flows; converted legacy steps are subject to the host's containment policy.
 
 ### Item Actions
+
+> **Withheld documentation claim (UNVERIFIED):** UNVERIFIED candidate: document Item: Create (Lookup by external_id), Item: Reconcile Batch, Search Org v2 and Search Space v2 only after the installed descriptor and behavior are verified. Historical audit names podio-new-component@a966bc3; a read-only connector fetch of that component.json failed. Do not publish availability or idempotency claims from this evidence.
+
+No additional action availability or idempotency guarantee is published from this evidence.
 
 #### Item: Create
 

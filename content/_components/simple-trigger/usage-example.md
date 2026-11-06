@@ -9,6 +9,8 @@ updatedDate: 2026-03-05
 ComponentVersion: 1.3.0
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Overview
 
 The Simple Trigger Component provides a reliable way to initiate platform flows. It emits a message containing the current execution time and the timestamp of the previous successful execution, allowing for time-windowed logic in subsequent steps. This guide provides an in-depth usage example to illustrate how to set up a flow using the Simple Trigger component.
@@ -103,7 +105,9 @@ In the third step, the [REST API v2 component](/components/rest-api/) is employe
 
 ### Scheduling the Flow
 
-To automate the process, a schedule must be configured. Click on the settings tab located in the upper right corner and enter the desired cron expression. It's important to note that the flow will only emit messages between the specified start and end dates. Outside this time frame, the flow will be triggered, but no messages will be processed.
+A schedule slot outside the configured start/end window is recorded as outside_window and skipped without starting a run.
+
+The screenshot below is a historical configuration example. Window normalization and current UI behavior require verification; this is not a live scheduling guarantee.
 
 {% include img.html max-width="100%" url="img/flow-scheduling.png" title="Flow Scheduling" %}
 

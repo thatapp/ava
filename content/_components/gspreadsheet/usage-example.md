@@ -9,6 +9,20 @@ updatedDate: 2022-10-07
 ComponentVersion: 2.0.4
 ---
 
+## AVA 1.0.0 release status — 2026-10-30
+
+**Published with conditional host requirements #57/#58/#72/#80.** Both historical Google Spreadsheets page families now map to one [AVA source release](https://github.com/thatapp/connector-gspreadsheets/tree/d62d1881439c669408752fbef477f03e5bdefbf1). The complete [contract report](https://github.com/thatapp/connector-gspreadsheets/blob/d62d1881439c669408752fbef477f03e5bdefbf1/REPORT.md) and [intake evidence](https://github.com/thatapp/connector-gspreadsheets/blob/d62d1881439c669408752fbef477f03e5bdefbf1/INTAKE.json) define its implemented scope. Historical page versions are not installation versions.
+
+The release combines five actions—Create new Spreadsheet, Add Spreadsheet Row, Read Spreadsheet, Create/Upsert/Update Spreadsheet Row and Get Spreadsheet Row—with the Get Spreadsheet Row polling trigger. The older GData Add Row and Rows entries remain removed; they are not aliases for the Sheets v4 implementation.
+
+All four local intake gates and standalone hostcheck pass on Node 20.20.2 and 24.13.0: 74 offline tests, 50 canonical actual-worker outcomes, 55 supplemental workers and zero network attempts. The final scan covers 62 files. A separate reviewer reran 28 actual workers per runtime, including sparse-state and metadata regressions. Qualification pins host `4576be108e21b597d1fbffd4163fb05cd821c834` and harness `f05a0c4d81f8b79dde6912da8b2b8f8384b40cf7`.
+
+Installation, live Google consent/permissions, UI behavior and host integration remain **UNVERIFIED**. See the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). The scope below supersedes conflicting historical runtime claims; historical changelogs and examples remain for context.
+
+Current action, polling, credential and size constraints are stated in the release contract report above. The historical mapping UI and deprecated examples below do not establish current UI support.
+
+---
+
 ## Introduction
 
 Google tables are used for a huge number of tasks. In our case, we use tables as a small database that contains data about customers of a small company. We will use the Google Spreadsheet component as a trigger and source of information for our flow. The flow itself performs the simplest function - send an email to a new client from different cities.
