@@ -42,6 +42,7 @@ The index is regenerated automatically whenever the documentation site is built:
 
 ```bash
 bundle exec jekyll build
+```
 
 ## Testing locally
 

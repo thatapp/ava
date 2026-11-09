@@ -83,7 +83,7 @@ $ less ~/.ssh/id_rsa.pub | pbcopy
 This command copies the newly created SSH Key into your clipboard, so that you
 can paste it into the SSH entry form on the {{site.data.tenant.name}} platform.
 
-> Alternatively, you can use an [API call](({{site.data.tenant.apiDocsUri}}/v2#/sshkeys/post_sshkeys) to create a new SSH key.
+> Alternatively, you can use an [API call]({{site.data.tenant.apiDocsUri}}/v2#/sshkeys/post_sshkeys) to create a new SSH key.
 
 ## Uploading your SSH keys
 
