@@ -65,7 +65,7 @@ Following the above definition it is then used further down like this:
 
 These are just small parts of the whole component.json which can be viewed fully in [Salesforce-component GitHub repository](https://github.com/thatapp/salesforce-component).
 
->**Please note:** the actual `clent_id` and `clent_secret` [are defined inside](https://github.com/thatapp/salesforce-component/blob/master/lib/helpers/oauth-utils.js) the`oauth-utils.js` and not only in `component.json`
+>**Please note:** the actual `client_id` and `client_secret` [are defined inside](https://github.com/thatapp/salesforce-component/blob/master/lib/helpers/oauth-utils.js) the`oauth-utils.js` and not only in `component.json`
 
 ## Related links
 
