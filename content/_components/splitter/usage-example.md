@@ -44,7 +44,7 @@ After that, we will receive the following E-Mail, which will contain the array w
 Our Array:
 
 ```
-{"f1":"Gandalf the Grey",f2":"Frodo","f3":"Sam","f4":"Merry","f5":"Pippin","f6":"Aragorn","f7":"Boromir","f8":"Legolas","f9":"Gimli"}
+{"f1":"Gandalf the Grey","f2":"Frodo","f3":"Sam","f4":"Merry","f5":"Pippin","f6":"Aragorn","f7":"Boromir","f8":"Legolas","f9":"Gimli"}
 ```
 
 {% include img.html max-width="80%" url="img/message.png" title="Message" %}

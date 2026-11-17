@@ -9,7 +9,7 @@ updatedDate: 2023-07-07
 ComponentVersion: 1.5.2
 ---
 
-## Chanhelog
+## Changelog
 
 ### 1.5.2 (July 07, 2023)
 
