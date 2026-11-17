@@ -11,13 +11,27 @@ This document describes the way to find errors that occur in your Flows, and dea
 
 ## Flow Errors
 
-Let's start with the fact, that no errors on the Platform are fatal. There is never a reason to panic - everything has a solution. Maybe you won't even need any assistance with it. To see your failed runs, open the [Executions](executions) page and filter it by *Status: Erroneous*.
+Let's start with the fact, that no errors on the Platform are fatal. There is never a reason to panic - everything has a solution. Maybe you won't even need any assistance with it. All the errors are gathered in one convenient list that you can access from the Dashboard. To see the list of errors, navigate to the Dashboard and click *Errors* tab:
 
-Click a row to open that run. An alert above the steps says which step failed, what the server reported and when it happened, and the step is marked *Failed*.
+![Dashboard](/assets/img/integrator-guide/flow-errors/dashboard.png)
 
-To read the logs, use *Download Logs* on the run page to save that run's logs, or open the [Logs](/getting-started/logs-page) page and filter by flow name, level, date range or search text.
+This list allows you to address any error by Error type, Flow, Flow author, and time of occurrence. Let's take the first one we see in our list and check it:
 
-By analyzing the logs, you can, most likely, find the cause of the error, and come up with a solution. You can also ask our Support for assistance.
+![List](/assets/img/integrator-guide/flow-errors/list.png)
+
+As you can see, the error type hints us to go look for answers in the logs. Many other errors give you some sort of a hint, for example a number that refers to a specific problem. To access Component logs from the Error list, click Flow name to open the required Flow:
+
+![Click Flow](/assets/img/integrator-guide/flow-errors/click-flow.png)
+
+In the Flow, open the Component that causes the error. In our case it failed to start:
+
+![Error](/assets/img/integrator-guide/flow-errors/error.png)
+
+Now open the *Logs* tab:
+
+![Logs tab](/assets/img/integrator-guide/flow-errors/logs-tab.png)
+
+By analyzing the logs, you can, most likely, find the cause of the error, and come up with a solution. Also, you apply to our Support for assistance.
 
 ## Downloading the Logs
 

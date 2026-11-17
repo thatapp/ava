@@ -1,6 +1,6 @@
 ---
 title: Managing your Teams/Components
-description: Manage developer teams, repository records, and sealed environment values in the beta.
+description: This article discribes how to structure your work into Git repositories and manage your Teams and Components.
 layout: article
 section: How-Tos and Tutorials
 order: 4
@@ -8,7 +8,9 @@ redirect_from:
   - /guides/teams-and-repos.html
 ---
 
-Developer teams organize component repository records. In the beta, a repository record stores its configuration. Creating or editing a record does not push to GitHub or deploy a component.
+When developing your own [integration components](/getting-started/integration-component) for the {{site.data.tenant.name}} platform, you need to structure your work into Git repositories. Each repository represents an integration component and gets used to push your local code to {{site.data.tenant.name}} remote server. Every push results in a new deployment of the component.
+
+The access to the component repository is restricted to a team the repository belongs to. Each member of the team can change, configure and deploy a component. The team itself belongs to a Contract and so only members of the Contract can be invited to the team.
 
 ## Manage developer teams
 
@@ -51,17 +53,122 @@ If the above conditions are true, you can proceed and delete the developer team 
 
 ## Manage integration components
 
+Almost every developer has worked with some sort of version control and repository
+management. GitHub, one of the most famous code developing and collaborating platforms,
+is the most famous for its use of repository practice. We use the same tactics which
+give developers complete autonomy to manage their code.
+
+>**Please Note:** Remind your fellow developers to follow the same procedure and upload
+their own unique SSH Key before proceeding further.
+
 ### Create a component repository
 
-Use Developer Teams to create a repository record for your team. GitHub synchronization and deployment from that record are outside the beta.
+As mentioned above, each repository represents a component. That's why we use
+repository and component terms interchangeably here. Every component resides in
+a particular repository.
+
+>**Please Note:** you must have appropriate [permissions](/guides/managing-user-roles-in-a-tenant) to create repositories.
+
+To create a new repository for your custom Components, click *New Repo* button **(1)**, enter repository name **(2)**, and then click *Save* **(3)**:
+
+![New Repo](/assets/img/developer-guide/team-repo/Create_Repo.gif)
+
+You can now see it in the list of repositories:
+
+![List of repositories](/assets/img/developer-guide/team-repo/Repo_List.png)
+
+>**Please Note:** As with the naming of the teams use letters, digits, `-` and `_` to name your repository.
 
 ### Manage the component repository
 
-Use the repository details page to review the record and its access settings.
+To manage your repository click on the name to see the following page with details:
+
+![Manage your repository](/assets/img/developer-guide/team-repo/Repo_Details.png)
+
+#### Repository URL:
+
+This is the URL that you can push the code for deploying the updates.
+
+>**Please Note:** the cloning of your repositories is not supported. To update the code
+push it again to create the next version of it. Please contact our support if
+you need the copy of your repository.
+
+#### Environment variables:
+
+You can set all environment variables for this particular repository by following the link. Consult our [documentation](/developers/defining-env-vars) on how to define environment variables for integration components.
+
+#### Access and visibility:
+
+This feature gives a possibility to set the Component as `Team`, `Tenant` and `Global`:
+
+*   `Team` means the Component is visible and accessible to the current Contract members.
+*   `Tenant` means the Component is visible and accessible for entire Tenant.
+*   `Global` means the Component is visible and accessible for all Tenants - **can be set only by support**.
+
+#### Build history:
+
+Here is the deployment history of the repository containing:
+
+*   The date of deployment.
+*   The version of the repository deployment and the commit ID.
+*   Status of the build - green check mark means success. If the deployment failed it will show a red cross.
+*   State of the build - showing which build is the default.
+*   Log of the deployment - clicking the "View" button will open a pop-out window showing the log of that particular deployment.
+
+### Delete the component repository
+
+To delete a component repository, follow the steps outlined below. Ensure you have the necessary permissions before proceeding.
+
+#### Prerequisites
+
+- You must have access to the **developer team** where the component located.
+- The repository must have **Team** visibility.
+- If the repository has higher visibility, you’ll need to contact the support team with the repository ID(s) for deletion.
+
+#### Step-by-Step Guide
+
+1. Locate the developer team associated with the component you wish to remove.
+> **Please Note:** Your user account must have access to this team.
+
+2. Identify the component repository, you can use search or [Fetch all components]({{site.data.tenant.apiDocsUri}}/v2#/components/get_workspace__workspace_id__components) visible in your workspace using the API call. The response will include **component IDs**, which are also the **repository IDs**.
+![Search repositories](/assets/img/developer-guide/team-repo/Repo_Search.png)
+```
+https://{your-tenant-address}/c/{contract-id}/teams/{team-id}/repo/{repo-id}
+```
+3. If the component is not in use, you can delete the repository. By opening the repository and clicking on **Delete** button or [Deleting the component]({{site.data.tenant.apiDocsUri}}/v2#/components/delete_components__component_id_) via API.
+![Delete the repository](/assets/img/developer-guide/team-repo/Delete_Repo.png)
+> **Please Note:** If a component is used in any flow, the delete operation will fail. The error message will show the **flow(s)** where the component is used. To proceed, update affected flows to remove the component, or delete those flows if they’re no longer needed.
+
+### Delete the component version
+
+If you want to delete some version of a component. Navigate to the component **Build history** and click the **Delete** button next to the version. To delete via API use the following calls: [List all versions]({{site.data.tenant.apiDocsUri}}/v2#/components/get_components__component_id__versions), and [Delete version]({{site.data.tenant.apiDocsUri}}/v2#/components/delete_components__component_id__versions__version_id_).
+![Delete builds](/assets/img/developer-guide/team-repo/Delete_Version.png)
 
 ## Managing Environment variables
 
-Values entered for a repository are stored sealed. The beta does not deliver those values to running steps.
+To add these values as environment variables to the component repository on the platform please select **Developer Teams** on Navigation panel:
+
+![Navigate Developer Teams](/assets/img/developer-guide/team-repo/DevTeams.png)
+
+Then click on your Team:
+
+![Choose your Team](/assets/img/developer-guide/team-repo/Enter_the_team.png)
+
+And find component you need:
+
+![Component you need](/assets/img/developer-guide/team-repo/Enter_the_repo.png)
+
+In the component description you can see Environment variables field where you can configure them:
+
+![Configure here](/assets/img/developer-guide/team-repo/Enter_envar.png)
+
+Here you can create new Environment variables **(1)** or edit **(2)** and delete **(3)** existing one:
+
+![Manage env vars](/assets/img/developer-guide/team-repo/Configuring_Envar.png)
+
+When you create Environment variables, please set name and value and click to **Add**:
+
+![Create env vars](/assets/img/developer-guide/team-repo/CreatingEnvar.gif)
 
 ## Related links
 
