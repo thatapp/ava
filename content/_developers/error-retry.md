@@ -118,7 +118,7 @@ The default limit is `1000` records per Flow. If the amount of errors per
 Flow gets higher than `1000` value, the Platform removes old error records and
 shows a corresponding notification in the UI.
 
-> **Please Note**: ALL lightweight messages can be retried only for the TTL of the storage (24 hours by default). For NON lightweight messages please check the [Input messages TTL](/guides/platform-behavior.html#default-limits). When TTL is expired and message is removed from the storage, UI will show warning to user that the message was deleted and retry is impossible.
+> **Please Note**: A failed execution's messages can be retried for **72 hours** after it ends. Lightweight messages can be retried only for the TTL of the storage (24 hours by default), whichever is shorter. A successful execution keeps no message data, so it cannot be retried. See the [Message data TTL](/guides/platform-behavior.html#default-limits). When the data has been removed, the UI shows that the message was deleted and retry is impossible.
 
 {% include img.html max-width="100%" url="/assets/img/integrator-guide/instant-error-management/error-retry-ttl.png" title="Error retry TTL" %}
 

@@ -46,25 +46,25 @@ containerlogsttl:
   field: 'Container logs TTL'
   description: >
     <p>The number of <b>days</b> for which container information is stored on the platform.</p>
-  value: '<b>14d</b>'
+  value: '<b>7d</b>'
 
 executionsttl:
   field: 'Executions TTL'
   description: >
-    <p>The number of <b>days</b> during which <a href="/guides/executions#executions-page">execution</a> details are stored on the platform.</p>
-  value: '<b>30d</b>'
+    <p>The number of <b>days</b> during which <a href="/guides/executions#executions-page">execution</a> details are stored on the platform. After that only the execution's ID, flow and dates are kept. The number of executions of each flow on each day is kept for reporting and billing.</p>
+  value: '<b>7d</b>'
 
 logsttl:
   field: 'Logs TTL'
   description: >
     <p>The time in <b>days</b> that <a href="/getting-started/logs-page">logs</a> information is stored on the platform.</p>
-  value: '<b>14d</b>'
+  value: '<b>7d</b>'
 
 inputmessagesttl:
-  field: 'Input messages TTL'
+  field: 'Message data TTL'
   description: >
-    <p>The time in <b>days</b> that the <a href="/developers/error-retry#retry-from-step">messages</a> that led to the error are stored on the platform.</p>
-  value: '<b>5d</b>'
+    <p>How long the data of an execution (the messages each step received and sent) is stored on the platform. A <b>successful</b> execution keeps no message data once it finishes; its logs stay. A <b>failed or stopped</b> execution keeps its message data for <b>72 hours</b>, so the <a href="/developers/error-retry#retry-from-step">messages that led to the error</a> can be retried.</p>
+  value: '<b>0 (success) / 72h (failure)</b>'
 
 messagerate:
   field: 'Rate limit for emitting messages per second'
