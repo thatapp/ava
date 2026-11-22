@@ -96,9 +96,11 @@ async function run(msg, cfg, snapshot) {
 If you prefer to transform an incoming message with code then use following sample:
 
 ```javascript
-async function run(msg) => {
-  addition : "You can use code",
-  keys : Object.keys(msg)
+async function run(msg) {
+  return {
+    addition: "You can use code",
+    keys: Object.keys(msg)
+  };
 }
 ```
 
