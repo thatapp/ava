@@ -25,7 +25,7 @@ has more about each including file and their function.
 
 ### Technical Notes
 
-The [technical notes](technical-notes) page gives some technical details about Petstore-nodejs component like [changelog](/components/petstore-nodejs/technical-notes#changelog).
+The [technical notes](technical-notes) include the [Petstore Java changelog](/components/petstore-java/technical-notes#changelog).
 
 ## Requirements
 
