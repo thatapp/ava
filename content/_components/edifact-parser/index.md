@@ -39,7 +39,7 @@ Sample example:
 }
 ```
 
-> Sample EDI files you can find [here](https://raw.githubusercontent.com/thatapp/edifact-parser-component/master/samples/INVOICE.edi), and [here](https://github.com/thatapp/edifact-parser-component/blob/master/samples/INVOICE.edi.json) you will see resulting JSON message body after parsing.
+> Compare the [sample EDI invoice](/assets/examples/edifact/INVOICE.edi) with its [parsed JSON output](/assets/examples/edifact/INVOICE.edi.json).
 
 ### Technical Notes
 
@@ -57,4 +57,4 @@ select as a first component during the integration flow design.
 
 EDIFACT Parse action expects an incoming message(es) with EDI attachment(s) in it.
 
-Sample EDI file you can find [here](https://raw.githubusercontent.com/thatapp/edifact-parser-component/master/samples/INVOICE.edi), and [here](https://github.com/thatapp/edifact-parser-component/blob/master/samples/INVOICE.edi.json) you will see resulting JSON message body after parsing.
+The [sample EDI invoice](/assets/examples/edifact/INVOICE.edi) produces the [example JSON response](/assets/examples/edifact/INVOICE.edi.json).
