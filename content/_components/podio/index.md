@@ -10,6 +10,8 @@ ComponentVersion: 2.0.0
 updatedDate: 2026-03-03
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Table of Contents
 
 * [Description](#description)
@@ -129,6 +131,7 @@ updatedDate: 2026-03-03
     * [Tag: Get by Organization](#tag-get-by-organization)
   * [Embed Actions](#embed-actions)
     * [Embed: Add](#embed-add)
+* [Additional hosted operations](#additional-hosted-operations)
 * [Deprecated Actions](#deprecated-actions)
   * [Space: Update Membership (Deprecated)](#space-update-membership-deprecated)
 
@@ -233,25 +236,15 @@ Returns the webhook payload when a notification is received.
 
 #### Credential: Get Tokens
 
-Retrieves the current OAuth tokens for debugging or external use.
-
-##### Configuration Fields
-
-- **Trigger Value** - (string, required): Enter any value to trigger token retrieval.
-
-##### Output Metadata
-
-Returns the current OAuth configuration including access and refresh tokens.
+Credential: Get Tokens is not offered for new flows; converted legacy steps are contained, and refresh tokens are withheld.
 
 #### Credential: Show
 
-Displays current credential information for debugging purposes.
-
-##### Output Metadata
-
-Returns the credential configuration object.
+Credential: Show is not offered for new flows; converted legacy steps are subject to the host's containment policy.
 
 ### Item Actions
+
+The installed build includes four additional item and search actions. See [Additional hosted operations](#additional-hosted-operations).
 
 #### Item: Create
 
@@ -1625,6 +1618,15 @@ Fetches metadata for a URL (title, description, thumbnail) to create an embed ob
 ##### Output Metadata
 
 Returns the embed object including title, description, URL, and thumbnail information.
+
+## Additional hosted operations
+
+| Operation | How to use it |
+|---|---|
+| Item: Create (Lookup by external_id) | Supply the app, a stable upstream external ID and the item fields. The action looks up the external ID before creating an item. Read `_idempotent_status` in the result to distinguish `created` from `existing`. Serialize calls that share an external ID because Podio permits duplicate external IDs. |
+| Item: Reconcile Batch (by external_id) | Supply the app and an array of `external_ids`. The result separates found records with their item IDs, missing external IDs and lookup errors. Check the errors before reprocessing missing records. |
+| Search: Organization (v2 with counts) | Choose the organization and supply a search query. Set `counts` to `true` to receive aggregate counts alongside the matching `results`. |
+| Search: Space (v2 with counts) | Choose the workspace and supply a search query. Set `counts` to `true` to receive aggregate counts alongside the results for that workspace. |
 
 ## Deprecated Actions
 

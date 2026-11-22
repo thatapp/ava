@@ -10,6 +10,8 @@ updatedDate: 2022-12-02
 ComponentVersion: 1.2.0
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Introduction
 
 The Zip/UnZip component allows users to compress and decompress files in their data integration flows. This connector can be used to reduce the size of data files and improve data transfer performance, as well as to simplify the handling of compressed files.

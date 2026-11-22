@@ -10,6 +10,22 @@ updatedDate: 2025-07-22
 ComponentVersion: 2.1.1
 ---
 
+## AVA 1.0.0 release status — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST approved Node 20 sidecar #69, #75/!129 and #72/!127**. [Published source](https://github.com/thatapp/connector-outlook/tree/1829c84b84a9fdf12209ddeb7691eac9004b0e74) · [Release scope](https://github.com/thatapp/connector-outlook/blob/1829c84b84a9fdf12209ddeb7691eac9004b0e74/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-outlook/blob/1829c84b84a9fdf12209ddeb7691eac9004b0e74/INTAKE.json).
+
+68 npm tests on Node 20.20.2; 11 exact host cases across seven entries; require allowlist and secret scan PASS; zero network attempts.
+
+All seven declared entries are exercised: Check Availability, Find Next Available Time, Create Event, Move Mail, Send Mail, Contacts, and Read Mail. Stored OAuth is used only with Microsoft Graph v1.0; host #57 owns renewal. Graph nextLink pages are drained before advancing a polling snapshot. Exact timestamps are retained, so same-time records may repeat rather than be skipped.
+
+Read Mail attachments return scoped host references instead of legacy public storage links. Send Mail accepts a public HTTPS source URL or scoped reference and supports total attachment bytes below 3 MiB; larger upload sessions are not implemented. Optional attachment features require scoped storage wiring as well as #75. A recorded clean-room send reports an unsent operation. A Graph acceptance response is not delivery confirmation. Full recurring-calendar behavior and deployed storage remain UNVERIFIED.
+
+Installation is handed off through the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). Publication is not installation. No live vendor account, customer data, server access or deployment was used to establish these results.
+
+The older reference below describes its source version. The scope and limits above supersede any conflicting runtime, attachment, environment-variable, or availability claim; historical release facts remain preserved.
+
+---
+
 ## Table of Contents
 
 * [General information](#general-information)

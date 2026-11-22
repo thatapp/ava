@@ -9,6 +9,8 @@ updatedDate: 2025-12-19
 ComponentVersion: 1.2.5
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Deprecated component
 
 >**Plese note:** the Microsoft Dynamics CRM component has been **deprecated** and is no longer supported. We highly recommend migrating to the newer [Microsoft Dynamics CRM v2](/components/msdynamics-crm-v2) component, which offers improved functionality and ongoing maintenance.

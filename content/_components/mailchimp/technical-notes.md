@@ -11,6 +11,13 @@ redirect_from:
   - /components/mailchimp/changelog.html
 ---
 
+> **AVA `1.0.0` published; installation conditional.** [Connector PR1](https://github.com/thatapp/connector-mailchimp/pull/1) publishes `4b1b77c39d6cf00c12311b8b50f6e48d92cf23ca`. All three documented actions, list/store selectors and dynamic list-specific merge metadata are built. Node 20/24 each pass 45 unit tests, nine canonical and nine standalone rows, allowlist/secret checks and 13 independent isolated workers. [The source-pinned report](https://github.com/thatapp/connector-mailchimp/blob/4b1b77c39d6cf00c12311b8b50f6e48d92cf23ca/REPORT.md) records bounds and retained failures. Host conditions [#57](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/57), [#72](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/72) and [#80](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/80) remain. **No READY/install or final combined-host qualification.** Live Mailchimp permissions and deployment remain UNVERIFIED.
+
+
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
+> **Historical component releases.** The entries below record upstream/component release facts. They do not establish the build installed on the current host. Sailor versions and renamed package coordinates in these entries are historical references, not installation instructions or a current runtime support matrix.
+
 ## Changelog
 
 ### 2.0.0 (April 21, 2026)

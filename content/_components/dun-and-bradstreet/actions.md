@@ -9,6 +9,10 @@ updatedDate: 2023-07-07
 ComponentVersion: 1.0.6
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
+> **Not offered: this Java connector build.** Java component hosting is not offered on the current host. The action/schema and release details below are retained as reference for that Java build; they do not describe an installed Node.js replacement. Current installation and runtime remain **UNVERIFIED**.
+
 ## Business Background Report
 
 D&B's Business Background Report provides details about the operations of a company, its history, and business background of its management.

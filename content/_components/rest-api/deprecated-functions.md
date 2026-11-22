@@ -9,6 +9,8 @@ updatedDate: 2026-08-14
 ComponentVersion: 2.2.7
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Deprecated authentication method
 
 To use the *REST API component* with any restricted access API provide the authorisation information.

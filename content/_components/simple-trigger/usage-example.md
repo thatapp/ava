@@ -9,6 +9,8 @@ updatedDate: 2026-03-05
 ComponentVersion: 1.3.0
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Overview
 
 The Simple Trigger Component provides a reliable way to initiate platform flows. It emits a message containing the current execution time and the timestamp of the previous successful execution, allowing for time-windowed logic in subsequent steps. This guide provides an in-depth usage example to illustrate how to set up a flow using the Simple Trigger component.

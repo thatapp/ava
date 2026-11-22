@@ -10,6 +10,8 @@ ComponentVersion: 1.1.5
 updatedDate: 2026-01-05
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Description
 
 {{page.description}}

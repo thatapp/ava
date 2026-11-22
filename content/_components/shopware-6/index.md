@@ -10,6 +10,26 @@ updatedDate: 2023-10-31
 ComponentVersion: 1.1.3
 ---
 
+## AVA 1.0.0 release status — 2026-10-30
+
+**PUBLISHED scoped; WAITING HOST #57 metadata authentication and #72 integration; #80 parity limits.** [Published source](https://github.com/thatapp/connector-shopware-6/tree/535a56fdc3a8b0109dd6a1ec6a9de7238a23a9d2) · [Contract report](https://github.com/thatapp/connector-shopware-6/blob/535a56fdc3a8b0109dd6a1ec6a9de7238a23a9d2/REPORT.md) · [Intake evidence](https://github.com/thatapp/connector-shopware-6/blob/535a56fdc3a8b0109dd6a1ec6a9de7238a23a9d2/INTAKE.json).
+
+Five actions and one polling trigger implement bounded JSON operations. This documentation chat reviewed the published report scope and accepted immutable intake: 106 offline tests, 30 canonical actual-worker outcomes, allowlist and secret scan passing (34 files in the committed receipt; the publisher reports 35 in the final scan). The publisher also records 108 sealed tests and 26 independent checks, including 18 actual workers and 14 sealed metadata calls, on both supported runtimes. Those supplemental suites were not rerun by this documentation chat.
+
+Each entity invocation authenticates and discovers the tenant schema, then reuses its token for the data request. Exact technical names take precedence over normalized aliases; no static core-only fallback hides discovery failure. Tenant UUID-ID entities and one association level are supported. Composite keys other than optional versionId are withheld. Entity protection is conservative; field write protection uses the vendor's crud scope. Actual tenant ACL, plugin behavior, custom-field leaves, inheritance/default alternatives and complete domain validation remain unverified.
+
+Lookup supports all/page/individual results, advanced filters and count-only size zero via a valid limit-one request. Upsert is explicit Create POST or Update PATCH, with an optional subsequent GET; it does not infer existence. Update always requires an ID. A failed GET after a successful write cannot roll that write back. Single lookup can explicitly allow no criteria or zero results. Raw requests remain API-relative JSON, with optional 404 handling and no binary transfer.
+
+Full scans stage up to 100 pages, 10000 rows and 4 MiB of serialized JSON before emission. Polling uses inclusive timestamp bounds, timestamp/ID ordering and boundary hashes. Late/backdated records below the watermark can be missed, and concurrent changes can shift offset pages. No deletion detection or exactly-once guarantee is provided. The host's 5 MiB HTTP limit is stricter than the connector's 10 MiB request preflight. Sample limit 10 lacks a trusted host sample context and is not implemented.
+
+Fresh client-credentials authentication is a POST. Clean-room records it unsent and the connector refuses fabricated success. The current generic metadata/select route therefore cannot perform that fresh authentication; direct sealed model callback tests do not establish UI wiring. Verification requires product-read ACL and can reject an otherwise valid limited integration. Compatibility with the historical 6.5.5.2-and-lower claim remains unverified; the preserved official OpenAPI identifies 6.5.6.1 with selected routing corroborated by 6.5.5.2 source.
+
+Qualification pins runtime host `4576be108e21b597d1fbffd4163fb05cd821c834` and harness `5acb7d929bb1a32ea36699ff0de8f4b034e06ef0`. This chat independently verified the annotated tag, peeled commit and unchanged main. Publication does not establish host integration or tenant acceptance.
+
+Installation, deployment, live vendor/account acceptance and UI behavior remain **UNVERIFIED**. Follow the single [#62 install table](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/62). Historical metadata and reference text below remain for context; the published scope and limitations above supersede conflicting runtime claims.
+
+---
+
 ## Credentials
 
 To use this component you need to create own API access integration credentials:

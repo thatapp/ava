@@ -10,6 +10,8 @@ updatedDate: 2023-06-29
 ComponentVersion: 1.3.0
 ---
 
+> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+
 ## Description
 
 This component receives the message body from incoming requests and, if a JSONata transformation is configured, applies it to the message. It then sends the transformed message back to the client that requested a webhook for a specific flow.
