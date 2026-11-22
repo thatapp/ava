@@ -3,7 +3,7 @@ companyName: thatapp.io
 apiBaseUri: https://api.thatapp.io
 gitDomain: git.thatapp.io
 supportEmail: support@thatapp.io
-petStoreDocs: https://petstore.thatapp.io/docs
+petStoreDocs: https://github.com/thatapp/petstore-component-nodejs#authentication
 petStoreApiKey: secret
 petStoreSourceNodeJS: https://github.com/thatapp/petstore-component-nodejs
 petStoreSourceJava: https://github.com/thatapp/petstore-component-java

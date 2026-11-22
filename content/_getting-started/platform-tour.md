@@ -270,7 +270,7 @@ workspace if you have appropriate access and role in the contract.
 
 ![Workspaces](/assets/img/getting-started/tour/workspaces-page.png "Workspaces")
 
-For more information please cvisit our [Managing workspaces](/guides/managing-workspaces) page.
+For more information, visit [Managing workspaces](/guides/managing-workspaces).
 
 </details>
 
