@@ -131,6 +131,7 @@ updatedDate: 2026-03-03
     * [Tag: Get by Organization](#tag-get-by-organization)
   * [Embed Actions](#embed-actions)
     * [Embed: Add](#embed-add)
+* [Additional hosted operations](#additional-hosted-operations)
 * [Deprecated Actions](#deprecated-actions)
   * [Space: Update Membership (Deprecated)](#space-update-membership-deprecated)
 
@@ -1619,6 +1620,15 @@ Fetches metadata for a URL (title, description, thumbnail) to create an embed ob
 ##### Output Metadata
 
 Returns the embed object including title, description, URL, and thumbnail information.
+
+## Additional hosted operations
+
+| Operation | How to use it |
+|---|---|
+| Item: Create (Lookup by external_id) | Supply the app, a stable upstream external ID and the item fields. The action looks up the external ID before creating an item. Read `_idempotent_status` in the result to distinguish `created` from `existing`. Serialize calls that share an external ID because Podio permits duplicate external IDs. |
+| Item: Reconcile Batch (by external_id) | Supply the app and an array of `external_ids`. The result separates found records with their item IDs, missing external IDs and lookup errors. Check the errors before reprocessing missing records. |
+| Search: Organization (v2 with counts) | Choose the organization and supply a search query. Set `counts` to `true` to receive aggregate counts alongside the matching `results`. |
+| Search: Space (v2 with counts) | Choose the workspace and supply a search query. Set `counts` to `true` to receive aggregate counts alongside the results for that workspace. |
 
 ## Deprecated Actions
 
