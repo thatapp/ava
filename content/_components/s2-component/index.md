@@ -45,7 +45,7 @@ Instance of MongoDB with possibility to connect from component.
 
 ### Technical Notes
 
-The [technical notes](technical-notes) page gives some technical details about Simple Storage component like [changelog](/components/key-value/technical-notes#changelog) and [completeness matrix](/components/key-value/technical-notes#completeness-matrix).
+The S2 technical notes include the [changelog](/components/s2-component/technical-notes.html#changelog) and the [completeness matrix](/components/s2-component/technical-notes.html#completeness-matrix).
 
 ## Credentials
 
