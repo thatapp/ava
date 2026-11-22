@@ -23,22 +23,27 @@ Let's see how it works with querying objects by timestamp:
 3.  Calculate the last update date based on returned objects. It's not recommended to calculate the last date as current time as you can miss some objects. This stage is also dependent on the originating API properties.
 4.  Emit the new last date as snapshot after iterating through all objects.
 
-Having gone through this list, here is what we get:
+In this example, `readPages(since)` reads the source API's pages of records updated after `since`. Each record has an `updatedAt` timestamp. The step stores the latest timestamp in its snapshot after it processes every page. An empty result keeps the previous timestamp.
 
 ```javascript
-params.snapshot = snapshot;
-
-if (!params.snapshot || typeof params.snapshot !== "string" || params.snapshot === '') {
-  // Empty snapshot
-      console.warn("Warning: expected string in snapshot but found : ", params.snapshot);
-      params.snapshot = new Date("2017-01-01T00:00:00.000Z").toISOString();
+async function pollUpdates(snapshot, readPages, emit) {
+  let since = snapshot && snapshot.lastSeen;
+  if (typeof since !== 'string' || !Number.isFinite(Date.parse(since))) {
+    console.warn('Using the initial polling timestamp');
+    since = '2017-01-01T00:00:00.000Z';
   }
 
- var newSnapshot = new Date().toISOString();
-
-...
-...
-emitSnapshot(newSnapshot);
+  let latest = Date.parse(since);
+  for await (const page of readPages(since)) {
+    for (const record of page) {
+      const updated = Date.parse(record.updatedAt);
+      if (!Number.isFinite(updated)) throw new Error('Record has an invalid updatedAt');
+      await emit('data', { body: record });
+      latest = Math.max(latest, updated);
+    }
+  }
+  await emit('snapshot', { lastSeen: new Date(latest).toISOString() });
+}
 ```
 
 >**IMPORTANT:** Please remember that there can be only one snapshot per step in a Flow. Each time another snapshot is made, the last one is overwritten.
