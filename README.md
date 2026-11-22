@@ -46,39 +46,13 @@ bundle exec jekyll build
 
 ## Testing locally
 
-If you don't have the `jekyll/jekyll` Docker image on your machine yet,
-install it once.
+Install Ruby and the Bundler version listed at the end of `Gemfile.lock`. From the root of this repository, install the locked dependencies and start the preview.
 
 ```sh
-docker pull jekyll/jekyll
-```
-
-Once you have `jekyll/jekyll` image locally, execute the following
-command from the root folder of this repo:
-
-```sh
+bundle install
 ./start.sh
 ```
 
-If you are on a Windows machine just copy the command from the
-[start.sh](./start.sh) file and adjust it with Windows specific commands.
+On Windows with PowerShell, run `bundle exec jekyll serve --host 127.0.0.1 --port 4000` after installing the bundle.
 
-If your see the following output in the terminal, the docs are up and running:
-
-```sh
-No active host found
-Error getting IP address: Host is not running
-Configuration file: /srv/jekyll/_config.yml
-Configuration file: /srv/jekyll/_config.yml
-            Source: /srv/jekyll
-       Destination: /srv/jekyll/_site
- Incremental build: disabled. Enable with --incremental
-      Generating...
-                    done in 0.672 seconds.
- Auto-regeneration: enabled for '/srv/jekyll'
-Configuration file: /srv/jekyll/_config.yml
-    Server address: http://0.0.0.0:4000/
-  Server running... press ctrl-c to stop.
- ```
-
-The docs are available now at [http://localhost:4000/](http://localhost:4000/).
+When Jekyll reports that the server is running, open [http://127.0.0.1:4000/](http://127.0.0.1:4000/). Press Ctrl+C in the terminal to stop it.

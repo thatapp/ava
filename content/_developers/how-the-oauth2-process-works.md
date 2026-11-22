@@ -9,10 +9,7 @@ redirect_from:
   - /developers/how-the-oauth2-process-works.html
 ---
 
-To learn about the details of OAuth2 authorization and the mechanism behind we
-refer to [The OAuth Bible](https://github.com/Kong/mashape-oauth) which we highly
-recommend. The explanation below is based on that extensive document customized
-to the case of this iPaaS.
+This guide follows an OAuth 2.0 authorization code from provider consent through token exchange and refresh on the platform.
 
 >**Please note:** Every OAuth2 API provider has its own specific requirements.
 > Make sure to check the documentation of the service before assuming anything
@@ -135,7 +132,7 @@ After the tokens are refreshed **Application** can resume accessing the protecte
 
 ## Related links
 
-- [The OAuth Bible](https://github.com/Kong/mashape-oauth)
+- [OAuth 2.0 Authorization Code Grant, RFC 6749 §4.1](https://www.rfc-editor.org/rfc/rfc6749.html#section-4.1)
 - [OAuth Callback redirect URL](/guides/oauth-callback-redirect-url)
 - [Salesforce component](/components/salesforce/index)
 - [Google Spreadsheets component](/components/gspreadsheet/index)s

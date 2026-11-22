@@ -1,2 +1,5 @@
-#!/bin/bash
-docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll --volume="$(pwd)/vendor/bundle:/usr/local/bundle" -it -p $(docker-machine ip `docker-machine active`):4000:4000 jekyll/jekyll jekyll serve
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")"
+exec bundle exec jekyll serve --host 127.0.0.1 --port 4000 "$@"

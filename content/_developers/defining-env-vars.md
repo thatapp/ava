@@ -61,12 +61,10 @@ Following the above definition it is then used further down like this:
 }
 ```
 
-These are just small parts of the whole component.json which can be viewed fully in [Salesforce-component GitHub repository](https://github.com/thatapp/salesforce-component).
-
->**Please note:** the actual `client_id` and `client_secret` [are defined inside](https://github.com/thatapp/salesforce-component/blob/master/lib/helpers/oauth-utils.js) the`oauth-utils.js` and not only in `component.json`
+Set the two values in the component repository’s environment before connecting a credential. The descriptor declares the variable names and references them from `credentials.oauth2`. Keep client secrets out of the component source.
 
 ## Related links
 
 - [Environment variables available during component execution](env-vars-execution)
 - [Creating OAuth App for Salesforce](/components/salesforce/creating-oauth-app-for-salesforce)
-- [Salesforce-component GitHub repository](https://github.com/thatapp/salesforce-component)
+- [OAuth2 properties in component.json](/developers/component-json-oauth#oauth2)
