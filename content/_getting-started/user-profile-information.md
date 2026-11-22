@@ -50,34 +50,13 @@ Please follow the instructions to generate secure password.
 
 ## Two-factor authentication
 
-We use Google 2FA to provide additional layer of security. Here you can enable the
-two-factor authentication. You would need Google Authenticator to read the generated
-QR-code:
+Open your ThatApp profile and select **Two-factor authentication** in the Security section. This setting applies to your ThatApp sign-in across workspaces.
 
-{% include img.html max-width="80%" url="/assets/img/getting-started/tour/2fa-1-qr-code.png" title="Generated QR code" %}
+1. Open an authenticator app that supports time-based codes, such as Google Authenticator. Scan the QR code or enter the setup secret shown in your profile.
+2. Enter the six-digit code from the app to confirm setup. Two-factor authentication becomes active after ThatApp accepts the code.
+3. Save the recovery codes shown after confirmation in a safe place. Each recovery code can be used once if you lose access to your authenticator.
 
-Open your Google Authenticator and scan this QR-code to get the code:
-
-{% include img.html max-width="80%" url="/assets/img/getting-started/tour/2fa-2-code-entered.png" title="Code entered" %}
-
-After this the 2FA will be enabled, but before navigating away you better copy,
-download or print the recovery codes:
-
-{% include img.html max-width="80%" url="/assets/img/getting-started/tour/2fa-3-recovery-codes.png" title="Recovery Codes" %}
-
-When everything is successfully enabled you will get the following screen:
-
-{% include img.html max-width="80%" url="/assets/img/getting-started/tour/2fa-4-generated.png" title="2FA enabled" %}
-
-Here you can either close this window and you will get a prompt to use your
-Google Authenticator along with your username/password pair to enter the platform UI.
-
-You can also disable the 2FA from here by pressing Disable button and when system
-will confirm with the following message:
-
-{% include img.html max-width="80%" url="/assets/img/getting-started/tour/2fa-5-disabled.png" title="2FA siabled" %}
-
-To enable the 2FA again you must repeat all previous steps.
+To replace recovery codes or turn two-factor authentication off, return to **Two-factor authentication** on your profile. Replacing recovery codes invalidates the previous set.
 
 ## Manage your API Key
 
