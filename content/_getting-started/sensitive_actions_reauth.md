@@ -7,9 +7,13 @@ order: 11
 category: platform-features
 ---
 
-## Description 
+## Description
 
-While working with the platform interface, there may be cases of unwanted changes of user/contract data by an unauthorized person who gained access to the interface or by the user himself by accident. 
+Re-authentication uses your core thatapp.io account, including the same password
+or OIDC/SAML provider used to sign in across the platform. Tenant and contract
+settings below continue to govern when this confirmation is required.
+
+While working with the platform interface, there may be cases of unwanted changes of user/contract data by an unauthorized person who gained access to the interface or by the user himself by accident.
 
 In order to prevent unaware changes and protect against malicious changes of data, the platform has a mechanism - *Re-authentication for sensitive actions*.
 
@@ -59,7 +63,7 @@ Below you can see a list of actions that are considered sensitive by the platfor
 - [Modifying user details](/getting-started/user-profile-information.html#edit-your-profile)
 - [Disabling 2-Factor Authentication (2FA)](/getting-started/user-profile-information.html#two-factor-authentication)
 - [Inviting Members to Contracts.](/guides/managing-contracts.html#editing-contract-memberships)
-- [Inviting and removing Members from Workspaces](/guides/managing-workspaces.html#workspace-members) 
+- [Inviting and removing Members from Workspaces](/guides/managing-workspaces.html#workspace-members)
 - [Changing user roles in Contracts and Workspaces](/guides/managing-user-roles-in-a-tenant.html#setting-user-roles-in-workspace)
 - [Deleting Full (Production) Workspaces](/getting-started/contracts-and-workspaces.html#workspaces)
 - [Adding or removing SSH Keys](/getting-started/user-profile-information.html#identity-keys)

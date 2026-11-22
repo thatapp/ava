@@ -43,7 +43,7 @@ The SAP Message Server manages communication between the application servers, pa
 3. `SAP System Number` - Mandatory. System Number of SAP ECC (R/3, ERP) DB.
 
 4. `SAP Client Number` - Client Number of SAP ECC (R/3, ERP). Client number may be different for different installations. But here is an example of clients available in one of the standard installation types (an extraction from SAP's official documentation):
-  -    `000` - serves as standard delivery client (as usual in on-premise deployments)
+  -    `000` - serves as standard delivery client
   -    `100` - is the primary demo client that contains the pre-configured scenarios and sample data.
   -    `200` - can be used to experience the activation of SAP Best Practices on your own (see the SAP Best Practices implementation guide for details)
   -    `300` - contains the activated Best Practices based on the White-list approach
@@ -75,14 +75,8 @@ SAP ECC (R/3, ERP) component includes the following actions:
 
 1. Chain function call in one transaction context not supported.
 2. IDOC mechanism of RFC function call not supported.
-3. Component does not support Local Agents.
-4. Asynchronous operations are not supported.
-5. `RFC Server` trigger currently supports callback requests only. RFC server can not define the RFC call response.
+3. Asynchronous operations are not supported.
+4. `RFC Server` trigger currently supports callback requests only. RFC server can not define the RFC call response.
 After receiving the request the server responses with an input BAPI structure.
-6. `RFC Server` trigger works for realtime flows only.
+5. `RFC Server` trigger works for realtime flows only.
 
-## Deployment status
-
-The former git-push, platform Docker registry and VPN/subnet deployment recipe is **not offered**. Do not modify legacy registry database records or publish an image using that recipe.
-
-The SAP JCo details above describe vendor dependencies. They do not establish a supported or installed build on this host. An operator must review the exact component and dependencies through component intake. Installation, native/Java prerequisites and current runtime behavior remain **UNVERIFIED**.

@@ -182,7 +182,7 @@ component descriptor of the [MailChimp component](https://github.com/thatapp/mai
 }
 ```
 
-Here the `model` has a `getLists` which is exposed in the `lib/commons.js` as a
+Here the `model` has a `getLists` which is exposed in the `lib/common.js` as a
 [function `getLists`](https://github.com/thatapp/mailchimp-component/blob/master/lib/common.js#L14):
 
 ```js

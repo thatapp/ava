@@ -560,4 +560,3 @@ Be careful: this action can process only one attachment - if it would be more or
 ## Known Limitations
 
 1. The maximum possible size for an attachment is 100 MB.
-2. The platform VPN Agent / Local Agent service is **not offered**; the former Agent attachment limitation is not a current setup option.

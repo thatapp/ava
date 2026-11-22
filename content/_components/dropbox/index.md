@@ -309,4 +309,3 @@ Create new folder in provided `path`. Path should contains folder name:
 ## Known Limitations
 
 1. Maximal possible size for an attachment is 10 MB.
-2. The platform VPN Agent / Local Agent service is **not offered**; the former Agent attachment limitation is not a current setup option.

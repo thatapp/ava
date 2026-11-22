@@ -152,7 +152,7 @@ If `Download as Attachment` is unchecked:
 ## Triggers
 
 ### HTTP Request (Axios Library)
-Refer to the actions section [HTTP Request (Axios Library)](#http-request-axios-lib).
+Refer to the actions section [HTTP Request (Axios Library)](#http-request-axios-library).
 
 ## Examples of Usage
 
@@ -204,8 +204,6 @@ They are:
 **2.** Attachments limitations:
 
   1. Maximal possible size for an attachment is 10 MB.
-
-  2. Attachments mechanism does not work with [Local Agent Installation](/references/local-agents-requesting#compatible-operating-systems)
 
 **3.** We suggest not to set *Delay* value more then time period between two executions of the flow.
 Please keep in mind that delay can influence on time of next execution.

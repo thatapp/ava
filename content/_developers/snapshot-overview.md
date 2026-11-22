@@ -1,5 +1,5 @@
 ---
-title: Using Shapshot
+title: Using Snapshot
 layout: article
 section: How-Tos and Tutorials
 description: This document provides basic information on Snapshot feature and a few real-life use case.

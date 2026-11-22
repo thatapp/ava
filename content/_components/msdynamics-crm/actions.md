@@ -144,10 +144,6 @@ Action creates a single object. Input metadata is fetched dynamically from your 
 
 You should specify **ID** for making updates in object.
 
-### Limitations
-
-When **Utilize data attachment from previous step (for objects with a binary field)** is checked and this action is used with Local Agent error would be thrown: 'getaddrinfo ENOTFOUND steward-service.platform.svc.cluster.local steward-service.platform.svc.cluster.local:8200'.
-
 ## Lookup Object by Field(deprecated)
 
 Use **Lookup Object by Field** instead

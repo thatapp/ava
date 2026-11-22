@@ -10,9 +10,6 @@ redirect_from:
 
 ## Using external modules
 
-Before we begin a word of caution:
-
-> Node.js and all the dependencies need to be installed on your local computer in order for this instruction to work. How to install the Node.js on your local computer is beyond the scope of this help page.
 From here on we would assume that you have all the necessary preconditions for developing your code in Node.js.
 
 While developing a component is node.js it is important to have all the dependencies right. If you are calling any modules from your programs that are required to run your component then the packages that include them need to be included as well. The logic is the following:
@@ -65,8 +62,6 @@ npm install name_of_dependency --save
 
 After this, your dependency will be added to the **package.json** file as well.
 
-The official NPM page has full fledged documentation about [installing NPM packages locally](https://docs.npmjs.com/downloading-and-installing-packages-locally) which can be consulted for more options.
-
 ## Resolving the dependencies
 
 If you need to check for the missing dependencies for any program included (for example `code.js`) in your component you could follow instructions presented here.
@@ -83,4 +78,3 @@ If all goes well without errors then your file `code.js` has no missing dependen
 
 - [Petstore component]({{site.data.tenant.petStoreSourceNodeJS}})
 - [Creating a package.json file](https://docs.npmjs.com/creating-a-package-json-file)
-- [Downloading and installing packages locally](https://docs.npmjs.com/downloading-and-installing-packages-locally)

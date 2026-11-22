@@ -17,64 +17,6 @@ ComponentVersion: 1.2.5
 
 >Please update your codebase to utilize the [Microsoft Dynamics CRM v2](/components/msdynamics-crm-v2) as soon as possible to ensure compatibility with future updates and benefit from the latest features.
 
-## Basic structure
-
-Component is structured in the following parts:
-
- * Actions can be found in `lib/actions`.
- * Triggers can be found in `lib/triggers`.
- * This component supports validation of credentials information, code for that you'll find in `/verifyCredentials.js`.
-
-## Legacy development workflow
-
-The old clone/npm/Grunt installation recipe has been removed from current instructions. Grunt is third-party developer tooling, not an unavailable AVA CLI. This legacy workflow was not reproduced, so its commands are not labelled working or freshly failed. Use reviewed component intake for any replacement build; local development does not install it on the host.
-
-## How to add new trigger / action
-
-Adding new trigger or action is very simple, component is coded in generic and uses OData API of MS Dynamics CRM. You need to do following on the sample of new trigger:
-
-## Update component description
-
-Triggers are described under `triggers` part of the `component.json`, so just add a new triggers like here:
-
-```json
-{
-  "getLeads": {
-    "main": "./lib/triggers/getLeads.js",
-    "type": "polling",
-    "title": "Query Leads",
-    "metadata": {
-      "out": "./lib/schemas/triggers/getLeads.out.json"
-    }
-  }
-}
-```
-As trigger only have an output and no input you don't need an in metadata.
-
-## Create a new schema
-
-Create an output schema mentioned above. It's a JSON Schema files, see sample for other out schemas in ```lib/schemas/```.
-
-## Create a new trigger code
-
-Now you can code a new trigger, you can create it from scratch or extend the existing MS Dynamics component code, e.g. for trigger that fetches leads you need something like this:
-
-```js
-var trigger = require('./baseTrigger');
-
-exports.process = processTrigger;
-
-function processTrigger(msg, cfg, snapshot) {
-    trigger(this, 'Lead', cfg, snapshot);
-}
-```
-
-Base trigger will takes care about:
- * Fetching OData objects
- * Paging
- * Fetching only for modified objects
-
-
 ## Additional information
 
 ### Actions: update fields

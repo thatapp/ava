@@ -187,7 +187,6 @@ In response, you will receive a complete list of roles for both *Scopes*: `contr
                         "global.auth_clients.get",
                         "workspaces.auth_secret.get",
                         "workspaces.logs.read_all",
-                        "workspaces.vpn_agent.get",
                         "workspaces.topic.get"
                     ],
                     "scope": "workspaces"

@@ -11,7 +11,7 @@ ComponentVersion: 2.0.3
 
 ## Use case
 
-You're looking to create a seamless real-time flow using [Webhooks](/components/webkook/). The flow starts when an external source calls a Webhook endpoint with some data that you need to store. Within a short span of time, another individual will initiate a different real-time flow by calling a separate endpoint with a specific ID. Using this ID as a reference, you aim to retrieve the previously stored data. To process the results, you intend to utilize a [Batch](/components/batch/) or [Pub-Sub](/components/pub-sub/) component as the trigger.
+You're looking to create a seamless real-time flow using [Webhooks](/components/webhook/). The flow starts when an external source calls a Webhook endpoint with some data that you need to store. Within a short span of time, another individual will initiate a different real-time flow by calling a separate endpoint with a specific ID. Using this ID as a reference, you aim to retrieve the previously stored data. To process the results, you intend to utilize a [Batch](/components/batch/) or [Pub-Sub](/components/pub-sub/) component as the trigger.
 
 In this scenario, the Webhook plays a crucial role, as it allows you to capture incoming data and initiate subsequent actions. However, it's important to note that Maester lacks trigger functions but can still be used effectively alongside the Webhook.
 
@@ -38,7 +38,7 @@ Our initial step involves a Webhook component which receives specific data.
 }
 ```
 
-In the second step, the Maester component stores the data received from the [Webhook](/components/webkook/). To avoid the need for constructing Custom Headers, we utilize the Maester Object ID as the Upsert Criteria.
+In the second step, the Maester component stores the data received from the [Webhook](/components/webhook/). To avoid the need for constructing Custom Headers, we utilize the Maester Object ID as the Upsert Criteria.
 
 {% include img.html max-width="100%" url="img/step-2-maester-config.png" title="First flow - maester configuration" %}
 
@@ -81,7 +81,7 @@ JSONata expression:
 
 ## Second flow
 
-In the second flow, data regarding the order description is received via the [Webhook](/components/webkook/), enabling the calculation of product dimensions. These calculations rely on the information obtained in the first flow.
+In the second flow, data regarding the order description is received via the [Webhook](/components/webhook/), enabling the calculation of product dimensions. These calculations rely on the information obtained in the first flow.
 
 <details close markdown="block"><summary><strong>Second flow view</strong></summary>
 
@@ -103,7 +103,7 @@ The initial step of our process involves a Webhook component designed to receive
 }
 ```
 
-In the second step, the ID Linking component retrieves the Maester Objects ID by relying on the order value specified in the Webhook data. To ensure timely [Webhook](/components/webkook/) triggers, we employ the ['Wait for object to exist'](/components/id-linking/index#config-fields-1) behavior.
+In the second step, the ID Linking component retrieves the Maester Objects ID by relying on the order value specified in the Webhook data. To ensure timely [Webhook](/components/webhook/) triggers, we employ the ['Wait for object to exist'](/components/id-linking/index#config-fields-1) behavior.
 
 {% include img.html max-width="100%" url="img/step-2-2-id-linking-config.png" title="Second flow - id linking configuration" %}
 

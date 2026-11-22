@@ -1973,5 +1973,53 @@
       "regressionPerRuntime": 314,
       "qualification": "Bounded offline combined replay with pinned source input; final every-connector one-SHA qualification remains open"
     }
+  },
+  "master_reconciliation": {
+    "docs_base": "494f5187d970be87da12b8c3fd5154c57eaa34e1",
+    "source_packet": "d4783273d656d6a5f7d7bd1a408b1028a634c2d7",
+    "source_packet_page_hashes_verified": 134,
+    "note": "The hashes above describe the November 1 source packet. The following pages include later edits from master. Hashes use the same UTF-8 and LF normalization.",
+    "updated_pages": {
+      "content/_components/salesforce/actions.md": {
+        "source_packet_sha256": "47424fba78a91fb72961d3802dbd95615d2146a34cad129a3ecbe5c330666e9b",
+        "integrated_sha256": "bd7967fc5af8aab252ae4889b8bff88f19f8fa26c9fe5e7bd511fcb505010e90"
+      },
+      "content/_components/salesforce/index.md": {
+        "source_packet_sha256": "70965f29672e7b55697989693e948c64fb671d7c88bcb382f69c040231143a65",
+        "integrated_sha256": "3cc896f090258c0e845bed0fadec318a01087d1d5d22dce48b5ae0df11a5efda"
+      },
+      "content/_components/mssql/index.md": {
+        "source_packet_sha256": "686934a29d1e4caa568384b62b784098fa98f9938cd208bbc6e1b268d4f508b9",
+        "integrated_sha256": "1de7339c7ae36aeb2795e8771eb6329003791b8fcf1296e77a924ebdaba5056f"
+      },
+      "content/_components/aws-s3/index.md": {
+        "source_packet_sha256": "707efd7b5fd15cffcccaf9817b7b1ad0a8d924c47277b25c0f4112ecbab6d80a",
+        "integrated_sha256": "89301465e1f38fbac90f243997c901b05580bd44766db82a231c0a9edbbbe010"
+      },
+      "content/_components/dropbox/index.md": {
+        "source_packet_sha256": "1347fd31de20976cc65bd5ebe70a503add63b1d2cc82d76ee5e3b911873867c0",
+        "integrated_sha256": "2c599f8ee74ac5177ddb516cca653bed8d30ef852133a74317f7c504e9cf82fe"
+      },
+      "content/_components/xml/index.md": {
+        "source_packet_sha256": "d191156a08b2d91254ac7b7b1f8f199d1c39f485e6b79e46942f7a63e4aad5f7",
+        "integrated_sha256": "dbfb1916bb46266b2e483411cd93f94db582e65f5f1ae005136d6755b9e28258"
+      },
+      "content/_components/odata/index.md": {
+        "source_packet_sha256": "1bb8c3b2d9e02adfcebba0df917681f4ecf526accc2b9b32797f98436d606d39",
+        "integrated_sha256": "d8d3bbcc492cb028658f7a9125b372dcb22b45cb644a500c3606673d52ac56af"
+      },
+      "content/_components/sftp/index.md": {
+        "source_packet_sha256": "cbf607aead6ae41d644bad6ed3ba805bc09e721e5199e5bb149b491617d68baf",
+        "integrated_sha256": "23e1d7f333eaeaf0e2277e51b23664e305717b7fb5ece8f6aab381a5b06700d5"
+      },
+      "content/_components/csv/actions.md": {
+        "source_packet_sha256": "28352d34ee62dc5be09be4febe3e3a3cba4a9fcaa3d68955c89af9f05e8b1047",
+        "integrated_sha256": "931e197e4037851b35aed45515099e3c18b393f22e6bde4ec7598a97af077e68"
+      },
+      "content/_components/csv/index.md": {
+        "source_packet_sha256": "b67739c246f7488086bf4e79507723465c294c098b90a5c1e2ee0802a006d612",
+        "integrated_sha256": "671f46b9e5712e5a4485aad5cab3137ba0488e0ed78381c8c4504d8ce3d89283"
+      }
+    }
   }
 }

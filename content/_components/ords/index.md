@@ -35,7 +35,7 @@ Your database must have **ORDS installed and configured** to expose SQL and Auto
 
 ## Requirements
 
-* An Oracle Database (on-premise or cloud).
+* An Oracle Database.
 * ORDS must be installed and running, configured with access to the target schema.
 * AutoREST should be enabled for any tables you want to access via this component. Example of SQL query to enable AutoREST for HR schema, EMPLOYEES table:
 

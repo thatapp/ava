@@ -88,10 +88,6 @@ SFTP component includes the following actions:
 5.  [Upload File From URL](actions#upload-file-from-url) - Given a filename and a URL to an attachment, transfers the contents of the attachment to the SFTP server.
 6.  [Upload Files From Attachments Header](actions#upload-files-from-attachments-header) - Upload all files from the attachments header to a defined SFTP directory.
 
-## Known limitations
-
-* The platform VPN Agent / Local Agent service is **not offered**; the former Agent attachment limitation is not a current setup option.
-
 ## Related links
 
 *   The SFTP component uses [ssh2-sftp-client](https://www.npmjs.com/package/ssh2-sftp-client).

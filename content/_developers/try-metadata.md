@@ -7,7 +7,7 @@ order: 8
 category: component-descriptor
 ---
 
-We want to introduce you a Try Metadata Tool for the [{{site.data.tenant.name}} platform](http://www.{{site.data.tenant.name}}). You can use this tool to render the component metadata structures to see how they would
+We want to introduce you a Try Metadata Tool for the [{{site.data.tenant.name}} platform]({{site.data.tenant.websiteURL}}). You can use this tool to render the component metadata structures to see how they would
 look on the platform UI. You can experiment and refine the metadata structure before
 committing it to your custom component code. We hope this tool will be useful for you. To access this tool you can just click on the button on left-hand-side menu.
 

@@ -1,10 +1,10 @@
 ---
 layout: component
-title: Utility сomponent
+title: Utility component
 section: Utility components
 description: A component that is designed for utility operations.
 icon: utility.png
-icontext: Utility сomponent
+icontext: Utility component
 category: utility
 updatedDate: 2025-12-03
 ComponentVersion: 1.8.1
@@ -302,7 +302,6 @@ There is no Config Fields
 ## Limitations
 
 1. Maximal possible size for an attachment is 10 MB.
-2. The platform VPN Agent / Local Agent service is **not offered**; the former Agent attachment limitation is not a current setup option.
-3. `Delay All` option from `Delay` don't correctly support `Parallel Processing` option in component more then 1
-4. `Delay Each` option from `Delay` in ordinary flow type can handle delay up to 30 sec, if you need more, use real-time type
-5. The historical `Data to transfer` requirement does not describe the source-supported pass-through behavior above. Current UI options remain UNVERIFIED.
+2. `Delay All` option from `Delay` don't correctly support `Parallel Processing` option in component more then 1
+3. `Delay Each` option from `Delay` in ordinary flow type can handle delay up to 30 sec, if you need more, use real-time type
+4. Needs to use `Data to transfer` field for correct transfer data after `Delay` component.

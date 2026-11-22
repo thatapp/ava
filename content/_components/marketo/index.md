@@ -105,4 +105,3 @@ The [technical notes](technical-notes) page gives some technical details about M
 
 1. See [REST API limitations](https://developers.marketo.com/rest-api/marketo-integration-best-practices/)
 2. We recommend to set flow to realtime if total execution time is greater than 60 seconds.
-3. The attachments mechanism does not work with Local Agent Installation.

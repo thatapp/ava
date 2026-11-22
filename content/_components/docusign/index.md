@@ -1110,10 +1110,6 @@ Allows to create envelope for signing using template in your account. Templates 
 
 This action has dynamic metadata.
 
-## Known Limitations
-
-Currently component does not support local agents.
-
 ## Additional information
 
 ### DocuSign API and Documentation links

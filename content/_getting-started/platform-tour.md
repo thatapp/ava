@@ -57,24 +57,20 @@ This menu section links pages to help you monitor and debug your integration flo
 
 *   [Dashboard](#dashboard)
 *   [Executions](#executions)
-*   [Containers](#containers)
 *   [Logs](#logs)
 
 ### Dashboard
 
-The first page you land when navigate to your contract is the Dashboard page. It shows execution statistics, count of flows, count of messages in flows, container errors and memory usage.
+The first page you land when navigate to your contract is the Dashboard page. It shows execution statistics, count of flows, count of messages in flows and memory usage.
 
 <details close markdown="block"><summary><strong>Click to expand for more details.</strong></summary>
-
-![Dashboard](/assets/img/getting-started/tour/dashboard.png "Dashboard")
 
 1. The **Ordinary Flows** counter showing the total count of Ordinary Flows in this workspace.
 2. The **Real-time Flows** counter showing the total count of Real-time Flows in this workspace.
 3. The **Message in Queues** counter showing the total count of messages in the queues in this workspace.
 4. The **Execution Statistics** graph showing the overview of the messages emitted by flows in this workspace. You can click on the legend to go the filtered execution information page.
-5. The **Container Errors** graph showing the container errors in this workspace. You can click on the legend to go the filtered containers information page.
-6. The **Workspace Memory Usage** graph showing the overview of resources quota available to this workspace and the actual use of it. You can hover to the graph point for getting the memory usage for certain date.
-7. The **View Report** button that allows you to see the detailed report for memory usage of flows in workspace.
+5. The **Workspace Memory Usage** graph showing the overview of resources quota available to this workspace and the actual use of it. You can hover to the graph point for getting the memory usage for certain date.
+6. The **View Report** button that allows you to see the detailed report for memory usage of flows in workspace.
 
 
 </details>
@@ -91,38 +87,6 @@ narrow down your search and navigate to the one you need.
 2.  The list of execution matching the selected criteria.
 
 ![Executions](/assets/img/getting-started/tour/executions.png "Executions")
-
-</details>
-
-### Containers
-
-The Containers menu item opens our [Containers page](/guides/containers). This page provides insights into containers and their components. By default, it displays today's log information, but users can expand the date range using the filtering and search features.
-
-<details close markdown="block"><summary><strong>Click to expand for more details.</strong></summary>
-
-Container logs are retained for up to 30 days. On the Containers page, you'll encounter the following states:
-
-* **Running** (Green Flag): Indicates that the container is currently operational.
-* **Finished** (Green Flag): Indicates that the container has been successfully shut down.
-* **Finished** (Red Flag): Suggests that the container has been stopped due to a registered error.
-* **Killed** (Green Flag): Signifies a successful termination of the container.
-* **Killed** (Red Flag): Indicates that the container was abruptly terminated by the operating system.
-* **Failed** (Red Flag): Indicates that the container was abruptly terminated due to an error.
-
-{% include img.html max-width="100%" url="/assets/img/getting-started/tour/container-states.png" title="Container States" %}
-
-To access specific information for a container, simply click on the 'Step Name.' On the individual container page, you will find the following details:
-
-* **Status:** The current status of the container.
-* **Flow Name:** The name of the flow associated with this container. Clicking on the flow name opens the corresponding flow designer page.
-* **Start Date:** The date and time when the container started.
-* **Stop Date:** The date and time when the container stopped.
-* **Exit Code:** The current or last status code of the container.
-* **Reason:** A description of the current or last status code.
-* **Filtering:** Options for filtering the container's logs, including Search, Log Level, and Date Range.
-* **Details:** Log entries with Date/Time, Log Level, and Description.
-
-{% include img.html max-width="100%" url="/assets/img/getting-started/tour/container.png" title="Container" %}
 
 </details>
 
@@ -147,7 +111,6 @@ This menu section links the pages you need to build integration flows.
 
 *   [Flows](#flows)
 *   [Credentials](#credentials)
-*   [Agents](#agents)
 *   [Topics](#topics)
 *   [Recipes](#recipes)
 
@@ -187,22 +150,6 @@ you can create, edit and delete the credentials for each integration component.
 
 > **Please Note** you can also create credentials during the flow step configuration.
 > These credentials will appear on the credentials page as well.
-
-</details>
-
-### Agents
-
-The Agents menu item links the [VPN Agent](/guides/vpn-agent) management page where
-you can create, edit and delete the VPN Agents. You can use this feature to establish
-a secure VPN tunnel between your local resource and the platform. This enables a secure
-data exchange between your local system and the active integration flow.
-
-<details close markdown="block"><summary><strong>Click to expand for more details:</strong></summary>
-
-1.  Use to [create the VPN Agents](/guides/vpn-agent.html#how-to-setup).
-2.  The list of VPN Agents configured for your workspace.
-
-![Agents](/assets/img/getting-started/tour/agents.png "Agents")
 
 </details>
 

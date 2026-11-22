@@ -89,10 +89,6 @@ Input metadata is fetched dynamically from your SugarCRM account. Output metadat
 
 * **Utilize data attachment from previous step (for objects with a binary field)** - a checkbox, if it is checked and an input message contains an attachment and specified object has a binary field (type of `file`) then the attachment is put into object's binary field.
 
-### Limitations
-
-When **Utilize data attachment from previous step (for objects with a binary field)** is checked and this action is used with Local Agent error would be thrown: 'getaddrinfo ENOTFOUND steward-service.platform.svc.cluster.local steward-service.platform.svc.cluster.local:8200'.
-
 ## Bulk Create Objects
 
 Provides a simple interface for quickly creating large amounts of objects.

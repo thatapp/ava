@@ -215,6 +215,4 @@ After all the above steps, this archive is completely ready for use in the new C
 
 ## Limitations
 
-1. The platform VPN Agent / Local Agent service is **not offered**; the former Agent attachment limitation is not a current setup option.
-
-2. UnZIP action does not support archived folders. It can only unzip archived files.
+1. UnZIP action does not support archived folders. It can only unzip archived files.

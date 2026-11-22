@@ -15,10 +15,6 @@ ComponentVersion: 1.0.6
 
 ## Changelog
 
-### 1.0.6 (September 10, 2024)
-
-* Made the component more whitelabel-friendly by removing the company name from the title
-
 ### 1.0.5 (October 21, 2022)
 
 * Fix error when component makes double HJSON stringify

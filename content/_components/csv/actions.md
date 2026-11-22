@@ -270,5 +270,4 @@ If **Upload CSV as file to attachments** is not checked:
 * You may get `Component run out of memory and terminated.` error during run-time, that means that component needs more memory, please add
  `AVA_REQUIRED_RAM_MB` environment variable with an appropriate value (e.g. value `1024` means that 1024 MB will be allocated) for the component in this case.
 * Maximal possible size for an attachment is 10 MB.
-* The platform VPN Agent / Local Agent service is **not offered**; the former Agent attachment limitation is not a current setup option.
 * Inbound message in `Message Stream` and each element of `JSON Array` should be a plain Object, if value not a primitive type it will be set as `[object Object]`

@@ -242,10 +242,6 @@ Input metadata depend on object type:
 
 </details>
 
-### Limitation
-
-The action uses the attachment mechanism, so due to platform limitation doesn't work with Local Agent Installation.
-
 ## Upsert Objects
 
 Action upsert objects by unique criteria.
@@ -351,7 +347,6 @@ Input/output metadata depend on object type and generated from [Marketo swagger 
 ### Limitations
 
  1. Mandatory fields are not marked in the input metadata for Activities and Program Members entities.  You can find this information in the [API documentation](https://developers.marketo.com/rest-api/bulk-extract)
- 2. The action uses the attachment mechanism, so due to platform limitation doesn't work with Local Agent Installation.
 
 ## Delete Object By Unique Criteria
 

@@ -27,7 +27,7 @@ and the repository exists.
 
 ## Clone and prepare your component
 
-If you have prepared your component locally by following instructions in how to build a component in Node.js or Java then you can skip this step. Otherwise, you can clone one of our template repositories to go through these steps couple of times to familiarize yourself. At the moment we are supporting only Node.js and Java so here are component templates in each language respectively:
+If you have prepared your component by following instructions in how to build a component in Node.js or Java then you can skip this step. Otherwise, you can clone one of our template repositories to go through these steps couple of times to familiarize yourself. At the moment we are supporting only Node.js and Java so here are component templates in each language respectively:
 
 *   [Petstore Component for Node.js]({{site.data.tenant.petStoreSourceNodeJS}} "Petstore components for Node.js")
 *   [Petstore Component for Java]({{site.data.tenant.petStoreSourceJava}} "Petstore Component for Java")

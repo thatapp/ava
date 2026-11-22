@@ -1,9 +1,9 @@
 ---
 layout: component
 title: Utility Technical Notes
-description: Technical Notes for the Utility сomponent.
+description: Technical Notes for the Utility component.
 icon: utility.png
-icontext: Utility сomponent
+icontext: Utility component
 category: utility
 updatedDate: 2025-12-03
 ComponentVersion: 1.8.1

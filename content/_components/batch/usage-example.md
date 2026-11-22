@@ -9,11 +9,11 @@ updatedDate: 2025-12-03
 ComponentVersion: 2.0.9
 ---
 
-## Szenario
+## Scenario
 
 As an example, consider a situation where we need to collect incoming data from Webhook and generate a CSV based on that data. It may happen that there is no possibility to send all data to Webhook at once. For example in case of data arriving in real time, and to generate a representative CSV document we need a set of data with a certain number of lines. In this case, we will use Batch component, which collects all incoming messages into one collection and sends it to CSV component for generating a document. Also, as a check, let's add sending email with the resulting document to the end.
 
-To implement this scenario, we will create two flowss.
+To implement this scenario, we will create two flows.
 In the first, our task will be to initialize the Batch component. In the second flow, we will work with a ready Batch component from the first flow.
 
 ## Initialization of Batch

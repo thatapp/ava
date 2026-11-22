@@ -13,7 +13,7 @@ ComponentVersion: 1.5.2
 
 > **Historical component releases.** The entries below record upstream/component release facts. They do not establish the build installed on the current host. Sailor versions and renamed package coordinates in these entries are historical references, not installation instructions or a current runtime support matrix.
 
-## Chanhelog
+## Changelog
 
 ### 1.5.2 (July 07, 2023)
 

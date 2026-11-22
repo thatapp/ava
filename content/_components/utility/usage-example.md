@@ -3,7 +3,7 @@ layout: component
 title: Utility Usage Example
 description: Usage example for the Utility component.
 icon: utility.png
-icontext: Utility сomponent
+icontext: Utility component
 category: utility
 updatedDate: 2025-12-03
 ComponentVersion: 1.8.1
