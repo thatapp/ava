@@ -45,9 +45,10 @@ This action has two parameters and a checkbox:
 #### Parameters:
 
 `Filter condition` - A **JSONata** expression passed in through the cfg.
-The Simple JSONata Filter passes a message when its expression yields a truthy value.
+The expression will be evaluated to a value of  `true` or `false`.
 
-A falsey result does not select the message for forwarding. This does not certify designer validation or the other filter options.
+*   If `false` - a message will be logged to the console and the msg will not be sent forward to the next component.
+*   If `true` - a new message with empty body will be passed forward along with all data that passed the condition.
 
 #### Checkbox:
 

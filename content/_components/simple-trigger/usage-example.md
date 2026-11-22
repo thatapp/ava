@@ -105,9 +105,7 @@ In the third step, the [REST API v2 component](/components/rest-api/) is employe
 
 ### Scheduling the Flow
 
-A schedule slot outside the configured start/end window is recorded as outside_window and skipped without starting a run.
-
-The screenshot below is a historical configuration example. Window normalization and current UI behavior require verification; this is not a live scheduling guarantee.
+To automate the process, a schedule must be configured. Click on the settings tab located in the upper right corner and enter the desired cron expression. It's important to note that the flow will only emit messages between the specified start and end dates. Outside this time frame, the flow will be triggered, but no messages will be processed.
 
 {% include img.html max-width="100%" url="img/flow-scheduling.png" title="Flow Scheduling" %}
 

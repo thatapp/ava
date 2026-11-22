@@ -62,7 +62,7 @@ select as a first component during the integration flow design.
 #### Input Metadata
 
 * **Content Type (Defaults to 'application/json')** - (string, optional, defaults to `application/json`): Header value tells the client what the content type of the returned content actually is.
-* **Response Body** — If responseBody is omitted or falsey, HTTP Reply uses the incoming message as the response body. Explicit false, zero and empty string also use this fallback.
+* **Response Body** - (string/Object, required): Body to send as the response
 * **Response Status Code** - (number, optional, defaults to `200`): Integer number between `200` and `999` (more info about status codes in [rfc7231](https://datatracker.ietf.org/doc/html/rfc7231#section-6) standart)
 
 If provided `Custom HTTP Headers` there will be additional field:
@@ -150,6 +150,6 @@ In all of the use cases described above, the basic principle is the same: there 
 There are several specific requirements that need to be fulfilled before the
 request-response mechanism can be used. There are:
 
-* Sailor version numbers do not define the current HTTP Reply contract. Verify the selected component build and host behavior.
-* Java component hosting is **not offered**.
+*   If a custom Node.js component is to be used in the flow with HTTP Reply then then [sailor-node.js](/references/sailor-compatibility-matrix) version should be 1.3.0 or above to support the messaging in the flow. We recommend to use the most recent sailor version.
+*   If a custom Java component is to be used then please use `sailor-jvm` version 2.0.0 or above.
 *   Care must be met to have all the steps tested in advance so the proper fields are mapped.

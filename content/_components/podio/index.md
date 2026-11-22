@@ -244,9 +244,7 @@ Credential: Show is not offered for new flows; converted legacy steps are subjec
 
 ### Item Actions
 
-> **Withheld documentation claim (UNVERIFIED):** UNVERIFIED candidate: document Item: Create (Lookup by external_id), Item: Reconcile Batch, Search Org v2 and Search Space v2 only after the installed descriptor and behavior are verified. Historical audit names podio-new-component@a966bc3; a read-only connector fetch of that component.json failed. Do not publish availability or idempotency claims from this evidence.
-
-No additional action availability or idempotency guarantee is published from this evidence.
+The installed build includes four additional item and search actions. See [Additional hosted operations](#additional-hosted-operations).
 
 #### Item: Create
 

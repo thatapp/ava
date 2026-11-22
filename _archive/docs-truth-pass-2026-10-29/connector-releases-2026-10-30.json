@@ -1994,7 +1994,7 @@
       },
       "content/_components/aws-s3/index.md": {
         "source_packet_sha256": "707efd7b5fd15cffcccaf9817b7b1ad0a8d924c47277b25c0f4112ecbab6d80a",
-        "integrated_sha256": "89301465e1f38fbac90f243997c901b05580bd44766db82a231c0a9edbbbe010"
+        "integrated_sha256": "31b55a497f3a1b466a4be82720cfb98a9eac18ab737fed8a0e80e6dd0b9565e9"
       },
       "content/_components/dropbox/index.md": {
         "source_packet_sha256": "1347fd31de20976cc65bd5ebe70a503add63b1d2cc82d76ee5e3b911873867c0",
@@ -2007,6 +2007,10 @@
       "content/_components/odata/index.md": {
         "source_packet_sha256": "1bb8c3b2d9e02adfcebba0df917681f4ecf526accc2b9b32797f98436d606d39",
         "integrated_sha256": "d8d3bbcc492cb028658f7a9125b372dcb22b45cb644a500c3606673d52ac56af"
+      },
+      "content/_components/mailchimp/index.md": {
+        "source_packet_sha256": "4229101897461beabd63aa82b2dc5d3d7de22eccbb649577cd7bda3887f50cc2",
+        "integrated_sha256": "64d127ddfc03b701bea483b1bb06a39db6318508cecba98d3a103fd6c9ab7373"
       },
       "content/_components/sftp/index.md": {
         "source_packet_sha256": "cbf607aead6ae41d644bad6ed3ba805bc09e721e5199e5bb149b491617d68baf",

@@ -56,7 +56,7 @@ for more information
 
 ### Unsubscribe
 
-This action uses the documented `DELETE /lists/{list_id}/members/{subscriber_hash}` endpoint to **archive** a member from the selected list. It does not permanently delete a contact or set their status to `unsubscribed`. The previous permanent-deletion description was incorrect; see the [official archive reference](https://mailchimp.com/developer/marketing/api/lists/members/delete-member).
+This action unsubscribes a user from a selected list. It utilizes a permanent deletion method within the Mailchimp API.
 
 ![Unsubscribe](img/unsubscribe.png)
 

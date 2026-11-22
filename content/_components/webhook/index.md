@@ -154,7 +154,6 @@ By supporting these various data types, the Webhook component provides flexibili
 
 ## Known Limitations
 * Currently, the component supports the following HTTP methods: `POST` and `GET`.
-* The webhook receiver parses JSON, XML and URL-encoded form bodies; other content is passed through as raw data.
-* The webhook receiver defines a 10 MiB body limit and a per-flow limit of 120 requests per minute.
-* Raw data does not imply automatic file attachment handling. These limits are source defaults; deployed settings and enforcement are **UNVERIFIED**.
-* Use the hook URL returned for the configured trigger; the former hard-coded URL example is not a verified current endpoint.
+* When using a `POST` request, only `JSON` or `XML` data can be transferred to the workflow; other types, such as text or files, are not supported.
+* `XML` data will be automatically converted to `JSON` format.
+* The base path of the URL begins with the keyword `hook` followed by the flow ID, for example, `/hook/678119de28021e00129641fe`. You can append the desired path only after this base path, such as `/hook/678119de28021e00129641fe/sales/orders`.

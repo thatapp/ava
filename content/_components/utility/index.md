@@ -166,9 +166,7 @@ Epoch time conversion is not supported.
 
 ### Delay
 
-The Delay step passes the incoming message through unchanged; proof mode records the delay without sleeping.
-
-Delay-unit behavior and the other Utility actions remain outside this claim; their runtime validation is pending.
+Introduce a delay before passing the message to the next step.
 
 {% include img.html max-width="100%" url="img/delay.png" title="Delay" %}
 
@@ -183,7 +181,7 @@ There are two options for delay behavior:
 #### Input Metadata
 
 * `Delay Time (in seconds)` - Amount of time this component should wait/delay (in seconds) before emiting the message. Negative number will be converted to positive, strings converted to number, if converted failed will set to zero.
-* `Data to transfer` — a field in the historical UI example; the source-supported Delay behavior passes the incoming message through unchanged.
+* `Data to transfer` - Use this field to transfer data in to another steps
 
 ### Log Message
 
