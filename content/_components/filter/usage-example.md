@@ -25,8 +25,10 @@ The next step is to define the configuration of the Filter component. As we ment
 
 >Filter component configuration expression:
 ```
-$exists($."Product_discount")!=0
+$exists($."Product_discount")
 ```
+
+This expression is true whenever the incoming message has a `Product_discount` field, including when its value is `0`, and false when the field is missing.
 
 In the last step, we use the [Transformation aka Jsonata](/components/jsonata) component. Here we calculate the sale price.
 
