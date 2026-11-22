@@ -77,28 +77,30 @@ necessary details and guidelines you can follow to start your own troubleshootin
 
 ## How to find IDs we need?
 
-To locate the necessary IDs you don't need to look far. You can find all IDs in
-the browser address bar while visiting platform pages. For example:
-```
-{{site.data.tenant.appURL}}/c/5b62c919fd98ea20112d53ad/w/57977bd3ee64438036020003
-```
-Here the alphanumeric value after the `/c/` and before `/w/` is the contract ID.
-The value after `/w/` is the workspace ID.
+Copy the address from the page where the problem occurred. The Workflows
+address includes the contract ID after `/c/` and the workspace ID after
+`/w/`. For example, the Members page for contract 17 and workspace 42 is:
 
-When you open any flow page you will get the flow ID appended to the address in
-URL like:
 ```
-.../w/57977bd3ee64438036020003/designer/5f7707d709994d0011430214/v/latest
+/ipaas/c/17/w/42/members
 ```
-Here, the flow ID is the alphanumeric value after `/designer/` and before `/v/`.
 
-For the completion, last part in the URL shows the version (`/v/`) of the flow. In
-above example this is the `latest` version. Otherwise, you will see here the flow
-version ID. If you are editing the flow here you will see `/draft` instead of `/v/`
-and the flow version.
+Opening a flow adds `/f/` and its flow ID. Copy that address when reporting
+a designer problem. If the problem occurs in a particular published version,
+include the version shown in the flow's version history. If it occurs while
+editing, mention that you were working on a draft.
 
-Similarly, you can get IDs of any entity like execution ID, credential ID or
-repository ID while visiting the pages and checking the browser address bar.
+```
+/ipaas/c/17/w/42/f/flw_example
+```
+
+For a failed execution, open it from the Executions list. The address
+includes its run ID after `/executions/`. Include that address with the
+downloaded logs so support can find the exact run.
+
+```
+/ipaas/c/17/w/42/executions/run_example
+```
 
 ## Logs and screenshots?
 
