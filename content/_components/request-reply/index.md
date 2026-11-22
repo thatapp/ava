@@ -10,7 +10,7 @@ updatedDate: 2023-06-29
 ComponentVersion: 1.3.0
 ---
 
-> **Verification status:** The corrections on this page are supported by source review. Runtime behavior, UI availability and deployed settings remain **UNVERIFIED** until the relevant ledger lines are rerun in [issue #64](https://gitlab.com/TECHeGO/thatapp-ai-powered/-/issues/64).
+> The first-step receiver and both Reply actions were verified on Hoist on November 22, 2026. [Signed workflow results](https://gitlab.com/TECHeGO/connector-deployments/-/issues/48#note_4295411792).
 
 ## Description
 
@@ -46,8 +46,9 @@ through the HTTP Reply pattern transforming the flow into a synchronous one.
 
 ## Triggers
 
-This component has no trigger functions. This means it will not be accessible to
-select as a first component during the integration flow design.
+The component descriptor lists two actions and no trigger functions. In the ThatApp workflow designer, you can also choose **HTTP Reply** for the first step and select **Reply**. The flow’s webhook receives the request and uses its body as the input to that step’s mapping. Set the response body, status code, and any custom headers the caller should receive.
+
+To return the result of a later step, start with **Webhook** and place **HTTP Reply** after the step whose output you want to return.
 
 ## Actions
 
