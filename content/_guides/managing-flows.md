@@ -7,6 +7,8 @@ order: 1
 category: integrator-management
 ---
 
+You can also build and test flows in a chat. [Build an AVA workflow from ChatGPT or Claude](/guides/ava-workflows-in-chat).
+
 This document provides information on Flow management, namely the following
 actions:
 
