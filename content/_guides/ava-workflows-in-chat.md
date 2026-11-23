@@ -46,7 +46,7 @@ Paste this after choosing a test workspace.
 
 | What you see | What to do |
 |---|---|
-| Sign-in expired or the host returns 401 | Disconnect AVA in the host’s plugin or connector settings. Reconnect, sign in to AVA and review the grants again. After a grant is revoked, a new sign-in is required. |
+| Sign-in expired or the host returns 401 | Disconnect AVA in the host’s plugin or connector settings. Reconnect, sign in to AVA and review the grants again. Choose the same workspace, then ask AVA to open your existing flow and show its execution by run ID. |
 | AVA asks you to select a workspace | List the available workspaces, choose the intended ID and repeat the request there. |
 | A write tool is absent, or the workspace returns 403 | Check the consented grants, your role in that workspace and the host’s action settings. A viewer receives the read tools. Removing membership takes effect on subsequent requests. |
 | No connection matches an installed component | Check which credential stores the lookup covered. Incomplete coverage leaves the result uncertain. Use the setup link in the selected workspace, then read the references again. |
