@@ -48,30 +48,15 @@ async function pollUpdates(snapshot, readPages, emit) {
 
 >**IMPORTANT:** Please remember that there can be only one snapshot per step in a Flow. Each time another snapshot is made, the last one is overwritten.
 
-**EXAMPLE:**
+### Count runs with a Code trigger
+
+Paste this example into a polling [Code component](/components/code/). The platform supplies the `messages` helper and the step's previous snapshot. On the first run the trigger emits `{ "iteration": 1 }`. On the next run it reads the saved count and emits `{ "iteration": 2 }`.
 
 ```javascript
-'use strict';
-
-const thatapp = require('thatapp-node');
-const messages = thatapp.messages;
-
-exports.process = processTrigger;
-
-function processTrigger(msg, cfg, snapshot) {
-    console.log('Message %j', msg);
-    console.log('Config %j', cfg);
-    console.log('Snapshot %j', snapshot);
-
-    snapshot.iteration = snapshot.iteration || 0;
-
-    console.log('Iteration: %d', snapshot.iteration);
-
-    snapshot.iteration += 1;
-
-    this.emit('snapshot', snapshot);
-    this.emit('data', messages.newMessageWithBody({iteration: snapshot.iteration}));
-    this.emit('end');
+async function run(msg, cfg, snapshot) {
+  const iteration = (snapshot?.iteration ?? 0) + 1;
+  await this.emit('data', messages.newMessageWithBody({ iteration }));
+  await this.emit('snapshot', { ...snapshot, iteration });
 }
 ```
 
