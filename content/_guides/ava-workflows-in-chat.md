@@ -31,6 +31,8 @@ Sign in on AVA’s authorization screen and review the requested permissions. **
 
 Ask “List my AVA workspaces with their organization and contract.” Choose your test workspace by name and ID. Use the same workspace when opening the draft or retrieving a run in another chat. If a step needs an external service, ask AVA to list connection references for that installed component. Follow the returned **Platform Connectors** link, connect the vendor in the selected workspace, then return to the saved draft and recheck its connection. Enter credentials on the connection form.
 
+AVA’s workflow tools read connection metadata and pass the saved reference to the selected installed-component revision. They do not inspect vendor secrets, certify the connector package or replace that component’s authentication, token refresh, configuration and mapping steps. Complete those steps through the component’s own forms and schemas. A connector remains a versioned installed plugin: if a revision introduces a defect, select the prior working revision in the flow or install a corrected revision. A stale or unavailable platform scanner database is not a reason to block installation.
+
 ## Build and test a webhook
 
 Paste this after choosing a test workspace.
@@ -50,7 +52,7 @@ Paste this after choosing a test workspace.
 | AVA asks you to select a workspace | List the available workspaces, choose the intended ID and repeat the request there. |
 | A write tool is absent, or the workspace returns 403 | Check the consented grants, your role in that workspace and the host’s action settings. A viewer receives the read tools. Removing membership takes effect on subsequent requests. |
 | The connection you expect is missing | Ask AVA to list connections for the installed component in the selected workspace and include the saved draft ID. Check which credential stores were read. If one was unavailable, the list is incomplete. Open the returned Platform Connectors link, check the existing connection and read the references again. |
-| A listed connection fails in the workflow | A listed reference identifies a saved account. Check its reported status. For a workspace secret in `error`, open that same connection in Platform Connectors and complete any required sign-in. Then confirm the original ID reports `ready`. For a component credential, check its verification status in Hoist. If no status was returned, its health is unknown. Use a harmless read on the original binding to confirm recovery. |
+| A listed connection fails in the workflow | A listed reference identifies a saved account; it is not a platform certification of the installed component. Open that component’s connection form and follow its own sign-in, refresh and configuration steps. Reopen the saved draft and confirm the component revision and reference ID. If the failure began with a new revision, select the prior working revision or install a corrected revision. Do not treat a stale or unavailable platform scanner database as an installation failure. |
 | Returning from Platform Connectors | Ask AVA to reopen the saved draft by its flow ID in the same workspace. Confirm its connection reference and current revision before editing. |
 | The draft changed during an edit | Read its latest mapping and revision in Hoist. Apply the intended change to that version and verify the saved result. |
 | The sample passed but there is no execution | Confirm the published version and active state, send a fresh event to the saved webhook, and inspect that flow’s executions. |
