@@ -192,7 +192,7 @@ The primary purpose of this component is to retrieve comprehensive information a
           "name": "",
           "description": "",
           "fields": {
-            "expression": "$exists($.\"Product_discount\") != 0",
+            "expression": "$exists($.\"Product_discount\")",
             "assertion": true
           }
         },
