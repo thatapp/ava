@@ -52,6 +52,7 @@ In the most cases `envVars` are defined in the `component.json` as it is done in
 
 Following the above definition it is then used further down like this:
 
+{% raw %}
 ```js
 "oauth2": {
   "client_id": "{{OAUTH_CLIENT_ID}}",
@@ -60,6 +61,7 @@ Following the above definition it is then used further down like this:
   "token_uri": "https://{{prodEnv}}.salesforce.com/services/oauth2/token"
 }
 ```
+{% endraw %}
 
 Set the two values in the component repository’s environment before connecting a credential. The descriptor declares the variable names and references them from `credentials.oauth2`. Keep client secrets out of the component source.
 
